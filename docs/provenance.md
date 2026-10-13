@@ -10,6 +10,8 @@
 | 零样本新增6个 / 24条件 | `explorations/protein_zero_native02` | `evidence/protein_zero_native02/` |
 | 原始MSA与结构分析工具 | `explorations/protein_zero_native02` | `tools/` |
 | 可运行工具输入示例 | 首批AMFR联合条件的原始公共输入与WT坐标 | `examples/zero_shot/amfr/` |
+| EVAgent领域模型与反馈对照 | 服务器 `paper/data/zero_shot/single_chain/input_group_figures_20261011` 与 `reports/fewshot_figure_refresh_20261001` 当前成品图及CSV | `evidence/evagent/`、`assets/evagent/` |
+| 高清定向进化概念图 | 用户提供的 `fitness.png`，3624×1708，原样复制 | `assets/fitness-guided-evolution.png` |
 
 `artifacts_manifest.json` 保留10个protein条件的输入与源码哈希。程序集成的输入、科研源码和原预测按字节复制；工程入口经过重构，排名融合统一在 `runtime/ranking.py`，执行仍使用原输入与冻结程序，并要求输出与原预测完全一致。原Skill归档为 `evidence/scientific_program_ensemble/original_skill.md`；仓库Skill增加了已有结果优先的说明。
 
@@ -20,5 +22,7 @@
 本次打包阶段只做复制、排版、哈希核对、存档指标算术复核和结果页面修正，未调用模型或执行预测程序。可复核状态见 [packaging_verification.json](../evidence/packaging_verification.json)，包含页面的70个分数和1860个候选数据核对。浏览器中逐一检查了20个任务的详情同步、实验切换记忆、键盘选择和桌面/小屏布局。模型请求标识为 `gpt-6.1-sol`；原生JSONL没有单独返回可独立核验的后端模型标识。
 
 工程重构另通过11个排名与输入边界单元测试、Ruff静态/格式检查和页面回归检查。重构前后的报告、页面数据和图表使用的70个数值一致；冻结程序未重新执行，因此这些检查不等于重新复现实验。
+
+2026-10-13补入EVAgent背景证据：蛋白201项与RNA10项零样本领域对照，以及共同47项蛋白的五轮反馈回放。导入时按字节复制16份服务器原图、来源说明和CSV，并比对SHA-256；`scripts/audit_evagent.py`核对2100条零样本指标、1880条反馈指标及原均值／SEM。概览图仅重新排版已有均值，现有MutaHarness程序和分数未改。来源与范围见[导入清单](../evidence/evagent/manifest.json)和[结果说明](evagent.md)。未来训练与轨迹采集是研究设计，未作为已实现能力报告。
 
 公开数据主要来自 [ProteinGym](https://github.com/OATML-Markslab/ProteinGym)，部分复合物任务来自原EVAgent公共导出。源码与输入中的原始assay名称、端点、采样和来源信息均保留。公共数据可能被模型预训练见过；运行时隔离避免提供隐藏标签，不等于训练集无泄漏。

@@ -1,0 +1,34 @@
+{
+  "source_manifest_sha256": "65741fb48b652f0725f3ceae5f3834bb41f8e0ef02be0a89254ad929ecfaee22",
+  "font": "Arial",
+  "source_csv_sha256": {
+    "protein_means.csv": "3ef51b94c15183cadbc85ce177c52545115fa41b38da21e8cf05a79c74ffedc7",
+    "rna_means.csv": "c72bd100aa70d4335366879545282b9dc32af47c854a83b37231493240e7044d"
+  },
+  "axis_range": [
+    -0.03,
+    0.62
+  ],
+  "bar_height": 0.4,
+  "error_bars": "none; saved assay-equal means",
+  "verification": {
+    "status": "passed",
+    "source_files_hash_verified": 16,
+    "protein_zero_assays": 201,
+    "rna_zero_assays": 10,
+    "zero_metric_rows_verified": 2100,
+    "protein_feedback_assays": 47,
+    "feedback_metric_rows_verified": 1880,
+    "hero_pixels": [
+      3624,
+      1708
+    ],
+    "new_model_calls": 0,
+    "predictor_executions": 0,
+    "test_labels_opened": false
+  },
+  "outputs": {
+    "assets/evagent/evagent_overview.png": "3007448b56afd6171c0d278ff052f1179f9d35d1f2da5caa283516b486020fbd",
+    "assets/evagent/evagent_overview.svg": "90195c83b6ec4ddbd9c74de867f3e5b49a0346109b2c700c3eafafc90c203274"
+  }
+}

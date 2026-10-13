@@ -1,0 +1,10 @@
+﻿model,original_model,detail,category,mean_spearman,original_assays,valid_assays,highlight,color,source_file,common_assays
+Gemini,gemini-3.8-flash,LLM,MSA,0.42709503073192295,11,10,True,#F5B5BF,/data/huangyanjie/EVAgent/paper/data/zero_shot/single_chain/rna/rna_gemini_msa_prompt.csv,10
+RNAErnie,RNAErnie,Transformer,sequence only,0.2349711573,30,30,True,#F5DDB5,/data/huangyanjie/EVAgent/paper/data/zero_shot/single_chain/rna/rna_rnagym_rnaernie.csv,10
+Evo2,evo2,StripedHyena 2,sequence only,0.21717227465,30,30,False,#D5D5D5,/data/huangyanjie/EVAgent/paper/data/zero_shot/single_chain/rna/rna_rnagym_evo2.csv,10
+NT,NT,Transformer,sequence only,0.20422138950000002,30,30,False,#D5D5D5,/data/huangyanjie/EVAgent/paper/data/zero_shot/single_chain/rna/rna_rnagym_nt.csv,10
+RNA-FM,RNA-FM,Transformer,sequence only,0.18530979837,30,30,False,#D5D5D5,/data/huangyanjie/EVAgent/paper/data/zero_shot/single_chain/rna/rna_rnagym_rna_fm.csv,10
+RiNALMo,rinalmo,Transformer,sequence only,0.09540444489,30,30,False,#D5D5D5,/data/huangyanjie/EVAgent/paper/data/zero_shot/single_chain/rna/rna_rnagym_rinalmo.csv,10
+Evo1.5,evo1.5,StripedHyena,sequence only,0.06816025151,30,30,False,#D5D5D5,/data/huangyanjie/EVAgent/paper/data/zero_shot/single_chain/rna/rna_rnagym_evo1_5.csv,10
+Evo1,evo1,StripedHyena,sequence only,0.002919136150000006,30,30,False,#D5D5D5,/data/huangyanjie/EVAgent/paper/data/zero_shot/single_chain/rna/rna_rnagym_evo1.csv,10
+GenSLM,GenSLM,Transformer,sequence only,-0.004564074039999999,30,30,False,#D5D5D5,/data/huangyanjie/EVAgent/paper/data/zero_shot/single_chain/rna/rna_rnagym_genslm.csv,10

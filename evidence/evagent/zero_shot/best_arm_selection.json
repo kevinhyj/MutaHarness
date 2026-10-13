@@ -1,0 +1,84 @@
+{
+  "rule": "Highest Gemini arm on shared assays; no rank 50/50 fusion",
+  "tasks": {
+    "protein": {
+      "selected_arm": "msa+structure",
+      "source_filename": "protein_gemini_msa_prompt+structure.csv",
+      "input_category": "MSA + structure",
+      "selection_common_assays": 189,
+      "arm_means": {
+        "sequence": 0.4038219198375679,
+        "msa": 0.43470740992713436,
+        "structure": 0.48394902097270825,
+        "msa+structure": 0.4847777316745657
+      },
+      "selection_source": "/data/huangyanjie/EVAgent/paper/data/zero_shot/msa_structure_boxplot_six_tasks_20261008/plotted_assay_scores.csv",
+      "selection_basis": "Exact signed per-assay Spearman, shared four-prompt cohort; rank fusion excluded"
+    },
+    "rna": {
+      "selected_arm": "msa",
+      "source_filename": "rna_gemini_msa_prompt.csv",
+      "input_category": "MSA",
+      "selection_common_assays": 10,
+      "arm_means": {
+        "sequence": 0.315252625982284,
+        "msa": 0.42709503073192295,
+        "structure": 0.3640659758087103,
+        "msa+structure": 0.4176255934380675
+      },
+      "selection_source": "/data/huangyanjie/EVAgent/paper/data/zero_shot/msa_structure_boxplot_six_tasks_20261008/plotted_assay_scores.csv",
+      "selection_basis": "Exact signed per-assay Spearman, shared four-prompt cohort; rank fusion excluded"
+    },
+    "ligand_regression": {
+      "selected_arm": "CR3+3D",
+      "source_filename": "ligand_gemini_cr3_3d.csv",
+      "input_category": "SMILES + 3D",
+      "selection_common_assays": 8,
+      "arm_means": {
+        "ligand_gemini_cr1.csv": 0.5897531176959893,
+        "ligand_gemini_cr3.csv": 0.6173576294757976,
+        "ligand_gemini_elo3.csv": 0.5940605302395474,
+        "ligand_gemini_cr1_3d.csv": 0.5941033570180192,
+        "ligand_gemini_cr3_3d.csv": 0.6189916370570654
+      },
+      "selection_source": [
+        "/data/huangyanjie/EVAgent/paper/data/zero_shot/single_chain/ligand/ligand_gemini_cr1.csv",
+        "/data/huangyanjie/EVAgent/paper/data/zero_shot/single_chain/ligand/ligand_gemini_cr3.csv",
+        "/data/huangyanjie/EVAgent/paper/data/zero_shot/single_chain/ligand/ligand_gemini_elo3.csv",
+        "/data/huangyanjie/EVAgent/paper/data/zero_shot/single_chain/ligand/ligand_gemini_cr1_3d.csv",
+        "/data/huangyanjie/EVAgent/paper/data/zero_shot/single_chain/ligand/ligand_gemini_cr3_3d.csv"
+      ],
+      "selection_basis": "Exact signed per-assay Spearman, shared cohort across all saved Gemini regression arms"
+    },
+    "ligand_classification": {
+      "selected_arm": "CR3",
+      "source_filename": "ligand_classification_gemini_cr3.csv",
+      "input_category": "SMILES-derived 2D",
+      "selection_common_assays": 10,
+      "arm_means": {
+        "CR1": 0.581276,
+        "CR3": 0.589279,
+        "CR1+3D": 0.580672,
+        "CR3+3D": 0.588929,
+        "Elo3": 0.579021
+      },
+      "selection_source": "/data/huangyanjie/EVAgent/paper/data/zero_shot/MSA_STRUCTURE_ABLATION_SUMMARY.md",
+      "selection_basis": "User-provided common-10-assay signed Spearman summary, including historical 3D arms; rounded six-decimal scores, not invented per-assay values",
+      "confirmation_13_assays": {
+        "CR1": 0.5468597048156414,
+        "CR3": 0.5561327706855318,
+        "Elo3": 0.5483484732730145
+      }
+    }
+  },
+  "source_sha256": {
+    "/data/huangyanjie/EVAgent/paper/data/zero_shot/msa_structure_boxplot_six_tasks_20261008/plotted_assay_scores.csv": "90436277c7918e1142ba9b76ef5ad1c6af1da82bfb919dcc272e6caa700b590b",
+    "/data/huangyanjie/EVAgent/paper/data/zero_shot/single_chain/ligand/ligand_gemini_cr1.csv": "ede708876d92c8474b8b3562915a2d40e61c1e989fd4fdd28bff8a8e2429e883",
+    "/data/huangyanjie/EVAgent/paper/data/zero_shot/single_chain/ligand/ligand_gemini_cr3.csv": "ccd03294ede9f62c05112b5e2e478d8444e5cf23edb097907f06f676d3ccb791",
+    "/data/huangyanjie/EVAgent/paper/data/zero_shot/single_chain/ligand/ligand_gemini_elo3.csv": "e781b4152066df54eb896219be7fb16673f26fb79d160135a56deda6ac081dab",
+    "/data/huangyanjie/EVAgent/paper/data/zero_shot/single_chain/ligand/ligand_gemini_cr1_3d.csv": "35ef32a5940335fb9ce71847abddae214442d96b1ccf0d39f595dd3166d4d5e2",
+    "/data/huangyanjie/EVAgent/paper/data/zero_shot/single_chain/ligand/ligand_gemini_cr3_3d.csv": "5b4d58320d344d5978ed88b19f09a0b1ecaea793542aeb9e4b103d5883baeaeb",
+    "/data/huangyanjie/EVAgent/paper/data/zero_shot/MSA_STRUCTURE_ABLATION_SUMMARY.md": "35fa988e68d5b65f879772ced28f4d950b456265d29803e10b960bf7219ca571",
+    "/data/huangyanjie/EVAgent/paper/data/zero_shot/single_chain/ligand/archive/classification_all_gemini_20261002_230339/ligand_classification_summary.csv": "69498a5181767fbaca72eb963abe1ce031a89e7b22ca5296c4dd178b7850ba54"
+  }
+}

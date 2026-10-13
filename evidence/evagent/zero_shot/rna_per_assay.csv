@@ -1,0 +1,91 @@
+﻿task,model,input_group,assay_id,spearman,n,seed,condition,source_file
+rna,Gemini,MSA,Andreasson_2020_ribozyme,0.704789595856323,250,42,sequence_msa_prompt,/data/huangyanjie/EVAgent/paper/data/zero_shot/single_chain/rna/rna_gemini_msa_prompt.csv
+rna,Gemini,MSA,Beck_2022_ribozyme,0.41649831776044016,250,42,sequence_msa_prompt,/data/huangyanjie/EVAgent/paper/data/zero_shot/single_chain/rna/rna_gemini_msa_prompt.csv
+rna,Gemini,MSA,Domingo_2018_tRNA,0.41812259985099803,250,42,sequence_msa_prompt,/data/huangyanjie/EVAgent/paper/data/zero_shot/single_chain/rna/rna_gemini_msa_prompt.csv
+rna,Gemini,MSA,Guy_2014_tRNA,0.17527215168401872,250,42,sequence_msa_prompt,/data/huangyanjie/EVAgent/paper/data/zero_shot/single_chain/rna/rna_gemini_msa_prompt.csv
+rna,Gemini,MSA,Kobori_2016_osa_ribozyme,0.4938275633417982,250,42,sequence_msa_prompt,/data/huangyanjie/EVAgent/paper/data/zero_shot/single_chain/rna/rna_gemini_msa_prompt.csv
+rna,Gemini,MSA,Li_2016_tRNA,0.3854607374813891,250,42,sequence_msa_prompt,/data/huangyanjie/EVAgent/paper/data/zero_shot/single_chain/rna/rna_gemini_msa_prompt.csv
+rna,Gemini,MSA,Peri_2022_ribozyme,0.34409105323496436,250,42,sequence_msa_prompt,/data/huangyanjie/EVAgent/paper/data/zero_shot/single_chain/rna/rna_gemini_msa_prompt.csv
+rna,Gemini,MSA,Roberts_2023_cepeb3_ribozyme,0.4107018868197358,250,42,sequence_msa_prompt,/data/huangyanjie/EVAgent/paper/data/zero_shot/single_chain/rna/rna_gemini_msa_prompt.csv
+rna,Gemini,MSA,Roberts_2023_tw_ribozyme,0.39324226624449343,250,42,sequence_msa_prompt,/data/huangyanjie/EVAgent/paper/data/zero_shot/single_chain/rna/rna_gemini_msa_prompt.csv
+rna,Gemini,MSA,Zhang_2020_cpeb3_ribozyme,0.528944135045069,250,42,sequence_msa_prompt,/data/huangyanjie/EVAgent/paper/data/zero_shot/single_chain/rna/rna_gemini_msa_prompt.csv
+rna,RNAErnie,sequence only,Andreasson_2020_ribozyme,0.2044213767,250,42,rnagym_official_reconstructed,/data/huangyanjie/EVAgent/paper/data/zero_shot/single_chain/rna/rna_rnagym_rnaernie.csv
+rna,RNAErnie,sequence only,Beck_2022_ribozyme,0.0968018978,250,42,rnagym_official_reconstructed,/data/huangyanjie/EVAgent/paper/data/zero_shot/single_chain/rna/rna_rnagym_rnaernie.csv
+rna,RNAErnie,sequence only,Domingo_2018_tRNA,0.5414045025,250,42,rnagym_official_reconstructed,/data/huangyanjie/EVAgent/paper/data/zero_shot/single_chain/rna/rna_rnagym_rnaernie.csv
+rna,RNAErnie,sequence only,Guy_2014_tRNA,0.3633329075,250,42,rnagym_official_reconstructed,/data/huangyanjie/EVAgent/paper/data/zero_shot/single_chain/rna/rna_rnagym_rnaernie.csv
+rna,RNAErnie,sequence only,Kobori_2016_osa_ribozyme,0.0644477077,250,42,rnagym_official_reconstructed,/data/huangyanjie/EVAgent/paper/data/zero_shot/single_chain/rna/rna_rnagym_rnaernie.csv
+rna,RNAErnie,sequence only,Li_2016_tRNA,0.4797624237,250,42,rnagym_official_reconstructed,/data/huangyanjie/EVAgent/paper/data/zero_shot/single_chain/rna/rna_rnagym_rnaernie.csv
+rna,RNAErnie,sequence only,Peri_2022_ribozyme,0.417690011,250,42,rnagym_official_reconstructed,/data/huangyanjie/EVAgent/paper/data/zero_shot/single_chain/rna/rna_rnagym_rnaernie.csv
+rna,RNAErnie,sequence only,Roberts_2023_cepeb3_ribozyme,0.1244928719,250,42,rnagym_official_reconstructed,/data/huangyanjie/EVAgent/paper/data/zero_shot/single_chain/rna/rna_rnagym_rnaernie.csv
+rna,RNAErnie,sequence only,Roberts_2023_tw_ribozyme,-0.1392256516,250,42,rnagym_official_reconstructed,/data/huangyanjie/EVAgent/paper/data/zero_shot/single_chain/rna/rna_rnagym_rnaernie.csv
+rna,RNAErnie,sequence only,Zhang_2020_cpeb3_ribozyme,0.1965835258,250,42,rnagym_official_reconstructed,/data/huangyanjie/EVAgent/paper/data/zero_shot/single_chain/rna/rna_rnagym_rnaernie.csv
+rna,Evo2,sequence only,Andreasson_2020_ribozyme,0.3333209811,250,42,rnagym_official_reconstructed,/data/huangyanjie/EVAgent/paper/data/zero_shot/single_chain/rna/rna_rnagym_evo2.csv
+rna,Evo2,sequence only,Beck_2022_ribozyme,-0.1764737281,250,42,rnagym_official_reconstructed,/data/huangyanjie/EVAgent/paper/data/zero_shot/single_chain/rna/rna_rnagym_evo2.csv
+rna,Evo2,sequence only,Domingo_2018_tRNA,0.2683669179,250,42,rnagym_official_reconstructed,/data/huangyanjie/EVAgent/paper/data/zero_shot/single_chain/rna/rna_rnagym_evo2.csv
+rna,Evo2,sequence only,Guy_2014_tRNA,0.4231230443,250,42,rnagym_official_reconstructed,/data/huangyanjie/EVAgent/paper/data/zero_shot/single_chain/rna/rna_rnagym_evo2.csv
+rna,Evo2,sequence only,Kobori_2016_osa_ribozyme,0.4011397394,250,42,rnagym_official_reconstructed,/data/huangyanjie/EVAgent/paper/data/zero_shot/single_chain/rna/rna_rnagym_evo2.csv
+rna,Evo2,sequence only,Li_2016_tRNA,0.4735452074,250,42,rnagym_official_reconstructed,/data/huangyanjie/EVAgent/paper/data/zero_shot/single_chain/rna/rna_rnagym_evo2.csv
+rna,Evo2,sequence only,Peri_2022_ribozyme,0.4644335429,250,42,rnagym_official_reconstructed,/data/huangyanjie/EVAgent/paper/data/zero_shot/single_chain/rna/rna_rnagym_evo2.csv
+rna,Evo2,sequence only,Roberts_2023_cepeb3_ribozyme,-0.1981259703,250,42,rnagym_official_reconstructed,/data/huangyanjie/EVAgent/paper/data/zero_shot/single_chain/rna/rna_rnagym_evo2.csv
+rna,Evo2,sequence only,Roberts_2023_tw_ribozyme,0.2069474392,250,42,rnagym_official_reconstructed,/data/huangyanjie/EVAgent/paper/data/zero_shot/single_chain/rna/rna_rnagym_evo2.csv
+rna,Evo2,sequence only,Zhang_2020_cpeb3_ribozyme,-0.0245544273,250,42,rnagym_official_reconstructed,/data/huangyanjie/EVAgent/paper/data/zero_shot/single_chain/rna/rna_rnagym_evo2.csv
+rna,NT,sequence only,Andreasson_2020_ribozyme,0.0244689091,250,42,rnagym_official_reconstructed,/data/huangyanjie/EVAgent/paper/data/zero_shot/single_chain/rna/rna_rnagym_nt.csv
+rna,NT,sequence only,Beck_2022_ribozyme,-0.0060035578,250,42,rnagym_official_reconstructed,/data/huangyanjie/EVAgent/paper/data/zero_shot/single_chain/rna/rna_rnagym_nt.csv
+rna,NT,sequence only,Domingo_2018_tRNA,0.287872894,250,42,rnagym_official_reconstructed,/data/huangyanjie/EVAgent/paper/data/zero_shot/single_chain/rna/rna_rnagym_nt.csv
+rna,NT,sequence only,Guy_2014_tRNA,0.3211152196,250,42,rnagym_official_reconstructed,/data/huangyanjie/EVAgent/paper/data/zero_shot/single_chain/rna/rna_rnagym_nt.csv
+rna,NT,sequence only,Kobori_2016_osa_ribozyme,0.0315987194,250,42,rnagym_official_reconstructed,/data/huangyanjie/EVAgent/paper/data/zero_shot/single_chain/rna/rna_rnagym_nt.csv
+rna,NT,sequence only,Li_2016_tRNA,0.4537433395,250,42,rnagym_official_reconstructed,/data/huangyanjie/EVAgent/paper/data/zero_shot/single_chain/rna/rna_rnagym_nt.csv
+rna,NT,sequence only,Peri_2022_ribozyme,0.4323206451,250,42,rnagym_official_reconstructed,/data/huangyanjie/EVAgent/paper/data/zero_shot/single_chain/rna/rna_rnagym_nt.csv
+rna,NT,sequence only,Roberts_2023_cepeb3_ribozyme,0.0034479912,250,42,rnagym_official_reconstructed,/data/huangyanjie/EVAgent/paper/data/zero_shot/single_chain/rna/rna_rnagym_nt.csv
+rna,NT,sequence only,Roberts_2023_tw_ribozyme,0.2630684011,250,42,rnagym_official_reconstructed,/data/huangyanjie/EVAgent/paper/data/zero_shot/single_chain/rna/rna_rnagym_nt.csv
+rna,NT,sequence only,Zhang_2020_cpeb3_ribozyme,0.2305813338,250,42,rnagym_official_reconstructed,/data/huangyanjie/EVAgent/paper/data/zero_shot/single_chain/rna/rna_rnagym_nt.csv
+rna,RNA-FM,sequence only,Andreasson_2020_ribozyme,0.0675920973,250,42,rnagym_official_reconstructed,/data/huangyanjie/EVAgent/paper/data/zero_shot/single_chain/rna/rna_rnagym_rna_fm.csv
+rna,RNA-FM,sequence only,Beck_2022_ribozyme,-0.1788149367,250,42,rnagym_official_reconstructed,/data/huangyanjie/EVAgent/paper/data/zero_shot/single_chain/rna/rna_rnagym_rna_fm.csv
+rna,RNA-FM,sequence only,Domingo_2018_tRNA,0.4360777612,250,42,rnagym_official_reconstructed,/data/huangyanjie/EVAgent/paper/data/zero_shot/single_chain/rna/rna_rnagym_rna_fm.csv
+rna,RNA-FM,sequence only,Guy_2014_tRNA,0.3877183551,250,42,rnagym_official_reconstructed,/data/huangyanjie/EVAgent/paper/data/zero_shot/single_chain/rna/rna_rnagym_rna_fm.csv
+rna,RNA-FM,sequence only,Kobori_2016_osa_ribozyme,-0.0758801666,250,42,rnagym_official_reconstructed,/data/huangyanjie/EVAgent/paper/data/zero_shot/single_chain/rna/rna_rnagym_rna_fm.csv
+rna,RNA-FM,sequence only,Li_2016_tRNA,0.6199629456,250,42,rnagym_official_reconstructed,/data/huangyanjie/EVAgent/paper/data/zero_shot/single_chain/rna/rna_rnagym_rna_fm.csv
+rna,RNA-FM,sequence only,Peri_2022_ribozyme,0.4229716315,250,42,rnagym_official_reconstructed,/data/huangyanjie/EVAgent/paper/data/zero_shot/single_chain/rna/rna_rnagym_rna_fm.csv
+rna,RNA-FM,sequence only,Roberts_2023_cepeb3_ribozyme,-0.2131936831,250,42,rnagym_official_reconstructed,/data/huangyanjie/EVAgent/paper/data/zero_shot/single_chain/rna/rna_rnagym_rna_fm.csv
+rna,RNA-FM,sequence only,Roberts_2023_tw_ribozyme,-0.1343625978,250,42,rnagym_official_reconstructed,/data/huangyanjie/EVAgent/paper/data/zero_shot/single_chain/rna/rna_rnagym_rna_fm.csv
+rna,RNA-FM,sequence only,Zhang_2020_cpeb3_ribozyme,0.5210265772,250,42,rnagym_official_reconstructed,/data/huangyanjie/EVAgent/paper/data/zero_shot/single_chain/rna/rna_rnagym_rna_fm.csv
+rna,RiNALMo,sequence only,Andreasson_2020_ribozyme,0.1560723963,250,42,rnagym_official_reconstructed,/data/huangyanjie/EVAgent/paper/data/zero_shot/single_chain/rna/rna_rnagym_rinalmo.csv
+rna,RiNALMo,sequence only,Beck_2022_ribozyme,-0.0547490236,250,42,rnagym_official_reconstructed,/data/huangyanjie/EVAgent/paper/data/zero_shot/single_chain/rna/rna_rnagym_rinalmo.csv
+rna,RiNALMo,sequence only,Domingo_2018_tRNA,0.4232120194,250,42,rnagym_official_reconstructed,/data/huangyanjie/EVAgent/paper/data/zero_shot/single_chain/rna/rna_rnagym_rinalmo.csv
+rna,RiNALMo,sequence only,Guy_2014_tRNA,0.1896072022,250,42,rnagym_official_reconstructed,/data/huangyanjie/EVAgent/paper/data/zero_shot/single_chain/rna/rna_rnagym_rinalmo.csv
+rna,RiNALMo,sequence only,Kobori_2016_osa_ribozyme,0.030608944,250,42,rnagym_official_reconstructed,/data/huangyanjie/EVAgent/paper/data/zero_shot/single_chain/rna/rna_rnagym_rinalmo.csv
+rna,RiNALMo,sequence only,Li_2016_tRNA,0.2200287802,250,42,rnagym_official_reconstructed,/data/huangyanjie/EVAgent/paper/data/zero_shot/single_chain/rna/rna_rnagym_rinalmo.csv
+rna,RiNALMo,sequence only,Peri_2022_ribozyme,0.2727945087,250,42,rnagym_official_reconstructed,/data/huangyanjie/EVAgent/paper/data/zero_shot/single_chain/rna/rna_rnagym_rinalmo.csv
+rna,RiNALMo,sequence only,Roberts_2023_cepeb3_ribozyme,-0.0388487943,250,42,rnagym_official_reconstructed,/data/huangyanjie/EVAgent/paper/data/zero_shot/single_chain/rna/rna_rnagym_rinalmo.csv
+rna,RiNALMo,sequence only,Roberts_2023_tw_ribozyme,-0.1359726724,250,42,rnagym_official_reconstructed,/data/huangyanjie/EVAgent/paper/data/zero_shot/single_chain/rna/rna_rnagym_rinalmo.csv
+rna,RiNALMo,sequence only,Zhang_2020_cpeb3_ribozyme,-0.1087089116,250,42,rnagym_official_reconstructed,/data/huangyanjie/EVAgent/paper/data/zero_shot/single_chain/rna/rna_rnagym_rinalmo.csv
+rna,Evo1.5,sequence only,Andreasson_2020_ribozyme,0.1302535731,250,42,rnagym_official_reconstructed,/data/huangyanjie/EVAgent/paper/data/zero_shot/single_chain/rna/rna_rnagym_evo1_5.csv
+rna,Evo1.5,sequence only,Beck_2022_ribozyme,-0.2910519104,250,42,rnagym_official_reconstructed,/data/huangyanjie/EVAgent/paper/data/zero_shot/single_chain/rna/rna_rnagym_evo1_5.csv
+rna,Evo1.5,sequence only,Domingo_2018_tRNA,0.4243079729,250,42,rnagym_official_reconstructed,/data/huangyanjie/EVAgent/paper/data/zero_shot/single_chain/rna/rna_rnagym_evo1_5.csv
+rna,Evo1.5,sequence only,Guy_2014_tRNA,0.2665527245,250,42,rnagym_official_reconstructed,/data/huangyanjie/EVAgent/paper/data/zero_shot/single_chain/rna/rna_rnagym_evo1_5.csv
+rna,Evo1.5,sequence only,Kobori_2016_osa_ribozyme,-0.1450775377,250,42,rnagym_official_reconstructed,/data/huangyanjie/EVAgent/paper/data/zero_shot/single_chain/rna/rna_rnagym_evo1_5.csv
+rna,Evo1.5,sequence only,Li_2016_tRNA,0.3667600986,250,42,rnagym_official_reconstructed,/data/huangyanjie/EVAgent/paper/data/zero_shot/single_chain/rna/rna_rnagym_evo1_5.csv
+rna,Evo1.5,sequence only,Peri_2022_ribozyme,0.3591742097,250,42,rnagym_official_reconstructed,/data/huangyanjie/EVAgent/paper/data/zero_shot/single_chain/rna/rna_rnagym_evo1_5.csv
+rna,Evo1.5,sequence only,Roberts_2023_cepeb3_ribozyme,-0.2966817543,250,42,rnagym_official_reconstructed,/data/huangyanjie/EVAgent/paper/data/zero_shot/single_chain/rna/rna_rnagym_evo1_5.csv
+rna,Evo1.5,sequence only,Roberts_2023_tw_ribozyme,-0.1905014253,250,42,rnagym_official_reconstructed,/data/huangyanjie/EVAgent/paper/data/zero_shot/single_chain/rna/rna_rnagym_evo1_5.csv
+rna,Evo1.5,sequence only,Zhang_2020_cpeb3_ribozyme,0.057866564,250,42,rnagym_official_reconstructed,/data/huangyanjie/EVAgent/paper/data/zero_shot/single_chain/rna/rna_rnagym_evo1_5.csv
+rna,Evo1,sequence only,Andreasson_2020_ribozyme,0.0777101753,250,42,rnagym_official_reconstructed,/data/huangyanjie/EVAgent/paper/data/zero_shot/single_chain/rna/rna_rnagym_evo1.csv
+rna,Evo1,sequence only,Beck_2022_ribozyme,-0.2509945809,250,42,rnagym_official_reconstructed,/data/huangyanjie/EVAgent/paper/data/zero_shot/single_chain/rna/rna_rnagym_evo1.csv
+rna,Evo1,sequence only,Domingo_2018_tRNA,0.0098017568,250,42,rnagym_official_reconstructed,/data/huangyanjie/EVAgent/paper/data/zero_shot/single_chain/rna/rna_rnagym_evo1.csv
+rna,Evo1,sequence only,Guy_2014_tRNA,0.0198408337,250,42,rnagym_official_reconstructed,/data/huangyanjie/EVAgent/paper/data/zero_shot/single_chain/rna/rna_rnagym_evo1.csv
+rna,Evo1,sequence only,Kobori_2016_osa_ribozyme,-0.1804866121,250,42,rnagym_official_reconstructed,/data/huangyanjie/EVAgent/paper/data/zero_shot/single_chain/rna/rna_rnagym_evo1.csv
+rna,Evo1,sequence only,Li_2016_tRNA,0.297347972,250,42,rnagym_official_reconstructed,/data/huangyanjie/EVAgent/paper/data/zero_shot/single_chain/rna/rna_rnagym_evo1.csv
+rna,Evo1,sequence only,Peri_2022_ribozyme,0.4306210339,250,42,rnagym_official_reconstructed,/data/huangyanjie/EVAgent/paper/data/zero_shot/single_chain/rna/rna_rnagym_evo1.csv
+rna,Evo1,sequence only,Roberts_2023_cepeb3_ribozyme,-0.2314014994,250,42,rnagym_official_reconstructed,/data/huangyanjie/EVAgent/paper/data/zero_shot/single_chain/rna/rna_rnagym_evo1.csv
+rna,Evo1,sequence only,Roberts_2023_tw_ribozyme,-0.0754231321,250,42,rnagym_official_reconstructed,/data/huangyanjie/EVAgent/paper/data/zero_shot/single_chain/rna/rna_rnagym_evo1.csv
+rna,Evo1,sequence only,Zhang_2020_cpeb3_ribozyme,-0.0678245857,250,42,rnagym_official_reconstructed,/data/huangyanjie/EVAgent/paper/data/zero_shot/single_chain/rna/rna_rnagym_evo1.csv
+rna,GenSLM,sequence only,Andreasson_2020_ribozyme,0.0668878932,250,42,rnagym_official_reconstructed,/data/huangyanjie/EVAgent/paper/data/zero_shot/single_chain/rna/rna_rnagym_genslm.csv
+rna,GenSLM,sequence only,Beck_2022_ribozyme,0.0521484066,250,42,rnagym_official_reconstructed,/data/huangyanjie/EVAgent/paper/data/zero_shot/single_chain/rna/rna_rnagym_genslm.csv
+rna,GenSLM,sequence only,Domingo_2018_tRNA,-0.075558672,250,42,rnagym_official_reconstructed,/data/huangyanjie/EVAgent/paper/data/zero_shot/single_chain/rna/rna_rnagym_genslm.csv
+rna,GenSLM,sequence only,Guy_2014_tRNA,-0.1078932094,250,42,rnagym_official_reconstructed,/data/huangyanjie/EVAgent/paper/data/zero_shot/single_chain/rna/rna_rnagym_genslm.csv
+rna,GenSLM,sequence only,Kobori_2016_osa_ribozyme,0.1767606424,250,42,rnagym_official_reconstructed,/data/huangyanjie/EVAgent/paper/data/zero_shot/single_chain/rna/rna_rnagym_genslm.csv
+rna,GenSLM,sequence only,Li_2016_tRNA,-0.2416031068,250,42,rnagym_official_reconstructed,/data/huangyanjie/EVAgent/paper/data/zero_shot/single_chain/rna/rna_rnagym_genslm.csv
+rna,GenSLM,sequence only,Peri_2022_ribozyme,0.076396589,250,42,rnagym_official_reconstructed,/data/huangyanjie/EVAgent/paper/data/zero_shot/single_chain/rna/rna_rnagym_genslm.csv
+rna,GenSLM,sequence only,Roberts_2023_cepeb3_ribozyme,0.0790977982,250,42,rnagym_official_reconstructed,/data/huangyanjie/EVAgent/paper/data/zero_shot/single_chain/rna/rna_rnagym_genslm.csv
+rna,GenSLM,sequence only,Roberts_2023_tw_ribozyme,0.1128895316,250,42,rnagym_official_reconstructed,/data/huangyanjie/EVAgent/paper/data/zero_shot/single_chain/rna/rna_rnagym_genslm.csv
+rna,GenSLM,sequence only,Zhang_2020_cpeb3_ribozyme,-0.1847666132,250,42,rnagym_official_reconstructed,/data/huangyanjie/EVAgent/paper/data/zero_shot/single_chain/rna/rna_rnagym_genslm.csv

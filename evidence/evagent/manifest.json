@@ -1,0 +1,124 @@
+{
+  "snapshot_date": "2026-10-13",
+  "server": "a100_enzyme2",
+  "server_root": "/data/huangyanjie/EVAgent",
+  "studies": {
+    "protein_zero": {
+      "assays": 201,
+      "methods": 10,
+      "llm": "gemini-3.8-flash",
+      "input": "sequence + MSA + structure",
+      "measured_supports": 0
+    },
+    "rna_zero": {
+      "assays": 10,
+      "methods": 9,
+      "llm": "gemini-3.8-flash",
+      "input": "sequence + MSA",
+      "measured_supports": 0
+    },
+    "protein_feedback": {
+      "assays": 47,
+      "rounds": 5,
+      "initial_supports": 32,
+      "pool_per_round": 1000,
+      "selections_per_round": 32,
+      "seed": 42,
+      "metric": "current-pool top-decile hit rate"
+    }
+  },
+  "new_model_calls": 0,
+  "predictor_executions": 0,
+  "test_labels_opened": false,
+  "hero": {
+    "path": "assets/fitness-guided-evolution.png",
+    "source": "User-provided fitness.png",
+    "pixels": [
+      3624,
+      1708
+    ],
+    "sha256": "9fa39c1a4c234e8ebac39e4c735b3e9453afcdb34bc91f80eb5462360ac70626"
+  },
+  "files": {
+    "evidence/evagent/zero_shot/protein_means.csv": {
+      "server_path": "/data/huangyanjie/EVAgent/paper/data/zero_shot/single_chain/input_group_figures_20261011/protein/plotted_mean_spearman.csv",
+      "sha256": "3ef51b94c15183cadbc85ce177c52545115fa41b38da21e8cf05a79c74ffedc7",
+      "bytes": 2035
+    },
+    "evidence/evagent/zero_shot/protein_per_assay.csv": {
+      "server_path": "/data/huangyanjie/EVAgent/paper/data/zero_shot/single_chain/input_group_figures_20261011/protein/plotted_assay_spearman.csv",
+      "sha256": "20e06d3915d638529059519a0092677c48a2632f2cd99edf2859b660a4013452",
+      "bytes": 428757
+    },
+    "evidence/evagent/zero_shot/rna_means.csv": {
+      "server_path": "/data/huangyanjie/EVAgent/paper/data/zero_shot/single_chain/input_group_figures_20261011/rna/plotted_mean_spearman.csv",
+      "sha256": "c72bd100aa70d4335366879545282b9dc32af47c854a83b37231493240e7044d",
+      "bytes": 1612
+    },
+    "evidence/evagent/zero_shot/rna_per_assay.csv": {
+      "server_path": "/data/huangyanjie/EVAgent/paper/data/zero_shot/single_chain/input_group_figures_20261011/rna/plotted_assay_spearman.csv",
+      "sha256": "e8a1725d7a0dd97af781a9b8e76c0a08f490ddd75865b1ed5a0db81e96f99dfa",
+      "bytes": 16393
+    },
+    "evidence/evagent/zero_shot/best_arm_selection.json": {
+      "server_path": "/data/huangyanjie/EVAgent/paper/data/zero_shot/single_chain/input_group_figures_20261011/BEST_ARM_SELECTION.json",
+      "sha256": "7e65f425db7c0b0d98455ce8238966f851037d34b2fd1484ca8072772b589dce",
+      "bytes": 4733
+    },
+    "evidence/evagent/zero_shot/original_readme.txt": {
+      "server_path": "/data/huangyanjie/EVAgent/paper/data/zero_shot/single_chain/input_group_figures_20261011/README.txt",
+      "sha256": "d0baf5af94fb13ff39fff8ce5e33a8b2a1cb1821e61003d0ff122434030d113b",
+      "bytes": 5614
+    },
+    "evidence/evagent/feedback/protein_display_series.csv": {
+      "server_path": "/data/huangyanjie/EVAgent/reports/fewshot_figure_refresh_20261001/multiround_arial_ticks25_20261011_v3/data/protein/DISPLAY_SERIES.csv",
+      "sha256": "1904b7dbb86d2185a005a373e8da6eef9fc5972c1bd2b4d21f6d20468211c94e",
+      "bytes": 8489
+    },
+    "evidence/evagent/feedback/protein_per_assay_rounds.csv": {
+      "server_path": "/data/huangyanjie/EVAgent/reports/fewshot_figure_refresh_20261001/multiround_arial_ticks25_20261011_v3/data/protein/PER_ASSAY_ROUNDS.csv",
+      "sha256": "cd2802008ab43d886c7a5df9070a6acc1e3718e22061f95a3550fbb12f9555e8",
+      "bytes": 188350
+    },
+    "evidence/evagent/feedback/original_readme.md": {
+      "server_path": "/data/huangyanjie/EVAgent/reports/fewshot_figure_refresh_20261001/README_V2.md",
+      "sha256": "f5e63f1553f2ec73920dc4bbdaa5828b1f66ab6e38b69596e44da063c88a6c55",
+      "bytes": 20316
+    },
+    "evidence/evagent/feedback/original_figure_index.csv": {
+      "server_path": "/data/huangyanjie/EVAgent/reports/fewshot_figure_refresh_20261001/FIGURE_INDEX_V2.csv",
+      "sha256": "74cf2b44806d461cba0eaf0b9bfb600d33c4760bbaa8acdc5c41ef97ecf9f8bd",
+      "bytes": 6840
+    },
+    "assets/evagent/original_protein.png": {
+      "server_path": "/data/huangyanjie/EVAgent/paper/fig/single_chain/protein/protein_baselines_by_input.png",
+      "sha256": "2d8fde40ee906608f89980b313416d60f7cfc89e61e87cc286fbe977bfdd4387",
+      "bytes": 596184
+    },
+    "assets/evagent/original_protein.svg": {
+      "server_path": "/data/huangyanjie/EVAgent/paper/fig/single_chain/protein/protein_baselines_by_input.svg",
+      "sha256": "68b2a90ff80910bbe9cddcb185aac0da7fd0cb41ddc52055ae58539810ed4bad",
+      "bytes": 349881
+    },
+    "assets/evagent/original_rna.png": {
+      "server_path": "/data/huangyanjie/EVAgent/paper/fig/single_chain/rna/rna_baselines_by_input.png",
+      "sha256": "6c51ff856edc2ad58736c654db19851dc37bfa289e21a494ef0f118bf1d925c8",
+      "bytes": 279201
+    },
+    "assets/evagent/original_rna.svg": {
+      "server_path": "/data/huangyanjie/EVAgent/paper/fig/single_chain/rna/rna_baselines_by_input.svg",
+      "sha256": "fcc55f05572fee0c9e0fb026db74bf9d0bf6b48abe3665c96516e155230c66c3",
+      "bytes": 39673
+    },
+    "assets/evagent/protein_feedback.png": {
+      "server_path": "/data/huangyanjie/EVAgent/reports/fewshot_figure_refresh_20261001/multiround_arial_ticks25_20261011_v3/protein/protein_rf_main.png",
+      "sha256": "4f98a971c3fa25093bc8f886de54c28c9ef687ad090118e5571f6de08e4c6b6c",
+      "bytes": 257174
+    },
+    "assets/evagent/protein_feedback.svg": {
+      "server_path": "/data/huangyanjie/EVAgent/reports/fewshot_figure_refresh_20261001/multiround_arial_ticks25_20261011_v3/protein/protein_rf_main.svg",
+      "sha256": "557900a93c0fc11d6e1ac11e754e10d956cdcfbd0d3693959553b7f6e80f6218",
+      "bytes": 21149
+    }
+  }
+}

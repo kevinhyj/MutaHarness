@@ -1,0 +1,11 @@
+﻿model,original_model,detail,category,mean_spearman,original_assays,valid_assays,highlight,color,source_file,common_assays
+Gemini,gemini-3.8-flash,LLM,MSA + structure,0.4824457688366049,203,201,True,#F5B5BF,/data/huangyanjie/EVAgent/paper/data/zero_shot/single_chain/protein/protein_gemini_msa_prompt+structure.csv,201
+VenusREM,VenusREM,Hybrid model,MSA + structure,0.5440601407925373,210,210,True,#B5A3CE,/data/huangyanjie/EVAgent/paper/data/zero_shot/single_chain/protein/protein_proteingym_venusrem.csv,201
+ESM2 (650M),ESM2 (650M),Protein LM,sequence only,0.4550387040840796,210,210,True,#F5DDB5,/data/huangyanjie/EVAgent/paper/data/zero_shot/single_chain/protein/protein_proteingym_esm2_650m.csv,201
+PoET (200M),PoET (200M),Protein LM,MSA,0.4946351579482587,210,210,True,#728AB9,/data/huangyanjie/EVAgent/paper/data/zero_shot/single_chain/protein/protein_proteingym_poet_200m.csv,201
+TranceptEVE-L,TranceptEVE L,Hybrid LM,MSA,0.4821348127084577,210,210,False,#D5D5D5,/data/huangyanjie/EVAgent/paper/data/zero_shot/single_chain/protein/protein_proteingym_trancepteve_l.csv,201
+GEMME,GEMME,Evolutionary,MSA,0.47792754360895523,210,210,False,#D5D5D5,/data/huangyanjie/EVAgent/paper/data/zero_shot/single_chain/protein/protein_proteingym_gemme.csv,201
+EVmutation,EVmutation,Potts model,MSA,0.42077183630597015,210,210,False,#D5D5D5,/data/huangyanjie/EVAgent/paper/data/zero_shot/single_chain/protein/protein_proteingym_evmutation.csv,201
+Site-independent,Site-Independent,PSSM,MSA,0.3674590497940298,210,210,False,#D5D5D5,/data/huangyanjie/EVAgent/paper/data/zero_shot/single_chain/protein/protein_proteingym_site_independent.csv,201
+ProSST (K=2048),ProSST (K=2048),Structure LM,structure,0.5358614592960199,210,210,True,#50B9AE,/data/huangyanjie/EVAgent/paper/data/zero_shot/single_chain/protein/protein_proteingym_prosst_k_2048.csv,201
+ESM-IF1,ESM-IF1,Inverse folding,structure,0.44866896470199,210,210,False,#D5D5D5,/data/huangyanjie/EVAgent/paper/data/zero_shot/single_chain/protein/protein_proteingym_esm_if1.csv,201

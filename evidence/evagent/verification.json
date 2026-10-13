@@ -1,0 +1,16 @@
+{
+  "status": "passed",
+  "source_files_hash_verified": 16,
+  "protein_zero_assays": 201,
+  "rna_zero_assays": 10,
+  "zero_metric_rows_verified": 2100,
+  "protein_feedback_assays": 47,
+  "feedback_metric_rows_verified": 1880,
+  "hero_pixels": [
+    3624,
+    1708
+  ],
+  "new_model_calls": 0,
+  "predictor_executions": 0,
+  "test_labels_opened": false
+}
