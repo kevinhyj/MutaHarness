@@ -4,6 +4,8 @@
   "programs_hash_verified": 30,
   "existing_zero_shot_conditions": 40,
   "stored_metric_arithmetic_verified": true,
+  "viewer_metric_values_verified": 70,
+  "viewer_candidates_verified": 1860,
   "predictor_executions": 0,
   "new_model_calls": 0,
   "test_labels_opened": false,
