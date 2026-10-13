@@ -1,7 +1,6 @@
 """Optional cold replay: refit frozen programs and compare with their stored predictions."""
 
 import argparse
-import csv
 import os
 import shutil
 import subprocess
@@ -10,7 +9,7 @@ import tempfile
 from pathlib import Path
 
 from runtime.artifacts import ROOT, read_json, verify_hash, write_json
-from runtime.ranking import query_ids, rank_ensemble
+from runtime.ranking import query_ids, rank_ensemble, write_ranking
 
 
 def stage_program(source: Path, workspace: Path, hashes: dict[str, str]) -> None:
@@ -59,23 +58,6 @@ def replay_program(
     for filename, digest in hashes.items():
         verify_hash(workspace / filename, digest)
     return prediction["scores"]
-
-
-def write_ranking(path: Path, ranked: list[dict]) -> None:
-    with path.open("w", newline="", encoding="utf-8") as stream:
-        writer = csv.writer(stream)
-        writer.writerow(
-            [
-                "id",
-                "ensemble_score",
-                "program00_score",
-                "program01_score",
-                "program02_score",
-                "rank_disagreement_sd",
-            ]
-        )
-        for row in sorted(ranked, key=lambda row: (-row["score"], row["id"])):
-            writer.writerow([row["id"], row["score"], *row["program_scores"], row["disagreement"]])
 
 
 def replay(condition: str, output: Path) -> None:

@@ -8,6 +8,8 @@
 
 Task Option 2：下面先说明研发岗位与任务，再用LLM能力评估和MutaHarness两组已有实验，讨论LLM的预测能力、Harness改进和后续研究。
 
+我选择突变效应预测作为科学评估任务：既有真实实验结果可核验，也能检验模型如何使用证据、学习反馈。评估同时关注排序质量、固定预算下的候选命中率，以及同模型、同生成预算下的Harness收益。
+
 ## 1. 行业岗位：谁在做什么？
 
 蛋白药物、酶和生物制造的研发，通常围绕 **设计 → 制备 → 测试 → 学习 → 再设计** 展开。蛋白工程科学家决定优化目标，计算团队推荐候选，实验团队测量效果，工程师保证数据和设备流程能接起来。小团队中，一人可能兼任多个职责。
@@ -128,6 +130,16 @@ Harness 在这里指模型周围的输入、工具、执行检查与结果聚合
 
 [方法、流程图与具体代码示例](docs/method.md) · [程序集成 Skill](.agents/skills/scientific-program-ensemble/SKILL.md) · [结构＋MSA Skill](.agents/skills/structure-msa-fitness/SKILL.md) · [MSA工具](tools/msa_tools.py) · [结构工具](tools/structure_tools.py)
 
+**下载后即可运行两个示例。** 在仓库根目录使用Python 3.11+，无需API key或额外依赖：
+
+```bash
+python3 harness.py ensemble --out outputs/gfp_ensemble
+python3 harness.py evidence --out outputs/amfr_evidence
+```
+
+第一条将已有三份GFP预测融合成186个候选的排名与分歧；第二条为250个AMFR候选生成结构/MSA证据。两者都校验输入，并输出含来源哈希的`manifest.json`。换成自己的数据时传入`--case`，融合入口另传三份`--predictions`。[输入格式、输出与使用说明](docs/getting-started.md)
+
+
 ## 5. 已有实测：相对原生 Codex，有多大收益？
 
 以下均为此前已完成实验的存档结果。测试模型为 `gpt-6.1-sol / high`，Fast关闭。对照是原生 Codex，可使用工具并编写预测程序。以下使用相同的Spearman排序指标。
@@ -179,12 +191,14 @@ flowchart LR
 
 | 入口 | 职责 |
 |---|---|
+| [harness.py](harness.py) | 两个Skill的统一命令入口；示例默认可跑，也接受自己的数据 |
+| [runtime/workflows.py](runtime/workflows.py) | 输入校验、证据分析/预测融合、来源记录与结果输出 |
 | [runtime/ranking.py](runtime/ranking.py) | 候选ID与分数检查、并列排名、等权融合、程序分歧；纯标准库 |
 | [demo.py](demo.py) | 可选冷重放：校验哈希、分工作区执行、核对原预测、输出排序 |
 | [scripts/results.py](scripts/results.py) | 报告、页面和图表共用的存档读取与指标整理 |
 | [scripts/build_viewer.py](scripts/build_viewer.py) | 由数据与 [Markdown模板](docs/results.template.md) 生成结果页和报告 |
 | [demo/viewer.js](demo/viewer.js) | 原生JavaScript交互；结构、样式和逻辑分文件维护 |
-| [tests/test_ranking.py](tests/test_ranking.py) | 并列、ID对齐、分数尺度变化、缺失与非法输入等边界测试 |
+| [排名测试](tests/test_ranking.py)与[流程测试](tests/test_workflows.py) | 排名性质、命令端到端运行、来源哈希、错误输入与输出保护 |
 
 `programs/` 是实测时模型生成的原始科研程序，`tools/` 和 `evidence/` 保留原工具与证据，便于追溯；工程入口的重构没有修改这些存档。
 

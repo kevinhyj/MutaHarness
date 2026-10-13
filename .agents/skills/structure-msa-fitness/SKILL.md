@@ -14,13 +14,14 @@ Use a canonical `case.json` with `reference_sequence`, `query` and `evidence.for
 The AMFR example includes an aligned MSA summary and a raw WT PDB. From the repository root, create evidence sidecars in a fresh output directory:
 
 ```bash
-python3 tools/msa_tools.py --case examples/zero_shot/amfr/case.json --output outputs/amfr_evidence/msa.json
-python3 tools/structure_tools.py --case examples/zero_shot/amfr/case.json --out outputs/amfr_evidence/structure.json
+python3 harness.py evidence --out outputs/amfr_evidence
 ```
 
-Both commands use the supplied evidence and standard library; they make no model calls. The MSA sidecar returns per-substitution frequency/log-odds terms and completeness. The structure sidecar returns WT exposure, local geometry, confidence and available pair distances.
+The entry point checks candidate IDs, excludes query fitness labels, verifies evidence mapping and writes `msa.json`, `structure.json` and a common `manifest.json` with input/output hashes. It uses the supplied evidence and standard library. For your own canonical case, add `--case path/to/case.json`; see [input contracts](../../../docs/getting-started.md).
 
-When full contact geometry is needed, use the separate `--raw-pdb examples/zero_shot/amfr/AMFR_HUMAN.pdb` mode with NumPy. It recomputes WT contact graphs and optional SASA from supplied coordinates. Keep this output separate from the summary sidecar and preserve input provenance.
+The MSA sidecar returns per-substitution frequency/log-odds terms and completeness. The structure sidecar returns WT exposure, local geometry, confidence and available pair distances. Treat these as evidence for prediction, not an already fitted assay predictor.
+
+When full contact geometry is needed, use `tools/structure_tools.py` with `--raw-pdb examples/zero_shot/amfr/AMFR_HUMAN.pdb` and NumPy. It recomputes WT contact graphs and optional SASA from supplied coordinates. Keep this output separate from the summary sidecar and preserve input provenance.
 
 ## Use evidence for the assay
 

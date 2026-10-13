@@ -1,8 +1,10 @@
 """Blind equal-weight rank fusion. No labels, model calls or fitted weights."""
 
+import csv
 from collections.abc import Mapping, Sequence
 from itertools import groupby
 from math import isfinite
+from pathlib import Path
 from statistics import mean, pstdev
 from typing import TypedDict
 
@@ -24,10 +26,23 @@ def validate_ids(ids: Sequence[str]) -> None:
 
 
 def query_ids(case: Mapping) -> list[str]:
+    if not isinstance(case, Mapping):
+        raise ValueError("Case must be a JSON object")
     queries = case["query"]
+    if not isinstance(queries, list) or any(
+        not isinstance(query, Mapping) or "id" not in query for query in queries
+    ):
+        raise ValueError("Query must be a list of objects with candidate IDs")
+    supports = case.get("support", [])
+    if not isinstance(supports, list) or any(
+        not isinstance(row, Mapping) or "id" not in row for row in supports
+    ):
+        raise ValueError("Support must be a list of objects with candidate IDs")
     ids = [query["id"] for query in queries]
     validate_ids(ids)
-    if set(ids) & {row["id"] for row in case.get("support", [])}:
+    if supports:
+        validate_ids([row["id"] for row in supports])
+    if set(ids) & {row["id"] for row in supports}:
         raise ValueError("Measured support and unmeasured query IDs must be disjoint")
     if any("fitness" in query for query in queries):
         raise ValueError("Unmeasured queries must not contain fitness labels")
@@ -37,6 +52,8 @@ def query_ids(case: Mapping) -> list[str]:
 def validate_scores(
     scores: Mapping[str, float], ids: Sequence[str], *, bounded: bool = False
 ) -> None:
+    if not isinstance(scores, Mapping):
+        raise ValueError("Scores must be a candidate-ID to number object")
     if set(scores) != set(ids):
         raise ValueError("Scores must cover exactly the query IDs")
     for value in scores.values():
@@ -81,3 +98,20 @@ def rank_ensemble(
         }
         for id_, ranks in zip(ids, zip(*votes), strict=True)
     ]
+
+
+def write_ranking(path: Path, ranked: list[dict]) -> None:
+    with path.open("w", newline="", encoding="utf-8") as stream:
+        writer = csv.writer(stream)
+        writer.writerow(
+            [
+                "id",
+                "ensemble_score",
+                "program00_score",
+                "program01_score",
+                "program02_score",
+                "rank_disagreement_sd",
+            ]
+        )
+        for row in sorted(ranked, key=lambda row: (-row["score"], row["id"])):
+            writer.writerow([row["id"], row["score"], *row["program_scores"], row["disagreement"]])
