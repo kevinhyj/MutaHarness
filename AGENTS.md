@@ -6,4 +6,4 @@ Keep the two demonstrated interventions distinct: Scientific Program Ensemble us
 
 Preserve original program sources, failures, delivery recovery and historical metrics. Report stored-result verification separately from a fresh model run. Cold replay (`demo.py`) refits frozen programs without calling an LLM; it is optional and should not be confused with fresh inference.
 
-The packaged Skill defaults to inspecting existing outputs. Read `.agents/skills/scientific-program-ensemble/SKILL.md` when using or replaying the frozen programs.
+The two packaged Skills default to existing-result review and label-free evidence analysis. Read `.agents/skills/scientific-program-ensemble/SKILL.md` for frozen program replay, or `.agents/skills/structure-msa-fitness/SKILL.md` for structure/MSA tool use.

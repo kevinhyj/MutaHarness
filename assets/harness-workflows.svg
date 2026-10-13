@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="900" viewBox="0 0 1440 900" role="img" aria-label="Scientific Program Ensemble and Structure plus MSA: two independently evaluated harness workflows">
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10" fill="#849099"/></marker></defs>
+<rect width="1440" height="900" fill="white"/>
+<g font-family="Arial, sans-serif">
+<text x="720" y="48" font-size="34" fill="#26343d" text-anchor="middle" font-weight="700">Two harnesses for mutation fitness prediction</text>
+<text x="720" y="83" font-size="23" fill="#687781" text-anchor="middle">Use experimental feedback more effectively · Turn scientific inputs into usable evidence</text>
+<rect x="32" y="115" width="668" height="725" rx="22" fill="#fff6f8" stroke="#efc9d3" stroke-width="1.5"/>
+<rect x="740" y="115" width="668" height="725" rx="22" fill="#f1faf8" stroke="#bddfd7" stroke-width="1.5"/>
+<text x="366" y="163" font-size="30" fill="#9b4a65" text-anchor="middle" font-weight="700">01  Scientific Program Ensemble</text>
+<text x="366" y="199" font-size="20" fill="#9b4a65" text-anchor="middle">FEEDBACK LEARNING</text>
+<text x="1074" y="163" font-size="30" fill="#28796c" text-anchor="middle" font-weight="700">02  Structure + MSA</text>
+<text x="1074" y="199" font-size="20" fill="#28796c" text-anchor="middle">ZERO-SHOT PREDICTION</text>
+<rect x="76" y="229" width="580" height="84" rx="14" fill="#fff" stroke="#d6dce1" stroke-width="1.5"/>
+<text x="366.0" y="263.0" font-size="25" fill="#26343d" text-anchor="middle">Same sequence, endpoint and candidates</text>
+<text x="366.0" y="297.0" font-size="25" fill="#26343d" text-anchor="middle">96 measured supports · 186 queries</text>
+<path d="M366 313 L366 349" fill="none" stroke="#849099" stroke-width="2.3" marker-end="url(#arrow)"/>
+<path d="M166 380V350H566V380 M366 350V380" fill="none" stroke="#849099" stroke-width="2.3"/>
+<rect x="76" y="380" width="180" height="104" rx="14" fill="#f8dfe6" stroke="#e7b7c6" stroke-width="1.5"/>
+<text x="166.0" y="424.0" font-size="24" fill="#26343d" text-anchor="middle">Codex A</text>
+<text x="166.0" y="458.0" font-size="24" fill="#26343d" text-anchor="middle">Program A</text>
+<path d="M166 484V510H366" fill="none" stroke="#849099" stroke-width="2.3"/>
+<rect x="276" y="380" width="180" height="104" rx="14" fill="#f8dfe6" stroke="#e7b7c6" stroke-width="1.5"/>
+<text x="366.0" y="424.0" font-size="24" fill="#26343d" text-anchor="middle">Codex B</text>
+<text x="366.0" y="458.0" font-size="24" fill="#26343d" text-anchor="middle">Program B</text>
+<path d="M366 484V510H366" fill="none" stroke="#849099" stroke-width="2.3"/>
+<rect x="476" y="380" width="180" height="104" rx="14" fill="#f8dfe6" stroke="#e7b7c6" stroke-width="1.5"/>
+<text x="566.0" y="424.0" font-size="24" fill="#26343d" text-anchor="middle">Codex C</text>
+<text x="566.0" y="458.0" font-size="24" fill="#26343d" text-anchor="middle">Program C</text>
+<path d="M566 484V510H366" fill="none" stroke="#849099" stroke-width="2.3"/>
+<path d="M366 510 L366 536" fill="none" stroke="#849099" stroke-width="2.3" marker-end="url(#arrow)"/>
+<rect x="76" y="536" width="580" height="72" rx="14" fill="#fff" stroke="#d6dce1" stroke-width="1.5"/>
+<text x="366.0" y="581.0" font-size="25" fill="#26343d" text-anchor="middle">Execute &amp; validate all three outputs</text>
+<path d="M366 608 L366 636" fill="none" stroke="#849099" stroke-width="2.3" marker-end="url(#arrow)"/>
+<rect x="76" y="636" width="580" height="72" rx="14" fill="#fff" stroke="#d6dce1" stroke-width="1.5"/>
+<text x="366.0" y="681.0" font-size="25" fill="#26343d" text-anchor="middle">Percentile ranks → equal-weight fusion</text>
+<path d="M366 708 L366 734" fill="none" stroke="#849099" stroke-width="2.3" marker-end="url(#arrow)"/>
+<rect x="76" y="734" width="580" height="72" rx="14" fill="#f8dfe6" stroke="#e7b7c6" stroke-width="1.5"/>
+<text x="366.0" y="779.0" font-size="25" fill="#26343d" text-anchor="middle">Candidate ranking + program disagreement</text>
+<rect x="784" y="229" width="580" height="84" rx="14" fill="#fff" stroke="#d6dce1" stroke-width="1.5"/>
+<text x="1074.0" y="263.0" font-size="25" fill="#26343d" text-anchor="middle">WT sequence + structure + MSA</text>
+<text x="1074.0" y="297.0" font-size="25" fill="#26343d" text-anchor="middle">0 measured supports · 250 queries</text>
+<path d="M1074 313 L1074 341" fill="none" stroke="#849099" stroke-width="2.3" marker-end="url(#arrow)"/>
+<rect x="784" y="341" width="580" height="64" rx="14" fill="#fff" stroke="#d6dce1" stroke-width="1.5"/>
+<text x="1074.0" y="382.0" font-size="25" fill="#26343d" text-anchor="middle">Verify chain, sequence and residue mapping</text>
+<path d="M1074 405V430H932V456 M1074 430H1216V456" fill="none" stroke="#849099" stroke-width="2.3"/>
+<rect x="784" y="456" width="276" height="104" rx="14" fill="#daf1eb" stroke="#b8ddd3" stroke-width="1.5"/>
+<text x="922.0" y="500.0" font-size="24" fill="#26343d" text-anchor="middle">MSA tool</text>
+<text x="922.0" y="534.0" font-size="24" fill="#26343d" text-anchor="middle">Frequencies · coverage</text>
+<rect x="1088" y="456" width="276" height="104" rx="14" fill="#daf1eb" stroke="#b8ddd3" stroke-width="1.5"/>
+<text x="1226.0" y="500.0" font-size="24" fill="#26343d" text-anchor="middle">Structure tool</text>
+<text x="1226.0" y="534.0" font-size="24" fill="#26343d" text-anchor="middle">Contacts · exposure</text>
+<path d="M922 560V581H1226V560" fill="none" stroke="#849099" stroke-width="2.3"/>
+<path d="M1074 581V606" fill="none" stroke="#849099" stroke-width="2.3" marker-end="url(#arrow)"/>
+<rect x="784" y="606" width="580" height="102" rx="14" fill="#fff" stroke="#d6dce1" stroke-width="1.5"/>
+<text x="1074.0" y="649.0" font-size="25" fill="#26343d" text-anchor="middle">Codex builds an assay-specific predictor</text>
+<text x="1074.0" y="683.0" font-size="25" fill="#26343d" text-anchor="middle">Evidence + confidence + missing data</text>
+<path d="M1074 708 L1074 734" fill="none" stroke="#849099" stroke-width="2.3" marker-end="url(#arrow)"/>
+<rect x="784" y="734" width="580" height="72" rx="14" fill="#daf1eb" stroke="#b8ddd3" stroke-width="1.5"/>
+<text x="1074.0" y="779.0" font-size="25" fill="#26343d" text-anchor="middle">Validated candidate ranking</text>
+<text x="720" y="878" font-size="23" fill="#687781" text-anchor="middle">Independently evaluated workflows · Same native Codex within each paired comparison</text>
+</g></svg>

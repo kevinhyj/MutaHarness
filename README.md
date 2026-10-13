@@ -110,7 +110,7 @@ Task Option 2：下面先说明研发岗位与任务，再用LLM能力评估和M
 
 ![Protein–Protein五轮反馈学习：37项共同实验](assets/evagent/ppi_feedback.png)
 
-**这三组回放中，LLM的末轮平均命中率均高于图中的其他学习方法，显示了利用实验反馈进行候选选择的潜力。** 图例中的领域模型与One-hot学习曲线均使用RF；PPI的VenusREM为项目适配版。阴影为实验间均值±SEM，zero-shot水平线为五轮平均参考，Random为随机参考。五轮候选池不同，曲线上升本身不能单独证明反馈的因果收益，也没有新湿实验。[完整协议、参考线定义与源数据](docs/llm-evaluation.md)
+**这三组回放中，LLM的末轮平均命中率均高于图中的其他学习方法，显示了利用实验反馈进行候选选择的潜力。** 图例中的领域模型与One-hot学习曲线均使用RF；PPI的VenusREM为项目适配版。阴影为实验间均值±SEM，zero-shot水平线为五轮平均参考，Random为随机参考。[完整协议、参考线定义与源数据](docs/llm-evaluation.md)
 
 **下一步检验：在同一个Codex上，Harness能否进一步改善预测？** 以下两项对照分别考察证据输入和科研程序组织，保留各自的模型、实验范围与指标。
 
@@ -118,11 +118,15 @@ Task Option 2：下面先说明研发岗位与任务，再用LLM能力评估和M
 
 Harness 在这里指模型周围的输入、工具、执行检查与结果聚合流程。模型仍在原生 Codex 科学会话中自由建模。
 
+![两项Harness：科研程序集成与结构进化证据分析](assets/harness-workflows.svg)
+
+左侧用同一份实验反馈生成三个科研程序，再检查并融合排名；右侧先将结构和MSA转成可用证据，再由Codex按实验目标组织预测。两条流程分别实测。
+
 **Scientific Program Ensemble：集成模型写出的科研程序。** 将同一份反馈交给三个独立会话，各自提出假设、验证并交付可执行预测程序。程序可以采用不同特征、模型和变换。检查输出后，把三份分数转成排名，再等权融合。这样能利用不同科学方案的互补性，降低一次建模选择的影响。
 
 **Structure + MSA：补充证据，并改善分析工具。** 结构提供突变位置的空间环境，MSA提供自然同源序列中的变化信息。工具先核对序列与残基编号，再计算接触、暴露、位点频率等证据，明确返回缺失与置信度。模型据此为具体实验目标组织预测，而不必仅凭序列文字猜测。
 
-[方法、流程图与具体代码示例](docs/method.md) · [可运行 Skill](.agents/skills/scientific-program-ensemble/SKILL.md) · [MSA工具](tools/msa_tools.py) · [结构工具](tools/structure_tools.py)
+[方法、流程图与具体代码示例](docs/method.md) · [程序集成 Skill](.agents/skills/scientific-program-ensemble/SKILL.md) · [结构＋MSA Skill](.agents/skills/structure-msa-fitness/SKILL.md) · [MSA工具](tools/msa_tools.py) · [结构工具](tools/structure_tools.py)
 
 ## 5. 已有实测：相对原生 Codex，有多大收益？
 
@@ -146,7 +150,7 @@ Harness 在这里指模型周围的输入、工具、执行检查与结果聚合
 
 粉红为提升，蓝色为下降。右图为同预算对照。[完整表格](docs/results.md)逐行加粗最高分；[矢量图与绘图源数据](assets/results/README.md)可下载。
 
-结论有明确边界：这是公开历史实验数据上的离线评估。零样本平均Top-25重合率从0.272降至0.244，排序相关性提高并未同步改善前25个选样；单次会话和小规模队列也不足以证明多次运行稳定性。程序集成原有一次容量失败，之后用一次交付调用恢复原代码，失败记录仍保留。没有新湿实验或药效验证。[详细结果、成本与限制](docs/results.md)
+结论有明确边界：这是公开历史实验数据上的离线评估。零样本平均Top-25重合率从0.272降至0.244，排序相关性提高并未同步改善前25个选样；单次会话和小规模队列也不足以证明多次运行稳定性。程序集成原有一次容量失败，之后用一次交付调用恢复原代码，失败记录仍保留。[详细结果、成本与限制](docs/results.md)
 
 ## 6. 未来方向：训练模型、学习反馈、积累轨迹
 

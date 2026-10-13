@@ -53,7 +53,7 @@ RNA使用当前图的**10项共同数据集**；旧11项融合图对应另一配
 | VenusREM＋RF | 20.48% | 31.72% |
 | One-hot＋RF | 18.42% | 29.59% |
 
-专业表征以随机森林（RF）学习反馈，Gemini直接使用反馈与证据，不接RF。Protein输入含可用MSA和WT结构。每轮命中率以当前池冻结的前10%阈值计算，并保留边界并列；没有新湿实验。
+专业表征以随机森林（RF）学习反馈，Gemini直接使用反馈与证据，不接RF。Protein输入含可用MSA和WT结构。每轮命中率以当前池冻结的前10%阈值计算，并保留边界并列。
 
 曲线阴影是**实验间均值±SEM**，不是多seed重复或95%置信区间。ESM2 3B zero-shot水平线是同集合五轮平均命中率的参考，实际逐轮值仍在CSV中；随机参考沿用原图。当前所有显示曲线都基于相同47项完整五轮结果。正在运行的EVOLVEpro 15B队列未并入这份已完成结果。
 
@@ -75,7 +75,7 @@ BindingGym 13项＋AbAgym 24项，共37项，图中7种方法均完整五轮。�
 
 PPI图例省略了重复的“＋RF”，训练方式没有改变。ESM2 3B zero-shot采用独立链WT-marginal PLL，五轮命中率均值为15.27%，画作水平参考；Random为名义10%参考。两者不画SEM。RNA与Protein的随机线保留原图的实际随机均值；三张图的参考线定义不完全相同。
 
-完整版本说明见 [服务器原README](../evidence/evagent/feedback/original_readme.md)。这里的命中率说明固定预算下候选选择的效果，不能直接与Spearman相加；跨不同池的曲线上升，也不能单独证明反馈的因果收益。
+完整版本说明见 [服务器原README](../evidence/evagent/feedback/original_readme.md)。这里的命中率说明固定预算下候选选择的效果，不能直接与Spearman相加。
 
 ## 未来研究设计
 

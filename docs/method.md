@@ -2,13 +2,15 @@
 
 科学家要的是一份值得投入实验的候选清单。通用模型能讨论机制，但从序列、结构、进化信息和少量实验结果中，稳定地生成数百个突变的统一排序，仍然很难。
 
-![MutaHarness 的两项任务扩展](../assets/overview.svg)
+![MutaHarness 的两项任务扩展](../assets/harness-workflows.svg)
 
 困难主要有三个：不同实验测的是不同性质；多点突变的组合效应不能总由单点相加；少量反馈允许许多看起来合理、却泛化不同的建模方案。Harness 负责把推理落到可执行的证据分析和预测程序上。
 
 ## 改进一：Scientific Program Ensemble
 
 **同一问题，让模型提出三个可检验的科学方案，再组合它们的排名。**
+
+[Scientific Program Ensemble Skill](../.agents/skills/scientific-program-ensemble/SKILL.md)
 
 每个会话获得相同的参考序列、实验端点、96条已测反馈和186个未测候选。96条由32个初始单点变体与64个随机历史反馈变体组成。程序可以选择位点模型、理化特征、核方法、非线性模型、读出变换和内部集成，不限制为三个预定公式。
 
@@ -36,6 +38,8 @@ flowchart LR
 ## 改进二：Structure + MSA 输入与工具
 
 **让模型能拿到合适的科学证据，并可靠地调用分析工具。**
+
+[Structure + MSA Skill](../.agents/skills/structure-msa-fitness/SKILL.md)
 
 | 输入 / 工具 | 能回答什么 | 如何避免误用 |
 |---|---|---|
