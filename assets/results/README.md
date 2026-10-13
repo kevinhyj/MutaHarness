@@ -12,7 +12,7 @@ The visual style follows the active EVAgent `figure2.svg` and `extended_data_3.s
 Regenerate from the repository root using an environment with Matplotlib and NumPy:
 
 ```bash
-python scripts/plot_results.py
+python -m scripts.plot_results
 ```
 
 Install plotting dependencies from `requirements-figures.txt` if needed. The plotted results are unchanged by regeneration. The two experiments use distinct assay cohorts and feedback settings; their improvements cannot be added. Assay-level variation is not the uncertainty from repeated model generation. The program-ensemble statistics include the disclosed completion-only recovery of unchanged code.

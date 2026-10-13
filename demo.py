@@ -1,68 +1,139 @@
-"""Cold replay of the three frozen scientific programs; no model calls or evaluator reads."""
-import argparse, csv, hashlib, json, os, shutil, subprocess, sys, tempfile
+"""Optional cold replay: refit frozen programs and compare with their stored predictions."""
+
+import argparse
+import csv
+import os
+import shutil
+import subprocess
+import sys
+import tempfile
 from pathlib import Path
-import numpy as np
-from scipy.stats import rankdata
-ROOT = Path(__file__).resolve().parent
-read = lambda p: json.loads(Path(p).read_text())
-sha = lambda p: hashlib.sha256(Path(p).read_bytes()).hexdigest()
+
+from runtime.artifacts import ROOT, read_json, verify_hash, write_json
+from runtime.ranking import query_ids, rank_ensemble
 
 
-def main():
-    p = argparse.ArgumentParser()
-    p.add_argument('--case', default='gfp_s2501')
-    p.add_argument('--out', type=Path, required=True)
-    a = p.parse_args()
-    manifest = read(ROOT / 'artifacts_manifest.json')
-    assert a.case in manifest['conditions'], 'Unknown condition'
-    if a.out.exists():
-        raise ValueError('Output exists; choose a new directory')
-    a.out.mkdir(parents=True)
-    expected = manifest['conditions'][a.case]
-    input_path = ROOT / 'inputs' / f'{a.case}.json'
-    assert sha(input_path) == expected['input_sha256']
-    case = read(input_path)
-    ids = [r['id'] for r in case['query']]
-    assert len(case['support']) == 96 and len(ids) == 186
-    assert all('fitness' not in r for r in case['query'])
-    predictions = []
-    with tempfile.TemporaryDirectory(prefix='programportfolio-') as temp:
-        for k in range(3):
-            source = ROOT / 'programs' / a.case / f'candidate_{k:02}'
-            ws = Path(temp) / f'candidate_{k:02}'
-            ws.mkdir()
-            for rel, digest in expected['candidates'][k]['code_sha256'].items():
-                assert sha(source / rel) == digest
-                target = ws / rel
-                target.parent.mkdir(parents=True, exist_ok=True)
-                shutil.copyfile(source / rel, target)
-            output = a.out.resolve() / f'candidate_{k:02}.json'
-            env = {**os.environ, 'OPENBLAS_NUM_THREADS': '1', 'OMP_NUM_THREADS': '1',
-                   'PYTHONDONTWRITEBYTECODE': '1', 'PYTHONNOUSERSITE': '1'}
-            subprocess.run([sys.executable, str(ROOT / 'runtime/replay_one.py'),
-                            '--case', str(input_path), '--module', str(ws / 'proposal.py'), '--out', str(output)],
-                           cwd=ws, env=env, timeout=120, check=True)
-            value = read(output)
-            assert value == read(ROOT / 'reference_predictions' / a.case / f'candidate_{k:02}.json'), 'Stored predictions did not reproduce exactly'
-            predictions.append(value['scores'])
-            for rel, digest in expected['candidates'][k]['code_sha256'].items():
-                assert sha(ws / rel) == digest, 'Scientific code changed during execution'
-    votes = np.array([(rankdata([v[i] for i in ids]) - .5) / len(ids) for v in predictions])
-    fused = 2 * votes.mean(0) - 1
-    out = {'scores': {i: float(fused[j]) for j, i in enumerate(ids)}, 'selected_ids': []}
-    (a.out / 'ensemble.json').write_text(json.dumps(out, indent=2) + '\n')
-    with (a.out / 'ranking.csv').open('w', newline='') as f:
-        w = csv.writer(f)
-        w.writerow(['id', 'ensemble_score', 'program00_score', 'program01_score', 'program02_score', 'rank_disagreement_sd'])
-        for j in sorted(range(len(ids)), key=lambda j: (-fused[j], ids[j])):
-            i = ids[j]
-            w.writerow([i, fused[j], *(v[i] for v in predictions), float(votes[:, j].std())])
-    (a.out / 'verification.json').write_text(json.dumps({'condition': a.case, 'programs': 3,
-        'all_program_hashes_verified': True, 'predictions_match_stored_results': True,
-        'support_count': 96, 'query_count': 186, 'new_model_calls': 0,
-        'evaluator_labels_opened': False}, indent=2) + '\n')
-    print('PASS: all3 frozen programs refitted; predictions exactly reproduced; no model calls or evaluator labels.')
+def stage_program(source: Path, workspace: Path, hashes: dict[str, str]) -> None:
+    for filename, digest in hashes.items():
+        verify_hash(source / filename, digest)
+        target = workspace / filename
+        target.parent.mkdir(parents=True, exist_ok=True)
+        shutil.copyfile(source / filename, target)
 
 
-if __name__ == '__main__':
+def replay_program(
+    condition: str, index: int, hashes: dict[str, str], workspace: Path, output: Path
+) -> dict:
+    stage_program(ROOT / "programs" / condition / f"candidate_{index:02}", workspace, hashes)
+    env = {
+        **os.environ,
+        "PYTHONPATH": str(ROOT),
+        "PYTHONNOUSERSITE": "1",
+        "PYTHONDONTWRITEBYTECODE": "1",
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+    }
+    subprocess.run(
+        [
+            sys.executable,
+            "-m",
+            "runtime.replay_one",
+            "--case",
+            str(ROOT / "inputs" / f"{condition}.json"),
+            "--module",
+            str(workspace / "proposal.py"),
+            "--out",
+            str(output),
+        ],
+        cwd=workspace,
+        env=env,
+        timeout=120,
+        check=True,
+    )
+    prediction = read_json(output)
+    reference = read_json(ROOT / "reference_predictions" / condition / f"candidate_{index:02}.json")
+    if prediction != reference:
+        raise ValueError(
+            f"Stored predictions did not reproduce exactly: {condition}, program {index}"
+        )
+    for filename, digest in hashes.items():
+        verify_hash(workspace / filename, digest)
+    return prediction["scores"]
+
+
+def write_ranking(path: Path, ranked: list[dict]) -> None:
+    with path.open("w", newline="", encoding="utf-8") as stream:
+        writer = csv.writer(stream)
+        writer.writerow(
+            [
+                "id",
+                "ensemble_score",
+                "program00_score",
+                "program01_score",
+                "program02_score",
+                "rank_disagreement_sd",
+            ]
+        )
+        for row in sorted(ranked, key=lambda row: (-row["score"], row["id"])):
+            writer.writerow([row["id"], row["score"], *row["program_scores"], row["disagreement"]])
+
+
+def replay(condition: str, output: Path) -> None:
+    details = read_json(ROOT / "artifacts_manifest.json")["conditions"][condition]
+    input_path = ROOT / "inputs" / f"{condition}.json"
+    verify_hash(input_path, details["input_sha256"])
+    case = read_json(input_path)
+    ids = query_ids(case)
+    if len(case["support"]) != 96 or len(ids) != 186:
+        raise ValueError("Packaged cases require 96 supports and 186 queries")
+    output = output.resolve()
+    output.mkdir(parents=True, exist_ok=False)
+    with tempfile.TemporaryDirectory(prefix="mutaharness-") as temporary:
+        predictions = [
+            replay_program(
+                condition,
+                index,
+                candidate["code_sha256"],
+                Path(temporary) / f"candidate_{index:02}",
+                output / f"candidate_{index:02}.json",
+            )
+            for index, candidate in enumerate(details["candidates"])
+        ]
+    ranked = rank_ensemble(ids, predictions)
+    write_json(
+        output / "ensemble.json",
+        {"scores": {row["id"]: row["score"] for row in ranked}, "selected_ids": []},
+    )
+    write_ranking(output / "ranking.csv", ranked)
+    write_json(
+        output / "verification.json",
+        {
+            "condition": condition,
+            "programs": 3,
+            "all_program_hashes_verified": True,
+            "predictions_match_stored_results": True,
+            "support_count": 96,
+            "query_count": 186,
+            "new_model_calls": 0,
+            "evaluator_labels_opened": False,
+        },
+    )
+    print(
+        "PASS: frozen programs refitted and matched stored predictions; no model calls or evaluator labels."
+    )
+
+
+def main() -> None:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument(
+        "--case",
+        default="gfp_s2501",
+        choices=read_json(ROOT / "artifacts_manifest.json")["conditions"],
+    )
+    parser.add_argument("--out", type=Path, required=True)
+    args = parser.parse_args()
+    replay(args.case, args.out)
+
+
+if __name__ == "__main__":
     main()

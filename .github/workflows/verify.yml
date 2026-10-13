@@ -8,4 +8,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-      - run: python scripts/audit_existing.py
+      - run: python -m unittest discover -s tests -v
+      - run: python -m scripts.audit_existing
+      - run: python -m scripts.build_viewer
+      - run: git diff --exit-code -- demo/data.js docs/results.md

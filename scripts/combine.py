@@ -1,21 +1,31 @@
-"""Exact-ID, blind all-three rank aggregation; never opens experimental labels."""
-import argparse,json,math
-from pathlib import Path
-import numpy as np
-from scipy.stats import rankdata
+"""Combine three stored predictions without reading evaluator labels."""
 
-def main():
- p=argparse.ArgumentParser();p.add_argument('--case',type=Path,required=True);p.add_argument('--candidate',type=Path,action='append',required=True);p.add_argument('--out',type=Path,required=True);a=p.parse_args()
- if len(a.candidate)!=3:raise ValueError('Exactly three candidate files required')
- if a.out.exists():raise ValueError('Output exists; preserve it')
- case=json.loads(a.case.read_text());ids=[r['id'] for r in case['query']]
- if len(ids)!=len(set(ids)) or set(ids)&{r['id'] for r in case['support']}:raise ValueError('Unmeasured unique IDs required')
- votes=[]
- for source in a.candidate:
-  scores=json.loads(source.read_text())['scores']
-  if set(scores)!=set(ids):raise ValueError('Candidate must cover exactly the current unmeasured IDs')
-  if not all(isinstance(v,(int,float)) and not isinstance(v,bool) and math.isfinite(v) for v in scores.values()):raise ValueError('Finite numeric scores required')
-  votes.append((rankdata([scores[i] for i in ids],method='average')-.5)/len(ids))
- values=2*np.mean(votes,axis=0)-1;out={'scores':{i:float(values[j]) for j,i in enumerate(ids)},'policy':'all-three uniform average-tie percentile ranks','candidate_files':[str(p) for p in a.candidate],'model_or_oracle_calls':0}
- a.out.parent.mkdir(parents=True,exist_ok=True);a.out.write_text(json.dumps(out,indent=2,allow_nan=False)+'\n')
-if __name__=='__main__':main()
+import argparse
+from pathlib import Path
+
+from runtime.artifacts import read_json, write_json
+from runtime.ranking import query_ids, rank_ensemble
+
+
+def main() -> None:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--case", type=Path, required=True)
+    parser.add_argument("--candidate", type=Path, action="append", required=True)
+    parser.add_argument("--out", type=Path, required=True)
+    args = parser.parse_args()
+    if args.out.exists():
+        parser.error("Output already exists; choose a new path")
+    predictions = [read_json(path)["scores"] for path in args.candidate]
+    ranked = rank_ensemble(query_ids(read_json(args.case)), predictions)
+    output = {
+        "scores": {candidate["id"]: candidate["score"] for candidate in ranked},
+        "policy": "all-three uniform average-tie percentile ranks",
+        "candidate_files": [str(path) for path in args.candidate],
+        "model_or_oracle_calls": 0,
+    }
+    args.out.parent.mkdir(parents=True, exist_ok=True)
+    write_json(args.out, output)
+
+
+if __name__ == "__main__":
+    main()

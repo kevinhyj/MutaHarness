@@ -1,52 +1,134 @@
 <!doctype html>
 <html lang="zh-CN">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>MutaHarness · 实验结果查看</title>
-<style>
-:root{--ink:#262831;--muted:#6d7180;--line:#e3e4e9;--pink:#a64460;--blue:#426394;--paper:#f7f7f9}
-*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:15px/1.7 -apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif}main{max-width:1120px;margin:auto;padding:32px 28px 40px}a{color:var(--blue)}button,select{font:inherit}button{cursor:pointer}header{border-bottom:1px solid var(--line);padding-bottom:22px}header .top{display:flex;justify-content:space-between;align-items:center;gap:15px}header h1{font-size:27px;margin:0;letter-spacing:-.5px}header p{margin:10px 0 0;color:var(--muted);font-size:14px}header a{font-size:13px;text-decoration:none}.tabs{display:flex;gap:8px;margin:24px 0 16px;flex-wrap:wrap}.tabs button{background:white;border:1px solid var(--line);border-radius:7px;padding:10px 18px;font-size:14px}.tabs button[aria-pressed="true"]{background:#fae7ed;border-color:#dcaaba;color:#87374e}.scope{color:var(--muted);font-size:13px;margin:0 0 18px}h2{font-size:17px;margin:0 0 12px}h3{font-size:19px;margin:0}.metrics{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}.metric{border:1px solid var(--line);border-radius:8px;background:white;padding:14px 18px}.metric span{display:block;color:var(--muted);font-size:12px}.metric .value{font:26px/1.6 Arial,sans-serif;font-variant-numeric:tabular-nums;display:block}.metric.best{background:#fbecf0;border-color:#e1bac6}.metric.best .value{font-weight:700}.summary-note{font-size:13px;margin:14px 0 24px;color:var(--muted)}.positive{color:var(--pink)}.negative{color:var(--blue)}.selection{padding:20px;background:white;border:1px solid var(--line);border-radius:10px;margin-bottom:24px}.select-top{display:flex;align-items:center;justify-content:space-between;gap:14px;margin-bottom:14px}label{font-size:13px;color:var(--muted)}select{padding:6px 32px 6px 10px;max-width:100%;border:1px solid #c6c8d0;border-radius:5px;color:var(--ink);background:white}.selection h2{margin:0}.current-meta{font-size:12px;color:var(--muted);margin:0 0 12px}.selection .metric{padding:10px 14px;background:#fafafd}.selection .metric.best{background:#fbecf0}.selection .metric .value{font-size:23px}.selection .delta{font-size:13px;margin:14px 0 0}.grid{display:grid;grid-template-columns:1.3fr 1fr;gap:22px;align-items:start}.panel{border:1px solid var(--line);border-radius:10px;background:white;overflow:hidden}.panel-header{padding:16px 18px 8px}.panel-header p,.caption{font-size:12px;color:var(--muted);margin:0}.table-scroll{overflow-x:auto}table{width:100%;border-collapse:collapse;font-size:12px;white-space:nowrap}th,td{padding:10px 11px;text-align:right;border-bottom:1px solid #ededf1;font-variant-numeric:tabular-nums}th{background:#fafafd;color:var(--muted);font-weight:500}th:first-child,td:first-child{text-align:left;padding-left:18px}td:not(:first-child){font-family:Arial,sans-serif}td strong{font-weight:750}tbody tr.selected{background:#f9edf1}tbody tr:hover{background:#f5f1f7}td button{padding:0;border:0;background:none;color:inherit;font-size:12px;text-align:left}td button[aria-pressed="true"]{font-weight:700}tfoot td{background:#fafafd;border-top:2px solid var(--line)}.caption{padding:13px 18px;line-height:1.8}.detail{padding:18px}.detail p{font-size:13px;color:var(--muted);margin:10px 0}.detail a{font-size:12px}.source-links{display:flex;gap:12px;flex-wrap:wrap}.candidate{margin-top:18px}.candidate h3{font-size:14px;margin-bottom:10px}.candidate th,.candidate td{padding:8px}.candidate td:first-child{font-family:monospace;white-space:normal;overflow-wrap:anywhere;max-width:190px}.candidate th:first-child{padding-left:8px}.small{font-size:12px;color:var(--muted)}footer{margin-top:24px;padding-top:18px;border-top:1px solid var(--line);color:var(--muted);font-size:12px}footer p{margin:0 0 8px}button:focus-visible,a:focus-visible,select:focus-visible{outline:2px solid var(--blue);outline-offset:3px}
-@media(max-width:900px){.grid{grid-template-columns:1fr}.metrics{grid-template-columns:repeat(2,minmax(0,1fr))!important}}@media(max-width:500px){main{padding:20px 16px 30px}header .top{align-items:start}header h1{font-size:22px}header a{font-size:12px}.tabs{display:grid;grid-template-columns:1fr}.tabs button{text-align:left;padding:10px 14px}.selection{padding:14px}.select-top{align-items:start;flex-direction:column;gap:8px}.metric{padding:12px}.metric .value{font-size:24px}th,td{padding:9px 8px}.panel-header{padding:14px}.caption{padding:12px 14px}}
-</style>
-</head>
-<body><main>
-<header><div class="top"><h1>MutaHarness · 实验结果</h1><a href="https://github.com/kevinhyj/MutaHarness">GitHub / 作业说明 ↗</a></div><p>查看两项独立实验的存档分数、逐任务对照与已有候选排名。Spearman表示预测排序与实验排序的一致程度，越高越好。</p></header>
-<div class="tabs" aria-label="选择实验"><button id="zero" aria-pressed="true">Structure + MSA · 零样本</button><button id="ensemble" aria-pressed="false">Scientific Program Ensemble · 少样本</button></div>
-<p class="scope" id="scope"></p>
-<section aria-label="总体均值"><h2>全部10个任务的平均 Spearman</h2><div id="means" class="metrics"></div><p class="summary-note" id="summary-note"></p></section>
-<section class="selection" aria-label="当前任务结果"><div class="select-top"><h2 id="case-title" aria-live="polite"></h2><div><label for="case-select">选择任务 </label><select id="case-select"></select></div></div><p class="current-meta" id="current-meta"></p><div id="case-scores" class="metrics"></div><p class="delta" id="case-delta"></p></section>
-<div class="grid"><section class="panel"><div class="panel-header"><h2>全部任务对照</h2><p>每行最高分加粗；点击任务查看详细结果。</p></div><div class="table-scroll"><table><thead id="tablehead"></thead><tbody id="tablebody"></tbody><tfoot id="tablefoot"></tfoot></table></div><p class="caption" id="table-caption"></p></section><section class="panel detail" id="detail" aria-label="当前任务的证据与候选"></section></div>
-<footer><p>两个实验分别保留选中的任务。两项改进的反馈量和候选不同，提升不能相加。本页仅展示已有结果，没有进行新模型调用或新湿实验。</p><a href="https://github.com/kevinhyj/MutaHarness/blob/main/docs/results.md">完整结果、失败记录与成本说明 ↗</a></footer>
-</main>
-<script src="data.js"></script>
-<script>
-'use strict';
-const D=window.MUTA_DATA;
-const el=id=>document.getElementById(id);
-const names={zero:{basic:'基础原生Codex',msa_tools:'仅MSA',structure_tools:'仅结构',joint_tools:'Structure + MSA'},ensemble:{direct:'单次原生Codex',cv:'同预算CV单程序',ensemble:'三程序排名融合'}};
-const shortNames={basic:'基础',msa_tools:'MSA',structure_tools:'结构',joint_tools:'联合',direct:'单次',cv:'CV单程序',ensemble:'集成'};
-const fmt=n=>Number(n).toFixed(4),signed=n=>(n>=0?'+':'')+fmt(n),tone=n=>n>=0?'positive':'negative';
-const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-const repo='https://github.com/kevinhyj/MutaHarness/blob/main/';
-let mode='zero';
-// Each experiment retains its own selection: the cohorts and candidate sets differ.
-const selections={zero:D.zero.cases[0].id,ensemble:D.ensemble.cases[0].id};
-const keys=()=>Object.keys(names[mode]);
-const delta=s=>mode==='zero'?s.joint_tools-s.basic:s.ensemble-s.cv;
-const deltaLabel=()=>mode==='zero'?'联合 − 基础':'集成 − 同预算CV单程序';
-function cells(scores){const best=Math.max(...Object.values(scores));return keys().map(k=>`<td data-method="${k}">${Math.abs(scores[k]-best)<1e-12?`<strong>${fmt(scores[k])}</strong>`:fmt(scores[k])}</td>`).join('');}
-function cards(scores){const best=Math.max(...Object.values(scores));return keys().map(k=>`<div class="metric ${Math.abs(scores[k]-best)<1e-12?'best':''}"><span>${names[mode][k]}</span><span class="value" data-method="${k}">${fmt(scores[k])}</span></div>`).join('');}
-function choose(id){if(!D[mode].cases.some(c=>c.id===id))return;selections[mode]=id;renderSelection();}
-function renderSelection(){const g=D[mode],c=g.cases.find(c=>c.id===selections[mode]);el('case-select').value=c.id;el('case-title').textContent=`当前任务：${c.label}`;el('current-meta').textContent=`以下分数仅对应 ${c.label}；${g.feedback_count}条已测反馈，${g.query_count}个候选。`;el('case-scores').innerHTML=cards(c.scores);el('case-delta').innerHTML=`${deltaLabel()}：<strong class="${tone(delta(c.scores))}">${signed(delta(c.scores))}</strong>`;el('tablebody').querySelectorAll('tr').forEach(row=>{const active=row.dataset.case===c.id;row.classList.toggle('selected',active);row.querySelector('button').setAttribute('aria-pressed',String(active));});
-let html=`<h2>${esc(c.label)} · 结果说明</h2><div class="source-links"><a href="${repo+c.source}">本任务的存档指标 ↗</a></div>`;
-if(mode==='zero'){html+='<p>四组使用同一批250个候选。基础Codex可以使用科学工具并写程序；另外三组分别增加MSA、结构或联合证据与分析工具。</p><p>结构帮助判断空间环境，MSA帮助判断自然变化；两者如何影响分数，取决于实验测的是哪种性质。</p><div class="source-links"><a href="'+repo+'tools/msa_tools.py">MSA工具 ↗</a><a href="'+repo+'tools/structure_tools.py">结构工具 ↗</a></div><p>这里同时改变了原始输入、预处理和工具，因此不能将整体收益归于某一个特征，也不证明模型直接理解三维坐标。</p>';
-}else{const list=[...c.candidates].sort((a,b)=>b.score-a.score||a.id.localeCompare(b.id));html+=`<p>三份程序从相同的96条反馈中学习。反馈交叉验证选择的是<strong>程序 ${c.cv_selected+1}</strong>；单次Codex对应预先固定的程序1。测试标签没有参与选择或融合权重。</p><div class="source-links">${[0,1,2].map(k=>`<a href="${repo}programs/${esc(c.id)}/candidate_0${k}/proposal.py">程序 ${k+1} ↗</a>`).join('')}</div><div class="candidate"><h3>集成排名的前10个候选</h3><div class="table-scroll"><table><thead><tr><th>突变</th><th>排名分</th><th>分歧</th></tr></thead><tbody>${list.slice(0,10).map(p=>`<tr><td>${esc(p.mutation)}</td><td>${p.score.toFixed(3)}</td><td>${p.disagreement.toFixed(3)}</td></tr>`).join('')}</tbody></table></div></div><p>排名分来自三份已有预测的等权排名融合，范围−1至1，用于排序，<strong>不是上方的Spearman或成功概率</strong>。分歧是三程序排名百分位的标准差，数值越大表示意见越不一致。</p>`;}
-el('detail').innerHTML=html;}
-function render(){const g=D[mode],ks=keys();['zero','ensemble'].forEach(k=>el(k).setAttribute('aria-pressed',String(k===mode)));document.querySelectorAll('.metrics').forEach(x=>x.style.gridTemplateColumns=`repeat(${ks.length},minmax(0,1fr))`);el('scope').textContent=`${D.model} · 每任务${g.feedback_count}条已测反馈、${g.query_count}个候选 · 两项实验分别评估`;el('means').innerHTML=cards(g.means);const wins=g.cases.filter(c=>delta(c.scores)>0).length;let note=`${deltaLabel()}：平均 ${signed(delta(g.means))}，${wins}/${g.cases.length}个任务提升。`;
-note+=mode==='zero'?` Top-25平均重合率：基础 ${g.top25_means.basic.toFixed(3)}，联合 ${g.top25_means.joint_tools.toFixed(3)}，未同步改善。`:' CV单程序和集成使用同一组三份程序，生成预算相同；原容量失败及交付恢复见完整记录。';el('summary-note').textContent=note;
-el('case-select').innerHTML=g.cases.map(c=>`<option value="${esc(c.id)}">${esc(c.label)}</option>`).join('');el('tablehead').innerHTML=`<tr><th>任务</th>${ks.map(k=>`<th>${shortNames[k]}</th>`).join('')}<th>Δ</th></tr>`;el('tablebody').innerHTML=g.cases.map(c=>`<tr data-case="${esc(c.id)}"><td><button aria-pressed="false" aria-label="查看 ${esc(c.label)}">${esc(c.label)}</button></td>${cells(c.scores)}<td class="${tone(delta(c.scores))}">${signed(delta(c.scores))}</td></tr>`).join('');el('tablebody').querySelectorAll('tr').forEach(row=>row.onclick=()=>choose(row.dataset.case));el('tablefoot').innerHTML=`<tr><td><strong>10任务平均</strong></td>${cells(g.means)}<td class="${tone(delta(g.means))}"><strong>${signed(delta(g.means))}</strong></td></tr>`;el('table-caption').textContent=`Δ = ${deltaLabel()}。${mode==='zero'?'MSA、结构列分别对应仅MSA、仅结构。':'CV指用已测反馈做交叉验证，在三份程序中选一个。'} 合并10个任务为描述性汇总。`;renderSelection();}
-el('case-select').onchange=e=>choose(e.target.value);
-['zero','ensemble'].forEach(k=>el(k).onclick=()=>{mode=k;render();});
-render();
-</script></body></html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>MutaHarness · 实验结果查看</title>
+    <link rel="stylesheet" href="viewer.css" />
+    <script src="data.js" defer></script>
+    <script src="viewer.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <header>
+        <div class="top">
+          <h1>MutaHarness · 实验结果</h1>
+          <a href="https://github.com/kevinhyj/MutaHarness"
+            >GitHub / 作业说明 ↗</a
+          >
+        </div>
+        <p>
+          查看两项独立实验的存档分数、逐任务对照与已有候选排名。Spearman表示预测排序与实验排序的一致程度，越高越好。
+        </p>
+      </header>
+      <div class="tabs" aria-label="选择实验">
+        <button id="zero" aria-pressed="true">Structure + MSA · 零样本</button>
+        <button id="ensemble" aria-pressed="false">
+          Scientific Program Ensemble · 少样本
+        </button>
+      </div>
+      <p class="scope" id="scope"></p>
+      <section aria-label="总体均值">
+        <h2>全部10个任务的平均 Spearman</h2>
+        <div id="means" class="metrics"></div>
+        <p class="summary-note" id="summary-note"></p>
+      </section>
+      <section class="selection" aria-label="当前任务结果">
+        <div class="select-top">
+          <h2 id="case-title" aria-live="polite"></h2>
+          <div>
+            <label for="case-select">选择任务 </label
+            ><select id="case-select"></select>
+          </div>
+        </div>
+        <p class="current-meta" id="current-meta"></p>
+        <div id="case-scores" class="metrics"></div>
+        <p class="delta" id="case-delta"></p>
+      </section>
+      <div class="grid">
+        <section class="panel">
+          <div class="panel-header">
+            <h2>全部任务对照</h2>
+            <p>每行最高分加粗；点击任务查看详细结果。</p>
+          </div>
+          <div class="table-scroll">
+            <table>
+              <thead id="tablehead"></thead>
+              <tbody id="tablebody"></tbody>
+              <tfoot id="tablefoot"></tfoot>
+            </table>
+          </div>
+          <p class="caption" id="table-caption"></p>
+        </section>
+        <section
+          class="panel detail"
+          id="detail"
+          aria-label="当前任务的证据与候选"
+        >
+          <h2 id="detail-title"></h2>
+          <div class="source-links">
+            <a id="source-link">本任务的存档指标 ↗</a>
+          </div>
+          <div id="explanation"></div>
+        </section>
+      </div>
+      <footer>
+        <p>
+          两个实验分别保留选中的任务。两项改进的反馈量和候选不同，提升不能相加。本页仅展示已有结果，没有进行新模型调用或新湿实验。
+        </p>
+        <a
+          href="https://github.com/kevinhyj/MutaHarness/blob/main/docs/results.md"
+          >完整结果、失败记录与成本说明 ↗</a
+        >
+      </footer>
+    </main>
+    <template id="zero-detail">
+      <p>
+        四组使用同一批250个候选。基础Codex可以使用科学工具并写程序；另外三组分别增加MSA、结构或联合证据与分析工具。
+      </p>
+      <p>
+        结构帮助判断空间环境，MSA帮助判断自然变化；两者如何影响分数，取决于实验测的是哪种性质。
+      </p>
+      <div class="source-links">
+        <a
+          href="https://github.com/kevinhyj/MutaHarness/blob/main/tools/msa_tools.py"
+          >MSA工具 ↗</a
+        >
+        <a
+          href="https://github.com/kevinhyj/MutaHarness/blob/main/tools/structure_tools.py"
+          >结构工具 ↗</a
+        >
+      </div>
+      <p>
+        这里同时改变了原始输入、预处理和工具，因此不能将整体收益归于某一个特征，也不证明模型直接理解三维坐标。
+      </p>
+    </template>
+    <template id="ensemble-detail">
+      <p>
+        三份程序从相同的96条反馈中学习。反馈交叉验证选择的是<strong
+          data-cv-program
+        ></strong
+        >；单次Codex对应预先固定的程序1。测试标签没有参与选择或融合权重。
+      </p>
+      <div class="source-links" data-program-links></div>
+      <div class="candidate">
+        <h3>集成排名的前10个候选</h3>
+        <div class="table-scroll">
+          <table>
+            <thead>
+              <tr>
+                <th>突变</th>
+                <th>排名分</th>
+                <th>分歧</th>
+              </tr>
+            </thead>
+            <tbody data-candidates></tbody>
+          </table>
+        </div>
+      </div>
+      <p>
+        排名分来自三份已有预测的等权排名融合，范围−1至1，用于排序，<strong>不是上方的Spearman或成功概率</strong>。分歧是三程序排名百分位的标准差，数值越大表示意见越不一致。
+      </p>
+    </template>
+  </body>
+</html>

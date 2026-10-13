@@ -93,9 +93,30 @@ Harness 在这里指模型周围的输入、工具、执行检查与结果聚合
 
 ## 5. 交付与复核
 
+工程代码从下面几处读起。排名融合、结果整理和页面交互各自独立，存档核对与页面数据生成只需 Python 3.11+，无需安装科学计算依赖。
+
+| 入口 | 职责 |
+|---|---|
+| [runtime/ranking.py](runtime/ranking.py) | 候选ID与分数检查、并列排名、等权融合、程序分歧；纯标准库 |
+| [demo.py](demo.py) | 可选冷重放：校验哈希、分工作区执行、核对原预测、输出排序 |
+| [scripts/results.py](scripts/results.py) | 报告、页面和图表共用的存档读取与指标整理 |
+| [scripts/build_viewer.py](scripts/build_viewer.py) | 由数据与 [Markdown模板](docs/results.template.md) 生成结果页和报告 |
+| [demo/viewer.js](demo/viewer.js) | 原生JavaScript交互；结构、样式和逻辑分文件维护 |
+| [tests/test_ranking.py](tests/test_ranking.py) | 并列、ID对齐、分数尺度变化、缺失与非法输入等边界测试 |
+
+`programs/` 是实测时模型生成的原始科研程序，`tools/` 和 `evidence/` 保留原工具与证据，便于追溯；工程入口的重构没有修改这些存档。
+
 - **交互查看**：下载[仓库ZIP](https://github.com/kevinhyj/MutaHarness/archive/refs/heads/main.zip)，解压后双击 `demo/index.html`。可切换实验和任务、查看分数与已有候选排名；GitHub文件页显示HTML源码。
 - **实测证据**：[程序集成](evidence/scientific_program_ensemble/)、[零样本首批](evidence/protein_zero_native01/)、[零样本追加批](evidence/protein_zero_native02/)，包含调用、程序、逐条预测和汇总。
-- **复核存档**：`python3 scripts/audit_existing.py` 检查哈希、指标算术和页面数据，不调用模型或执行预测程序。[材料来源与打包范围](docs/provenance.md)
+- **复核存档**：`python3 -m scripts.audit_existing` 检查哈希、指标算术和页面数据，不调用模型或执行预测程序。[材料来源与打包范围](docs/provenance.md)
+
+本地检查与GitHub CI使用同一组命令：
+
+```bash
+python3 -m unittest discover -s tests -v
+python3 -m scripts.audit_existing
+python3 -m scripts.build_viewer
+```
 
 可选的程序重放：从96条反馈重新拟合冻结程序，核对输出与原记录。它不请求新模型，也不读取测试标签。
 

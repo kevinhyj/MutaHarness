@@ -1,0 +1,5 @@
+# Generated predictions and original model programs remain available for provenance.
+demo/data.js linguist-generated=true
+reference_predictions/** linguist-generated=true
+programs/** linguist-generated=true
+evidence/** linguist-vendored=true
