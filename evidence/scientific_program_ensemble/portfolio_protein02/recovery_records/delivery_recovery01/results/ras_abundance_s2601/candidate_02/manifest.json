@@ -1,0 +1,49 @@
+{
+  "case_id": "ras_abundance",
+  "seed": 2601,
+  "candidate": 2,
+  "status": "complete",
+  "original_status": "failed",
+  "recovery_type": "completion-only frozen code",
+  "program_sha256": "5dad623215ce75706ad9891e55af2ec80faf70f01a4323107ee86445274ea5ab",
+  "input_sha256": "29b561550730cfa093f1ef26d879de7fe12ed173d924efa3827d47c382a36d82",
+  "deterministic_repeat_equal": true,
+  "unchanged_scientific_code": true,
+  "invocations": [
+    {
+      "started_at_utc": "2026-10-13T07:41:19.753891+00:00",
+      "finished_at_utc": "2026-10-13T07:42:39.173940+00:00",
+      "wall_seconds": 79.42,
+      "exit_code": 0,
+      "timed_out": false,
+      "ready_observed_seconds": 78.59372549969703,
+      "controller_stopped_after_ready": false,
+      "completion_accepted": true,
+      "usage": {
+        "reasoning_output_tokens": 70,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1589,
+        "input_tokens": 160802,
+        "cached_input_tokens": 128512
+      },
+      "usage_known": true,
+      "observed_item_types": [
+        "agent_message",
+        "command_execution",
+        "error",
+        "file_change"
+      ],
+      "malformed_jsonl_lines": 0,
+      "model_requested": "gpt-6.1-sol",
+      "reasoning_effort": "high",
+      "fast_mode": false,
+      "backend_model_identifier": null,
+      "backend_model_identifier_status": "not provided by native exec JSONL",
+      "cli_version": "codex-cli 0.162.0-alpha.17.2"
+    }
+  ],
+  "wall_seconds": 80.6806635838002,
+  "known_input_plus_output_tokens": 162391,
+  "unknown_usage": false,
+  "original_usage_remains_unknown": true
+}

@@ -1,0 +1,22 @@
+{
+  "assignment.json": "2ef303d2664920fc0365eeaed3da78917593d6edfea5967638a3b83790eb8aa4",
+  "case.json": "570d91e133fdf6f2757b15be928b8b33581c939138d0eb80ef1e1af616d9b704",
+  "confirmation_log.txt": "81ad0f1b5f588062b19ae3d92b68bfc68dd41dd0a45a8f717361bb32fd6303d7",
+  "confirmation_results.json": "22668a0115ec7f5ad7ac50e32ccc8548e5975a50d65be9d22e6dffb96d1301f9",
+  "cv_exploration.npz": "39d14bf093c658d7973c744fb0e8b661afd28d0bf07776bf8c5aeb66ee91e9b7",
+  "decision_note.txt": "d7dd2bafd55c6666e5d5ec64c975dff5293de90b4bd95e0ae4a6b14755cfc84a",
+  "ensemble_explore.py": "638955577c07922a8e168bc9fa440d5f8f02d5238b7762e370f804da1a78134b",
+  "exploration_log.txt": "0c4cf39f4d654b64d417c710da8fb0d3fd26cda944ce9cfa38ac82e5bdde1cd1",
+  "final_validation.py": "931dabc732d68c04b124b994c62783f0558dc5a18664c0353cc14df5b0a801a1",
+  "final_validation_results.json": "4b8469ad8485c600a356de08e032f401cf90bdfc264c380e0dab33e481af1a7a",
+  "finalize_artifact.py": "b58b17386dfc6924390f089a8c37ee34036a5966a610f652b7e36e6520271b9f",
+  "further_validation.py": "a80d7e1e114a16963b893388059e4e61f878136ac80d3275e6c070b159c5fa48",
+  "ge_explore.py": "a587b8ccc6bf99458980b30c58f2a4578fbbf36d76177662b498052330502289",
+  "ge_log.txt": "cbeb8db5a8cb24a46012f194011aa9aa3ac7f2f2d89e8e4dfdbf26a44c965da1",
+  "host_output.json": "0b86521b7694130151cdbc4535213748a156f73455b4654f0dbda8cb30745714",
+  "model_dev.py": "26bcc9fd85a913aa0d7f45d0bf42d8ee7cc706166e91dca9a81a38fd16bdc12a",
+  "proposal.py": "2702964cedffce85230f2693f30de48531f9916e55c1bb00707fc9fd92595ee9",
+  "trial_output.json": "0b86521b7694130151cdbc4535213748a156f73455b4654f0dbda8cb30745714",
+  "validation_ge.json": "63d1fe73d3b780e2e4ff154f89d10537a401206bad8b18c6495d1c299ebd8d47",
+  "validation_results.json": "cdcda9ccd938f38933d6f32454f8f5662abca963c405a3c94b0d377c9a838005"
+}

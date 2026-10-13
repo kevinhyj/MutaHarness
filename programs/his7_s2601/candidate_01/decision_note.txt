@@ -1,0 +1,94 @@
+Final predictor and objective
+-----------------------------
+proposal.py implements propose(case, assignment). It fits anew from the supplied
+support records on every call, scores every current query ID, returns finite
+ordinal midrank scores strictly inside [-1, 1], and always returns selected_ids=[];
+no additional measurements are requested. It has no runtime training-data,
+model-state, prediction-list, or external-resource reads. No IDs or observed
+fitness values are embedded. Its only dependencies are the installed numpy,
+scipy, sklearn and threadpoolctl packages. Computation is single-threaded; the
+elastic-net solver is cyclic and carries an explicit reproducibility seed.
+
+Assay interpretation
+--------------------
+The supplied assay is HIS7_YEAST_Pokusaeva_2019, yeast IGP dehydratase growth.
+Higher original fitness means higher rank. There is no measured WT record and
+we do not assign a measured WT fitness. The supplied 32 single-mutant supports
+cluster around 1; the 64 independently sampled measured combinations range
+from zero to above 1. Zero values are treated as tied observations, without
+assuming their underlying molecular cause. Each fit transforms only its own
+support fitness to empirical midranks. This matches the signed rank objective,
+avoids assuming calibrated probabilities, and avoids imposing additivity in
+the original growth units. The fitted baseline is the median single-mutant
+support rank, or all-support median when single-mutant supports are absent.
+It is a learned statistical baseline, not a claim about WT.
+
+How measured feedback enters
+----------------------------
+All current support outcomes directly train every ensemble component. Mutation
+indicators are extracted by comparison with the supplied reference. Features
+also include mutation burden, a multi-mutant indicator, and eight assumed
+position-pooling families with mutation-count terms. The families distinguish
+visible co-mutated neighborhoods, including overlapping sequence intervals;
+they are statistical annotations, not known structures or verified contacts.
+A fallback group accommodates other positions. Sequence-only vocabulary may
+include query substitutions; query records contribute no targets or fitted
+coefficients. Novel substitution indicators have zero linear coefficients but
+increase distance in the RBF model.
+
+The final ensemble combines additive ridge (penalty 0.5), a second-order
+polynomial kernel (linear + 0.2*linear^2/8, penalty 1), an RBF kernel
+(exp(-0.03*squared_distance), penalty 0.005), and elastic net (alpha 0.004,
+L1 ratio 0.2). Polynomial interactions permit nonlinear combination effects;
+RBF interpolation permits smooth higher-order dependence. Regularization is
+necessary because combinations are sparse. With 64 measured combinations the
+four components receive equal weights. Below 64, the additive weight rises
+continuously, capped at 0.55 at 32 or fewer combinations; the remaining models
+share the residual weight. This modest count-based shrinkage preference follows
+reduced-training validation. All coefficients and empirical target transforms
+are recomputed on each invocation, including independent training subsets.
+
+Validation and selection
+------------------------
+Development compared approximately 486 configurations: additive/contextual
+ridge, explicit pair effects, stationary/polynomial kernels, elastic net,
+random forests, extra trees, gradient boosting, and sequence-derived
+hydrophobicity, volume, charge and residue-category features. Targets included
+raw fitness, square-root fitness, empirical rank, and a regularized logit scale.
+The signed Spearman statistic was used without taking its absolute value.
+Main validation used three seeded repetitions (11, 47, 101) of four-fold
+holdouts of measured combinations, retaining single-mutant supports in each
+training fold. All target transformations were estimated within training folds.
+The strongest component families were rank-based regularized regressions,
+with mean pooled held-out correlation around 0.593. The equal four-model
+ensemble produced correlations 0.590, 0.630 and 0.583 across the three repetitions
+(mean 0.601). Tree models and generic physicochemical features did worse, so
+they were excluded; explicit context copies also offered no consistent gain.
+
+Sensitivity checks used 16 seeded random splits at each of 32 and 48 training
+combinations plus the 32 single mutants. Equal-ensemble mean signed correlation
+was approximately 0.429 and 0.588 respectively. The additive component was
+slightly better at 32 training combinations (0.434), motivating the conservative
+small-sample weighting rule. A raw-fitness single-support-only ridge comparator
+was around -0.06 in these feedback holdouts, indicating that measured
+combination data carry useful information for this task. This comparator does
+not establish a causal effect of collecting feedback or wet-lab improvement.
+
+These are descriptive internal validation results, not independent external
+test performance. Configuration selection used these supports and can make
+reported validation performance optimistic. Validation predictions, scripts,
+and logs remain in the workspace for review; proposal.py imports none of them.
+
+Remaining limitations
+---------------------
+There are only 64 measured combinations across several mutation neighborhoods.
+Within-neighborhood validation varies markedly: pooled global correlation can
+be stronger than fine ordering among closely related near-neutral variants.
+Rare substitutions or interactions, including some fatal combinations, cannot
+be identified reliably if no informative training examples remain. Unseen
+substitutions receive a shrinkage/interpolation prediction, not a demonstrated
+biophysical effect. Near-1 differences may include experimental noise. There
+are no external sequences, pretrained scores, MSA, structures or hidden labels.
+No proposed epistasis, contact, rescue mechanism, probability calibration, or
+prospective wet-lab improvement is asserted. The output is only a ranking of
+existing unmeasured variants under the available evidence.

@@ -1,0 +1,97 @@
+The deliverable is proposal.py, with propose(case, assignment). It uses only
+the reference sequence, variant sequences, and fitness values in the supplied
+support records. Every invocation creates five new fits; there are no stored
+training records, learned coefficients, prediction IDs, fitted models, or
+runtime file reads. NumPy and SciPy are the only scientific dependencies.
+The returned scores cover every current query ID, lie in [-1, 1], and are
+ordinal values. selected_ids is always empty. No additional measurements
+are requested. Production fitting has no random draws; experiment split
+and tree seeds are explicit in the retained exploration scripts.
+
+Assay interpretation
+The case describes Bacillus subtilis YnzC stability measured by cDNA-display
+proteolysis, with higher ProteinGym DMS_score as the ranking target. No WT
+measurement is supplied or invented. The regression intercept is estimated
+from supports without assigning the reference a fitness. Original assay
+units need not be exact free energies. The final models regress empirical
+ranks of CURRENT support fitness, preserving the stated direction. Raw
+fitness, Gaussian rank transforms, and an assumed soft assay floor were
+tested; ordinary ranks were more reliable. Outputs are not probabilities,
+calibrated stability values, or evidence of wet-lab improvement.
+
+Model and use of feedback
+All 96 supplied outcomes (32 original single-mutant supports and 64 measured
+feedback variants) enter the final fit with equal observation weight.
+There is no special ID-based treatment of original versus feedback records.
+The feedback supplies information about recurring double-mutant families,
+site-specific amino-acid preferences, and deviations from additive effects.
+The five-member kernel-ridge ensemble combines site indicators, local and
+shared physicochemical changes, smooth amino-acid substitution kernels,
+mutation count, site-pair indicators, and strongly regularized pairwise
+descriptor products. One member also includes small nonlinear local
+property features and pair-conditional effects. Positive ridge penalties
+ensure unique stable solves, with an unpenalized fitted intercept.
+Each member's query predictions are converted to average-tie ranks, averaged
+equally, then ranked and mapped monotonically to [-1, 1]. Thus members do
+not vote according to arbitrary prediction magnitudes.
+
+Generic amino-acid constants describe hydropathy, side-chain volume,
+approximate charge, helix propensity, proline/glycine, aromaticity,
+beta branching, and amide identity. A two-helix hypothesis annotates
+positions 5-18 and 22-38, with positions 19-21 as a possible turn. This is
+inferred from this short sequence's composition and is an assumed context
+for regularized features, not a structure determination. No coordinates,
+external sequences, MSA, pretrained scores, or external predictor are used.
+Neither pairwise terms nor successful prediction establishes a salt bridge,
+contact, core residue, or molecular mechanism. Models with different context
+strengths and smoothness settings reduce reliance on any single hypothesis.
+
+Validation and configuration selection
+Local exploration used three repeated five-fold splits stratified by
+mutation order (seeds 17, 29, 43). Training labels alone were transformed
+within each fold. A selection criterion combined overall signed Spearman
+correlation with within-double and within-single correlations, so separation
+of singles from doubles was not the only objective. Hierarchical additive
+models, nonlinear amino-acid kernels, pair effects, conservative-substitution
+features, target transforms, ExtraTrees, random forests, and robust gradient
+boosting were compared. The tree/boosting baselines produced overall
+correlations around 0.73-0.77, below the selected kernel models. Extra
+severity and residue-class features did not improve confirmation results
+enough to include them. Five diverse configurations were rounded and fixed;
+these constants are validation-selected regularization settings, not learned
+prediction coefficients.
+
+Six additional split seeds (101, 137, 191, 229, 271, 307) checked the fixed
+ensemble. Aggregated out-of-fold predictions averaged approximately 0.854
+overall, 0.715 within doubles, and 0.554 within singles. A check using the
+actual final propose function on each held-out fold gave mean fold Spearman
+0.840, with fold standard deviation 0.071. The distinction matters because
+the final function returns batch-relative ranks, whose values cannot be
+compared as calibrated predictions across separate invocations.
+
+Another exercise kept the original 32 supports and added a randomly chosen
+32 feedback records, then predicted the remaining 32 feedback records.
+Across ten fixed splits, overall correlation averaged approximately 0.763;
+within doubles it averaged 0.498. Predicting all 64 feedback records from
+the original supports alone gave overall correlation 0.578. These different
+holdout exercises indicate the practical value of incorporating feedback,
+but are not an external experiment or a controlled mechanistic comparison.
+Exploration and validation reports remain in this workspace. proposal.py
+does not import those scripts or read their outputs.
+
+Limits and artifact checks
+There are only 96 outcomes, with sparse substitution coverage and repeated
+site-pair families. Unseen positions and amino acids rely substantially on
+shared-property assumptions. Interactions are weakly identified. Overall
+correlation partly reflects the easier single-versus-double distinction;
+within-family ranking is less certain. All configuration selection and
+confirmation reuse this one public support pool, so validation is subject
+to tuning bias and is not a guarantee for the 186 unmeasured queries.
+The independent executor's training-subset validation remains important.
+
+The final artifact was checked for repeated-call determinism, support/query
+order invariance, changed predictions after support labels were reversed,
+empty-support behavior, fresh fitting on 30 altered support subsets, exact
+coverage of all 186 query IDs, bounded finite scores, and no selections.
+The required protected executor is run after this note is saved to verify
+the actual proposal.py and write trial_output.json.

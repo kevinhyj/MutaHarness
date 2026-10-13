@@ -1,0 +1,16 @@
+{
+  "candidate_count": 250,
+  "unique_ids": 250,
+  "unique_scores": 250,
+  "all_finite_in_range": true,
+  "higher_is_better": true,
+  "all_mutation_sequences_verified": true,
+  "source_hashes_verified": true,
+  "raw_query_mapping_verified": true,
+  "supplied_msa_reproduced_exactly": true,
+  "msa_incomplete_candidates": 17,
+  "fixed_partners_supplied": false,
+  "structure_supplied": false,
+  "measured_supports": 0,
+  "accuracy_validated": false
+}

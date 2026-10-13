@@ -1,0 +1,2178 @@
+{
+  "schema": "protein_zero_native_final_analysis_v1",
+  "status": "analysis_after_host_scoring",
+  "generated_at_utc": "2026-10-13T04:10:36.558793+00:00",
+  "protocol_sha256": "abdeafc53343b416dac32749d129f64b0e1b390f1367739e6a64825b5260e015",
+  "summary_sha256": "459617a7f4d50b2198bbdb3bbc8f4f26c2e65d8b9f8353e596b4e659bbe9239e",
+  "cases": [
+    "amfr",
+    "his7",
+    "yap_peptide",
+    "bh3_mcl1"
+  ],
+  "arms": [
+    "basic",
+    "msa_tools",
+    "structure_tools",
+    "joint_tools"
+  ],
+  "rows": [
+    {
+      "case_id": "amfr",
+      "arm": "basic",
+      "status": "complete",
+      "wall_seconds": 594.301,
+      "known_input_plus_output_tokens": 223808,
+      "unknown_usage": false,
+      "checkpoint_contract_valid": true,
+      "attempts": 1,
+      "spearman": 0.43399422723453535,
+      "top25_overlap": 0.28,
+      "independent_spearman": 0.4339942272345354,
+      "distinct_prediction_scores": 249
+    },
+    {
+      "case_id": "amfr",
+      "arm": "msa_tools",
+      "status": "complete",
+      "wall_seconds": 805.179,
+      "known_input_plus_output_tokens": 379051,
+      "unknown_usage": false,
+      "checkpoint_contract_valid": true,
+      "attempts": 1,
+      "spearman": 0.4867981440967482,
+      "top25_overlap": 0.08,
+      "independent_spearman": 0.4867981440967482,
+      "distinct_prediction_scores": 245
+    },
+    {
+      "case_id": "amfr",
+      "arm": "structure_tools",
+      "status": "complete",
+      "wall_seconds": 985.673,
+      "known_input_plus_output_tokens": 483919,
+      "unknown_usage": false,
+      "checkpoint_contract_valid": true,
+      "attempts": 1,
+      "spearman": 0.6122751404022464,
+      "top25_overlap": 0.6,
+      "independent_spearman": 0.6122751404022464,
+      "distinct_prediction_scores": 250
+    },
+    {
+      "case_id": "amfr",
+      "arm": "joint_tools",
+      "status": "complete",
+      "wall_seconds": 940.433,
+      "known_input_plus_output_tokens": 902365,
+      "unknown_usage": false,
+      "checkpoint_contract_valid": true,
+      "attempts": 1,
+      "spearman": 0.6574366932149486,
+      "top25_overlap": 0.32,
+      "independent_spearman": 0.6574366932149487,
+      "distinct_prediction_scores": 249
+    },
+    {
+      "case_id": "his7",
+      "arm": "basic",
+      "status": "complete",
+      "wall_seconds": 682.859,
+      "known_input_plus_output_tokens": 228228,
+      "unknown_usage": false,
+      "checkpoint_contract_valid": true,
+      "attempts": 1,
+      "spearman": 0.5766928829558756,
+      "top25_overlap": 0.4,
+      "independent_spearman": 0.5766928829558756,
+      "distinct_prediction_scores": 250
+    },
+    {
+      "case_id": "his7",
+      "arm": "msa_tools",
+      "status": "complete",
+      "wall_seconds": 517.488,
+      "known_input_plus_output_tokens": 406301,
+      "unknown_usage": false,
+      "checkpoint_contract_valid": true,
+      "attempts": 1,
+      "spearman": 0.5987090263674707,
+      "top25_overlap": 0.28,
+      "independent_spearman": 0.5987090263674707,
+      "distinct_prediction_scores": 250
+    },
+    {
+      "case_id": "his7",
+      "arm": "structure_tools",
+      "status": "complete",
+      "wall_seconds": 576.213,
+      "known_input_plus_output_tokens": 343689,
+      "unknown_usage": false,
+      "checkpoint_contract_valid": true,
+      "attempts": 1,
+      "spearman": 0.491376306013687,
+      "top25_overlap": 0.32,
+      "independent_spearman": 0.491376306013687,
+      "distinct_prediction_scores": 250
+    },
+    {
+      "case_id": "his7",
+      "arm": "joint_tools",
+      "status": "complete",
+      "wall_seconds": 669.727,
+      "known_input_plus_output_tokens": 649662,
+      "unknown_usage": false,
+      "checkpoint_contract_valid": true,
+      "attempts": 1,
+      "spearman": 0.5971516990391995,
+      "top25_overlap": 0.24,
+      "independent_spearman": 0.5971516990391995,
+      "distinct_prediction_scores": 250
+    },
+    {
+      "case_id": "yap_peptide",
+      "arm": "basic",
+      "status": "complete",
+      "wall_seconds": 455.987,
+      "known_input_plus_output_tokens": 187792,
+      "unknown_usage": false,
+      "checkpoint_contract_valid": true,
+      "attempts": 1,
+      "spearman": 0.3537152297380888,
+      "top25_overlap": 0.32,
+      "independent_spearman": 0.3537152297380888,
+      "distinct_prediction_scores": 243
+    },
+    {
+      "case_id": "yap_peptide",
+      "arm": "msa_tools",
+      "status": "complete",
+      "wall_seconds": 460.902,
+      "known_input_plus_output_tokens": 283839,
+      "unknown_usage": false,
+      "checkpoint_contract_valid": true,
+      "attempts": 1,
+      "spearman": 0.37364751532057416,
+      "top25_overlap": 0.24,
+      "independent_spearman": 0.37364751532057416,
+      "distinct_prediction_scores": 249
+    },
+    {
+      "case_id": "yap_peptide",
+      "arm": "structure_tools",
+      "status": "complete",
+      "wall_seconds": 542.343,
+      "known_input_plus_output_tokens": 437841,
+      "unknown_usage": false,
+      "checkpoint_contract_valid": true,
+      "attempts": 1,
+      "spearman": 0.42892688503167753,
+      "top25_overlap": 0.4,
+      "independent_spearman": 0.4289268850316775,
+      "distinct_prediction_scores": 250
+    },
+    {
+      "case_id": "yap_peptide",
+      "arm": "joint_tools",
+      "status": "complete",
+      "wall_seconds": 599.067,
+      "known_input_plus_output_tokens": 597746,
+      "unknown_usage": false,
+      "checkpoint_contract_valid": true,
+      "attempts": 1,
+      "spearman": 0.4012574035035102,
+      "top25_overlap": 0.16,
+      "independent_spearman": 0.40125740350351013,
+      "distinct_prediction_scores": 250
+    },
+    {
+      "case_id": "bh3_mcl1",
+      "arm": "basic",
+      "status": "complete",
+      "wall_seconds": 348.746,
+      "known_input_plus_output_tokens": 147131,
+      "unknown_usage": false,
+      "checkpoint_contract_valid": true,
+      "attempts": 1,
+      "spearman": 0.5469212504431551,
+      "top25_overlap": 0.2,
+      "independent_spearman": 0.5469212504431552,
+      "distinct_prediction_scores": 167
+    },
+    {
+      "case_id": "bh3_mcl1",
+      "arm": "msa_tools",
+      "status": "complete",
+      "wall_seconds": 434.591,
+      "known_input_plus_output_tokens": 254772,
+      "unknown_usage": false,
+      "checkpoint_contract_valid": true,
+      "attempts": 1,
+      "spearman": 0.4709157474836415,
+      "top25_overlap": 0.2,
+      "independent_spearman": 0.47091574748364146,
+      "distinct_prediction_scores": 248
+    },
+    {
+      "case_id": "bh3_mcl1",
+      "arm": "structure_tools",
+      "status": "complete",
+      "wall_seconds": 592.468,
+      "known_input_plus_output_tokens": 527376,
+      "unknown_usage": false,
+      "checkpoint_contract_valid": true,
+      "attempts": 1,
+      "spearman": 0.42423577977247634,
+      "top25_overlap": 0.08,
+      "independent_spearman": 0.42423577977247634,
+      "distinct_prediction_scores": 250
+    },
+    {
+      "case_id": "bh3_mcl1",
+      "arm": "joint_tools",
+      "status": "complete",
+      "wall_seconds": 609.874,
+      "known_input_plus_output_tokens": 463400,
+      "unknown_usage": false,
+      "checkpoint_contract_valid": true,
+      "attempts": 1,
+      "spearman": 0.5389554147660858,
+      "top25_overlap": 0.16,
+      "independent_spearman": 0.5389554147660858,
+      "distinct_prediction_scores": 249
+    }
+  ],
+  "complete_all_arm_cases": [
+    "amfr",
+    "his7",
+    "yap_peptide",
+    "bh3_mcl1"
+  ],
+  "common_cohort_macro": {
+    "basic": {
+      "spearman": 0.4778308975929137,
+      "top25_overlap": 0.30000000000000004
+    },
+    "msa_tools": {
+      "spearman": 0.48251760831710866,
+      "top25_overlap": 0.2
+    },
+    "structure_tools": {
+      "spearman": 0.4892035278050218,
+      "top25_overlap": 0.35
+    },
+    "joint_tools": {
+      "spearman": 0.548700302630936,
+      "top25_overlap": 0.22
+    }
+  },
+  "comparisons_to_basic": {
+    "msa_tools": {
+      "case_deltas_from_basic": {
+        "amfr": 0.05280391686221286,
+        "his7": 0.02201614341159508,
+        "yap_peptide": 0.019932285582485387,
+        "bh3_mcl1": -0.07600550295951358
+      },
+      "valid_pair_count": 4,
+      "wins": 3,
+      "ties": 0,
+      "losses": 1,
+      "pairwise_macro_delta": 0.004686710724194937,
+      "all_arm_common_macro_delta": 0.004686710724194937
+    },
+    "structure_tools": {
+      "case_deltas_from_basic": {
+        "amfr": 0.17828091316771105,
+        "his7": -0.08531657694218864,
+        "yap_peptide": 0.07521165529358875,
+        "bh3_mcl1": -0.12268547067067875
+      },
+      "valid_pair_count": 4,
+      "wins": 2,
+      "ties": 0,
+      "losses": 2,
+      "pairwise_macro_delta": 0.011372630212108104,
+      "all_arm_common_macro_delta": 0.011372630212108104
+    },
+    "joint_tools": {
+      "case_deltas_from_basic": {
+        "amfr": 0.22344246598041323,
+        "his7": 0.020458816083323894,
+        "yap_peptide": 0.047542173765421414,
+        "bh3_mcl1": -0.007965835677069322
+      },
+      "valid_pair_count": 4,
+      "wins": 3,
+      "ties": 0,
+      "losses": 1,
+      "pairwise_macro_delta": 0.0708694050380223,
+      "all_arm_common_macro_delta": 0.0708694050380223
+    }
+  },
+  "native_costs_by_arm": {
+    "basic": {
+      "known_input_plus_output_tokens": 786959,
+      "known_input_tokens": 727776,
+      "known_cached_input_tokens": 550016,
+      "known_output_tokens": 59183,
+      "condition_wall_seconds": 2081.893,
+      "recorded_native_wall_seconds": 2081.712,
+      "complete": 4,
+      "failed": 0,
+      "unknown_usage_conditions": 0,
+      "recorded_native_invocations": 4,
+      "recorded_contract_corrections": 0,
+      "timeouts": 0
+    },
+    "msa_tools": {
+      "known_input_plus_output_tokens": 1323963,
+      "known_input_tokens": 1261747,
+      "known_cached_input_tokens": 1021568,
+      "known_output_tokens": 62216,
+      "condition_wall_seconds": 2218.16,
+      "recorded_native_wall_seconds": 2217.749,
+      "complete": 4,
+      "failed": 0,
+      "unknown_usage_conditions": 0,
+      "recorded_native_invocations": 4,
+      "recorded_contract_corrections": 0,
+      "timeouts": 0
+    },
+    "structure_tools": {
+      "known_input_plus_output_tokens": 1792825,
+      "known_input_tokens": 1716099,
+      "known_cached_input_tokens": 1496064,
+      "known_output_tokens": 76726,
+      "condition_wall_seconds": 2696.697,
+      "recorded_native_wall_seconds": 2696.081,
+      "complete": 4,
+      "failed": 0,
+      "unknown_usage_conditions": 0,
+      "recorded_native_invocations": 4,
+      "recorded_contract_corrections": 0,
+      "timeouts": 0
+    },
+    "joint_tools": {
+      "known_input_plus_output_tokens": 2613173,
+      "known_input_tokens": 2535562,
+      "known_cached_input_tokens": 2259328,
+      "known_output_tokens": 77611,
+      "condition_wall_seconds": 2819.101,
+      "recorded_native_wall_seconds": 2818.2780000000002,
+      "complete": 4,
+      "failed": 0,
+      "unknown_usage_conditions": 0,
+      "recorded_native_invocations": 4,
+      "recorded_contract_corrections": 0,
+      "timeouts": 0
+    }
+  },
+  "condition_costs": [
+    {
+      "case_id": "amfr",
+      "arm": "basic",
+      "status": "complete",
+      "recorded_native_invocations": 1,
+      "recorded_contract_corrections": 0,
+      "known_input_plus_output_tokens": 223808,
+      "known_input_tokens": 207169,
+      "known_cached_input_tokens": 169728,
+      "known_output_tokens": 16639,
+      "unknown_usage": false,
+      "condition_wall_seconds": 594.301,
+      "recorded_native_wall_seconds": 594.245,
+      "timeouts": 0,
+      "unsuccessful_native_exits": 0,
+      "failure_phase": null,
+      "errors": [
+        []
+      ],
+      "archive_error": null
+    },
+    {
+      "case_id": "his7",
+      "arm": "basic",
+      "status": "complete",
+      "recorded_native_invocations": 1,
+      "recorded_contract_corrections": 0,
+      "known_input_plus_output_tokens": 228228,
+      "known_input_tokens": 208449,
+      "known_cached_input_tokens": 161408,
+      "known_output_tokens": 19779,
+      "unknown_usage": false,
+      "condition_wall_seconds": 682.859,
+      "recorded_native_wall_seconds": 682.827,
+      "timeouts": 0,
+      "unsuccessful_native_exits": 0,
+      "failure_phase": null,
+      "errors": [
+        []
+      ],
+      "archive_error": null
+    },
+    {
+      "case_id": "yap_peptide",
+      "arm": "basic",
+      "status": "complete",
+      "recorded_native_invocations": 1,
+      "recorded_contract_corrections": 0,
+      "known_input_plus_output_tokens": 187792,
+      "known_input_tokens": 174796,
+      "known_cached_input_tokens": 124672,
+      "known_output_tokens": 12996,
+      "unknown_usage": false,
+      "condition_wall_seconds": 455.987,
+      "recorded_native_wall_seconds": 455.941,
+      "timeouts": 0,
+      "unsuccessful_native_exits": 0,
+      "failure_phase": null,
+      "errors": [
+        []
+      ],
+      "archive_error": null
+    },
+    {
+      "case_id": "bh3_mcl1",
+      "arm": "basic",
+      "status": "complete",
+      "recorded_native_invocations": 1,
+      "recorded_contract_corrections": 0,
+      "known_input_plus_output_tokens": 147131,
+      "known_input_tokens": 137362,
+      "known_cached_input_tokens": 94208,
+      "known_output_tokens": 9769,
+      "unknown_usage": false,
+      "condition_wall_seconds": 348.746,
+      "recorded_native_wall_seconds": 348.699,
+      "timeouts": 0,
+      "unsuccessful_native_exits": 0,
+      "failure_phase": null,
+      "errors": [
+        []
+      ],
+      "archive_error": null
+    },
+    {
+      "case_id": "amfr",
+      "arm": "msa_tools",
+      "status": "complete",
+      "recorded_native_invocations": 1,
+      "recorded_contract_corrections": 0,
+      "known_input_plus_output_tokens": 379051,
+      "known_input_tokens": 357261,
+      "known_cached_input_tokens": 299648,
+      "known_output_tokens": 21790,
+      "unknown_usage": false,
+      "condition_wall_seconds": 805.179,
+      "recorded_native_wall_seconds": 805.094,
+      "timeouts": 0,
+      "unsuccessful_native_exits": 0,
+      "failure_phase": null,
+      "errors": [
+        []
+      ],
+      "archive_error": null
+    },
+    {
+      "case_id": "his7",
+      "arm": "msa_tools",
+      "status": "complete",
+      "recorded_native_invocations": 1,
+      "recorded_contract_corrections": 0,
+      "known_input_plus_output_tokens": 406301,
+      "known_input_tokens": 391856,
+      "known_cached_input_tokens": 307712,
+      "known_output_tokens": 14445,
+      "unknown_usage": false,
+      "condition_wall_seconds": 517.488,
+      "recorded_native_wall_seconds": 517.318,
+      "timeouts": 0,
+      "unsuccessful_native_exits": 0,
+      "failure_phase": null,
+      "errors": [
+        []
+      ],
+      "archive_error": null
+    },
+    {
+      "case_id": "yap_peptide",
+      "arm": "msa_tools",
+      "status": "complete",
+      "recorded_native_invocations": 1,
+      "recorded_contract_corrections": 0,
+      "known_input_plus_output_tokens": 283839,
+      "known_input_tokens": 270646,
+      "known_cached_input_tokens": 224896,
+      "known_output_tokens": 13193,
+      "unknown_usage": false,
+      "condition_wall_seconds": 460.902,
+      "recorded_native_wall_seconds": 460.815,
+      "timeouts": 0,
+      "unsuccessful_native_exits": 0,
+      "failure_phase": null,
+      "errors": [
+        []
+      ],
+      "archive_error": null
+    },
+    {
+      "case_id": "bh3_mcl1",
+      "arm": "msa_tools",
+      "status": "complete",
+      "recorded_native_invocations": 1,
+      "recorded_contract_corrections": 0,
+      "known_input_plus_output_tokens": 254772,
+      "known_input_tokens": 241984,
+      "known_cached_input_tokens": 189312,
+      "known_output_tokens": 12788,
+      "unknown_usage": false,
+      "condition_wall_seconds": 434.591,
+      "recorded_native_wall_seconds": 434.522,
+      "timeouts": 0,
+      "unsuccessful_native_exits": 0,
+      "failure_phase": null,
+      "errors": [
+        []
+      ],
+      "archive_error": null
+    },
+    {
+      "case_id": "amfr",
+      "arm": "structure_tools",
+      "status": "complete",
+      "recorded_native_invocations": 1,
+      "recorded_contract_corrections": 0,
+      "known_input_plus_output_tokens": 483919,
+      "known_input_tokens": 457078,
+      "known_cached_input_tokens": 407296,
+      "known_output_tokens": 26841,
+      "unknown_usage": false,
+      "condition_wall_seconds": 985.673,
+      "recorded_native_wall_seconds": 985.586,
+      "timeouts": 0,
+      "unsuccessful_native_exits": 0,
+      "failure_phase": null,
+      "errors": [
+        []
+      ],
+      "archive_error": null
+    },
+    {
+      "case_id": "his7",
+      "arm": "structure_tools",
+      "status": "complete",
+      "recorded_native_invocations": 1,
+      "recorded_contract_corrections": 0,
+      "known_input_plus_output_tokens": 343689,
+      "known_input_tokens": 326512,
+      "known_cached_input_tokens": 270208,
+      "known_output_tokens": 17177,
+      "unknown_usage": false,
+      "condition_wall_seconds": 576.213,
+      "recorded_native_wall_seconds": 575.875,
+      "timeouts": 0,
+      "unsuccessful_native_exits": 0,
+      "failure_phase": null,
+      "errors": [
+        []
+      ],
+      "archive_error": null
+    },
+    {
+      "case_id": "yap_peptide",
+      "arm": "structure_tools",
+      "status": "complete",
+      "recorded_native_invocations": 1,
+      "recorded_contract_corrections": 0,
+      "known_input_plus_output_tokens": 437841,
+      "known_input_tokens": 421791,
+      "known_cached_input_tokens": 366720,
+      "known_output_tokens": 16050,
+      "unknown_usage": false,
+      "condition_wall_seconds": 542.343,
+      "recorded_native_wall_seconds": 542.264,
+      "timeouts": 0,
+      "unsuccessful_native_exits": 0,
+      "failure_phase": null,
+      "errors": [
+        []
+      ],
+      "archive_error": null
+    },
+    {
+      "case_id": "bh3_mcl1",
+      "arm": "structure_tools",
+      "status": "complete",
+      "recorded_native_invocations": 1,
+      "recorded_contract_corrections": 0,
+      "known_input_plus_output_tokens": 527376,
+      "known_input_tokens": 510718,
+      "known_cached_input_tokens": 451840,
+      "known_output_tokens": 16658,
+      "unknown_usage": false,
+      "condition_wall_seconds": 592.468,
+      "recorded_native_wall_seconds": 592.356,
+      "timeouts": 0,
+      "unsuccessful_native_exits": 0,
+      "failure_phase": null,
+      "errors": [
+        []
+      ],
+      "archive_error": null
+    },
+    {
+      "case_id": "amfr",
+      "arm": "joint_tools",
+      "status": "complete",
+      "recorded_native_invocations": 1,
+      "recorded_contract_corrections": 0,
+      "known_input_plus_output_tokens": 902365,
+      "known_input_tokens": 876106,
+      "known_cached_input_tokens": 802176,
+      "known_output_tokens": 26259,
+      "unknown_usage": false,
+      "condition_wall_seconds": 940.433,
+      "recorded_native_wall_seconds": 940.32,
+      "timeouts": 0,
+      "unsuccessful_native_exits": 0,
+      "failure_phase": null,
+      "errors": [
+        []
+      ],
+      "archive_error": null
+    },
+    {
+      "case_id": "his7",
+      "arm": "joint_tools",
+      "status": "complete",
+      "recorded_native_invocations": 1,
+      "recorded_contract_corrections": 0,
+      "known_input_plus_output_tokens": 649662,
+      "known_input_tokens": 630747,
+      "known_cached_input_tokens": 550400,
+      "known_output_tokens": 18915,
+      "unknown_usage": false,
+      "condition_wall_seconds": 669.727,
+      "recorded_native_wall_seconds": 669.264,
+      "timeouts": 0,
+      "unsuccessful_native_exits": 0,
+      "failure_phase": null,
+      "errors": [
+        []
+      ],
+      "archive_error": null
+    },
+    {
+      "case_id": "yap_peptide",
+      "arm": "joint_tools",
+      "status": "complete",
+      "recorded_native_invocations": 1,
+      "recorded_contract_corrections": 0,
+      "known_input_plus_output_tokens": 597746,
+      "known_input_tokens": 581600,
+      "known_cached_input_tokens": 516608,
+      "known_output_tokens": 16146,
+      "unknown_usage": false,
+      "condition_wall_seconds": 599.067,
+      "recorded_native_wall_seconds": 598.935,
+      "timeouts": 0,
+      "unsuccessful_native_exits": 0,
+      "failure_phase": null,
+      "errors": [
+        []
+      ],
+      "archive_error": null
+    },
+    {
+      "case_id": "bh3_mcl1",
+      "arm": "joint_tools",
+      "status": "complete",
+      "recorded_native_invocations": 1,
+      "recorded_contract_corrections": 0,
+      "known_input_plus_output_tokens": 463400,
+      "known_input_tokens": 447109,
+      "known_cached_input_tokens": 390144,
+      "known_output_tokens": 16291,
+      "unknown_usage": false,
+      "condition_wall_seconds": 609.874,
+      "recorded_native_wall_seconds": 609.759,
+      "timeouts": 0,
+      "unsuccessful_native_exits": 0,
+      "failure_phase": null,
+      "errors": [
+        []
+      ],
+      "archive_error": null
+    }
+  ],
+  "method_observations": [
+    {
+      "case_id": "amfr",
+      "arm": "basic",
+      "generated_or_modified_source_files": [
+        {
+          "file": "results/amfr/basic/workspace/predict.py",
+          "sha256": "6c09658cdc0bde84b95a515f80beda1fb6caed1f1df51953d62d804941b485f7",
+          "kind": "native_generated_source"
+        }
+      ],
+      "source_references": {
+        "ranking_or_ensemble": [
+          {
+            "kind": "source_text_reference",
+            "file": "results/amfr/basic/workspace/predict.py",
+            "line": 176,
+            "text": "# frustrated WT sites are both included in the fixed prior ensemble."
+          }
+        ],
+        "sequence_chemistry": [
+          {
+            "kind": "source_text_reference",
+            "file": "results/amfr/basic/workspace/predict.py",
+            "line": 4,
+            "text": "The checkpoint model uses generic helix and hydrophobic compatibility."
+          }
+        ]
+      },
+      "native_command_references": {
+        "msa_reference": [
+          {
+            "kind": "native_command_reference",
+            "file": "results/amfr/basic/call_00/events.jsonl",
+            "line": 6,
+            "text": "/bin/zsh -lc \"pwd && rg --files -g '\"'!*.a3m'\"' -g '\"'!*.fasta'\"' -g '\"'!*.pdb'\"' -g '\"'!*.cif'\"'\"",
+            "exit_code": 0,
+            "status": "completed"
+          }
+        ],
+        "structure_reference": [
+          {
+            "kind": "native_command_reference",
+            "file": "results/amfr/basic/call_00/events.jsonl",
+            "line": 6,
+            "text": "/bin/zsh -lc \"pwd && rg --files -g '\"'!*.a3m'\"' -g '\"'!*.fasta'\"' -g '\"'!*.pdb'\"' -g '\"'!*.cif'\"'\"",
+            "exit_code": 0,
+            "status": "completed"
+          }
+        ],
+        "sequence_chemistry": [
+          {
+            "kind": "native_command_reference",
+            "file": "results/amfr/basic/call_00/events.jsonl",
+            "line": 19,
+            "text": "/bin/zsh -lc \"python - <<'PY' import json,predict c,_=predict.load_and_validate(); wt=c['reference_sequence']; b,h=predict.helix_burial(wt,[(5,17),(22,32),(35,44)]) print('WT inferred face scores:') for i,a in enumerate(wt,1):print(i,a,roun",
+            "exit_code": 0,
+            "status": "completed"
+          }
+        ]
+      },
+      "native_reported_method_summary": {
+        "text": "Sequence-only stability prior combining hydrophobic transfer, packing, hydrogen-bond/charge compatibility and helix propensity, averaged over uncertain CUE helix boundaries. Higher scores predict better stability on one global tanh scale, without assay-unit calibration. All mutation identities and 250 unique IDs were validated; input hashes, checkpoint, program and diagnostics were saved. Measurements, MSA, coordinates and fixed partners are absent. Ranking uncertainty is high, particularly for burial, epistasis and proteolysis-specific effects.",
+        "file": "results/amfr/basic/call_00/events.jsonl",
+        "line": 31
+      },
+      "event_files_inspected": [
+        "results/amfr/basic/call_00/events.jsonl"
+      ],
+      "malformed_event_lines": 0,
+      "interpretation": "Only archived text/command observations. Source references do not establish execution; commands do not establish that outputs determined final scores. Native summaries are self-reports, not mechanism validation."
+    },
+    {
+      "case_id": "amfr",
+      "arm": "msa_tools",
+      "generated_or_modified_source_files": [
+        {
+          "file": "results/amfr/msa_tools/workspace/model_rationale.md",
+          "sha256": "a84d704723dba094b22cb95d031fba0c6aa64d62e48b0d3dec39bc9bc4855119",
+          "kind": "native_generated_source"
+        },
+        {
+          "file": "results/amfr/msa_tools/workspace/predict_variants.py",
+          "sha256": "2bd644a40c0b86e9e2260cb0c587e8b46a2d641d2599e3a25b98686148307922",
+          "kind": "native_generated_source"
+        },
+        {
+          "file": "results/amfr/msa_tools/workspace/refine_model.py",
+          "sha256": "ae6b93ddec17c3045f5a45c7db70c9b3c98aad1fb7397799b14f14139b16707c",
+          "kind": "native_generated_source"
+        }
+      ],
+      "source_references": {
+        "msa_reference": [
+          {
+            "kind": "source_text_reference",
+            "file": "results/amfr/msa_tools/workspace/model_rationale.md",
+            "line": 7,
+            "text": "All 250 mutation strings agree with sequence differences, all IDs are unique, scores are finite and within [-1,1], higher means predicted better stability, and both file hashes and"
+          }
+        ],
+        "structure_reference": [
+          {
+            "kind": "source_text_reference",
+            "file": "results/amfr/msa_tools/workspace/model_rationale.md",
+            "line": 5,
+            "text": "The known CUE three-helix topology is a coarse domain/sequence prior. Hydrophobic periodicity estimates are chemistry proxies, not observed burial, verified RSA or atomic geometry."
+          }
+        ],
+        "evolutionary_log_ratio": [
+          {
+            "kind": "source_text_reference",
+            "file": "results/amfr/msa_tools/workspace/model_rationale.md",
+            "line": 1,
+            "text": "Initial checkpoint: additive fixed MSA log-frequency ratios, with explicit weak priors for missing evidence. No labels or measured WT stability were used."
+          }
+        ],
+        "sequence_chemistry": [
+          {
+            "kind": "source_text_reference",
+            "file": "results/amfr/msa_tools/workspace/model_rationale.md",
+            "line": 5,
+            "text": "The known CUE three-helix topology is a coarse domain/sequence prior. Hydrophobic periodicity estimates are chemistry proxies, not observed burial, verified RSA or atomic geometry."
+          }
+        ]
+      },
+      "native_command_references": {
+        "msa_reference": [
+          {
+            "kind": "native_command_reference",
+            "file": "results/amfr/msa_tools/call_00/events.jsonl",
+            "line": 6,
+            "text": "/bin/zsh -lc \"pwd && rg --files -g '\"'!*.a3m'\"' -g '\"'!*.pdb'\"' -g '\"'!*.cif'\"' -g '\"'!*.fasta'\"' -g '\"'!*.fa'\"'\"",
+            "exit_code": 0,
+            "status": "completed"
+          }
+        ],
+        "structure_reference": [
+          {
+            "kind": "native_command_reference",
+            "file": "results/amfr/msa_tools/call_00/events.jsonl",
+            "line": 6,
+            "text": "/bin/zsh -lc \"pwd && rg --files -g '\"'!*.a3m'\"' -g '\"'!*.pdb'\"' -g '\"'!*.cif'\"' -g '\"'!*.fasta'\"' -g '\"'!*.fa'\"'\"",
+            "exit_code": 0,
+            "status": "completed"
+          }
+        ],
+        "evolutionary_log_ratio": [
+          {
+            "kind": "native_command_reference",
+            "file": "results/amfr/msa_tools/call_00/events.jsonl",
+            "line": 14,
+            "text": "/bin/zsh -lc \"cat > predict_variants.py <<'PY' \\\"\\\"\\\"Label-free AMFR stability prioritization; no measured outcome fitting.\\\"\\\"\\\" import json, math, hashlib, re from pathlib import Path import msa_tools ROOT=Path(__file__).resolve().parent ",
+            "exit_code": 0,
+            "status": "completed"
+          }
+        ],
+        "sequence_chemistry": [
+          {
+            "kind": "native_command_reference",
+            "file": "results/amfr/msa_tools/call_00/events.jsonl",
+            "line": 22,
+            "text": "/bin/zsh -lc \"python - <<'PY' import numpy as np,collections,json s=[] for line in open('raw_evidence/AMFR_HUMAN_2023-08-07_b04.a2m'): if line.startswith('>'):s.append('') else:s[-1]+=line.strip() seq=sorted(set(''.join(c for c in x if c.is",
+            "exit_code": 0,
+            "status": "completed"
+          }
+        ]
+      },
+      "native_reported_method_summary": {
+        "text": "Unsupervised stability ranking combines supplied MSA ratios, biochemical-class compatibility and modest sequence-based CUE helix, hydrophobicity, size and cap priors. High-gap evidence is attenuated; zero-depth sites supply no evolutionary evidence. Source hashes and mutation mapping verified: 239 candidates have complete MSA evidence, 11 none. Additive effects use one global tanh scale, higher better. No structure, partners or assay outcomes; rankings are unvalidated and especially uncertain for doubles and uncovered termini. Predictor, checkpoint and diagnostics saved.",
+        "file": "results/amfr/msa_tools/call_00/events.jsonl",
+        "line": 30
+      },
+      "event_files_inspected": [
+        "results/amfr/msa_tools/call_00/events.jsonl"
+      ],
+      "malformed_event_lines": 0,
+      "interpretation": "Only archived text/command observations. Source references do not establish execution; commands do not establish that outputs determined final scores. Native summaries are self-reports, not mechanism validation."
+    },
+    {
+      "case_id": "amfr",
+      "arm": "structure_tools",
+      "generated_or_modified_source_files": [
+        {
+          "file": "results/amfr/structure_tools/workspace/inspect_geometry.py",
+          "sha256": "9c971206793d2d96acc50c938bb78bbc6bedc21efcff5146c0b808ec8e77a607",
+          "kind": "native_generated_source"
+        },
+        {
+          "file": "results/amfr/structure_tools/workspace/model_notes.md",
+          "sha256": "415c06a94a9f595bddf96fe6da7a77834437ddd634256683efa5987a9b97f3ca",
+          "kind": "native_generated_source"
+        },
+        {
+          "file": "results/amfr/structure_tools/workspace/predict_variants.py",
+          "sha256": "c599685ac71d5d586a96188e73b80d5860a8b91af67063fc7c08762c4b665ad3",
+          "kind": "native_generated_source"
+        }
+      ],
+      "source_references": {
+        "structure_reference": [
+          {
+            "kind": "source_text_reference",
+            "file": "results/amfr/structure_tools/workspace/inspect_geometry.py",
+            "line": 5,
+            "text": "from structure_tools import _read_pdb, _sasa_arrays"
+          }
+        ],
+        "sequence_chemistry": [
+          {
+            "kind": "source_text_reference",
+            "file": "results/amfr/structure_tools/workspace/inspect_geometry.py",
+            "line": 82,
+            "text": "'helix_compatibility':helices,'sidechain_contact_pairs':sidechain_pairs,"
+          }
+        ]
+      },
+      "native_command_references": {
+        "msa_reference": [
+          {
+            "kind": "native_command_reference",
+            "file": "results/amfr/structure_tools/call_00/events.jsonl",
+            "line": 6,
+            "text": "/bin/zsh -lc \"pwd; rg --files -g '\"'!*.pdb'\"' -g '\"'!*.a3m'\"' -g '\"'!*.fasta'\"' -g '\"'!*.cif'\"' -g '\"'!*.sto'\"' -g '\"'!*.fa'\"'\"",
+            "exit_code": 0,
+            "status": "completed"
+          }
+        ],
+        "structure_reference": [
+          {
+            "kind": "native_command_reference",
+            "file": "results/amfr/structure_tools/call_00/events.jsonl",
+            "line": 6,
+            "text": "/bin/zsh -lc \"pwd; rg --files -g '\"'!*.pdb'\"' -g '\"'!*.a3m'\"' -g '\"'!*.fasta'\"' -g '\"'!*.cif'\"' -g '\"'!*.sto'\"' -g '\"'!*.fa'\"'\"",
+            "exit_code": 0,
+            "status": "completed"
+          }
+        ]
+      },
+      "native_reported_method_summary": {
+        "text": "Unsupervised stability prior using WT burial, solvation, packing, backbone compatibility and conservative polar-contact coupling. Source/reference hashes and exact 47/47 residue mapping verified; standard heavy atoms complete, missing torsions handled explicitly, no fixed partners or MSA. One global tanh scale; higher predicts better performance. No measured outcomes or relaxed mutant structures: scores are uncalibrated, epistasis is heuristic, and ranking uncertainty is substantial. Checkpoint and prediction programs saved.",
+        "file": "results/amfr/structure_tools/call_00/events.jsonl",
+        "line": 48
+      },
+      "event_files_inspected": [
+        "results/amfr/structure_tools/call_00/events.jsonl"
+      ],
+      "malformed_event_lines": 0,
+      "interpretation": "Only archived text/command observations. Source references do not establish execution; commands do not establish that outputs determined final scores. Native summaries are self-reports, not mechanism validation."
+    },
+    {
+      "case_id": "amfr",
+      "arm": "joint_tools",
+      "generated_or_modified_source_files": [
+        {
+          "file": "results/amfr/joint_tools/workspace/checkpoint_model.py",
+          "sha256": "8b81ba23ecdeefd42c5dbd2536d8a67cb98ac62a51795a5d59396890f73f9296",
+          "kind": "native_generated_source"
+        },
+        {
+          "file": "results/amfr/joint_tools/workspace/inspect_alignment.py",
+          "sha256": "7d1b42835259fa1703da05db34214d6d2cab97b18f6cb3fb4d4af69c52ed4455",
+          "kind": "native_generated_source"
+        },
+        {
+          "file": "results/amfr/joint_tools/workspace/inspect_hbonds.py",
+          "sha256": "15c6336c3cf7309d12894c1e494bb8c9ac3dde989eb05acf7906a0808c9978a8",
+          "kind": "native_generated_source"
+        },
+        {
+          "file": "results/amfr/joint_tools/workspace/model_rationale.md",
+          "sha256": "5c7a709157290300a392b992316c588d699fe44c3f604129dbba27605921bda8",
+          "kind": "native_generated_source"
+        },
+        {
+          "file": "results/amfr/joint_tools/workspace/predict.py",
+          "sha256": "8b81ba23ecdeefd42c5dbd2536d8a67cb98ac62a51795a5d59396890f73f9296",
+          "kind": "native_generated_source"
+        },
+        {
+          "file": "results/amfr/joint_tools/workspace/stability_model.py",
+          "sha256": "b416707d1c6ef44016f8fb0159e4b33523fc0a9db57939dbc8abb4ba288120b8",
+          "kind": "native_generated_source"
+        }
+      ],
+      "source_references": {
+        "msa_reference": [
+          {
+            "kind": "source_text_reference",
+            "file": "results/amfr/joint_tools/workspace/checkpoint_model.py",
+            "line": 15,
+            "text": "c=json.load(open(ROOT/'case.json')); m=json.load(open(ROOT/'msa_evidence.json')); s=json.load(open(ROOT/'structure_evidence.json'));manifest=json.load(open(ROOT/'evidence_manifest."
+          }
+        ],
+        "structure_reference": [
+          {
+            "kind": "source_text_reference",
+            "file": "results/amfr/joint_tools/workspace/checkpoint_model.py",
+            "line": 15,
+            "text": "c=json.load(open(ROOT/'case.json')); m=json.load(open(ROOT/'msa_evidence.json')); s=json.load(open(ROOT/'structure_evidence.json'));manifest=json.load(open(ROOT/'evidence_manifest."
+          }
+        ],
+        "evolutionary_log_ratio": [
+          {
+            "kind": "source_text_reference",
+            "file": "results/amfr/joint_tools/workspace/checkpoint_model.py",
+            "line": 49,
+            "text": "if term['sum_log_frequency_ratio'] is not None and term['non_gap_depth']>0:"
+          }
+        ],
+        "sequence_chemistry": [
+          {
+            "kind": "source_text_reference",
+            "file": "results/amfr/joint_tools/workspace/checkpoint_model.py",
+            "line": 2,
+            "text": "Checkpoint version: additive burial, helix and weak natural profile compatibility."
+          }
+        ]
+      },
+      "native_command_references": {
+        "msa_reference": [
+          {
+            "kind": "native_command_reference",
+            "file": "results/amfr/joint_tools/call_00/events.jsonl",
+            "line": 6,
+            "text": "/bin/zsh -lc \"pwd && rg --files -g '\"'!*.pdb'\"' -g '\"'!*.cif'\"' -g '\"'!*.a3m'\"' -g '\"'!*.fasta'\"' -g '\"'!*.fa'\"' -g '\"'!*.jsonl'\"'\"",
+            "exit_code": 0,
+            "status": "completed"
+          }
+        ],
+        "structure_reference": [
+          {
+            "kind": "native_command_reference",
+            "file": "results/amfr/joint_tools/call_00/events.jsonl",
+            "line": 6,
+            "text": "/bin/zsh -lc \"pwd && rg --files -g '\"'!*.pdb'\"' -g '\"'!*.cif'\"' -g '\"'!*.a3m'\"' -g '\"'!*.fasta'\"' -g '\"'!*.fa'\"' -g '\"'!*.jsonl'\"'\"",
+            "exit_code": 0,
+            "status": "completed"
+          }
+        ],
+        "evolutionary_log_ratio": [
+          {
+            "kind": "native_command_reference",
+            "file": "results/amfr/joint_tools/call_00/events.jsonl",
+            "line": 14,
+            "text": "/bin/zsh -lc \"cat > predict.py <<'PY' \\\"\\\"\\\"Label-free stability prior; no assay observations or fitted parameters. Checkpoint version: additive burial, helix and weak natural profile compatibility. \\\"\\\"\\\" import json, math, re, hashlib fro",
+            "exit_code": 0,
+            "status": "completed"
+          }
+        ],
+        "sequence_chemistry": [
+          {
+            "kind": "native_command_reference",
+            "file": "results/amfr/joint_tools/call_00/events.jsonl",
+            "line": 14,
+            "text": "/bin/zsh -lc \"cat > predict.py <<'PY' \\\"\\\"\\\"Label-free stability prior; no assay observations or fitted parameters. Checkpoint version: additive burial, helix and weak natural profile compatibility. \\\"\\\"\\\" import json, math, re, hashlib fro",
+            "exit_code": 0,
+            "status": "completed"
+          }
+        ]
+      },
+      "native_reported_method_summary": {
+        "text": "Unsupervised stability prior combines WT burial/packing, backbone propensity and polar-contact chemistry with weak homolog marginals and shrunk contact covariation. Source hashes and exact mutation/residue mapping verified; coordinates cover 47/47 residues, while 8 sites lack MSA support (missing terms omitted; partial sums not treated as complete). No fixed partners supplied. One global tanh scale, higher is better. Uncalibrated: no assay outcomes, mutant relaxation or validated epistasis; close rankings are uncertain.",
+        "file": "results/amfr/joint_tools/call_00/events.jsonl",
+        "line": 50
+      },
+      "event_files_inspected": [
+        "results/amfr/joint_tools/call_00/events.jsonl"
+      ],
+      "malformed_event_lines": 0,
+      "interpretation": "Only archived text/command observations. Source references do not establish execution; commands do not establish that outputs determined final scores. Native summaries are self-reports, not mechanism validation."
+    },
+    {
+      "case_id": "his7",
+      "arm": "basic",
+      "generated_or_modified_source_files": [
+        {
+          "file": "results/his7/basic/workspace/predict.py",
+          "sha256": "3ea6b7885f9e74dda4407ecbd184441c26de6e5f6208c78314e3d234a0a7f563",
+          "kind": "native_generated_source"
+        }
+      ],
+      "source_references": {
+        "structure_reference": [
+          {
+            "kind": "source_text_reference",
+            "file": "results/his7/basic/workspace/predict.py",
+            "line": 102,
+            "text": "# Hydrophobic neighborhoods are weak proxies: no coordinate-derived SASA."
+          }
+        ],
+        "sequence_chemistry": [
+          {
+            "kind": "source_text_reference",
+            "file": "results/his7/basic/workspace/predict.py",
+            "line": 53,
+            "text": "# to hydrophobic-to-charged changes in hydrophobic sequence neighborhoods."
+          }
+        ]
+      },
+      "native_command_references": {
+        "msa_reference": [
+          {
+            "kind": "native_command_reference",
+            "file": "results/his7/basic/call_00/events.jsonl",
+            "line": 6,
+            "text": "/bin/zsh -lc \"pwd && rg --files -g '\"'!*.a3m'\"' -g '\"'!*.fasta'\"' -g '\"'!*.pdb'\"' -g '\"'!*.cif'\"' -g '\"'!*.sto'\"' -g '\"'!*.fa'\"'\"",
+            "exit_code": 0,
+            "status": "completed"
+          }
+        ],
+        "structure_reference": [
+          {
+            "kind": "native_command_reference",
+            "file": "results/his7/basic/call_00/events.jsonl",
+            "line": 6,
+            "text": "/bin/zsh -lc \"pwd && rg --files -g '\"'!*.a3m'\"' -g '\"'!*.fasta'\"' -g '\"'!*.pdb'\"' -g '\"'!*.cif'\"' -g '\"'!*.sto'\"' -g '\"'!*.fa'\"'\"",
+            "exit_code": 0,
+            "status": "completed"
+          }
+        ],
+        "sequence_chemistry": [
+          {
+            "kind": "native_command_reference",
+            "file": "results/his7/basic/call_00/events.jsonl",
+            "line": 13,
+            "text": "/bin/zsh -lc \"cat > predict.py <<'PY' import json, math, re from collections import Counter from pathlib import Path import numpy as np ROOT=Path(__file__).resolve().parent case=json.loads((ROOT/'case.json').read_text()) manifest=json.loads",
+            "exit_code": 0,
+            "status": "completed"
+          }
+        ]
+      },
+      "native_reported_method_summary": {
+        "text": "Sequence-only IGPD functional ranking combines BLOSUM62, hydrophobic/charge disruption, catalytic-region and loop sensitivity, and lower terminal-region penalties; one weak turn-context interaction is hypothetical. All mutations reconstruct supplied sequences; all 250 IDs use one global scale, higher is better. Input hashes are recorded. No outcomes, MSA depth, evolutionary source mappings or structural coordinates are supplied; no fixed partners are specified. Scores are uncalibrated priors: beneficial substitutions, oligomer assembly and epistasis remain uncertain, especially among otherwise",
+        "file": "results/his7/basic/call_00/events.jsonl",
+        "line": 22
+      },
+      "event_files_inspected": [
+        "results/his7/basic/call_00/events.jsonl"
+      ],
+      "malformed_event_lines": 0,
+      "interpretation": "Only archived text/command observations. Source references do not establish execution; commands do not establish that outputs determined final scores. Native summaries are self-reports, not mechanism validation."
+    },
+    {
+      "case_id": "his7",
+      "arm": "msa_tools",
+      "generated_or_modified_source_files": [
+        {
+          "file": "results/his7/msa_tools/workspace/amino_acids.py",
+          "sha256": "9179d72581a06ff2f4a64df53ad1c8d56ce906b0837702c16128ff8640a46247",
+          "kind": "native_generated_source"
+        },
+        {
+          "file": "results/his7/msa_tools/workspace/inspect_alignment.py",
+          "sha256": "571ac57b509b910897eda0d3c66863df4ed2506dcaf762a263d4c8f5d0405354",
+          "kind": "native_generated_source"
+        },
+        {
+          "file": "results/his7/msa_tools/workspace/local_profile.py",
+          "sha256": "c504b8c98b0eaed8129033402ba11bb1323a9064f35e4bf2057b14be8192029f",
+          "kind": "native_generated_source"
+        },
+        {
+          "file": "results/his7/msa_tools/workspace/predict.py",
+          "sha256": "5e5df4a1ef7c32ad78d14d4eca625b12c3f3e6a511966b0dc47e715a3d45589d",
+          "kind": "native_generated_source"
+        }
+      ],
+      "source_references": {
+        "msa_reference": [
+          {
+            "kind": "source_text_reference",
+            "file": "results/his7/msa_tools/workspace/inspect_alignment.py",
+            "line": 7,
+            "text": "for line in Path('raw_evidence/HIS7_YEAST_full_11-26-2021_b09.a2m').read_text().splitlines():"
+          }
+        ],
+        "evolutionary_log_ratio": [
+          {
+            "kind": "source_text_reference",
+            "file": "results/his7/msa_tools/workspace/predict.py",
+            "line": 32,
+            "text": "assert e['scores']['sum_log_frequency_ratio']['complete']"
+          }
+        ],
+        "ranking_or_ensemble": [
+          {
+            "kind": "source_text_reference",
+            "file": "results/his7/msa_tools/workspace/predict.py",
+            "line": 73,
+            "text": "# A geometric ensemble of broad and WT-neighborhood evidence."
+          }
+        ],
+        "sequence_chemistry": [
+          {
+            "kind": "source_text_reference",
+            "file": "results/his7/msa_tools/workspace/predict.py",
+            "line": 80,
+            "text": "# smoothed with a BLOSUM distance kernel. It supplies statistical"
+          }
+        ]
+      },
+      "native_command_references": {
+        "msa_reference": [
+          {
+            "kind": "native_command_reference",
+            "file": "results/his7/msa_tools/call_00/events.jsonl",
+            "line": 6,
+            "text": "/bin/zsh -lc \"pwd; rg --files -g '\"'!*.a3m'\"' -g '\"'!*.fasta'\"' -g '\"'!*.pdb'\"' -g '\"'!*.cif'\"' -g '\"'!*.fa'\"' -g '\"'!*.sto'\"'\"",
+            "exit_code": 0,
+            "status": "completed"
+          }
+        ],
+        "structure_reference": [
+          {
+            "kind": "native_command_reference",
+            "file": "results/his7/msa_tools/call_00/events.jsonl",
+            "line": 6,
+            "text": "/bin/zsh -lc \"pwd; rg --files -g '\"'!*.a3m'\"' -g '\"'!*.fasta'\"' -g '\"'!*.pdb'\"' -g '\"'!*.cif'\"' -g '\"'!*.fa'\"' -g '\"'!*.sto'\"'\"",
+            "exit_code": 0,
+            "status": "completed"
+          }
+        ],
+        "evolutionary_log_ratio": [
+          {
+            "kind": "native_command_reference",
+            "file": "results/his7/msa_tools/call_00/events.jsonl",
+            "line": 14,
+            "text": "/bin/zsh -lc \"python - <<'PY' import json,collections c=json.load(open('case.json'));e=json.load(open('msa_evidence.json')) missing=[s['position'] for s in c['evidence']['sites'] if s['msa']['non_gap_depth']==0];print('absent positions',mis",
+            "exit_code": 0,
+            "status": "completed"
+          }
+        ],
+        "ranking_or_ensemble": [
+          {
+            "kind": "native_command_reference",
+            "file": "results/his7/msa_tools/call_00/events.jsonl",
+            "line": 30,
+            "text": "/bin/zsh -lc \"python - <<'PY' p='predict.py';s=open(p).read();s=s[:s.index(\\\"if __name__ == '__main__':\\\")] s+='''def baseline(case, idx): values = {q['id']:math.tanh(idx[q['id']]['scores']['sum_log_frequency_ratio']['score']/20) for q in c",
+            "exit_code": 0,
+            "status": "completed"
+          }
+        ],
+        "sequence_chemistry": [
+          {
+            "kind": "native_command_reference",
+            "file": "results/his7/msa_tools/call_00/events.jsonl",
+            "line": 30,
+            "text": "/bin/zsh -lc \"python - <<'PY' p='predict.py';s=open(p).read();s=s[:s.index(\\\"if __name__ == '__main__':\\\")] s+='''def baseline(case, idx): values = {q['id']:math.tanh(idx[q['id']]['scores']['sum_log_frequency_ratio']['score']/20) for q in c",
+            "exit_code": 0,
+            "status": "completed"
+          }
+        ]
+      },
+      "native_reported_method_summary": {
+        "text": "Unsupervised growth ranking combines broad MSA ratios with a redundancy-weighted WT-neighborhood profile and modest BLOSUM-smoothed natural-block compatibility. Severe individual losses limit compensation by consensus gains; all scores use one global tanh scale. Source hashes, residue mapping, mutation identities and complete IDs verified. Every mutated site has homolog evidence; 28 other WT positions lack evidence. Broad Neff is 560; neighborhood contains 938 unique homologs. No outcomes, structures or separate fixed partners were supplied. Natural co-occurrence is not validated assay epistas",
+        "file": "results/his7/msa_tools/call_00/events.jsonl",
+        "line": 36
+      },
+      "event_files_inspected": [
+        "results/his7/msa_tools/call_00/events.jsonl"
+      ],
+      "malformed_event_lines": 0,
+      "interpretation": "Only archived text/command observations. Source references do not establish execution; commands do not establish that outputs determined final scores. Native summaries are self-reports, not mechanism validation."
+    },
+    {
+      "case_id": "his7",
+      "arm": "structure_tools",
+      "generated_or_modified_source_files": [
+        {
+          "file": "results/his7/structure_tools/workspace/model_rationale.md",
+          "sha256": "dc2e07fe25a0d92b1a04f9e43531f7bb07239396daefa6a8f747bd5be005eadc",
+          "kind": "native_generated_source"
+        },
+        {
+          "file": "results/his7/structure_tools/workspace/predict.py",
+          "sha256": "b01057ac342ec268b7c9229b0ab0312b36b489285af67be9add86bf088e1b0df",
+          "kind": "native_generated_source"
+        },
+        {
+          "file": "results/his7/structure_tools/workspace/refine.py",
+          "sha256": "032c913c09f8b5a9e7b55a32a01d45e2ed6884c731386e8caf810b22b658515e",
+          "kind": "native_generated_source"
+        }
+      ],
+      "source_references": {
+        "structure_reference": [
+          {
+            "kind": "source_text_reference",
+            "file": "results/his7/structure_tools/workspace/model_rationale.md",
+            "line": 9,
+            "text": "- pLDDT is used only as a geometry reliability weight. RSA above 1 is preserved in source evidence; exposure is bounded only inside the heuristic weighting. Missing geometry would "
+          }
+        ],
+        "evolutionary_log_ratio": [
+          {
+            "kind": "source_text_reference",
+            "file": "results/his7/structure_tools/workspace/model_rationale.md",
+            "line": 3,
+            "text": "- There are no support measurements, target outcomes, or permitted MSA observations. Candidate repetition is not treated as homolog frequency. Scores are heuristic priorities, not "
+          }
+        ],
+        "sequence_chemistry": [
+          {
+            "kind": "source_text_reference",
+            "file": "results/his7/structure_tools/workspace/model_rationale.md",
+            "line": 5,
+            "text": "- One substantive refinement (refine.py) adds generic BLOSUM62 similarity, observed WT polar contacts/backbone donor contacts, and distinguishes exposed from buried proline/glycine"
+          }
+        ]
+      },
+      "native_command_references": {
+        "msa_reference": [
+          {
+            "kind": "native_command_reference",
+            "file": "results/his7/structure_tools/call_00/events.jsonl",
+            "line": 6,
+            "text": "/bin/zsh -lc \"pwd && rg --files -g '\"'!*.pdb'\"' -g '\"'!*.a3m'\"' -g '\"'!*.fasta'\"' -g '\"'!*.fa'\"' -g '\"'!*.sto'\"' -g '\"'!*.cif'\"'\"",
+            "exit_code": 0,
+            "status": "completed"
+          }
+        ],
+        "structure_reference": [
+          {
+            "kind": "native_command_reference",
+            "file": "results/his7/structure_tools/call_00/events.jsonl",
+            "line": 6,
+            "text": "/bin/zsh -lc \"pwd && rg --files -g '\"'!*.pdb'\"' -g '\"'!*.a3m'\"' -g '\"'!*.fasta'\"' -g '\"'!*.fa'\"' -g '\"'!*.sto'\"' -g '\"'!*.cif'\"'\"",
+            "exit_code": 0,
+            "status": "completed"
+          }
+        ],
+        "evolutionary_log_ratio": [
+          {
+            "kind": "native_command_reference",
+            "file": "results/his7/structure_tools/call_00/events.jsonl",
+            "line": 30,
+            "text": "/bin/zsh -lc \"cat > model_rationale.md <<'EOF' Model and audit - There are no support measurements, target outcomes, or permitted MSA observations. Candidate repetition is not treated as homolog frequency. Scores are heuristic priorities, n",
+            "exit_code": 0,
+            "status": "completed"
+          }
+        ],
+        "sequence_chemistry": [
+          {
+            "kind": "native_command_reference",
+            "file": "results/his7/structure_tools/call_00/events.jsonl",
+            "line": 17,
+            "text": "/bin/zsh -lc \"cat > predict.py <<'PY' \\\"\\\"\\\"Zero-shot HIS3 ranking. No outcomes or fitted coefficients are used. Initial checkpoint: conservative substitution and static-WT structural disruption. \\\"\\\"\\\" import json, math, re, hashlib from p",
+            "exit_code": 0,
+            "status": "completed"
+          }
+        ]
+      },
+      "native_reported_method_summary": {
+        "text": "Zero-shot ranking combines generic substitution similarity with WT burial, packing, polar contacts, backbone compatibility and a weak histidine-network prior. All candidates share one scale; higher predicts better growth. Mutation identities, complete ID coverage, source hashes and exact residue mapping were verified; every mutated site has complete observed coordinates. No MSA or assay outcomes are available. Static single-chain geometry omits cofactors and oligomer context, and contact adjustments are unvalidated. Ranking uncertainty is substantial. Checkpoint, prediction programs and refine",
+        "file": "results/his7/structure_tools/call_00/events.jsonl",
+        "line": 31
+      },
+      "event_files_inspected": [
+        "results/his7/structure_tools/call_00/events.jsonl"
+      ],
+      "malformed_event_lines": 0,
+      "interpretation": "Only archived text/command observations. Source references do not establish execution; commands do not establish that outputs determined final scores. Native summaries are self-reports, not mechanism validation."
+    },
+    {
+      "case_id": "his7",
+      "arm": "joint_tools",
+      "generated_or_modified_source_files": [
+        {
+          "file": "results/his7/joint_tools/workspace/build_homolog_prior.py",
+          "sha256": "b6aa823b0045a3d2a1de212bc7555090dbb1fc447d9b99db8a3480b9f6800608",
+          "kind": "native_generated_source"
+        },
+        {
+          "file": "results/his7/joint_tools/workspace/inspect_alignment.py",
+          "sha256": "3c5cbc88a2d0e8eca872b91baf06dfba6ae1ee9c622080dc01309d74dc8bea0b",
+          "kind": "native_generated_source"
+        },
+        {
+          "file": "results/his7/joint_tools/workspace/model_rationale.md",
+          "sha256": "d4f7cef63be865d9ca4cc8251f484d89050d0105ffb2f4cf6e29e3c6ac32f113",
+          "kind": "native_generated_source"
+        },
+        {
+          "file": "results/his7/joint_tools/workspace/predict.py",
+          "sha256": "f2c65978fc8d0d40066930c7302b3b9b9c71c3527d53dc468ce44b14fbadfca1",
+          "kind": "native_generated_source"
+        }
+      ],
+      "source_references": {
+        "msa_reference": [
+          {
+            "kind": "source_text_reference",
+            "file": "results/his7/joint_tools/workspace/inspect_alignment.py",
+            "line": 6,
+            "text": "for line in open('raw_evidence/HIS7_YEAST_full_11-26-2021_b09.a2m'):"
+          }
+        ],
+        "structure_reference": [
+          {
+            "kind": "source_text_reference",
+            "file": "results/his7/joint_tools/workspace/model_rationale.md",
+            "line": 9,
+            "text": "WT RSA, side-chain chemistry, volume changes, and signed backbone angles add modest compatibility penalties. Raw PDB and sequence hashes were verified; the supplied structure parse"
+          }
+        ],
+        "evolutionary_log_ratio": [
+          {
+            "kind": "source_text_reference",
+            "file": "results/his7/joint_tools/workspace/model_rationale.md",
+            "line": 1,
+            "text": "The first checkpoint uses the supplied complete homolog log-frequency-ratio scores on one global scale. It was saved before alignment refinements."
+          }
+        ],
+        "sequence_chemistry": [
+          {
+            "kind": "source_text_reference",
+            "file": "results/his7/joint_tools/workspace/predict.py",
+            "line": 56,
+            "text": "CHARGE={a:float(a in 'KR')-float(a in 'DE') for a in AA}"
+          }
+        ]
+      },
+      "native_command_references": {
+        "msa_reference": [
+          {
+            "kind": "native_command_reference",
+            "file": "results/his7/joint_tools/call_00/events.jsonl",
+            "line": 6,
+            "text": "/bin/zsh -lc \"pwd && rg --files -g '\"'!*.pdb'\"' -g '\"'!*.a3m'\"' -g '\"'!*.fasta'\"' -g '\"'!*.cif'\"' -g '\"'!*.fa'\"'\"",
+            "exit_code": 0,
+            "status": "completed"
+          }
+        ],
+        "structure_reference": [
+          {
+            "kind": "native_command_reference",
+            "file": "results/his7/joint_tools/call_00/events.jsonl",
+            "line": 6,
+            "text": "/bin/zsh -lc \"pwd && rg --files -g '\"'!*.pdb'\"' -g '\"'!*.a3m'\"' -g '\"'!*.fasta'\"' -g '\"'!*.cif'\"' -g '\"'!*.fa'\"'\"",
+            "exit_code": 0,
+            "status": "completed"
+          }
+        ],
+        "evolutionary_log_ratio": [
+          {
+            "kind": "native_command_reference",
+            "file": "results/his7/joint_tools/call_00/events.jsonl",
+            "line": 12,
+            "text": "/bin/zsh -lc \"python - <<'PY' import json,os,collections c=json.load(open('case.json'));m=json.load(open('msa_evidence.json'));s=json.load(open('structure_evidence.json')) print('EVIDENCE METADATA',c['evidence']['source_metadata']);print('I",
+            "exit_code": 0,
+            "status": "completed"
+          }
+        ],
+        "sequence_chemistry": [
+          {
+            "kind": "native_command_reference",
+            "file": "results/his7/joint_tools/call_00/events.jsonl",
+            "line": 38,
+            "text": "/bin/zsh -lc \"cat >> predict.py <<'PY' # All constants below are fixed prior assumptions, never fitted to assay outcomes. AA='ACDEFGHIKLMNPQRSTVWY' AAMAP={a:i for i,a in enumerate(AA)} # Approximate side-chain/residue volume and Kyte-Doolit",
+            "exit_code": 0,
+            "status": "completed"
+          }
+        ]
+      },
+      "native_reported_method_summary": {
+        "text": "Unsupervised growth ranking blends supplied homolog log-frequency ratios, a diversity-weighted yeast-like homolog prior, shrunk natural contact-context corrections, and modest WT burial/backbone penalties. Hashes, residue mapping and mutation identities were verified; every mutated site has homolog and coordinate coverage. Unaligned sites were treated as absent evidence. All scores use one global tanh scale, higher better. No measured outcomes or catalytic/oligomeric context were supplied; assay accuracy and epistasis remain uncertain. Checkpoint, predictor and rationale are saved.",
+        "file": "results/his7/joint_tools/call_00/events.jsonl",
+        "line": 46
+      },
+      "event_files_inspected": [
+        "results/his7/joint_tools/call_00/events.jsonl"
+      ],
+      "malformed_event_lines": 0,
+      "interpretation": "Only archived text/command observations. Source references do not establish execution; commands do not establish that outputs determined final scores. Native summaries are self-reports, not mechanism validation."
+    },
+    {
+      "case_id": "yap_peptide",
+      "arm": "basic",
+      "generated_or_modified_source_files": [
+        {
+          "file": "results/yap_peptide/basic/workspace/model_rationale.md",
+          "sha256": "5012c62f628538e2aabd8ebcfa4487f75af621884197209cc03eaf1f557086eb",
+          "kind": "native_generated_source"
+        },
+        {
+          "file": "results/yap_peptide/basic/workspace/predict.py",
+          "sha256": "9f0e5837ff0e88e78f4b78f4ab54c5b0f9a9fe55dd1ffafde33d3c21b6c47a1e",
+          "kind": "native_generated_source"
+        }
+      ],
+      "source_references": {
+        "sequence_chemistry": [
+          {
+            "kind": "source_text_reference",
+            "file": "results/yap_peptide/basic/workspace/model_rationale.md",
+            "line": 6,
+            "text": "- Include Q22/R23 in the approximate second-strand region and distinguish the H28/I29 recognition loop from canonical strand positions. This repairs an omitted backbone proline pen"
+          }
+        ]
+      },
+      "native_command_references": {
+        "msa_reference": [
+          {
+            "kind": "native_command_reference",
+            "file": "results/yap_peptide/basic/call_00/events.jsonl",
+            "line": 6,
+            "text": "/bin/zsh -lc \"pwd && rg --files -g '\"'!*.a3m'\"' -g '\"'!*.fasta'\"' -g '\"'!*.pdb'\"' -g '\"'!*.cif'\"'\"",
+            "exit_code": 0,
+            "status": "completed"
+          }
+        ],
+        "structure_reference": [
+          {
+            "kind": "native_command_reference",
+            "file": "results/yap_peptide/basic/call_00/events.jsonl",
+            "line": 6,
+            "text": "/bin/zsh -lc \"pwd && rg --files -g '\"'!*.a3m'\"' -g '\"'!*.fasta'\"' -g '\"'!*.pdb'\"' -g '\"'!*.cif'\"'\"",
+            "exit_code": 0,
+            "status": "completed"
+          }
+        ],
+        "sequence_chemistry": [
+          {
+            "kind": "native_command_reference",
+            "file": "results/yap_peptide/basic/call_00/events.jsonl",
+            "line": 13,
+            "text": "/bin/zsh -lc \"cat > predict.py <<'PY' \\\"\\\"\\\"Sequence-only YAP WW / fixed PPxY partner ranking prior; no outcome fitting.\\\"\\\"\\\" import json, math, re, hashlib from pathlib import Path import numpy as np ROOT = Path(__file__).resolve().parent",
+            "exit_code": 0,
+            "status": "completed"
+          }
+        ]
+      },
+      "native_reported_method_summary": {
+        "text": "Unsupervised sequence-only YAP WW-domain prior combining substitution compatibility, core/strand and turn stability, and PPxY-binding chemistry with fixed partner GTPPPPYTVG. Folding effects average three WT-stability assumptions; all scores share one monotonic scale, higher is better. All 250 mutation identities, sequences and partners were verified; input hashes are saved. No measurements, MSA or structure are available. Scores have substantial uncertainty, especially for multi-mutants; neither assay calibration nor validated epistasis is claimed.",
+        "file": "results/yap_peptide/basic/call_00/events.jsonl",
+        "line": 21
+      },
+      "event_files_inspected": [
+        "results/yap_peptide/basic/call_00/events.jsonl"
+      ],
+      "malformed_event_lines": 0,
+      "interpretation": "Only archived text/command observations. Source references do not establish execution; commands do not establish that outputs determined final scores. Native summaries are self-reports, not mechanism validation."
+    },
+    {
+      "case_id": "yap_peptide",
+      "arm": "msa_tools",
+      "generated_or_modified_source_files": [
+        {
+          "file": "results/yap_peptide/msa_tools/workspace/model_rationale.md",
+          "sha256": "2a142a51e109548a710cf5af6992c94c7f2823339fce8c1e9ff168856fc2c1a4",
+          "kind": "native_generated_source"
+        },
+        {
+          "file": "results/yap_peptide/msa_tools/workspace/predict_variants.py",
+          "sha256": "a6a35586b96c2f5d7ff1958eb5da9dfd3ee9c9ccdb8036f983eb94d385c5591d",
+          "kind": "native_generated_source"
+        }
+      ],
+      "source_references": {
+        "msa_reference": [
+          {
+            "kind": "source_text_reference",
+            "file": "results/yap_peptide/msa_tools/workspace/predict_variants.py",
+            "line": 4,
+            "text": "import msa_tools"
+          }
+        ],
+        "structure_reference": [
+          {
+            "kind": "source_text_reference",
+            "file": "results/yap_peptide/msa_tools/workspace/model_rationale.md",
+            "line": 7,
+            "text": "GTPPPPYTVG. No coordinate evidence is supplied, so no contacts, RSA, relaxation,"
+          }
+        ],
+        "evolutionary_log_ratio": [
+          {
+            "kind": "source_text_reference",
+            "file": "results/yap_peptide/msa_tools/workspace/model_rationale.md",
+            "line": 3,
+            "text": "The initial checkpoint uses the complete sum of supplied marginal log frequency"
+          }
+        ],
+        "sequence_chemistry": [
+          {
+            "kind": "source_text_reference",
+            "file": "results/yap_peptide/msa_tools/workspace/model_rationale.md",
+            "line": 13,
+            "text": "and proline/glycine residues. Natural selection acts on more than binding to this"
+          }
+        ]
+      },
+      "native_command_references": {
+        "msa_reference": [
+          {
+            "kind": "native_command_reference",
+            "file": "results/yap_peptide/msa_tools/call_00/events.jsonl",
+            "line": 6,
+            "text": "/bin/zsh -lc \"pwd; rg --files -g '\"'!*.a3m'\"' -g '\"'!*.fasta'\"' -g '\"'!*.pdb'\"' -g '\"'!*.cif'\"' -g '\"'!*.sto'\"'\"",
+            "exit_code": 0,
+            "status": "completed"
+          }
+        ],
+        "structure_reference": [
+          {
+            "kind": "native_command_reference",
+            "file": "results/yap_peptide/msa_tools/call_00/events.jsonl",
+            "line": 6,
+            "text": "/bin/zsh -lc \"pwd; rg --files -g '\"'!*.a3m'\"' -g '\"'!*.fasta'\"' -g '\"'!*.pdb'\"' -g '\"'!*.cif'\"' -g '\"'!*.sto'\"'\"",
+            "exit_code": 0,
+            "status": "completed"
+          }
+        ],
+        "evolutionary_log_ratio": [
+          {
+            "kind": "native_command_reference",
+            "file": "results/yap_peptide/msa_tools/call_00/events.jsonl",
+            "line": 10,
+            "text": "/bin/zsh -lc \"python - <<'PY' import json,collections c=json.load(open('case.json'));e=json.load(open('msa_evidence.json')) print('QUERY EXAMPLES',c['query'][:2]);print('CASE EVIDENCE keys',c['evidence'].keys()) for k,v in c['evidence'].ite",
+            "exit_code": 0,
+            "status": "completed"
+          }
+        ],
+        "sequence_chemistry": [
+          {
+            "kind": "native_command_reference",
+            "file": "results/yap_peptide/msa_tools/call_00/events.jsonl",
+            "line": 22,
+            "text": "/bin/zsh -lc \"cat > model_rationale.md <<'EOF' # Scientific model and revision record The initial checkpoint uses the complete sum of supplied marginal log frequency ratios. All 250 candidates have coverage 1.0; neither a partial sum nor a ",
+            "exit_code": 0,
+            "status": "completed"
+          }
+        ]
+      },
+      "native_reported_method_summary": {
+        "text": "Unsupervised ranking combines complete MSA log-frequency ratios with modest WW-domain biochemical priors for core integrity, turns and peptide recognition. One global monotone scale; higher is better. Verified all 250 mutation identities, source hashes, raw-MSA residue mapping and fixed peptide GTPPPPYTVG. No missing evolutionary terms; unweighted homolog depth is not Neff. Checkpoint, predictor and revision rationale saved. No structures or assay outcomes: scores are uncalibrated, conservation imperfectly predicts binding, and stability/affinity tradeoffs and epistasis remain uncertain.",
+        "file": "results/yap_peptide/msa_tools/call_00/events.jsonl",
+        "line": 25
+      },
+      "event_files_inspected": [
+        "results/yap_peptide/msa_tools/call_00/events.jsonl"
+      ],
+      "malformed_event_lines": 0,
+      "interpretation": "Only archived text/command observations. Source references do not establish execution; commands do not establish that outputs determined final scores. Native summaries are self-reports, not mechanism validation."
+    },
+    {
+      "case_id": "yap_peptide",
+      "arm": "structure_tools",
+      "generated_or_modified_source_files": [
+        {
+          "file": "results/yap_peptide/structure_tools/workspace/predict.py",
+          "sha256": "cc8843940a97a9c4a64edb6805181b1b85647e0974c37a3f23a3849949c4bfe9",
+          "kind": "native_generated_source"
+        },
+        {
+          "file": "results/yap_peptide/structure_tools/workspace/predict_baseline.py",
+          "sha256": "81778ba8e77ad1aba07c86b48b1b6238a096671e8909427f1b20a69c5cbd1434",
+          "kind": "native_generated_source"
+        }
+      ],
+      "source_references": {
+        "structure_reference": [
+          {
+            "kind": "source_text_reference",
+            "file": "results/yap_peptide/structure_tools/workspace/predict.py",
+            "line": 14,
+            "text": "import structure_tools as st"
+          }
+        ],
+        "sequence_chemistry": [
+          {
+            "kind": "source_text_reference",
+            "file": "results/yap_peptide/structure_tools/workspace/predict.py",
+            "line": 157,
+            "text": "fold -= 0.45  # conserved C-terminal WW proline cap"
+          }
+        ]
+      },
+      "native_command_references": {
+        "msa_reference": [
+          {
+            "kind": "native_command_reference",
+            "file": "results/yap_peptide/structure_tools/call_00/events.jsonl",
+            "line": 6,
+            "text": "/bin/zsh -lc \"pwd; rg --files -g '\"'!*.a3m'\"' -g '\"'!*.fasta'\"' -g '\"'!*.pdb'\"' -g '\"'!*.cif'\"'\"",
+            "exit_code": 0,
+            "status": "completed"
+          }
+        ],
+        "structure_reference": [
+          {
+            "kind": "native_command_reference",
+            "file": "results/yap_peptide/structure_tools/call_00/events.jsonl",
+            "line": 6,
+            "text": "/bin/zsh -lc \"pwd; rg --files -g '\"'!*.a3m'\"' -g '\"'!*.fasta'\"' -g '\"'!*.pdb'\"' -g '\"'!*.cif'\"'\"",
+            "exit_code": 0,
+            "status": "completed"
+          }
+        ]
+      },
+      "native_reported_method_summary": {
+        "text": "Unsupervised WW-domain prior combines substitution chemistry, WT burial/backbone constraints and aromatic preservation, with separate saturating folding and fixed-peptide recognition terms. Source/reference hashes and exact A/P mapping verified; raw coordinates cover all residues and standard heavy atoms. No MSA or assay outcomes; missing summary fields remain absent. All scores use one global monotone scale, higher is better. Rankings are uncertain: static modeled WT geometry cannot establish mutant relaxation, assay calibration or epistasis. Checkpoint and prediction programs saved.",
+        "file": "results/yap_peptide/structure_tools/call_00/events.jsonl",
+        "line": 41
+      },
+      "event_files_inspected": [
+        "results/yap_peptide/structure_tools/call_00/events.jsonl"
+      ],
+      "malformed_event_lines": 0,
+      "interpretation": "Only archived text/command observations. Source references do not establish execution; commands do not establish that outputs determined final scores. Native summaries are self-reports, not mechanism validation."
+    },
+    {
+      "case_id": "yap_peptide",
+      "arm": "joint_tools",
+      "generated_or_modified_source_files": [
+        {
+          "file": "results/yap_peptide/joint_tools/workspace/inspect_raw.py",
+          "sha256": "aff3376f246977cbcf9e2be80c9fefc625236846bddb312116057bb095767cd9",
+          "kind": "native_generated_source"
+        },
+        {
+          "file": "results/yap_peptide/joint_tools/workspace/model_rationale.md",
+          "sha256": "98a663f29bf56de3f54552c7aa2ebcb1331899a0ba7bdad539d7975e91f47ddd",
+          "kind": "native_generated_source"
+        },
+        {
+          "file": "results/yap_peptide/joint_tools/workspace/predict.py",
+          "sha256": "4e247c422e806fe01ef785f72df10cd244fe447731704b50a32f1d1e39c7a528",
+          "kind": "native_generated_source"
+        }
+      ],
+      "source_references": {
+        "msa_reference": [
+          {
+            "kind": "source_text_reference",
+            "file": "results/yap_peptide/joint_tools/workspace/inspect_raw.py",
+            "line": 6,
+            "text": "for line in next(Path('raw_evidence').glob('*.a3m')).read_text().splitlines():"
+          }
+        ],
+        "structure_reference": [
+          {
+            "kind": "source_text_reference",
+            "file": "results/yap_peptide/joint_tools/workspace/model_rationale.md",
+            "line": 8,
+            "text": "All weights were fixed by these general scientific assumptions; no search or fit to assay outcomes. The additive model does not claim to estimate epistasis. Neighborhood weight tot"
+          }
+        ],
+        "evolutionary_log_ratio": [
+          {
+            "kind": "source_text_reference",
+            "file": "results/yap_peptide/joint_tools/workspace/model_rationale.md",
+            "line": 1,
+            "text": "Initial checkpoint: summed complete supplied independent-site MSA log-frequency ratios; global tanh transform. No outcomes or support examples."
+          }
+        ],
+        "sequence_chemistry": [
+          {
+            "kind": "source_text_reference",
+            "file": "results/yap_peptide/joint_tools/workspace/model_rationale.md",
+            "line": 6,
+            "text": "- WT G12 has positive phi, making some non-Gly substitutions structurally difficult. Q31 also has positive phi, making Q31P particularly suspect. Proline introduction can remove a "
+          }
+        ]
+      },
+      "native_command_references": {
+        "msa_reference": [
+          {
+            "kind": "native_command_reference",
+            "file": "results/yap_peptide/joint_tools/call_00/events.jsonl",
+            "line": 6,
+            "text": "/bin/zsh -lc \"pwd && rg --files -g '\"'!*.pdb'\"' -g '\"'!*.a3m'\"' -g '\"'!*.fasta'\"' -g '\"'!*.fa'\"' -g '\"'!*.cif'\"'\"",
+            "exit_code": 0,
+            "status": "completed"
+          }
+        ],
+        "structure_reference": [
+          {
+            "kind": "native_command_reference",
+            "file": "results/yap_peptide/joint_tools/call_00/events.jsonl",
+            "line": 6,
+            "text": "/bin/zsh -lc \"pwd && rg --files -g '\"'!*.pdb'\"' -g '\"'!*.a3m'\"' -g '\"'!*.fasta'\"' -g '\"'!*.fa'\"' -g '\"'!*.cif'\"'\"",
+            "exit_code": 0,
+            "status": "completed"
+          }
+        ],
+        "evolutionary_log_ratio": [
+          {
+            "kind": "native_command_reference",
+            "file": "results/yap_peptide/joint_tools/call_00/events.jsonl",
+            "line": 14,
+            "text": "/bin/zsh -lc \"cat > predict.py <<'PY' \\\"\\\"\\\"Label-free relative binding predictor; checkpoint baseline plus documented refinement.\\\"\\\"\\\" import json, math, re, hashlib from pathlib import Path import numpy as np import msa_tools ROOT=Path(_",
+            "exit_code": 0,
+            "status": "completed"
+          }
+        ],
+        "sequence_chemistry": [
+          {
+            "kind": "native_command_reference",
+            "file": "results/yap_peptide/joint_tools/call_00/events.jsonl",
+            "line": 36,
+            "text": "/bin/zsh -lc \"cat >> predict.py <<'PY' # The supplemental raw profile is kept distinct from the unchanged supplied # frequencies and the fixed msa_tools scores. No assay labels enter this model. AA='ACDEFGHIKLMNPQRSTVWY' VOLUME=dict(zip(AA,",
+            "exit_code": 0,
+            "status": "completed"
+          }
+        ]
+      },
+      "native_reported_method_summary": {
+        "text": "Unsupervised additive ranking blends complete supplied homolog log-frequency ratios with a modest redundancy-weighted PPXY-class raw-MSA profile, tempered by WT exposure, backbone constraints and contacts with fixed peptide P. Source hashes, residue mapping, mutation identities, partners and complete evidence coverage were verified. All scores share one global tanh scale centered on the panel median; higher predicts better binding. No assay outcomes were used: scores are uncalibrated, conservation and WT geometry are imperfect priors, effective homolog independence is unknown, and mutant relax",
+        "file": "results/yap_peptide/joint_tools/call_00/events.jsonl",
+        "line": 42
+      },
+      "event_files_inspected": [
+        "results/yap_peptide/joint_tools/call_00/events.jsonl"
+      ],
+      "malformed_event_lines": 0,
+      "interpretation": "Only archived text/command observations. Source references do not establish execution; commands do not establish that outputs determined final scores. Native summaries are self-reports, not mechanism validation."
+    },
+    {
+      "case_id": "bh3_mcl1",
+      "arm": "basic",
+      "generated_or_modified_source_files": [
+        {
+          "file": "results/bh3_mcl1/basic/workspace/MODEL_NOTES.md",
+          "sha256": "b590ebb44b2f7ed63f655818f780f47727101cd774a94535c006f847f021b7fc",
+          "kind": "native_generated_source"
+        },
+        {
+          "file": "results/bh3_mcl1/basic/workspace/predict.py",
+          "sha256": "51f775ff4b3327c3734b60d9ddf54547696bf89f6c002b6bcc16d35240f2c0a7",
+          "kind": "native_generated_source"
+        }
+      ],
+      "source_references": {
+        "sequence_chemistry": [
+          {
+            "kind": "source_text_reference",
+            "file": "results/bh3_mcl1/basic/workspace/MODEL_NOTES.md",
+            "line": 5,
+            "text": "The predictor uses manually specified, approximate binding penalties for the four hydrophobic BH3 anchors C6, C10, C13 and C17, allowing Mcl-1-compatible hydrophobic alternatives. "
+          }
+        ]
+      },
+      "native_command_references": {
+        "msa_reference": [
+          {
+            "kind": "native_command_reference",
+            "file": "results/bh3_mcl1/basic/call_00/events.jsonl",
+            "line": 6,
+            "text": "/bin/zsh -lc \"pwd && rg --files -g '\"'!*.a3m'\"' -g '\"'!*.fasta'\"' -g '\"'!*.pdb'\"' -g '\"'!*.cif'\"' -g '\"'!*.sto'\"' -g '\"'!*.aln'\"'\"",
+            "exit_code": 0,
+            "status": "completed"
+          }
+        ],
+        "structure_reference": [
+          {
+            "kind": "native_command_reference",
+            "file": "results/bh3_mcl1/basic/call_00/events.jsonl",
+            "line": 6,
+            "text": "/bin/zsh -lc \"pwd && rg --files -g '\"'!*.a3m'\"' -g '\"'!*.fasta'\"' -g '\"'!*.pdb'\"' -g '\"'!*.cif'\"' -g '\"'!*.sto'\"' -g '\"'!*.aln'\"'\"",
+            "exit_code": 0,
+            "status": "completed"
+          }
+        ],
+        "sequence_chemistry": [
+          {
+            "kind": "native_command_reference",
+            "file": "results/bh3_mcl1/basic/call_00/events.jsonl",
+            "line": 13,
+            "text": "/bin/zsh -lc \"cat > predict.py <<'PY' \\\"\\\"\\\"Unsupervised, assay-directed BH3/Mcl-1 ranking. No fitted outcome data.\\\"\\\"\\\" import json, math, re, hashlib from collections import Counter from pathlib import Path AA=set('ACDEFGHIKLMNPQRSTVWY')",
+            "exit_code": 0,
+            "status": "completed"
+          }
+        ]
+      },
+      "native_reported_method_summary": {
+        "text": "Unsupervised BH3/Mcl-1 binding model combines position-specific hydrophobic-anchor compatibility, conserved Asp-contact penalties, and modest helix/steric effects. Mutation identities and the unchanged Mcl-1 partner were validated; unknown partner residues remain unimputed. Scores use one global monotonic scale, with higher predicting better binding. No measured supports, MSA or coordinates were supplied. Close rankings and multi-mutant effects have substantial uncertainty; scores are not calibrated assay values.",
+        "file": "results/bh3_mcl1/basic/call_00/events.jsonl",
+        "line": 21
+      },
+      "event_files_inspected": [
+        "results/bh3_mcl1/basic/call_00/events.jsonl"
+      ],
+      "malformed_event_lines": 0,
+      "interpretation": "Only archived text/command observations. Source references do not establish execution; commands do not establish that outputs determined final scores. Native summaries are self-reports, not mechanism validation."
+    },
+    {
+      "case_id": "bh3_mcl1",
+      "arm": "msa_tools",
+      "generated_or_modified_source_files": [
+        {
+          "file": "results/bh3_mcl1/msa_tools/workspace/model_rationale.md",
+          "sha256": "d10fd4ae72f16eebb35b46e0775cd6eb8add72615114de2c421ebed2a21c7f50",
+          "kind": "native_generated_source"
+        },
+        {
+          "file": "results/bh3_mcl1/msa_tools/workspace/predict_variants.py",
+          "sha256": "c71d1b6b17f111d91bf977aee84b90e2ab95a767eb6333834256b8ecb0253ffc",
+          "kind": "native_generated_source"
+        }
+      ],
+      "source_references": {
+        "msa_reference": [
+          {
+            "kind": "source_text_reference",
+            "file": "results/bh3_mcl1/msa_tools/workspace/model_rationale.md",
+            "line": 4,
+            "text": "msa_tools.score_case reproduces the supplied sidecar exactly. All candidate"
+          }
+        ],
+        "evolutionary_log_ratio": [
+          {
+            "kind": "source_text_reference",
+            "file": "results/bh3_mcl1/msa_tools/workspace/model_rationale.md",
+            "line": 1,
+            "text": "The first checkpoint uses the supplied complete additive MSA log-frequency"
+          }
+        ],
+        "sequence_chemistry": [
+          {
+            "kind": "source_text_reference",
+            "file": "results/bh3_mcl1/msa_tools/workspace/model_rationale.md",
+            "line": 9,
+            "text": "the reference is a BH3 helix with hydrophobic anchors I6/L10/I13/F17 and conserved"
+          }
+        ]
+      },
+      "native_command_references": {
+        "msa_reference": [
+          {
+            "kind": "native_command_reference",
+            "file": "results/bh3_mcl1/msa_tools/call_00/events.jsonl",
+            "line": 6,
+            "text": "/bin/zsh -lc \"pwd; rg --files -g 'AGENTS.md' -g 'case.json' -g 'evidence_manifest.json' -g '*evidence*.json' -g '*.py' -g '*.pdb' -g '*.a3m' -g '*.fasta' -g '*.fa'\"",
+            "exit_code": 0,
+            "status": "completed"
+          }
+        ],
+        "structure_reference": [
+          {
+            "kind": "native_command_reference",
+            "file": "results/bh3_mcl1/msa_tools/call_00/events.jsonl",
+            "line": 6,
+            "text": "/bin/zsh -lc \"pwd; rg --files -g 'AGENTS.md' -g 'case.json' -g 'evidence_manifest.json' -g '*evidence*.json' -g '*.py' -g '*.pdb' -g '*.a3m' -g '*.fasta' -g '*.fa'\"",
+            "exit_code": 0,
+            "status": "completed"
+          }
+        ],
+        "evolutionary_log_ratio": [
+          {
+            "kind": "native_command_reference",
+            "file": "results/bh3_mcl1/msa_tools/call_00/events.jsonl",
+            "line": 19,
+            "text": "/bin/zsh -lc \"python - <<'PY' from pathlib import Path import json,collections,numpy as np p=next(Path('raw_evidence').glob('*.a3m')); lines=p.read_text().splitlines() rows=[];headers=[] for l in lines: if l.startswith('>'): headers.append(",
+            "exit_code": 0,
+            "status": "completed"
+          }
+        ]
+      },
+      "native_reported_method_summary": {
+        "text": "Additive BH3–Mcl-1 binding prior combining hydrophobic anchors, conserved Asp15, side-chain size/charge, helix propensity and downweighted natural-homolog log-frequency ratios. Fixed partner A retained; hashes, mutations and residue mapping verified. All queried substitutions have homolog coverage; zero-depth flanks excluded, Neff unknown. One global scale; higher is better. Checkpoint and predictor saved. No assay calibration or structure evidence; partner-specific tolerance and epistasis remain uncertain.",
+        "file": "results/bh3_mcl1/msa_tools/call_00/events.jsonl",
+        "line": 29
+      },
+      "event_files_inspected": [
+        "results/bh3_mcl1/msa_tools/call_00/events.jsonl"
+      ],
+      "malformed_event_lines": 0,
+      "interpretation": "Only archived text/command observations. Source references do not establish execution; commands do not establish that outputs determined final scores. Native summaries are self-reports, not mechanism validation."
+    },
+    {
+      "case_id": "bh3_mcl1",
+      "arm": "structure_tools",
+      "generated_or_modified_source_files": [
+        {
+          "file": "results/bh3_mcl1/structure_tools/workspace/inspect_geometry.py",
+          "sha256": "24bf189edb8d2e01ed895089f75a57f2db0e67662efe4aafb6fe23b229710a85",
+          "kind": "native_generated_source"
+        },
+        {
+          "file": "results/bh3_mcl1/structure_tools/workspace/model_rationale.md",
+          "sha256": "5a2c744965a0f6189bbfabb4a99a3f55950a4d3fed8997ac34c220bf0b628de7",
+          "kind": "native_generated_source"
+        },
+        {
+          "file": "results/bh3_mcl1/structure_tools/workspace/predict.py",
+          "sha256": "7894fdc5ada2e15546cf9f478557c541f8cd3f2cfc1900afca51953437aa6801",
+          "kind": "native_generated_source"
+        }
+      ],
+      "source_references": {
+        "structure_reference": [
+          {
+            "kind": "source_text_reference",
+            "file": "results/bh3_mcl1/structure_tools/workspace/inspect_geometry.py",
+            "line": 4,
+            "text": "import structure_tools as st"
+          }
+        ],
+        "sequence_chemistry": [
+          {
+            "kind": "source_text_reference",
+            "file": "results/bh3_mcl1/structure_tools/workspace/inspect_geometry.py",
+            "line": 16,
+            "text": "print(p,aa,'nearest Mcl1 charge-centers to CB',[(round(d,2),a,n) for d,a,n in nearest])"
+          }
+        ]
+      },
+      "native_command_references": {
+        "msa_reference": [
+          {
+            "kind": "native_command_reference",
+            "file": "results/bh3_mcl1/structure_tools/call_00/events.jsonl",
+            "line": 6,
+            "text": "/bin/zsh -lc \"pwd; rg --files -g '\"'!*.pdb'\"' -g '\"'!*.fasta'\"' -g '\"'!*.a3m'\"' -g '\"'!*.cif'\"' -g '\"'!*.fa'\"'\"",
+            "exit_code": 0,
+            "status": "completed"
+          }
+        ],
+        "structure_reference": [
+          {
+            "kind": "native_command_reference",
+            "file": "results/bh3_mcl1/structure_tools/call_00/events.jsonl",
+            "line": 6,
+            "text": "/bin/zsh -lc \"pwd; rg --files -g '\"'!*.pdb'\"' -g '\"'!*.fasta'\"' -g '\"'!*.a3m'\"' -g '\"'!*.cif'\"' -g '\"'!*.fa'\"'\"",
+            "exit_code": 0,
+            "status": "completed"
+          }
+        ],
+        "sequence_chemistry": [
+          {
+            "kind": "native_command_reference",
+            "file": "results/bh3_mcl1/structure_tools/call_00/events.jsonl",
+            "line": 17,
+            "text": "/bin/zsh -lc \"cat > predict.py <<'PY' \\\"\\\"\\\"Unsupervised BH3/Mcl-1 prioritization; no assay labels or fitted parameters. Initial checkpoint: conservative physicochemical effects at observed WT interface. \\\"\\\"\\\" import json, re, math, hashli",
+            "exit_code": 0,
+            "status": "completed"
+          }
+        ]
+      },
+      "native_reported_method_summary": {
+        "text": "Unsupervised BH3/Mcl-1 binding heuristic combining WT interface burial, hydrophobic packing, possible polar compensation, conserved Asp–Arg contact, glycine-pocket sterics and helix propensity, with Mcl-1 fixed. Source/reference hashes, mutation identities and residue mapping verified; peptide coverage is 23/23, while partner X25–31 remain unobserved. No MSA or measured outcomes. Static WT geometry, mutant relaxation and unvalidated epistasis create substantial uncertainty. All candidates share one global monotonic scale; higher scores indicate better predicted performance, not calibrated affi",
+        "file": "results/bh3_mcl1/structure_tools/call_00/events.jsonl",
+        "line": 38
+      },
+      "event_files_inspected": [
+        "results/bh3_mcl1/structure_tools/call_00/events.jsonl"
+      ],
+      "malformed_event_lines": 0,
+      "interpretation": "Only archived text/command observations. Source references do not establish execution; commands do not establish that outputs determined final scores. Native summaries are self-reports, not mechanism validation."
+    },
+    {
+      "case_id": "bh3_mcl1",
+      "arm": "joint_tools",
+      "generated_or_modified_source_files": [
+        {
+          "file": "results/bh3_mcl1/joint_tools/workspace/model_rationale.md",
+          "sha256": "190fe18e7e00e3f4088d1c38fcfeb510c033f3892f89f1740e6ffdc24b653290",
+          "kind": "native_generated_source"
+        },
+        {
+          "file": "results/bh3_mcl1/joint_tools/workspace/predict.py",
+          "sha256": "55d80294ab33c2c2f1cd4913503d565ce1830e865c6184bf9a3075a1309dc7f1",
+          "kind": "native_generated_source"
+        }
+      ],
+      "source_references": {
+        "msa_reference": [
+          {
+            "kind": "source_text_reference",
+            "file": "results/bh3_mcl1/joint_tools/workspace/predict.py",
+            "line": 8,
+            "text": "msa=json.load(open('msa_evidence.json'))"
+          }
+        ],
+        "structure_reference": [
+          {
+            "kind": "source_text_reference",
+            "file": "results/bh3_mcl1/joint_tools/workspace/predict.py",
+            "line": 9,
+            "text": "structure=json.load(open('structure_evidence.json'))"
+          }
+        ],
+        "evolutionary_log_ratio": [
+          {
+            "kind": "source_text_reference",
+            "file": "results/bh3_mcl1/joint_tools/workspace/model_rationale.md",
+            "line": 3,
+            "text": "Checkpoint: supplied complete additive evolutionary log-frequency ratios, with a bound-helix proline penalty."
+          }
+        ],
+        "sequence_chemistry": [
+          {
+            "kind": "source_text_reference",
+            "file": "results/bh3_mcl1/joint_tools/workspace/model_rationale.md",
+            "line": 3,
+            "text": "Checkpoint: supplied complete additive evolutionary log-frequency ratios, with a bound-helix proline penalty."
+          }
+        ]
+      },
+      "native_command_references": {
+        "msa_reference": [
+          {
+            "kind": "native_command_reference",
+            "file": "results/bh3_mcl1/joint_tools/call_00/events.jsonl",
+            "line": 6,
+            "text": "/bin/zsh -lc \"pwd && rg --files -g '\"'!*.a3m'\"' -g '\"'!*.fasta'\"' -g '\"'!*.pdb'\"' -g '\"'!*.cif'\"' -g '\"'!*.sto'\"'\"",
+            "exit_code": 0,
+            "status": "completed"
+          }
+        ],
+        "structure_reference": [
+          {
+            "kind": "native_command_reference",
+            "file": "results/bh3_mcl1/joint_tools/call_00/events.jsonl",
+            "line": 6,
+            "text": "/bin/zsh -lc \"pwd && rg --files -g '\"'!*.a3m'\"' -g '\"'!*.fasta'\"' -g '\"'!*.pdb'\"' -g '\"'!*.cif'\"' -g '\"'!*.sto'\"'\"",
+            "exit_code": 0,
+            "status": "completed"
+          }
+        ],
+        "evolutionary_log_ratio": [
+          {
+            "kind": "native_command_reference",
+            "file": "results/bh3_mcl1/joint_tools/call_00/events.jsonl",
+            "line": 10,
+            "text": "/bin/zsh -lc \"python - <<'PY' import json,collections,os c=json.load(open('case.json'));m=json.load(open('msa_evidence.json'));s=json.load(open('structure_evidence.json')) print('Evidence metadata:',json.dumps(c['evidence']['source_metadata",
+            "exit_code": 0,
+            "status": "completed"
+          }
+        ],
+        "sequence_chemistry": [
+          {
+            "kind": "native_command_reference",
+            "file": "results/bh3_mcl1/joint_tools/call_00/events.jsonl",
+            "line": 12,
+            "text": "/bin/zsh -lc \"cat > predict.py <<'PY' \\\"\\\"\\\"Unsupervised BH3/Mcl-1 ranking; saved checkpoint precedes structural refinement.\\\"\\\"\\\" import json, math, re, hashlib from pathlib import Path def load_inputs(): case=json.load(open('case.json')) ",
+            "exit_code": 0,
+            "status": "completed"
+          }
+        ]
+      },
+      "native_reported_method_summary": {
+        "text": "Unsupervised additive binding model combines a bounded MSA conservation prior with WT Mcl-1 interface packing, hydrophobicity, polar contacts and BH3 helix propensity. Source hashes, residue mapping, mutation identities, unchanged partner A and complete nonzero-depth MSA coverage at all mutated sites were verified; zero-depth flanks and unmapped partner X positions were excluded. One global tanh scale, higher is better. Substantial uncertainty remains: no assay outcomes, relaxed mutant structures or validated epistasis. Predictor, checkpoint and rationale saved.",
+        "file": "results/bh3_mcl1/joint_tools/call_00/events.jsonl",
+        "line": 35
+      },
+      "event_files_inspected": [
+        "results/bh3_mcl1/joint_tools/call_00/events.jsonl"
+      ],
+      "malformed_event_lines": 0,
+      "interpretation": "Only archived text/command observations. Source references do not establish execution; commands do not establish that outputs determined final scores. Native summaries are self-reports, not mechanism validation."
+    }
+  ],
+  "labels_read_by_analysis": false,
+  "model_calls_by_analysis": 0,
+  "checkpoint_selection": false,
+  "native_cost_interpretation": "Known input includes cached input; cached is a subset and is not added again. Missing/unknown usage is not zero total cost. Summed condition/native seconds are overlapping worker durations, not campaign elapsed time.",
+  "limitations": [
+    "Four previously inspected development assays; one native generation per condition, except allowed technical corrections.",
+    "Model sampling seed not independently controlled; no cross-seed stability claim.",
+    "Each modality adds public observations, preprocessing and tools; internal contributions were not individually ablated.",
+    "Host preprocessing/sidecar construction cost is outside native condition wall time.",
+    "Archived source/commands and native explanations do not prove biological correctness or identify the causal mechanism.",
+    "Failures remain missing; no checkpoint or outcome-driven selection.",
+    "Runtime isolation does not exclude public-data pretraining exposure."
+  ],
+  "campaign_elapsed_seconds": 2589.833635
+}

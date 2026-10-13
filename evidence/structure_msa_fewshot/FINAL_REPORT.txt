@@ -1,0 +1,180 @@
+Protein 32-shot comparison (fresh native inference)
+
+case | basic | MSA | structure | joint
+ube4b | 0.3210* | 0.3922 | 0.3662 | 0.4210
+cbx4 | 0.6191 | 0.5691* | 0.5379 | 0.5927
+gfp | 0.6547 | 0.6934 | 0.7028* | 0.7430
+pabp | 0.5803 | 0.6880 | 0.6054 | 0.6281
+kras_abundance | 0.4717* | 0.3664 | 0.5068 | 0.4370
+kras_raf1 | 0.6412 | 0.6396 | 0.6157 | 0.6277
+
+* = one user-authorized40-minute fresh session after timeout or provider-capacity failure. Original failure is preserved.
+Original: 20/24 complete.
+Primary all-arm common cases: pabp, kras_raf1
+Primary macro Spearman: {"basic": 0.6107471387155636, "msa_tools": 0.6637741934358237, "structure_tools": 0.6105790433856813, "joint_tools": 0.6279078161182897}
+Primary delta versus few-shot basic: {"basic": 0.0, "msa_tools": 0.053027054720260036, "structure_tools": -0.0001680953298823784, "joint_tools": 0.017160677402726088}
+Separately marked long-budget-completed macro: {"basic": 0.5479887643004865, "msa_tools": 0.5581123451122104, "structure_tools": 0.5558006561841613, "joint_tools": 0.5749217672793537}
+Completion Top25 overlap: {"basic": 0.35333333333333333, "msa_tools": 0.41333333333333333, "structure_tools": 0.3866666666666667, "joint_tools": 0.35333333333333333}
+Completion few-shot minus prior zero-shot on same complete cases: {"basic": 0.024731395855990573, "msa_tools": -0.02686672719845712, "structure_tools": 0.024152135107499407, "joint_tools": -0.015226285511849022}
+Equal-protein completion macro: {"basic": 0.5462979463329986, "msa_tools": 0.5691321702913391, "structure_tools": 0.5547051929314817, "joint_tools": 0.583434558531505}
+Native sessions total=33; CLI known I/O=10178717; usage unknown in 9 sessions.
+Cost excludes unexposed failed-stream/internal reconnect accounting; not an audited invoice.
+
+One native generation per condition; no controlled model sampling seeds.
+32 measured single-mutant supports; many queries are multiple mutations or include unseen positions.
+Six reused cohorts, five distinct proteins; KRAS has two endpoints.
+Original failures stay missing in primary analysis;40-minute recovery is separately marked. Extra budget means completion is not an equal-time causal comparison.
+Pairwise/available-arm supplements use explicitly different cohorts; do not compare their means across arms.
+Few-shot includes fitted/calibrated program changes; it is not a labels-only prompt ablation.
+No query labels exposed to native agents; this does not rule out pretraining exposure.
+
+Applied fixed-stage few-shot workflow: /Users/hyj/Desktop/Kimi/project/.agents/skills/few-shot-lab-loop/SKILL.md
+No new laboratory feedback rounds; no RNA inference.
+
+Pairwise completion comparisons (each lists its matched cohort):
+{
+  "msa_tools": {
+    "cases": [
+      "ube4b",
+      "cbx4",
+      "gfp",
+      "pabp",
+      "kras_abundance",
+      "kras_raf1"
+    ],
+    "macro_spearman": {
+      "basic": 0.5479887643004865,
+      "msa_tools": 0.5581123451122104
+    },
+    "macro_top25": {
+      "basic": 0.35333333333333333,
+      "msa_tools": 0.41333333333333333
+    },
+    "delta_from_basic": {
+      "basic": 0.0,
+      "msa_tools": 0.010123580811723931
+    },
+    "wins_over_basic": {
+      "msa_tools": 3
+    },
+    "equal_protein_macro": {
+      "basic": 0.5462979463329986,
+      "msa_tools": 0.5691321702913391
+    }
+  },
+  "structure_tools": {
+    "cases": [
+      "ube4b",
+      "cbx4",
+      "gfp",
+      "pabp",
+      "kras_abundance",
+      "kras_raf1"
+    ],
+    "macro_spearman": {
+      "basic": 0.5479887643004865,
+      "structure_tools": 0.5558006561841613
+    },
+    "macro_top25": {
+      "basic": 0.35333333333333333,
+      "structure_tools": 0.3866666666666667
+    },
+    "delta_from_basic": {
+      "basic": 0.0,
+      "structure_tools": 0.007811891883674815
+    },
+    "wins_over_basic": {
+      "structure_tools": 4
+    },
+    "equal_protein_macro": {
+      "basic": 0.5462979463329986,
+      "structure_tools": 0.5547051929314817
+    }
+  },
+  "joint_tools": {
+    "cases": [
+      "ube4b",
+      "cbx4",
+      "gfp",
+      "pabp",
+      "kras_abundance",
+      "kras_raf1"
+    ],
+    "macro_spearman": {
+      "basic": 0.5479887643004865,
+      "joint_tools": 0.5749217672793537
+    },
+    "macro_top25": {
+      "basic": 0.35333333333333333,
+      "joint_tools": 0.35333333333333333
+    },
+    "delta_from_basic": {
+      "basic": 0.0,
+      "joint_tools": 0.02693300297886725
+    },
+    "wins_over_basic": {
+      "joint_tools": 3
+    },
+    "equal_protein_macro": {
+      "basic": 0.5462979463329986,
+      "joint_tools": 0.583434558531505
+    }
+  }
+}
+Few versus zero, available-arm matched comparisons (different cohorts across arms):
+{
+  "basic": {
+    "cases": [
+      "ube4b",
+      "cbx4",
+      "gfp",
+      "pabp",
+      "kras_abundance",
+      "kras_raf1"
+    ],
+    "few_macro": 0.5479887643004865,
+    "zero_macro": 0.523257368444496,
+    "delta": 0.024731395855990573
+  },
+  "msa_tools": {
+    "cases": [
+      "ube4b",
+      "cbx4",
+      "gfp",
+      "pabp",
+      "kras_abundance",
+      "kras_raf1"
+    ],
+    "few_macro": 0.5581123451122104,
+    "zero_macro": 0.5849790723106676,
+    "delta": -0.02686672719845712
+  },
+  "structure_tools": {
+    "cases": [
+      "ube4b",
+      "cbx4",
+      "gfp",
+      "pabp",
+      "kras_abundance",
+      "kras_raf1"
+    ],
+    "few_macro": 0.5558006561841613,
+    "zero_macro": 0.5316485210766618,
+    "delta": 0.024152135107499407
+  },
+  "joint_tools": {
+    "cases": [
+      "ube4b",
+      "cbx4",
+      "gfp",
+      "pabp",
+      "kras_abundance",
+      "kras_raf1"
+    ],
+    "few_macro": 0.5749217672793537,
+    "zero_macro": 0.5901480527912027,
+    "delta": -0.015226285511849022
+  }
+}
+
+Chinese findings and predeclared subgroup evaluation: FINDINGS_ZH.txt; SUBGROUP_AUDIT.json

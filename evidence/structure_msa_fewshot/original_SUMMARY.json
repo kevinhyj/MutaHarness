@@ -1,0 +1,447 @@
+{
+  "status": "scored_after_all_terminal",
+  "protocol_sha256": "a8bd14dc4f143751b7867d5aee03e31e400eb8101a64d6ef9b15c8767af42064",
+  "rows": [
+    {
+      "case_id": "ube4b",
+      "arm": "basic",
+      "status": "failed",
+      "wall_seconds": 61.573,
+      "known_input_plus_output_tokens": 0,
+      "unknown_usage": true,
+      "checkpoint_contract_valid": false,
+      "attempts": 2,
+      "spearman": null,
+      "top25_overlap": null
+    },
+    {
+      "case_id": "ube4b",
+      "arm": "msa_tools",
+      "status": "complete",
+      "wall_seconds": 933.683,
+      "known_input_plus_output_tokens": 547475,
+      "unknown_usage": false,
+      "checkpoint_contract_valid": true,
+      "attempts": 1,
+      "spearman": 0.3921832390086786,
+      "top25_overlap": 0.44,
+      "independent_spearman": 0.3921832390086786,
+      "distinct_prediction_scores": 232
+    },
+    {
+      "case_id": "ube4b",
+      "arm": "structure_tools",
+      "status": "complete",
+      "wall_seconds": 671.836,
+      "known_input_plus_output_tokens": 488551,
+      "unknown_usage": false,
+      "checkpoint_contract_valid": true,
+      "attempts": 1,
+      "spearman": 0.3661740507848125,
+      "top25_overlap": 0.56,
+      "independent_spearman": 0.3661740507848126,
+      "distinct_prediction_scores": 250
+    },
+    {
+      "case_id": "ube4b",
+      "arm": "joint_tools",
+      "status": "complete",
+      "wall_seconds": 465.35,
+      "known_input_plus_output_tokens": 500260,
+      "unknown_usage": false,
+      "checkpoint_contract_valid": true,
+      "attempts": 1,
+      "spearman": 0.42096865549848794,
+      "top25_overlap": 0.6,
+      "independent_spearman": 0.420968655498488,
+      "distinct_prediction_scores": 250
+    },
+    {
+      "case_id": "cbx4",
+      "arm": "basic",
+      "status": "complete",
+      "wall_seconds": 844.369,
+      "known_input_plus_output_tokens": 343092,
+      "unknown_usage": false,
+      "checkpoint_contract_valid": true,
+      "attempts": 1,
+      "spearman": 0.6190973661580441,
+      "top25_overlap": 0.56,
+      "independent_spearman": 0.6190973661580441,
+      "distinct_prediction_scores": 247
+    },
+    {
+      "case_id": "cbx4",
+      "arm": "msa_tools",
+      "status": "failed",
+      "wall_seconds": 904.956,
+      "known_input_plus_output_tokens": 0,
+      "unknown_usage": true,
+      "checkpoint_contract_valid": true,
+      "attempts": 2,
+      "spearman": null,
+      "top25_overlap": null
+    },
+    {
+      "case_id": "cbx4",
+      "arm": "structure_tools",
+      "status": "complete",
+      "wall_seconds": 474.973,
+      "known_input_plus_output_tokens": 385119,
+      "unknown_usage": false,
+      "checkpoint_contract_valid": true,
+      "attempts": 1,
+      "spearman": 0.5378662698603177,
+      "top25_overlap": 0.56,
+      "independent_spearman": 0.5378662698603177,
+      "distinct_prediction_scores": 250
+    },
+    {
+      "case_id": "cbx4",
+      "arm": "joint_tools",
+      "status": "complete",
+      "wall_seconds": 444.127,
+      "known_input_plus_output_tokens": 342149,
+      "unknown_usage": false,
+      "checkpoint_contract_valid": true,
+      "attempts": 1,
+      "spearman": 0.5927023472375558,
+      "top25_overlap": 0.48,
+      "independent_spearman": 0.5927023472375558,
+      "distinct_prediction_scores": 250
+    },
+    {
+      "case_id": "gfp",
+      "arm": "basic",
+      "status": "complete",
+      "wall_seconds": 1153.117,
+      "known_input_plus_output_tokens": 395002,
+      "unknown_usage": false,
+      "checkpoint_contract_valid": true,
+      "attempts": 1,
+      "spearman": 0.6546592881060485,
+      "top25_overlap": 0.28,
+      "independent_spearman": 0.6546592881060485,
+      "distinct_prediction_scores": 244
+    },
+    {
+      "case_id": "gfp",
+      "arm": "msa_tools",
+      "status": "complete",
+      "wall_seconds": 595.796,
+      "known_input_plus_output_tokens": 255683,
+      "unknown_usage": true,
+      "checkpoint_contract_valid": true,
+      "attempts": 2,
+      "spearman": 0.6933967046116595,
+      "top25_overlap": 0.44,
+      "independent_spearman": 0.6933967046116595,
+      "distinct_prediction_scores": 248
+    },
+    {
+      "case_id": "gfp",
+      "arm": "structure_tools",
+      "status": "failed",
+      "wall_seconds": 1200.258,
+      "known_input_plus_output_tokens": 0,
+      "unknown_usage": true,
+      "checkpoint_contract_valid": true,
+      "attempts": 1,
+      "spearman": null,
+      "top25_overlap": null
+    },
+    {
+      "case_id": "gfp",
+      "arm": "joint_tools",
+      "status": "complete",
+      "wall_seconds": 704.95,
+      "known_input_plus_output_tokens": 391796,
+      "unknown_usage": false,
+      "checkpoint_contract_valid": true,
+      "attempts": 1,
+      "spearman": 0.7430230883694138,
+      "top25_overlap": 0.28,
+      "independent_spearman": 0.7430230883694139,
+      "distinct_prediction_scores": 250
+    },
+    {
+      "case_id": "pabp",
+      "arm": "basic",
+      "status": "complete",
+      "wall_seconds": 875.984,
+      "known_input_plus_output_tokens": 278455,
+      "unknown_usage": false,
+      "checkpoint_contract_valid": true,
+      "attempts": 1,
+      "spearman": 0.5803029002645717,
+      "top25_overlap": 0.28,
+      "independent_spearman": 0.5803029002645718,
+      "distinct_prediction_scores": 250
+    },
+    {
+      "case_id": "pabp",
+      "arm": "msa_tools",
+      "status": "complete",
+      "wall_seconds": 517.478,
+      "known_input_plus_output_tokens": 407684,
+      "unknown_usage": false,
+      "checkpoint_contract_valid": true,
+      "attempts": 1,
+      "spearman": 0.6879548193644478,
+      "top25_overlap": 0.24,
+      "independent_spearman": 0.6879548193644478,
+      "distinct_prediction_scores": 250
+    },
+    {
+      "case_id": "pabp",
+      "arm": "structure_tools",
+      "status": "complete",
+      "wall_seconds": 692.504,
+      "known_input_plus_output_tokens": 420340,
+      "unknown_usage": true,
+      "checkpoint_contract_valid": true,
+      "attempts": 2,
+      "spearman": 0.6054268910722314,
+      "top25_overlap": 0.24,
+      "independent_spearman": 0.6054268910722314,
+      "distinct_prediction_scores": 250
+    },
+    {
+      "case_id": "pabp",
+      "arm": "joint_tools",
+      "status": "complete",
+      "wall_seconds": 1015.932,
+      "known_input_plus_output_tokens": 670043,
+      "unknown_usage": false,
+      "checkpoint_contract_valid": true,
+      "attempts": 1,
+      "spearman": 0.628120890533471,
+      "top25_overlap": 0.16,
+      "independent_spearman": 0.6281208905334711,
+      "distinct_prediction_scores": 250
+    },
+    {
+      "case_id": "kras_abundance",
+      "arm": "basic",
+      "status": "failed",
+      "wall_seconds": 1200.176,
+      "known_input_plus_output_tokens": 0,
+      "unknown_usage": true,
+      "checkpoint_contract_valid": true,
+      "attempts": 1,
+      "spearman": null,
+      "top25_overlap": null
+    },
+    {
+      "case_id": "kras_abundance",
+      "arm": "msa_tools",
+      "status": "complete",
+      "wall_seconds": 808.872,
+      "known_input_plus_output_tokens": 400166,
+      "unknown_usage": false,
+      "checkpoint_contract_valid": true,
+      "attempts": 1,
+      "spearman": 0.3664328709259348,
+      "top25_overlap": 0.28,
+      "independent_spearman": 0.3664328709259348,
+      "distinct_prediction_scores": 250
+    },
+    {
+      "case_id": "kras_abundance",
+      "arm": "structure_tools",
+      "status": "complete",
+      "wall_seconds": 680.723,
+      "known_input_plus_output_tokens": 526971,
+      "unknown_usage": false,
+      "checkpoint_contract_valid": true,
+      "attempts": 1,
+      "spearman": 0.5068247491959871,
+      "top25_overlap": 0.28,
+      "independent_spearman": 0.5068247491959872,
+      "distinct_prediction_scores": 250
+    },
+    {
+      "case_id": "kras_abundance",
+      "arm": "joint_tools",
+      "status": "complete",
+      "wall_seconds": 472.94,
+      "known_input_plus_output_tokens": 324483,
+      "unknown_usage": false,
+      "checkpoint_contract_valid": true,
+      "attempts": 1,
+      "spearman": 0.4370208803340853,
+      "top25_overlap": 0.24,
+      "independent_spearman": 0.43702088033408537,
+      "distinct_prediction_scores": 250
+    },
+    {
+      "case_id": "kras_raf1",
+      "arm": "basic",
+      "status": "complete",
+      "wall_seconds": 732.503,
+      "known_input_plus_output_tokens": 370789,
+      "unknown_usage": false,
+      "checkpoint_contract_valid": true,
+      "attempts": 1,
+      "spearman": 0.6411913771665555,
+      "top25_overlap": 0.24,
+      "independent_spearman": 0.6411913771665556,
+      "distinct_prediction_scores": 213
+    },
+    {
+      "case_id": "kras_raf1",
+      "arm": "msa_tools",
+      "status": "complete",
+      "wall_seconds": 1104.112,
+      "known_input_plus_output_tokens": 262750,
+      "unknown_usage": true,
+      "checkpoint_contract_valid": true,
+      "attempts": 2,
+      "spearman": 0.6395935675071996,
+      "top25_overlap": 0.4,
+      "independent_spearman": 0.6395935675071996,
+      "distinct_prediction_scores": 245
+    },
+    {
+      "case_id": "kras_raf1",
+      "arm": "structure_tools",
+      "status": "complete",
+      "wall_seconds": 626.152,
+      "known_input_plus_output_tokens": 535069,
+      "unknown_usage": false,
+      "checkpoint_contract_valid": true,
+      "attempts": 1,
+      "spearman": 0.6157311956991312,
+      "top25_overlap": 0.36,
+      "independent_spearman": 0.6157311956991312,
+      "distinct_prediction_scores": 250
+    },
+    {
+      "case_id": "kras_raf1",
+      "arm": "joint_tools",
+      "status": "complete",
+      "wall_seconds": 620.608,
+      "known_input_plus_output_tokens": 573523,
+      "unknown_usage": false,
+      "checkpoint_contract_valid": true,
+      "attempts": 1,
+      "spearman": 0.6276947417031085,
+      "top25_overlap": 0.36,
+      "independent_spearman": 0.6276947417031086,
+      "distinct_prediction_scores": 245
+    }
+  ],
+  "complete_conditions": 20,
+  "planned_conditions": 24,
+  "complete_all_arm_cases": [
+    "pabp",
+    "kras_raf1"
+  ],
+  "paired_case_macro_spearman": {
+    "basic": 0.6107471387155636,
+    "msa_tools": 0.6637741934358237,
+    "structure_tools": 0.6105790433856813,
+    "joint_tools": 0.6279078161182897
+  },
+  "comparisons": [
+    {
+      "case_id": "ube4b",
+      "arm": "msa_tools",
+      "delta_from_basic": null
+    },
+    {
+      "case_id": "cbx4",
+      "arm": "msa_tools",
+      "delta_from_basic": null
+    },
+    {
+      "case_id": "gfp",
+      "arm": "msa_tools",
+      "delta_from_basic": 0.03873741650561102
+    },
+    {
+      "case_id": "pabp",
+      "arm": "msa_tools",
+      "delta_from_basic": 0.10765191909987615
+    },
+    {
+      "case_id": "kras_abundance",
+      "arm": "msa_tools",
+      "delta_from_basic": null
+    },
+    {
+      "case_id": "kras_raf1",
+      "arm": "msa_tools",
+      "delta_from_basic": -0.0015978096593558533
+    },
+    {
+      "case_id": "ube4b",
+      "arm": "structure_tools",
+      "delta_from_basic": null
+    },
+    {
+      "case_id": "cbx4",
+      "arm": "structure_tools",
+      "delta_from_basic": -0.0812310962977264
+    },
+    {
+      "case_id": "gfp",
+      "arm": "structure_tools",
+      "delta_from_basic": null
+    },
+    {
+      "case_id": "pabp",
+      "arm": "structure_tools",
+      "delta_from_basic": 0.025123990807659702
+    },
+    {
+      "case_id": "kras_abundance",
+      "arm": "structure_tools",
+      "delta_from_basic": null
+    },
+    {
+      "case_id": "kras_raf1",
+      "arm": "structure_tools",
+      "delta_from_basic": -0.025460181467424348
+    },
+    {
+      "case_id": "ube4b",
+      "arm": "joint_tools",
+      "delta_from_basic": null
+    },
+    {
+      "case_id": "cbx4",
+      "arm": "joint_tools",
+      "delta_from_basic": -0.026395018920488345
+    },
+    {
+      "case_id": "gfp",
+      "arm": "joint_tools",
+      "delta_from_basic": 0.08836380026336532
+    },
+    {
+      "case_id": "pabp",
+      "arm": "joint_tools",
+      "delta_from_basic": 0.047817990268899324
+    },
+    {
+      "case_id": "kras_abundance",
+      "arm": "joint_tools",
+      "delta_from_basic": null
+    },
+    {
+      "case_id": "kras_raf1",
+      "arm": "joint_tools",
+      "delta_from_basic": -0.013496635463447038
+    }
+  ],
+  "independent_arithmetic_verified": true,
+  "scorer_model_calls": 0,
+  "limitations": [
+    "One native program generation per condition; model sampling seed not independently controlled.",
+    "Six same cohorts as native02 zero-shot,32 frozen single-mutant supports; reused public cohorts, no random holdout claim.",
+    "Evidence modalities include preprocessing/tools/raw inputs; this does not isolate each internal tool contribution.",
+    "No score-driven retries or model selection; only final valid submissions are scored.",
+    "Runtime label isolation does not establish absence of pretraining exposure."
+  ]
+}

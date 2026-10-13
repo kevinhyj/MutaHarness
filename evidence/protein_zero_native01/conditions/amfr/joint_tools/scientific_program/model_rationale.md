@@ -1,0 +1,11 @@
+Model development rationale
+
+- Saved the initial usable 250-candidate checkpoint before refinements. It used additive WT exposure, volume, helix propensity and weak observed MSA terms, with no assay fitting.
+- The assay is stability, so native functional conservation is a secondary prior. Raw coordinates identify a buried D28/T38/N41 polar network and T32/S34 capping contacts. The final fixed model includes directional WT polar-contact losses counted once per affected edge, buried-charge compatibility and conservative packing penalties. These are hypotheses from WT geometry, not relaxed mutant energies or validated epistasis.
+- Replaced membrane-oriented Kyte-Doolittle hydropathy with the Fauchere-Pliska sidechain partition scale, which provides a more appropriate soluble-core prior for aromatic residues. Used a small, strongly shrunk chemistry-group covariation term only for four observed contact pairs. No measured outputs informed coefficients or revisions.
+- Reconstructed the selected 2048 unique aligned homologs and inverse-neighbor weights, matching supplied Neff and all observed site frequencies. An X at position 36 is noncanonical missing evidence and is excluded from site depth, matching the supplied profile. Missing or zero-depth terms are omitted with per-candidate coverage retained, never relabeled as complete evolutionary scores.
+- Corrected secondary-structure assignment to require at least four consecutive alpha-like residues. Isolated P18/Q19 and R46 torsions describe turns; treating P18 as a helix incorrectly rewarded its removal. WT coordinates fill missing summary torsions and were checked against all supplied torsions.
+
+Validation: raw source hashes; exact PDB-chain/reference match; 47/47 raw structural coverage; all listed mutations equal candidate sequence differences; 250 unique candidate IDs exactly once; finite bounded scores; one global monotone tanh scale. Two uninformative terminal mutations share the same prior score; no artificial tie breaking was introduced. Execution checks do not establish assay accuracy. No fixed partners are supplied in this single-chain stability case.
+
+Reproduction: python inspect_alignment.py; python stability_model.py. The latter writes final_predictions.json and model_diagnostics.json. Initial checkpoint: checkpoint_predictions.json, checkpoint_model.py.

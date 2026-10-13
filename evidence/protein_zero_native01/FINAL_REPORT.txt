@@ -1,0 +1,92 @@
+蛋白 zero-shot：原生 Codex 结构/MSA 工具对照
+
+全部 16 条件终态并经独立宿主评分：16 complete，0 failed。
+每条件250候选、0目标测量；仅使用最终有效提交，失败不补零，不回选checkpoint。
+
+最终 Spearman / Top-25 重合率（Top-25数值为比例）
+蛋白 | 基础 Codex | MSA | 结构 | MSA＋结构
+AMFR | 0.4340 / 0.28 | 0.4868 / 0.08 | 0.6123 / 0.60 | 0.6574 / 0.32
+HIS7 | 0.5767 / 0.40 | 0.5987 / 0.28 | 0.4914 / 0.32 | 0.5972 / 0.24
+YAP–肽 | 0.3537 / 0.32 | 0.3736 / 0.24 | 0.4289 / 0.40 | 0.4013 / 0.16
+BH3–Mcl-1 | 0.5469 / 0.20 | 0.4709 / 0.20 | 0.4242 / 0.08 | 0.5390 / 0.16
+
+四条件完整共同cohort：4/4；AMFR、HIS7、YAP–肽、BH3–Mcl-1
+共同cohort等权均值：基础 Codex ρ=0.4778，Top-25=0.30；MSA ρ=0.4825，Top-25=0.20；结构 ρ=0.4892，Top-25=0.35；MSA＋结构 ρ=0.5487，Top-25=0.22
+
+各证据条件相对基础 Codex 的 Spearman 差值
+MSA：AMFR 0.0528；HIS7 0.0220；YAP–肽 0.0199；BH3–Mcl-1 -0.0760。有效配对4，3胜/0平/1负，配对均差0.0047。
+结构：AMFR 0.1783；HIS7 -0.0853；YAP–肽 0.0752；BH3–Mcl-1 -0.1227。有效配对4，2胜/0平/2负，配对均差0.0114。
+MSA＋结构：AMFR 0.2234；HIS7 0.0205；YAP–肽 0.0475；BH3–Mcl-1 -0.0080。有效配对4，3胜/0平/1负，配对均差0.0709。
+
+原生会话用量与完成情况
+条件 | complete/failed | 已记录会话/技术纠正 | 已知input＋output | 其中cached input | 已知output | 未知用量条件 | 累计条件秒
+基础 Codex | 4/0 | 4/0 | 786959 | 550016 | 59183 | 0 | 2081.9
+MSA | 4/0 | 4/0 | 1323963 | 1021568 | 62216 | 0 | 2218.2
+结构 | 4/0 | 4/0 | 1792825 | 1496064 | 76726 | 0 | 2696.7
+MSA＋结构 | 4/0 | 4/0 | 2613173 | 2259328 | 77611 | 0 | 2819.1
+campaign实际经过秒：2589.8。累计条件秒/调用秒含并发重叠，不能当实际总历时。
+input已包含cached input，不重复相加。未知/缺失用量只披露已知部分，不当完整费用；原生token不等于账单。
+主机预处理和工具sidecar构建在会话之前完成，其成本未计入原生wall；不据此声称总计算量或成本优势。
+
+逐条件耗时、失败和技术纠正
+amfr/basic：complete，条件594.3秒，已记录调用1、纠正0、timeout0，unknown_usage=False。
+his7/basic：complete，条件682.9秒，已记录调用1、纠正0、timeout0，unknown_usage=False。
+yap_peptide/basic：complete，条件456.0秒，已记录调用1、纠正0、timeout0，unknown_usage=False。
+bh3_mcl1/basic：complete，条件348.7秒，已记录调用1、纠正0、timeout0，unknown_usage=False。
+amfr/msa_tools：complete，条件805.2秒，已记录调用1、纠正0、timeout0，unknown_usage=False。
+his7/msa_tools：complete，条件517.5秒，已记录调用1、纠正0、timeout0，unknown_usage=False。
+yap_peptide/msa_tools：complete，条件460.9秒，已记录调用1、纠正0、timeout0，unknown_usage=False。
+bh3_mcl1/msa_tools：complete，条件434.6秒，已记录调用1、纠正0、timeout0，unknown_usage=False。
+amfr/structure_tools：complete，条件985.7秒，已记录调用1、纠正0、timeout0，unknown_usage=False。
+his7/structure_tools：complete，条件576.2秒，已记录调用1、纠正0、timeout0，unknown_usage=False。
+yap_peptide/structure_tools：complete，条件542.3秒，已记录调用1、纠正0、timeout0，unknown_usage=False。
+bh3_mcl1/structure_tools：complete，条件592.5秒，已记录调用1、纠正0、timeout0，unknown_usage=False。
+amfr/joint_tools：complete，条件940.4秒，已记录调用1、纠正0、timeout0，unknown_usage=False。
+his7/joint_tools：complete，条件669.7秒，已记录调用1、纠正0、timeout0，unknown_usage=False。
+yap_peptide/joint_tools：complete，条件599.1秒，已记录调用1、纠正0、timeout0，unknown_usage=False。
+bh3_mcl1/joint_tools：complete，条件609.9秒，已记录调用1、纠正0、timeout0，unknown_usage=False。
+
+公开输入与方法记录
+基础组只有序列、assay条件和固定伙伴；MSA组提供完整频率/原比对，结构组提供WT坐标/几何，两者联合组同时提供。
+输入模态边界已独立核验。源码或命令出现MSA/structure字样也可能是在检查缺失，不能据此判定基础组读到了该证据。
+更细的字符串定位保存在final_stats.json，以下只列原生最终方法自述，供结合归档源码复核。
+amfr/basic：生成工件见 results/amfr/basic/workspace/
+  原生最终自述：Sequence-only stability prior combining hydrophobic transfer, packing, hydrogen-bond/charge compatibility and helix propensity, averaged over uncertain CUE helix boundaries. Higher scores predict better stability on one global tanh scale, without assay-unit calibration. All mutation identities and 250 unique IDs were validated; input hashes, checkpoint, program and diagnostics were saved. Measurem
+amfr/msa_tools：生成工件见 results/amfr/msa_tools/workspace/
+  原生最终自述：Unsupervised stability ranking combines supplied MSA ratios, biochemical-class compatibility and modest sequence-based CUE helix, hydrophobicity, size and cap priors. High-gap evidence is attenuated; zero-depth sites supply no evolutionary evidence. Source hashes and mutation mapping verified: 239 candidates have complete MSA evidence, 11 none. Additive effects use one global tanh scale, higher be
+amfr/structure_tools：生成工件见 results/amfr/structure_tools/workspace/
+  原生最终自述：Unsupervised stability prior using WT burial, solvation, packing, backbone compatibility and conservative polar-contact coupling. Source/reference hashes and exact 47/47 residue mapping verified; standard heavy atoms complete, missing torsions handled explicitly, no fixed partners or MSA. One global tanh scale; higher predicts better performance. No measured outcomes or relaxed mutant structures: 
+amfr/joint_tools：生成工件见 results/amfr/joint_tools/workspace/
+  原生最终自述：Unsupervised stability prior combines WT burial/packing, backbone propensity and polar-contact chemistry with weak homolog marginals and shrunk contact covariation. Source hashes and exact mutation/residue mapping verified; coordinates cover 47/47 residues, while 8 sites lack MSA support (missing terms omitted; partial sums not treated as complete). No fixed partners supplied. One global tanh scal
+his7/basic：生成工件见 results/his7/basic/workspace/
+  原生最终自述：Sequence-only IGPD functional ranking combines BLOSUM62, hydrophobic/charge disruption, catalytic-region and loop sensitivity, and lower terminal-region penalties; one weak turn-context interaction is hypothetical. All mutations reconstruct supplied sequences; all 250 IDs use one global scale, higher is better. Input hashes are recorded. No outcomes, MSA depth, evolutionary source mappings or stru
+his7/msa_tools：生成工件见 results/his7/msa_tools/workspace/
+  原生最终自述：Unsupervised growth ranking combines broad MSA ratios with a redundancy-weighted WT-neighborhood profile and modest BLOSUM-smoothed natural-block compatibility. Severe individual losses limit compensation by consensus gains; all scores use one global tanh scale. Source hashes, residue mapping, mutation identities and complete IDs verified. Every mutated site has homolog evidence; 28 other WT posit
+his7/structure_tools：生成工件见 results/his7/structure_tools/workspace/
+  原生最终自述：Zero-shot ranking combines generic substitution similarity with WT burial, packing, polar contacts, backbone compatibility and a weak histidine-network prior. All candidates share one scale; higher predicts better growth. Mutation identities, complete ID coverage, source hashes and exact residue mapping were verified; every mutated site has complete observed coordinates. No MSA or assay outcomes a
+his7/joint_tools：生成工件见 results/his7/joint_tools/workspace/
+  原生最终自述：Unsupervised growth ranking blends supplied homolog log-frequency ratios, a diversity-weighted yeast-like homolog prior, shrunk natural contact-context corrections, and modest WT burial/backbone penalties. Hashes, residue mapping and mutation identities were verified; every mutated site has homolog and coordinate coverage. Unaligned sites were treated as absent evidence. All scores use one global 
+yap_peptide/basic：生成工件见 results/yap_peptide/basic/workspace/
+  原生最终自述：Unsupervised sequence-only YAP WW-domain prior combining substitution compatibility, core/strand and turn stability, and PPxY-binding chemistry with fixed partner GTPPPPYTVG. Folding effects average three WT-stability assumptions; all scores share one monotonic scale, higher is better. All 250 mutation identities, sequences and partners were verified; input hashes are saved. No measurements, MSA o
+yap_peptide/msa_tools：生成工件见 results/yap_peptide/msa_tools/workspace/
+  原生最终自述：Unsupervised ranking combines complete MSA log-frequency ratios with modest WW-domain biochemical priors for core integrity, turns and peptide recognition. One global monotone scale; higher is better. Verified all 250 mutation identities, source hashes, raw-MSA residue mapping and fixed peptide GTPPPPYTVG. No missing evolutionary terms; unweighted homolog depth is not Neff. Checkpoint, predictor a
+yap_peptide/structure_tools：生成工件见 results/yap_peptide/structure_tools/workspace/
+  原生最终自述：Unsupervised WW-domain prior combines substitution chemistry, WT burial/backbone constraints and aromatic preservation, with separate saturating folding and fixed-peptide recognition terms. Source/reference hashes and exact A/P mapping verified; raw coordinates cover all residues and standard heavy atoms. No MSA or assay outcomes; missing summary fields remain absent. All scores use one global mon
+yap_peptide/joint_tools：生成工件见 results/yap_peptide/joint_tools/workspace/
+  原生最终自述：Unsupervised additive ranking blends complete supplied homolog log-frequency ratios with a modest redundancy-weighted PPXY-class raw-MSA profile, tempered by WT exposure, backbone constraints and contacts with fixed peptide P. Source hashes, residue mapping, mutation identities, partners and complete evidence coverage were verified. All scores share one global tanh scale centered on the panel medi
+bh3_mcl1/basic：生成工件见 results/bh3_mcl1/basic/workspace/
+  原生最终自述：Unsupervised BH3/Mcl-1 binding model combines position-specific hydrophobic-anchor compatibility, conserved Asp-contact penalties, and modest helix/steric effects. Mutation identities and the unchanged Mcl-1 partner were validated; unknown partner residues remain unimputed. Scores use one global monotonic scale, with higher predicting better binding. No measured supports, MSA or coordinates were s
+bh3_mcl1/msa_tools：生成工件见 results/bh3_mcl1/msa_tools/workspace/
+  原生最终自述：Additive BH3–Mcl-1 binding prior combining hydrophobic anchors, conserved Asp15, side-chain size/charge, helix propensity and downweighted natural-homolog log-frequency ratios. Fixed partner A retained; hashes, mutations and residue mapping verified. All queried substitutions have homolog coverage; zero-depth flanks excluded, Neff unknown. One global scale; higher is better. Checkpoint and predict
+bh3_mcl1/structure_tools：生成工件见 results/bh3_mcl1/structure_tools/workspace/
+  原生最终自述：Unsupervised BH3/Mcl-1 binding heuristic combining WT interface burial, hydrophobic packing, possible polar compensation, conserved Asp–Arg contact, glycine-pocket sterics and helix propensity, with Mcl-1 fixed. Source/reference hashes, mutation identities and residue mapping verified; peptide coverage is 23/23, while partner X25–31 remain unobserved. No MSA or measured outcomes. Static WT geometr
+bh3_mcl1/joint_tools：生成工件见 results/bh3_mcl1/joint_tools/workspace/
+  原生最终自述：Unsupervised additive binding model combines a bounded MSA conservation prior with WT Mcl-1 interface packing, hydrophobicity, polar contacts and BH3 helix propensity. Source hashes, residue mapping, mutation identities, unchanged partner A and complete nonzero-depth MSA coverage at all mutated sites were verified; zero-depth flanks and unmapped partner X positions were excluded. One global tanh s
+
+解释边界
+这是4个此前已查看的开发蛋白案例，每条件一次原生科学会话（允许一次技术/格式纠正），没有独立模型seed控制或多次稳定性证据。
+结构/MSA条件增加相应公共证据、预处理与工具；每种工具内部因素未进一步拆开，不能把整体差值归因于一个具体几何特征或MSA算法。
+结构与天然同源信息是目标assay的先验，不是目标测量；生成源码、命令出现和原生自述都不是生物学机制验证。
+失败、未知用量及部分归档保留；没有测试标签择模、checkpoint择优或质量驱动重跑。
+本分析只读取已评分SUMMARY、manifest、归档源文件和原生事件，无标签文件读取、模型调用或预测器执行。
+公开数据进入模型预训练的可能性未排除；结果不能升级为独立holdout或通用优势结论。

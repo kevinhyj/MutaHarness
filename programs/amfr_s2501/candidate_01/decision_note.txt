@@ -1,0 +1,84 @@
+Final decision: a deterministic five-member ordinal ensemble. proposal.py is
+self-contained and refits all learned parameters from case['support'] on every
+call. It returns every current query ID, finite scores in [-1,1], and no selected
+measurements. Neither assignment eligibility lists nor stored experimental data
+are used to fit the predictor. There are no model caches or prediction-file reads.
+
+Assay interpretation
+This is the AMFR human CUE-domain stability assay measured by cDNA-display
+proteolysis, with ProteinGym DMS_score as supplied and higher fitness preferred.
+The task is signed rank correlation. We neither estimate calibrated assay
+probabilities nor claim improved experimental stability. No measured wild-type
+score or fixed wild-type fitness is imposed. The ridge members learn a target
+intercept from current support ranks. We considered inverse soft-floor transforms
+as a possible response to assay saturation; they did not justify replacing the
+ordinal models. An assay floor or physical stability mechanism is not established.
+
+How measured feedback is used
+All 96 supplied observations, including the 64 independently sampled feedback
+variants, enter the final fits. The original 32 measurements alone mainly describe
+isolated single mutants. Feedback adds 44 measured double mutants and substantial
+coverage at positions 28, 32, 38, and 41. The model learns substitution effects at
+these sites jointly rather than assigning unmeasured single-mutant labels or
+assuming doubles equal the sum of measured single mutants. The same fitting code
+also works with smaller supplied support subsets; absent feedback is never read
+from elsewhere or reconstructed from remembered outcomes.
+
+Representations and model
+Reference-relative mutation features use fixed hydropathy, residue volume,
+alpha-helix propensity, charge, aromatic character, proline/glycine indicators,
+polar character, and branching. Position-specific biochemical kernels share
+information among related substitutions, while pooled chemical changes transfer
+information across sites. Two members additionally use a small contribution from
+the generic BLOSUM62 substitution matrix, projected to a positive-semidefinite
+kernel. BLOSUM62 is a scientific constant, not a pretrained assay predictor or an
+external sequence. One member shares destination amino-acid indicators globally.
+Weak site-pair indicator kernels allow nonadditive combination offsets with
+shrinkage. These are statistical offsets, not asserted residue contacts.
+
+Three kernel-ridge members fit Gaussianized ranks calculated only from the current
+training labels. Two kernel pairwise-logistic members fit the signed ordering of
+current measured pairs directly. Their logistic objective is a ranking loss, not
+a calibrated probability model. The ensemble combines 70% ridge-family mean
+ranks with 30% pairwise-family mean ranks, then maps the combined query ordering
+into [-1,1]. This scale has ordinal meaning only. Every call recomputes the chemical
+kernels, rank transforms, fitted coefficients, pairwise objectives and predictions.
+
+Validation and choices
+Development compared categorical and physicochemical additive kernels, several
+shrinkage scales, Gaussian-rank and raw targets, inverse-soft-floor targets,
+position-pair and smooth chemical interaction kernels, source-conditioned global
+chemical features, BLOSUM and amino-acid classes, extra trees, gradient boosting,
+and pairwise ranking losses. Strong shrinkage and chemically shared ordinal
+models were more consistent than the tree models or elaborate interaction terms.
+A compact ensemble reduces reliance on one chemical distance or one ordinal loss.
+No structural coordinates, MSA, external sequences, pretrained prediction scores,
+query outcomes, previous evaluation results, or additional measurements were used.
+
+The main development validation retained the original 32 singles and held out
+feedback: four seeded four-fold partitions of the 64 feedback records, plus eight
+seeded half-feedback holdouts. Final target rank transforms were computed within
+each training fold. The leading ridge configurations had mean feedback Spearman
+around 0.74 in this development scheme. Confirmation used four further seeded
+four-fold feedback partitions; the final 70/30 ensemble had mean Spearman 0.8009.
+When arbitrary supports were withheld in five shuffled folds, its mean Spearman
+was 0.6255. Pooled double-mutant Spearman across those confirmation protocols was
+about 0.6774; fold-relative member ranks make this pooled number descriptive.
+These are repeated internal validation estimates on reused public supports, not
+independent experimental evidence or an unbiased confidence bound after model
+selection. Different partition results also show material small-sample uncertainty.
+Exploration scripts and validation result files are retained in the workspace.
+
+Limitations and reproducibility
+Unseen alleles and sparsely measured sites require chemical extrapolation. Native
+context can change residue preferences in ways these generic descriptors miss.
+The sparse double-mutant data do not identify detailed physical epistasis. Helical
+packing and hydrophobic stabilization are plausible sequence-derived explanations
+for some observed trends, but neither contacts nor mechanisms are established and
+no guessed contact map was imposed. Assay saturation, noise and local effects may
+change rankings. The final output is a prediction of the unmeasured ordering only.
+
+NumPy seed is fixed at zero; fitting uses deterministic algorithms and no random
+draws. BLAS thread pools are limited to one within each fit. Local checks confirm
+exact repeated-call determinism, all-query coverage, bounded finite scores, an
+empty selected_ids list, and independent refitting on 1, 32 and 64 supports.

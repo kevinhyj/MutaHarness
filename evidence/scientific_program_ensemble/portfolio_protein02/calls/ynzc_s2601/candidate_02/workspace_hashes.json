@@ -1,0 +1,22 @@
+{
+  "assignment.json": "47e0e4600beaa336235d6b9758ae6fa72bcb55e60016ea1663d9d90ff6f29d28",
+  "audit_models.py": "8813ab55caccc6f2af0770594eb200a1ca82bfe62c33748cbc677165b58cb5ca",
+  "case.json": "fcd82c1ac3b2109820a3ca290c10d2449fd774965be78c6fe980165c5bdf8597",
+  "decision_note.txt": "fb4d10b27a5b189cad85fec909a92f4221730c69ceef3113ace57881647552af",
+  "explore.py": "12b457720e6b9f2e8ffa486bb4004552143093946eb5323fab76c3b9815c0b59",
+  "explore2.py": "9596fc0bb4c1bcb9df817ce31b20daafbd6af27272ae8d607c1865bb5d5cec7a",
+  "explore3.py": "d53a1c49565bfbd9c64d118b5db3074080f0a42fb59d6adc9158e42de8c86337",
+  "explore4.py": "06c8daffe2b9c0ed3ce785f560db6838ad552741019aaf576fd6c5448fb9c11c",
+  "final_checks.json": "d6e00672a362d29fa81f5a0e352a53b394684322f213e01ea0c1ef08124067f5",
+  "final_checks.py": "73f48b0c2593b25e80dc6a77d651af025be43741839fd10ab1c787e54cc386c0",
+  "host_output.json": "77764346a441a6eb5fdc3e147c7d88c4d8c5799df9680874ea0350e58b10828f",
+  "model_audit.json": "28f3782c9f42d7e7f87b5d341dcaf7916ccb700c17dfe7e73902f6d85f752f78",
+  "nonlinear_baselines.json": "bd7bcb2baf177dd30e832ab22d7189d1d2d15bbb0f226f6914d5de82a11b8c51",
+  "nonlinear_baselines.py": "25b49c0220135e7ecab59afbafd3456e2b39903be2c15bffa07cec32b2183ace",
+  "proposal.py": "015affdc0703aa302f50d6ce936b0e4cfda3134cb79b8ea74fc30ddf07665ab7",
+  "trial_output.json": "77764346a441a6eb5fdc3e147c7d88c4d8c5799df9680874ea0350e58b10828f",
+  "validation_results.json": "a67250ba8ed12f53aa1095d88b46e9a3bd9dee85ac973700df4cbe0a751c0c4f",
+  "validation_results2.json": "275dc921a55c0004d3d39a33fd2d36f438872203a3999218fc48d2fecb67cefe",
+  "validation_results3.json": "69a9700c9eda2e333d90b70c1a5d5e2af692c5e856b32d369ddbdeb06f7890a5",
+  "validation_results4.json": "7c35237ae2d5ca3e29ece0ca52b91c19f19b9c08865909e8e60f6c0345945afb"
+}

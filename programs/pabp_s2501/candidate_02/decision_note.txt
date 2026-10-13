@@ -1,0 +1,80 @@
+The delivered artifact is proposal.py, with no runtime dependency on exploration
+files. propose(case, assignment) refits five kernel ridge models from the supplied
+support records on every invocation. It returns finite ordinal scores for every
+current query ID and selected_ids=[], since the measurement budget is zero. No
+fitness values, learned coefficients, variant IDs, fitted states or prediction
+lists are embedded. All numerical operations are deterministic; development
+validation uses explicit fixed seeds. Runtime uses no stochastic operations.
+
+Assay interpretation
+The supplied assay is PABP_YEAST_Melamed_2013, yeast PAB1 growth/essential function
+and RNA binding. Higher observed DMS_score is better. These measurements are not
+probabilities. No measured wild type is supplied, and no WT value is invented.
+The model uses square-root and offset-log transformations as alternative monotone
+latent combination scales. Offsets regularize low assay values; they do not
+establish multiplicative biology. Its final output is a rank transform in [-1,1].
+Only score ordering has meaning, including the signed direction of that ordering.
+
+Measured feedback and model
+The current case has 32 original singles and 64 independently sampled feedback
+variants. All 96 outcomes are used in the final fit with equal observation weight.
+Feedback learns effects at sites absent from the original singles, substitution
+differences, and effects of combinations. Mutation features are parsed from the
+case. Kernels use exact position indicators, short-range sequence-position
+smoothing (length 1.5 residues), and position-specific chemical descriptors:
+hydropathy, volume, polarity, charge and amino-acid group indicators. Changes,
+absolute changes, and destination descriptors distinguish substitutions. A weak
+global chemical component allows transfer to sites with little direct evidence.
+The ordinary chemical constants in code are assumptions, not external sequence
+data or pretrained scores. All fitted effects come from the supplied supports.
+
+Three ensemble members are additive kernels and two add an RBF residual kernel
+over variant distance, permitting combination-dependent effects. Different
+regularization strengths and monotone outcome scales are averaged after scaling
+each component by its training-target standard deviation. Kernel centering,
+target scaling and coefficients all use training supports only. Query sequences
+merely define feature coordinates; query outcomes are never used. Queries cannot
+change the support kernel. Equal model weights reduce dependence on a narrow
+hyperparameter optimum. All constants and configurations are explicit in code.
+
+Validation and model selection
+Exploration compared position/substitution kernels; local smoothing; raw, square
+root, log and rank outcome scales; multiple ridge strengths; chemical descriptor
+ablations; amino-acid RBF kernels; quadratic and variant-level RBF interactions;
+and broad sharing between approximate RRM secondary-structure segments. The
+segment and topology annotations were hypotheses based on sequence/domain
+knowledge, not structure coordinates. They added little and are absent from the
+delivered predictor. Exact substitution indicators alone were also insufficient.
+Random forests and extremely randomized trees using ordered mutation sites and
+source/destination chemistry were tested with fixed seed 1977, 150 trees, varied
+leaf sizes and feature fractions. Their best mean correlation was about 0.40,
+substantially below the kernel approach; they were excluded from the ensemble.
+
+Development used seeds 17, 42 and 93 for repeated four-fold mixed-support splits
+and four-fold multi-mutant holdouts with singles retained. Position models reached
+about 0.59 mean signed Spearman; position-specific chemistry about 0.67; nonlinear
+residual candidates about 0.68. These are model-selection statistics, not unbiased
+prospective performance estimates.
+
+A small set of ensemble options was assessed using new seeds 123, 321 and 271.
+The final equal-weight ensemble gave mean Spearman 0.6478 over 12 mixed-support
+folds and 0.6940 over 12 multi-mutant holdout folds with singles retained. Over six
+half-support splits it gave 0.4718. A retrospective fit with only the original
+singles ranked the observed feedback multi-mutants at 0.4765. Split-to-split
+variation was substantial (about 0.146 standard deviation across the combined
+new-seed splits). The new seeds were not used in the broad configuration search,
+but the same finite support pool and a small ensemble comparison were reused;
+these figures are therefore internal validation, not independent experimental
+confirmation. Exploration scripts and logs are left in the workspace.
+
+Limits and verification
+Sparse observations at many sites, unobserved substitution types, assay noise,
+and pair-specific epistasis remain substantial limits. Short-range smoothing is
+sequence proximity, not a physical contact map. Chemical transfer and residual
+kernel similarity do not identify mechanisms. Growth ranking need not imply an
+isolated RNA-binding affinity ranking. No external sequences, MSA, structure,
+pretrained predictions, hidden outcomes, or additional measurements are used.
+Direct checks verify exact current-query coverage, finite bounded scores, empty
+selection, deterministic repetition, and successful fresh fits on support subsets
+including sizes 0, 1, 16, 32 and 48. Final kernels match the validation kernels
+exactly. The required protected executor result is written to trial_output.json.

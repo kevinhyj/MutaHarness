@@ -1,0 +1,61 @@
+{
+  "run_id": "protein_zero_native02",
+  "case_id": "pabp",
+  "arm": "basic",
+  "status": "complete",
+  "started_at_utc": "2026-10-13T05:19:59.188377+00:00",
+  "finished_at_utc": "2026-10-13T05:33:39.170687+00:00",
+  "support_count": 0,
+  "query_count": 250,
+  "prediction_count": 250,
+  "invocations": [
+    {
+      "started_at_utc": "2026-10-13T05:19:59.202320+00:00",
+      "finished_at_utc": "2026-10-13T05:33:39.143260+00:00",
+      "wall_seconds": 819.938,
+      "exit_code": 0,
+      "timed_out": false,
+      "usage": {
+        "input_tokens": 348924,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 22778,
+        "reasoning_output_tokens": 9474,
+        "cached_input_tokens": 302208
+      },
+      "usage_known": true,
+      "observed_item_types": [
+        "agent_message",
+        "command_execution",
+        "error",
+        "file_change"
+      ],
+      "malformed_jsonl_lines": 0,
+      "model_requested": "gpt-6.1-sol",
+      "reasoning_effort": "high",
+      "cli_version": "codex-cli 0.162.0-alpha.17.2",
+      "backend_model_identifier": null,
+      "backend_model_identifier_status": "not provided by native exec JSONL",
+      "service_tier_requested": null,
+      "fast_mode": false
+    }
+  ],
+  "known_input_plus_output_tokens": 371702,
+  "unknown_usage": false,
+  "errors": [
+    []
+  ],
+  "protocol_sha256": "6f4e892a01cf835ff5674aba7271b17dce52a582fb53a12df7fdf3076898332e",
+  "initial_input_sha256": {
+    "case.json": "666061abaf238f2da4ffdf342adb1e20c62febe555d82c20438aa9caf113fdd7",
+    "evidence_manifest.json": "1de024c93db7d11ffdc048f493190d4725a1fe4da7453c4aaafbcc9bf1198189"
+  },
+  "final_case_sha256": "666061abaf238f2da4ffdf342adb1e20c62febe555d82c20438aa9caf113fdd7",
+  "model_requested": "gpt-6.1-sol",
+  "reasoning_effort": "high",
+  "fast_mode": false,
+  "label_access": "OS denied",
+  "tool_network": "disabled",
+  "prediction_sha256": "9bc1275a8431e52fec239bac415800c3f723732fb84819c4ccea9e0664dae2ea",
+  "checkpoint_contract_valid": true,
+  "wall_seconds": 820.002
+}

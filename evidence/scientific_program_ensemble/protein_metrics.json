@@ -1,0 +1,240 @@
+{
+  "status": "all_planned_attempts_terminal_and_scored",
+  "rows": [
+    {
+      "case_id": "gfp",
+      "seed": 2501,
+      "native_statuses": [
+        "complete",
+        "complete",
+        "complete"
+      ],
+      "cv_statuses": [
+        "complete",
+        "complete",
+        "complete"
+      ],
+      "support_cv_rho": [
+        0.6926599210521691,
+        0.7040076929870002,
+        0.7031092620383365
+      ],
+      "cv_selected_candidate": 1,
+      "all_native_complete": true,
+      "same_budget_comparison_complete": true,
+      "known_input_plus_output_tokens": 1758655,
+      "unknown_usage": false,
+      "candidate_wall_seconds": [
+        970.1824767077342,
+        725.350437792018,
+        798.9049599580467
+      ],
+      "candidate_rho": [
+        0.5303479432511691,
+        0.5433016607675963,
+        0.5951867770907777
+      ],
+      "ensemble_rho": 0.5818562430610039,
+      "delta_vs_direct00": 0.051508299809834845,
+      "delta_vs_cv_single": 0.03855458229340758,
+      "delta_vs_mean_single": 0.025577449357822912,
+      "cv_selected_single_rho": 0.5433016607675963,
+      "candidate_top20_overlap_fraction": [
+        0.3,
+        0.4,
+        0.3
+      ],
+      "ensemble_top20_overlap_fraction": 0.35,
+      "top20_delta_vs_direct00": 0.04999999999999999,
+      "top20_delta_vs_cv_single": -0.050000000000000044
+    },
+    {
+      "case_id": "pabp",
+      "seed": 2501,
+      "native_statuses": [
+        "complete",
+        "complete",
+        "complete"
+      ],
+      "cv_statuses": [
+        "complete",
+        "complete",
+        "complete"
+      ],
+      "support_cv_rho": [
+        0.763788723554558,
+        0.8007967217465335,
+        0.7884928012738436
+      ],
+      "cv_selected_candidate": 1,
+      "all_native_complete": true,
+      "same_budget_comparison_complete": true,
+      "known_input_plus_output_tokens": 2175710,
+      "unknown_usage": false,
+      "candidate_wall_seconds": [
+        816.1235921252519,
+        777.7174497912638,
+        782.9181142500602
+      ],
+      "candidate_rho": [
+        0.498906003993734,
+        0.5537647868957922,
+        0.5110735334090105
+      ],
+      "ensemble_rho": 0.53445831375789,
+      "delta_vs_direct00": 0.035552309764155965,
+      "delta_vs_cv_single": -0.019306473137902236,
+      "delta_vs_mean_single": 0.013210205658377716,
+      "cv_selected_single_rho": 0.5537647868957922,
+      "candidate_top20_overlap_fraction": [
+        0.15,
+        0.15,
+        0.15
+      ],
+      "ensemble_top20_overlap_fraction": 0.2,
+      "top20_delta_vs_direct00": 0.05000000000000002,
+      "top20_delta_vs_cv_single": 0.05000000000000002
+    },
+    {
+      "case_id": "gcn4",
+      "seed": 2501,
+      "native_statuses": [
+        "complete",
+        "complete",
+        "complete"
+      ],
+      "cv_statuses": [
+        "complete",
+        "complete",
+        "complete"
+      ],
+      "support_cv_rho": [
+        0.46362543719697935,
+        0.5164163406582656,
+        0.5050197478365912
+      ],
+      "cv_selected_candidate": 1,
+      "all_native_complete": true,
+      "same_budget_comparison_complete": true,
+      "known_input_plus_output_tokens": 3008423,
+      "unknown_usage": false,
+      "candidate_wall_seconds": [
+        849.6480036671273,
+        763.3054634169675,
+        787.6835796250962
+      ],
+      "candidate_rho": [
+        0.4196271137447608,
+        0.3818996609614843,
+        0.3115644894723101
+      ],
+      "ensemble_rho": 0.4130882568812617,
+      "delta_vs_direct00": -0.006538856863499087,
+      "delta_vs_cv_single": 0.031188595919777407,
+      "delta_vs_mean_single": 0.04205783548840997,
+      "cv_selected_single_rho": 0.3818996609614843,
+      "candidate_top20_overlap_fraction": [
+        0.25,
+        0.2,
+        0.15
+      ],
+      "ensemble_top20_overlap_fraction": 0.15,
+      "top20_delta_vs_direct00": -0.1,
+      "top20_delta_vs_cv_single": -0.05000000000000002
+    },
+    {
+      "case_id": "amfr",
+      "seed": 2501,
+      "native_statuses": [
+        "complete",
+        "complete",
+        "complete"
+      ],
+      "cv_statuses": [
+        "complete",
+        "complete",
+        "complete"
+      ],
+      "support_cv_rho": [
+        0.821328816282988,
+        0.8111455843245562,
+        0.8307614826237527
+      ],
+      "cv_selected_candidate": 2,
+      "all_native_complete": true,
+      "same_budget_comparison_complete": true,
+      "known_input_plus_output_tokens": 2099013,
+      "unknown_usage": false,
+      "candidate_wall_seconds": [
+        716.7935155001469,
+        834.1618066248484,
+        528.7693429170176
+      ],
+      "candidate_rho": [
+        0.8098588266098238,
+        0.8078721089996677,
+        0.8279149437717404
+      ],
+      "ensemble_rho": 0.8283429104462717,
+      "delta_vs_direct00": 0.01848408383644795,
+      "delta_vs_cv_single": 0.00042796667453137704,
+      "delta_vs_mean_single": 0.01312761731919454,
+      "cv_selected_single_rho": 0.8279149437717404,
+      "candidate_top20_overlap_fraction": [
+        0.65,
+        0.65,
+        0.7
+      ],
+      "ensemble_top20_overlap_fraction": 0.7,
+      "top20_delta_vs_direct00": 0.04999999999999993,
+      "top20_delta_vs_cv_single": 0.0
+    }
+  ],
+  "comparisons": {
+    "delta_vs_cv_single": {
+      "complete_assays": 4,
+      "wins": 3,
+      "mean_delta": 0.012716167937453532,
+      "assay_cluster_bootstrap95": [
+        -0.00943925323168543,
+        0.03487158910659249
+      ],
+      "prospective_stability_criteria_met": false
+    },
+    "delta_vs_direct00": {
+      "complete_assays": 4,
+      "wins": 3,
+      "mean_delta": 0.02475145913673492,
+      "assay_cluster_bootstrap95": [
+        0.003983934793414676,
+        0.043530304786995405
+      ],
+      "prospective_stability_criteria_met": true
+    },
+    "delta_vs_mean_single": {
+      "complete_assays": 4,
+      "wins": 4,
+      "mean_delta": 0.023493276955951284,
+      "assay_cluster_bootstrap95": [
+        0.013168911488786128,
+        0.034845928030901904
+      ],
+      "prospective_stability_criteria_met": true
+    }
+  },
+  "primary_comparison": "delta_vs_cv_single",
+  "planned_assays": 4,
+  "planned_native_calls": 12,
+  "model": "gpt-6.1-sol",
+  "reasoning_effort": "high",
+  "primary_pass": false,
+  "limits": [
+    "Only four additional assays; bounded replication, not universal superiority.",
+    "Four protein assays selected by endpoint coverage and input availability, not by stored scores. This is a small cross-domain extension; no universal protein-engineering claim.",
+    "Architecture was generated from all96 support outcomes; support-CV architecture selection is not nested. Remaining186 query outcomes are never used for model or portfolio selection.",
+    "Generation maximum wait3600s and soft12-minute scientific target differ from the previous hard720-second campaign; cohorts are reported separately.",
+    "Three scientific sessions per portfolio. CV-selected single shares the same generated program pool; one-call direct has lower inference budget.",
+    "Pretraining exposure to public benchmarks cannot be excluded.",
+    "Top20 overlap is an offline ranking metric, not new wet-lab validation."
+  ]
+}

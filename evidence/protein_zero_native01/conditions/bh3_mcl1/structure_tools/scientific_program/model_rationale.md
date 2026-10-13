@@ -1,0 +1,9 @@
+# Model rationale
+
+No assay supports, outcomes, MSA or trained predictor are supplied. The first complete checkpoint uses a conservative additive BH3/Mcl-1 contact heuristic, saved before refinement. All coefficients are fixed scientific priors, not estimated from outcomes.
+
+The one substantive refinement incorporates supplied WT geometry: use both the absolute buried area and buried fraction; partially discount polarity penalties where the fixed Mcl-1 partner supplies geometrically reachable polar groups; keep the native Asp15–Arg92/Asn89 interaction important; distinguish Arg11 donor-contact loss from possible alternative acidic interactions near Arg92; increase the Gly14 constraint because an ideal beta-carbon template would sit only 2.54 A from a partner heavy atom; strongly penalize helix proline and apply a weak helical charge prior. The ideal beta-carbon and polar reach descriptors are compatibility priors, not relaxed mutant coordinates or confirmed mutant contacts. No further parameter search was performed.
+
+The raw PDB and sequence hashes match declared sources. Exact whole-chain mapping covers C1–23; partner A covers 143/150, with explicit unknown X25–31 absent. All mutation identities, variant sequences and unchanged partner sequences are checked. Summary-only SASA/torsions are absent; the separately supplied verified-coordinate evidence supplies observed-atom SASA and contacts. Missing observations are not imputed. The all-zero occupancy/B-factor placeholders in the modeled source are included under the supplied provenance and are not confidence estimates.
+
+The score is tanh((relative_effect + 3)/5) for every candidate, without block/pool normalization. The arbitrary offset is not measured WT or neutral fitness. Validation establishes computational integrity, not ranking accuracy. Relaxation, assay-specific expression/display effects, binding saturation and experimental epistasis remain uncertain.

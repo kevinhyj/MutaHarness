@@ -1,0 +1,1047 @@
+[
+  {
+    "source": "experiments/portfolio_protein01/results/amfr_s2501/candidate_00/native_00/command.json",
+    "sha256_original": "c4738d54e2632dee3d8d5d94e43dc8029ab3ebe24fb3cc25bdc34e3bea5301a7",
+    "bytes": 2583
+  },
+  {
+    "source": "experiments/portfolio_protein01/results/amfr_s2501/candidate_00/native_00/events.jsonl",
+    "sha256_original": "2a8d8b6fb10e34072daee771f0390942645d9fb7f08e9127fa6c6ce46b533e52",
+    "bytes": 112080
+  },
+  {
+    "source": "experiments/portfolio_protein01/results/amfr_s2501/candidate_00/native_00/final.json",
+    "sha256_original": "561e80328d65157ca52fd3ffa4e543dfdd955029ad0ee73f995321a7a074947c",
+    "bytes": 215
+  },
+  {
+    "source": "experiments/portfolio_protein01/results/amfr_s2501/candidate_00/native_00/invocation.json",
+    "sha256_original": "9c1ec16ecb43d9fe9f0ee5e411e6e383003435ddc3c0c65a40e9f1a941370aba",
+    "bytes": 875
+  },
+  {
+    "source": "experiments/portfolio_protein01/results/amfr_s2501/candidate_00/native_00/prompt.txt",
+    "sha256_original": "1224b34680ed26b88a3f12b3474ae27a1110f146dc54c738fa221864ba81ebc2",
+    "bytes": 3144
+  },
+  {
+    "source": "experiments/portfolio_protein01/results/amfr_s2501/candidate_00/native_00/response_schema.json",
+    "sha256_original": "2220c764a860921c4cfee46e364d20de4c4526e1690bb9ad97e1d91bf4790686",
+    "bytes": 261
+  },
+  {
+    "source": "experiments/portfolio_protein01/results/amfr_s2501/candidate_00/native_00/stderr.txt",
+    "sha256_original": "1785f3a5bc9ac59123d6400710312cb67344ff03f46e738e7b0757f2c835a9e5",
+    "bytes": 1245
+  },
+  {
+    "source": "experiments/portfolio_protein01/results/amfr_s2501/candidate_01/native_00/command.json",
+    "sha256_original": "55dfc0d812795cdd1efb441c09a42bde06386912ef0e6bf2ccd1cc46ebf50a12",
+    "bytes": 2583
+  },
+  {
+    "source": "experiments/portfolio_protein01/results/amfr_s2501/candidate_01/native_00/events.jsonl",
+    "sha256_original": "91df6eecaf65de19358f549da3fdd9943a8d2652a633ec3959cd6a20fe219878",
+    "bytes": 97803
+  },
+  {
+    "source": "experiments/portfolio_protein01/results/amfr_s2501/candidate_01/native_00/final.json",
+    "sha256_original": "b8b33452eafaebb535df6063475fc8f2cef8b3d67f6a9d62dfb0e93bd6f2c5f7",
+    "bytes": 246
+  },
+  {
+    "source": "experiments/portfolio_protein01/results/amfr_s2501/candidate_01/native_00/invocation.json",
+    "sha256_original": "e63d397a1b0231ad5ac66feef36f5cdbd06827bfb7bd3a16a66c5833563585e8",
+    "bytes": 875
+  },
+  {
+    "source": "experiments/portfolio_protein01/results/amfr_s2501/candidate_01/native_00/prompt.txt",
+    "sha256_original": "1224b34680ed26b88a3f12b3474ae27a1110f146dc54c738fa221864ba81ebc2",
+    "bytes": 3144
+  },
+  {
+    "source": "experiments/portfolio_protein01/results/amfr_s2501/candidate_01/native_00/response_schema.json",
+    "sha256_original": "2220c764a860921c4cfee46e364d20de4c4526e1690bb9ad97e1d91bf4790686",
+    "bytes": 261
+  },
+  {
+    "source": "experiments/portfolio_protein01/results/amfr_s2501/candidate_01/native_00/stderr.txt",
+    "sha256_original": "e203eb8143b15e07bb09dec325758fa41ab917abe2725f13ca2127b68fb58d83",
+    "bytes": 1126
+  },
+  {
+    "source": "experiments/portfolio_protein01/results/amfr_s2501/candidate_02/native_00/command.json",
+    "sha256_original": "d3fc038e3b5c84a1eb6408cc127a34525b6339332674ec4eb4689088c93ab621",
+    "bytes": 2583
+  },
+  {
+    "source": "experiments/portfolio_protein01/results/amfr_s2501/candidate_02/native_00/events.jsonl",
+    "sha256_original": "1127a2c53289dfad8f54196872beaaece651c4f71f3e53ad4e20073c03aa3843",
+    "bytes": 133117
+  },
+  {
+    "source": "experiments/portfolio_protein01/results/amfr_s2501/candidate_02/native_00/final.json",
+    "sha256_original": "ccaaf9bc413239247f3678c051dd876a00271727fc54c1e8691679e4e85fd4e5",
+    "bytes": 259
+  },
+  {
+    "source": "experiments/portfolio_protein01/results/amfr_s2501/candidate_02/native_00/invocation.json",
+    "sha256_original": "704a8f3df0a4b963ddf7dac9ee75f3d5ec0174b0e9a89b49d20ef2cf924fe09e",
+    "bytes": 875
+  },
+  {
+    "source": "experiments/portfolio_protein01/results/amfr_s2501/candidate_02/native_00/prompt.txt",
+    "sha256_original": "1224b34680ed26b88a3f12b3474ae27a1110f146dc54c738fa221864ba81ebc2",
+    "bytes": 3144
+  },
+  {
+    "source": "experiments/portfolio_protein01/results/amfr_s2501/candidate_02/native_00/response_schema.json",
+    "sha256_original": "2220c764a860921c4cfee46e364d20de4c4526e1690bb9ad97e1d91bf4790686",
+    "bytes": 261
+  },
+  {
+    "source": "experiments/portfolio_protein01/results/amfr_s2501/candidate_02/native_00/stderr.txt",
+    "sha256_original": "6d32067935572b8885ee65e3501ff94bd2eca8b4a706fb534be4871ce9ad29f6",
+    "bytes": 821
+  },
+  {
+    "source": "experiments/portfolio_protein01/results/gcn4_s2501/candidate_00/native_00/command.json",
+    "sha256_original": "98a3c9449e12f2a48e5131c4467b4764269ad7eb9a2831763dbd3ad293d6dc62",
+    "bytes": 2583
+  },
+  {
+    "source": "experiments/portfolio_protein01/results/gcn4_s2501/candidate_00/native_00/events.jsonl",
+    "sha256_original": "62f3620282bf7a3de5684d0852319a7b02052e1257229d3566b8c88f306c98c5",
+    "bytes": 255734
+  },
+  {
+    "source": "experiments/portfolio_protein01/results/gcn4_s2501/candidate_00/native_00/final.json",
+    "sha256_original": "98e78e248e6904ba1f1da8ce241f50b2a568df0b988a9c81fb6f17ee650be170",
+    "bytes": 238
+  },
+  {
+    "source": "experiments/portfolio_protein01/results/gcn4_s2501/candidate_00/native_00/invocation.json",
+    "sha256_original": "47faf6f5ad32d8688c561137b0e2e889258e98bafa41a69ba1605b5c44571adf",
+    "bytes": 877
+  },
+  {
+    "source": "experiments/portfolio_protein01/results/gcn4_s2501/candidate_00/native_00/prompt.txt",
+    "sha256_original": "1224b34680ed26b88a3f12b3474ae27a1110f146dc54c738fa221864ba81ebc2",
+    "bytes": 3144
+  },
+  {
+    "source": "experiments/portfolio_protein01/results/gcn4_s2501/candidate_00/native_00/response_schema.json",
+    "sha256_original": "2220c764a860921c4cfee46e364d20de4c4526e1690bb9ad97e1d91bf4790686",
+    "bytes": 261
+  },
+  {
+    "source": "experiments/portfolio_protein01/results/gcn4_s2501/candidate_00/native_00/stderr.txt",
+    "sha256_original": "4bc1d4d7509868c1f1f681519bdbec601c5a8df0d7df8a89d911cc2f7c6bd8f4",
+    "bytes": 1364
+  },
+  {
+    "source": "experiments/portfolio_protein01/results/gcn4_s2501/candidate_01/native_00/command.json",
+    "sha256_original": "a7cf92dbe575cfd126ce6a9cf376f6b42ea0dee1da5499a883feb41a3dabaf4f",
+    "bytes": 2583
+  },
+  {
+    "source": "experiments/portfolio_protein01/results/gcn4_s2501/candidate_01/native_00/events.jsonl",
+    "sha256_original": "43e112ea2feb4c68d0d731626be7d2473b4eecb8456c6bbf4fa8ddec6d40d5a5",
+    "bytes": 121674
+  },
+  {
+    "source": "experiments/portfolio_protein01/results/gcn4_s2501/candidate_01/native_00/final.json",
+    "sha256_original": "aaf4eddf8b68562cb5fa74dd31cd16cc9b3298e6cc36a9d77c1cf034cdbae117",
+    "bytes": 249
+  },
+  {
+    "source": "experiments/portfolio_protein01/results/gcn4_s2501/candidate_01/native_00/invocation.json",
+    "sha256_original": "31cd8db6a2a6dc4dd337837e4c5fbc50831a3900167e3c86e6b96bdccc7c2dfc",
+    "bytes": 875
+  },
+  {
+    "source": "experiments/portfolio_protein01/results/gcn4_s2501/candidate_01/native_00/prompt.txt",
+    "sha256_original": "1224b34680ed26b88a3f12b3474ae27a1110f146dc54c738fa221864ba81ebc2",
+    "bytes": 3144
+  },
+  {
+    "source": "experiments/portfolio_protein01/results/gcn4_s2501/candidate_01/native_00/response_schema.json",
+    "sha256_original": "2220c764a860921c4cfee46e364d20de4c4526e1690bb9ad97e1d91bf4790686",
+    "bytes": 261
+  },
+  {
+    "source": "experiments/portfolio_protein01/results/gcn4_s2501/candidate_01/native_00/stderr.txt",
+    "sha256_original": "0f44db0973f76828d4e0002988b4fd6f72ad1f2b55eb242759862162c2ab11eb",
+    "bytes": 1831
+  },
+  {
+    "source": "experiments/portfolio_protein01/results/gcn4_s2501/candidate_02/native_00/command.json",
+    "sha256_original": "4d11e6537893cd6df2c18cba694dc876a52fd83f6cd479b4583b871c92109d34",
+    "bytes": 2583
+  },
+  {
+    "source": "experiments/portfolio_protein01/results/gcn4_s2501/candidate_02/native_00/events.jsonl",
+    "sha256_original": "00d1cf2a61095e3c6ff5731feb7cb4d795e3fbc4adc693b51098814377eb93ae",
+    "bytes": 135060
+  },
+  {
+    "source": "experiments/portfolio_protein01/results/gcn4_s2501/candidate_02/native_00/final.json",
+    "sha256_original": "6ae6bb273f2b8e113d876cb9df3d454da85f5d6a86f23695b05d16962ccaa3d1",
+    "bytes": 256
+  },
+  {
+    "source": "experiments/portfolio_protein01/results/gcn4_s2501/candidate_02/native_00/invocation.json",
+    "sha256_original": "d0dc2fcec80a5035f626bcdb5bfef46d1381e6f05b5202205967217c63196a51",
+    "bytes": 876
+  },
+  {
+    "source": "experiments/portfolio_protein01/results/gcn4_s2501/candidate_02/native_00/prompt.txt",
+    "sha256_original": "1224b34680ed26b88a3f12b3474ae27a1110f146dc54c738fa221864ba81ebc2",
+    "bytes": 3144
+  },
+  {
+    "source": "experiments/portfolio_protein01/results/gcn4_s2501/candidate_02/native_00/response_schema.json",
+    "sha256_original": "2220c764a860921c4cfee46e364d20de4c4526e1690bb9ad97e1d91bf4790686",
+    "bytes": 261
+  },
+  {
+    "source": "experiments/portfolio_protein01/results/gcn4_s2501/candidate_02/native_00/stderr.txt",
+    "sha256_original": "b5755856b32bb61095df2013d648c159cb7a8a27503c87d58a907e5c30e021b5",
+    "bytes": 1766
+  },
+  {
+    "source": "experiments/portfolio_protein01/results/gfp_s2501/candidate_00/native_00/command.json",
+    "sha256_original": "53bba6113bc6e4f74187aea62d3c4caddc7f39cb7d5fdc4bdac41c8ec0fce909",
+    "bytes": 2576
+  },
+  {
+    "source": "experiments/portfolio_protein01/results/gfp_s2501/candidate_00/native_00/events.jsonl",
+    "sha256_original": "ad6a3af70ab9bce73ed535d0fc4560fd3b02008e44d5e65e1dba65679f40a39c",
+    "bytes": 106142
+  },
+  {
+    "source": "experiments/portfolio_protein01/results/gfp_s2501/candidate_00/native_00/final.json",
+    "sha256_original": "09af0fd8cdf335dbcacc21a329f94e288c78d2faa80deb22b20c0c70d408e282",
+    "bytes": 237
+  },
+  {
+    "source": "experiments/portfolio_protein01/results/gfp_s2501/candidate_00/native_00/invocation.json",
+    "sha256_original": "45d433c758843db86fac55c315d7baceb2fd533ec98b2ce122c9658361cb5af9",
+    "bytes": 875
+  },
+  {
+    "source": "experiments/portfolio_protein01/results/gfp_s2501/candidate_00/native_00/prompt.txt",
+    "sha256_original": "1224b34680ed26b88a3f12b3474ae27a1110f146dc54c738fa221864ba81ebc2",
+    "bytes": 3144
+  },
+  {
+    "source": "experiments/portfolio_protein01/results/gfp_s2501/candidate_00/native_00/response_schema.json",
+    "sha256_original": "2220c764a860921c4cfee46e364d20de4c4526e1690bb9ad97e1d91bf4790686",
+    "bytes": 261
+  },
+  {
+    "source": "experiments/portfolio_protein01/results/gfp_s2501/candidate_00/native_00/stderr.txt",
+    "sha256_original": "facbfd7fd1cf2583efe020ae89dcb271d71675356f605c57709c003ae0659ab6",
+    "bytes": 2807
+  },
+  {
+    "source": "experiments/portfolio_protein01/results/gfp_s2501/candidate_01/native_00/command.json",
+    "sha256_original": "e2edccd8bb2a62296d57d08655447306cc28b6aaf87df6ba50450bb88a3bb64d",
+    "bytes": 2576
+  },
+  {
+    "source": "experiments/portfolio_protein01/results/gfp_s2501/candidate_01/native_00/events.jsonl",
+    "sha256_original": "46fad29e0ed66029e21834d4bd38a96436831f3241199f324a1099ad53818ce2",
+    "bytes": 109219
+  },
+  {
+    "source": "experiments/portfolio_protein01/results/gfp_s2501/candidate_01/native_00/final.json",
+    "sha256_original": "4c8abb74664dea4c0f870f1aef46fc2f3774c5deacc55f8c2c0e69ae17e1e5b9",
+    "bytes": 256
+  },
+  {
+    "source": "experiments/portfolio_protein01/results/gfp_s2501/candidate_01/native_00/invocation.json",
+    "sha256_original": "8c377cc0fce7b99b8d0e28179aeafdaffb1551596b75c0215de5b95acda1fde8",
+    "bytes": 874
+  },
+  {
+    "source": "experiments/portfolio_protein01/results/gfp_s2501/candidate_01/native_00/prompt.txt",
+    "sha256_original": "1224b34680ed26b88a3f12b3474ae27a1110f146dc54c738fa221864ba81ebc2",
+    "bytes": 3144
+  },
+  {
+    "source": "experiments/portfolio_protein01/results/gfp_s2501/candidate_01/native_00/response_schema.json",
+    "sha256_original": "2220c764a860921c4cfee46e364d20de4c4526e1690bb9ad97e1d91bf4790686",
+    "bytes": 261
+  },
+  {
+    "source": "experiments/portfolio_protein01/results/gfp_s2501/candidate_01/native_00/stderr.txt",
+    "sha256_original": "6fcd911157665e98e46d4c313a62a7a99e18d464d65906ad330edff2285baf6f",
+    "bytes": 1582
+  },
+  {
+    "source": "experiments/portfolio_protein01/results/gfp_s2501/candidate_02/native_00/command.json",
+    "sha256_original": "8c65682abd4d37bc008e971bd6586c5676d72d6b7e90e73db43da165fc16ff88",
+    "bytes": 2576
+  },
+  {
+    "source": "experiments/portfolio_protein01/results/gfp_s2501/candidate_02/native_00/events.jsonl",
+    "sha256_original": "e259a662a5a01cf4ab83e1901b32c19e00d74849f1670ecbfa6bff73975f517a",
+    "bytes": 89934
+  },
+  {
+    "source": "experiments/portfolio_protein01/results/gfp_s2501/candidate_02/native_00/final.json",
+    "sha256_original": "fd281e0dad0696edb602894b651c69345fc3b6cb50040e5d08b3ccd36a5f5d19",
+    "bytes": 186
+  },
+  {
+    "source": "experiments/portfolio_protein01/results/gfp_s2501/candidate_02/native_00/invocation.json",
+    "sha256_original": "f5f6978790f416afec4a63d60772b37086f575865a71e3d4e1aa2c3379a80284",
+    "bytes": 874
+  },
+  {
+    "source": "experiments/portfolio_protein01/results/gfp_s2501/candidate_02/native_00/prompt.txt",
+    "sha256_original": "1224b34680ed26b88a3f12b3474ae27a1110f146dc54c738fa221864ba81ebc2",
+    "bytes": 3144
+  },
+  {
+    "source": "experiments/portfolio_protein01/results/gfp_s2501/candidate_02/native_00/response_schema.json",
+    "sha256_original": "2220c764a860921c4cfee46e364d20de4c4526e1690bb9ad97e1d91bf4790686",
+    "bytes": 261
+  },
+  {
+    "source": "experiments/portfolio_protein01/results/gfp_s2501/candidate_02/native_00/stderr.txt",
+    "sha256_original": "38921fb4642bf6b17255dfb351700aebd2880496730c8018c55ac3727e9f309c",
+    "bytes": 2682
+  },
+  {
+    "source": "experiments/portfolio_protein01/results/pabp_s2501/candidate_00/native_00/command.json",
+    "sha256_original": "a89b640e67e3cc2d01e963a04c9a969f9fdf97a884e95e3209d7a677b6bf5bc5",
+    "bytes": 2583
+  },
+  {
+    "source": "experiments/portfolio_protein01/results/pabp_s2501/candidate_00/native_00/events.jsonl",
+    "sha256_original": "4feab7b6dc019bf5f1bdebc1be309659024e0bb20b6b16d365f188b20ba4a403",
+    "bytes": 122725
+  },
+  {
+    "source": "experiments/portfolio_protein01/results/pabp_s2501/candidate_00/native_00/final.json",
+    "sha256_original": "2e405dddcdec1892917db979706fe08e4ae431da9fc75e5387ac7b67969889d9",
+    "bytes": 206
+  },
+  {
+    "source": "experiments/portfolio_protein01/results/pabp_s2501/candidate_00/native_00/invocation.json",
+    "sha256_original": "7c274b3cc8fedd83dd2fd4d2c35a34a9ce19e73048ad98ec90c075fcdca26ba4",
+    "bytes": 875
+  },
+  {
+    "source": "experiments/portfolio_protein01/results/pabp_s2501/candidate_00/native_00/prompt.txt",
+    "sha256_original": "1224b34680ed26b88a3f12b3474ae27a1110f146dc54c738fa221864ba81ebc2",
+    "bytes": 3144
+  },
+  {
+    "source": "experiments/portfolio_protein01/results/pabp_s2501/candidate_00/native_00/response_schema.json",
+    "sha256_original": "2220c764a860921c4cfee46e364d20de4c4526e1690bb9ad97e1d91bf4790686",
+    "bytes": 261
+  },
+  {
+    "source": "experiments/portfolio_protein01/results/pabp_s2501/candidate_00/native_00/stderr.txt",
+    "sha256_original": "4d95ac2b20a4effc4ae4c56afbc7830bbbfcac40972106d447e20958733b8f3f",
+    "bytes": 2683
+  },
+  {
+    "source": "experiments/portfolio_protein01/results/pabp_s2501/candidate_01/native_00/command.json",
+    "sha256_original": "b8fe9e42a103ef80b6484ef27e479633e1311f5910dd8935cd906cf26538ec66",
+    "bytes": 2583
+  },
+  {
+    "source": "experiments/portfolio_protein01/results/pabp_s2501/candidate_01/native_00/events.jsonl",
+    "sha256_original": "dfdebcdec40def49e1b55fec49a2427a89fcebf42b2c49bae591a13a5a4df43b",
+    "bytes": 314603
+  },
+  {
+    "source": "experiments/portfolio_protein01/results/pabp_s2501/candidate_01/native_00/final.json",
+    "sha256_original": "7b83011187d32a134bc2ad7b13607b4d094ee5c50a78ceb2a7218df7ac874857",
+    "bytes": 231
+  },
+  {
+    "source": "experiments/portfolio_protein01/results/pabp_s2501/candidate_01/native_00/invocation.json",
+    "sha256_original": "04330db467203af7dd2634620ddd765a7b69ceb04e35930bbb8a754795dcd166",
+    "bytes": 874
+  },
+  {
+    "source": "experiments/portfolio_protein01/results/pabp_s2501/candidate_01/native_00/prompt.txt",
+    "sha256_original": "1224b34680ed26b88a3f12b3474ae27a1110f146dc54c738fa221864ba81ebc2",
+    "bytes": 3144
+  },
+  {
+    "source": "experiments/portfolio_protein01/results/pabp_s2501/candidate_01/native_00/response_schema.json",
+    "sha256_original": "2220c764a860921c4cfee46e364d20de4c4526e1690bb9ad97e1d91bf4790686",
+    "bytes": 261
+  },
+  {
+    "source": "experiments/portfolio_protein01/results/pabp_s2501/candidate_01/native_00/stderr.txt",
+    "sha256_original": "83386378dd739e3804306d29f2a3d04382d0be08100bbd01a9c1a7f45bc6ebc7",
+    "bytes": 2702
+  },
+  {
+    "source": "experiments/portfolio_protein01/results/pabp_s2501/candidate_02/native_00/command.json",
+    "sha256_original": "3825b0ddd8f27bc184a19217ce9782759d3ce9b9d0f462cec16cb417898c4bcb",
+    "bytes": 2583
+  },
+  {
+    "source": "experiments/portfolio_protein01/results/pabp_s2501/candidate_02/native_00/events.jsonl",
+    "sha256_original": "7c13afaf5da6b664da8c3c31b63d99e0a0389a73ebdeccada4826c4bef9feb3e",
+    "bytes": 59228
+  },
+  {
+    "source": "experiments/portfolio_protein01/results/pabp_s2501/candidate_02/native_00/final.json",
+    "sha256_original": "2214e124fbeabfba8cc39de3a7dd51f517d6a1369cc87cdeac2867514e513f00",
+    "bytes": 230
+  },
+  {
+    "source": "experiments/portfolio_protein01/results/pabp_s2501/candidate_02/native_00/invocation.json",
+    "sha256_original": "768735487859c15ee29ad52892a1d03588f03934b0bd3b12113f14e4875b4580",
+    "bytes": 893
+  },
+  {
+    "source": "experiments/portfolio_protein01/results/pabp_s2501/candidate_02/native_00/prompt.txt",
+    "sha256_original": "1224b34680ed26b88a3f12b3474ae27a1110f146dc54c738fa221864ba81ebc2",
+    "bytes": 3144
+  },
+  {
+    "source": "experiments/portfolio_protein01/results/pabp_s2501/candidate_02/native_00/response_schema.json",
+    "sha256_original": "2220c764a860921c4cfee46e364d20de4c4526e1690bb9ad97e1d91bf4790686",
+    "bytes": 261
+  },
+  {
+    "source": "experiments/portfolio_protein01/results/pabp_s2501/candidate_02/native_00/stderr.txt",
+    "sha256_original": "82b4ccf108546536a3fb289842e1e96d4ff875540763772d6c1ce01606ee1dee",
+    "bytes": 2637
+  },
+  {
+    "source": "experiments/portfolio_protein02/results/grb2_s2601/candidate_00/native_00/command.json",
+    "sha256_original": "a48cd1e5e5b389525b194398031920d67bf14072bbb2d7aa33f9009065444d35",
+    "bytes": 2583
+  },
+  {
+    "source": "experiments/portfolio_protein02/results/grb2_s2601/candidate_00/native_00/events.jsonl",
+    "sha256_original": "b21fd69671d10571954d31b0d4d0a3c0bcdffb8a2562903a5682740e89f9502e",
+    "bytes": 147248
+  },
+  {
+    "source": "experiments/portfolio_protein02/results/grb2_s2601/candidate_00/native_00/final.json",
+    "sha256_original": "63dd8c47738edd8f66bde913ffbfbbb60bf481ead354db067cc38aaa49d9f422",
+    "bytes": 240
+  },
+  {
+    "source": "experiments/portfolio_protein02/results/grb2_s2601/candidate_00/native_00/invocation.json",
+    "sha256_original": "bbff82cdf5871c857936967586b79067e1c1311564b11c6a1dcb007529ad0577",
+    "bytes": 873
+  },
+  {
+    "source": "experiments/portfolio_protein02/results/grb2_s2601/candidate_00/native_00/prompt.txt",
+    "sha256_original": "01e8e0d3449cb7a7880dbab31a2df5cf98bba96925afe663cae0f6b4d589577d",
+    "bytes": 3144
+  },
+  {
+    "source": "experiments/portfolio_protein02/results/grb2_s2601/candidate_00/native_00/response_schema.json",
+    "sha256_original": "2220c764a860921c4cfee46e364d20de4c4526e1690bb9ad97e1d91bf4790686",
+    "bytes": 261
+  },
+  {
+    "source": "experiments/portfolio_protein02/results/grb2_s2601/candidate_00/native_00/stderr.txt",
+    "sha256_original": "5a088dcfacc749592ae9b7f0e38734f2c24b4598568518ec40ce6d86fca69165",
+    "bytes": 422
+  },
+  {
+    "source": "experiments/portfolio_protein02/results/grb2_s2601/candidate_01/native_00/command.json",
+    "sha256_original": "6af05633bfad72a3a44a7c2e2408fb81cf511fc99aba32c824fe2d242b0725b8",
+    "bytes": 2583
+  },
+  {
+    "source": "experiments/portfolio_protein02/results/grb2_s2601/candidate_01/native_00/events.jsonl",
+    "sha256_original": "1c1d4eac02573b0cfe5ee8b2387825cee825e5f6c121a63c5e8982b030de6076",
+    "bytes": 122311
+  },
+  {
+    "source": "experiments/portfolio_protein02/results/grb2_s2601/candidate_01/native_00/final.json",
+    "sha256_original": "20ff413eac4f7b03aa29d38370e892e9ad40102d2095ebd7f2e0e117ee7e644c",
+    "bytes": 191
+  },
+  {
+    "source": "experiments/portfolio_protein02/results/grb2_s2601/candidate_01/native_00/invocation.json",
+    "sha256_original": "6d24e1c8f4edec5259253d314a17754bb592dc27c454d7f32396999c73c95b14",
+    "bytes": 874
+  },
+  {
+    "source": "experiments/portfolio_protein02/results/grb2_s2601/candidate_01/native_00/prompt.txt",
+    "sha256_original": "01e8e0d3449cb7a7880dbab31a2df5cf98bba96925afe663cae0f6b4d589577d",
+    "bytes": 3144
+  },
+  {
+    "source": "experiments/portfolio_protein02/results/grb2_s2601/candidate_01/native_00/response_schema.json",
+    "sha256_original": "2220c764a860921c4cfee46e364d20de4c4526e1690bb9ad97e1d91bf4790686",
+    "bytes": 261
+  },
+  {
+    "source": "experiments/portfolio_protein02/results/grb2_s2601/candidate_01/native_00/stderr.txt",
+    "sha256_original": "2a6334dd1c8e5cd513964bd0d3425e3044dfbb18b6ef493a886b326abc4f59bd",
+    "bytes": 835
+  },
+  {
+    "source": "experiments/portfolio_protein02/results/grb2_s2601/candidate_02/native_00/command.json",
+    "sha256_original": "ddcad02689c87bf84d5fc27b24192293025d68749a9d5599ec320e26b3f72d97",
+    "bytes": 2583
+  },
+  {
+    "source": "experiments/portfolio_protein02/results/grb2_s2601/candidate_02/native_00/events.jsonl",
+    "sha256_original": "a4549dc84782d9a28d53691686e1af02719fbf8158aaf03bfb7727d083d8ee9d",
+    "bytes": 96591
+  },
+  {
+    "source": "experiments/portfolio_protein02/results/grb2_s2601/candidate_02/native_00/final.json",
+    "sha256_original": "51eef46f4f721e8d4fb8150938b7613fb91f60b78e8994d2571ac1824b792837",
+    "bytes": 233
+  },
+  {
+    "source": "experiments/portfolio_protein02/results/grb2_s2601/candidate_02/native_00/invocation.json",
+    "sha256_original": "f086343a098baff58df88b4c40a8a0ba75151206e5bda137b1930728c7bdfae6",
+    "bytes": 893
+  },
+  {
+    "source": "experiments/portfolio_protein02/results/grb2_s2601/candidate_02/native_00/prompt.txt",
+    "sha256_original": "01e8e0d3449cb7a7880dbab31a2df5cf98bba96925afe663cae0f6b4d589577d",
+    "bytes": 3144
+  },
+  {
+    "source": "experiments/portfolio_protein02/results/grb2_s2601/candidate_02/native_00/response_schema.json",
+    "sha256_original": "2220c764a860921c4cfee46e364d20de4c4526e1690bb9ad97e1d91bf4790686",
+    "bytes": 261
+  },
+  {
+    "source": "experiments/portfolio_protein02/results/grb2_s2601/candidate_02/native_00/stderr.txt",
+    "sha256_original": "804b2a6dd8bbbb6c9bcf0c0e6932c2fd6992cc6c6f32b3b40bb08f5068d07bae",
+    "bytes": 357
+  },
+  {
+    "source": "experiments/portfolio_protein02/results/his7_s2601/candidate_00/native_00/command.json",
+    "sha256_original": "be0862f96e501f60d5e1098e1283f16db00337115a7e71f87a8dcb6ac364f9ca",
+    "bytes": 2583
+  },
+  {
+    "source": "experiments/portfolio_protein02/results/his7_s2601/candidate_00/native_00/events.jsonl",
+    "sha256_original": "c31c4646188a6f33cf3ebd7580e2d1b4c5c402640d32b04489f7129800b4f903",
+    "bytes": 140744
+  },
+  {
+    "source": "experiments/portfolio_protein02/results/his7_s2601/candidate_00/native_00/final.json",
+    "sha256_original": "938d7b8693ced5018bf0aac1d10ac1380b363c463f15989a6d3730be6d34f40a",
+    "bytes": 214
+  },
+  {
+    "source": "experiments/portfolio_protein02/results/his7_s2601/candidate_00/native_00/invocation.json",
+    "sha256_original": "e066a4d516caaa52fc041b642c1c03f5a97208f4f4c81f49557aca13ce1814ee",
+    "bytes": 876
+  },
+  {
+    "source": "experiments/portfolio_protein02/results/his7_s2601/candidate_00/native_00/prompt.txt",
+    "sha256_original": "01e8e0d3449cb7a7880dbab31a2df5cf98bba96925afe663cae0f6b4d589577d",
+    "bytes": 3144
+  },
+  {
+    "source": "experiments/portfolio_protein02/results/his7_s2601/candidate_00/native_00/response_schema.json",
+    "sha256_original": "2220c764a860921c4cfee46e364d20de4c4526e1690bb9ad97e1d91bf4790686",
+    "bytes": 261
+  },
+  {
+    "source": "experiments/portfolio_protein02/results/his7_s2601/candidate_00/native_00/stderr.txt",
+    "sha256_original": "6c5a2ade23e81a662e4ba6452636c0b32c18b4bb2922fb532e708e72defe4d33",
+    "bytes": 410
+  },
+  {
+    "source": "experiments/portfolio_protein02/results/his7_s2601/candidate_01/native_00/command.json",
+    "sha256_original": "78cc6c1b6b978be84641a0a84ee96eaeafaf8651e3a071a658694cfec3c7ea15",
+    "bytes": 2583
+  },
+  {
+    "source": "experiments/portfolio_protein02/results/his7_s2601/candidate_01/native_00/events.jsonl",
+    "sha256_original": "b50c089003e8be1e7239d801c71c6cd811258e1ae4ede2e0b14afa53ed7ba27f",
+    "bytes": 145195
+  },
+  {
+    "source": "experiments/portfolio_protein02/results/his7_s2601/candidate_01/native_00/final.json",
+    "sha256_original": "da6abb09442087dc38b4df9e148c2a1051b1e1f8f9c1c9cdd1e2d03c78f276c0",
+    "bytes": 232
+  },
+  {
+    "source": "experiments/portfolio_protein02/results/his7_s2601/candidate_01/native_00/invocation.json",
+    "sha256_original": "70e585238841d51f5b8f5a2984818f643ed8cad979840542d56a23c34e87f01c",
+    "bytes": 875
+  },
+  {
+    "source": "experiments/portfolio_protein02/results/his7_s2601/candidate_01/native_00/prompt.txt",
+    "sha256_original": "01e8e0d3449cb7a7880dbab31a2df5cf98bba96925afe663cae0f6b4d589577d",
+    "bytes": 3144
+  },
+  {
+    "source": "experiments/portfolio_protein02/results/his7_s2601/candidate_01/native_00/response_schema.json",
+    "sha256_original": "2220c764a860921c4cfee46e364d20de4c4526e1690bb9ad97e1d91bf4790686",
+    "bytes": 261
+  },
+  {
+    "source": "experiments/portfolio_protein02/results/his7_s2601/candidate_01/native_00/stderr.txt",
+    "sha256_original": "b027126c193a803c0df70788e57142e9472133f530cb58e0aef4d7ff1277513f",
+    "bytes": 956
+  },
+  {
+    "source": "experiments/portfolio_protein02/results/his7_s2601/candidate_02/native_00/command.json",
+    "sha256_original": "b1b34f9a969f6c5a41784acf7db9e3164bea054e1db99285f5bc10e9eaebd804",
+    "bytes": 2583
+  },
+  {
+    "source": "experiments/portfolio_protein02/results/his7_s2601/candidate_02/native_00/events.jsonl",
+    "sha256_original": "4cbf07ce9e7aad6ad4b02296a81a363252a9c2f51e806d1a213763b03719384f",
+    "bytes": 241554
+  },
+  {
+    "source": "experiments/portfolio_protein02/results/his7_s2601/candidate_02/native_00/final.json",
+    "sha256_original": "65702f30781be242ab184b910742abb03cec043b6360e76b824a7848631c40d0",
+    "bytes": 242
+  },
+  {
+    "source": "experiments/portfolio_protein02/results/his7_s2601/candidate_02/native_00/invocation.json",
+    "sha256_original": "2c71562d3504dbc5e7756b0f5fe4e15d9881e1cfc24f7237778097cee6c8b28d",
+    "bytes": 874
+  },
+  {
+    "source": "experiments/portfolio_protein02/results/his7_s2601/candidate_02/native_00/prompt.txt",
+    "sha256_original": "01e8e0d3449cb7a7880dbab31a2df5cf98bba96925afe663cae0f6b4d589577d",
+    "bytes": 3144
+  },
+  {
+    "source": "experiments/portfolio_protein02/results/his7_s2601/candidate_02/native_00/response_schema.json",
+    "sha256_original": "2220c764a860921c4cfee46e364d20de4c4526e1690bb9ad97e1d91bf4790686",
+    "bytes": 261
+  },
+  {
+    "source": "experiments/portfolio_protein02/results/his7_s2601/candidate_02/native_00/stderr.txt",
+    "sha256_original": "e4c9867444d18fc783b33ef0f2321569bdf39a4c79f008b6c83cbc47e81b8c92",
+    "bytes": 119
+  },
+  {
+    "source": "experiments/portfolio_protein02/results/phot_s2601/candidate_00/native_00/command.json",
+    "sha256_original": "66455ea6c892dfb4760675a6e4c05eff0c6ae05cd4cfd1dbc343f0c1fd32d9cf",
+    "bytes": 2583
+  },
+  {
+    "source": "experiments/portfolio_protein02/results/phot_s2601/candidate_00/native_00/events.jsonl",
+    "sha256_original": "a24e9fc1f3d97d1fd2f87b712aa337742831e27d18ad5a6316d209e14edf71a1",
+    "bytes": 100441
+  },
+  {
+    "source": "experiments/portfolio_protein02/results/phot_s2601/candidate_00/native_00/final.json",
+    "sha256_original": "f0d30de4d321661522f872621738d4da7fa312869eeb91694814aa7ab1acec74",
+    "bytes": 246
+  },
+  {
+    "source": "experiments/portfolio_protein02/results/phot_s2601/candidate_00/native_00/invocation.json",
+    "sha256_original": "42d1e34d3b40c51357759c7e06dffd9cf5d4a00394ceb1d9a00fd1d05f9c64ab",
+    "bytes": 874
+  },
+  {
+    "source": "experiments/portfolio_protein02/results/phot_s2601/candidate_00/native_00/prompt.txt",
+    "sha256_original": "01e8e0d3449cb7a7880dbab31a2df5cf98bba96925afe663cae0f6b4d589577d",
+    "bytes": 3144
+  },
+  {
+    "source": "experiments/portfolio_protein02/results/phot_s2601/candidate_00/native_00/response_schema.json",
+    "sha256_original": "2220c764a860921c4cfee46e364d20de4c4526e1690bb9ad97e1d91bf4790686",
+    "bytes": 261
+  },
+  {
+    "source": "experiments/portfolio_protein02/results/phot_s2601/candidate_00/native_00/stderr.txt",
+    "sha256_original": "bc3927c2e5a57ac2feab7b8d1c3c1c303176988aa30fd7dc41bad908eaa6c564",
+    "bytes": 798
+  },
+  {
+    "source": "experiments/portfolio_protein02/results/phot_s2601/candidate_01/native_00/command.json",
+    "sha256_original": "59d018102f8fe456c720b2f62a7666abb8d9f0d69df4e4bed0c09d7fb830b672",
+    "bytes": 2583
+  },
+  {
+    "source": "experiments/portfolio_protein02/results/phot_s2601/candidate_01/native_00/events.jsonl",
+    "sha256_original": "4886faa9dc67da36796fb65362126e5fb14ca01cbb39460f1b742a02953247d1",
+    "bytes": 83254
+  },
+  {
+    "source": "experiments/portfolio_protein02/results/phot_s2601/candidate_01/native_00/final.json",
+    "sha256_original": "c5ddfa20bc14e08bef718a53f59ee9c8037a15443f86729e2b5c9d1e615ff353",
+    "bytes": 233
+  },
+  {
+    "source": "experiments/portfolio_protein02/results/phot_s2601/candidate_01/native_00/invocation.json",
+    "sha256_original": "f400878ff4843bcfb33e2737b70b6e7dd13093d7321b4de3e2ef351c01a9c1d1",
+    "bytes": 875
+  },
+  {
+    "source": "experiments/portfolio_protein02/results/phot_s2601/candidate_01/native_00/prompt.txt",
+    "sha256_original": "01e8e0d3449cb7a7880dbab31a2df5cf98bba96925afe663cae0f6b4d589577d",
+    "bytes": 3144
+  },
+  {
+    "source": "experiments/portfolio_protein02/results/phot_s2601/candidate_01/native_00/response_schema.json",
+    "sha256_original": "2220c764a860921c4cfee46e364d20de4c4526e1690bb9ad97e1d91bf4790686",
+    "bytes": 261
+  },
+  {
+    "source": "experiments/portfolio_protein02/results/phot_s2601/candidate_01/native_00/stderr.txt",
+    "sha256_original": "705286b36955d870493ccb9e72327d8467a2b8475cf6451efbbdf9462e5e2f53",
+    "bytes": 917
+  },
+  {
+    "source": "experiments/portfolio_protein02/results/phot_s2601/candidate_02/native_00/command.json",
+    "sha256_original": "eed2c6a79c647a40a6c84ae735ab1fd712acf35a5e6b405854d3c8c429f3fdb3",
+    "bytes": 2583
+  },
+  {
+    "source": "experiments/portfolio_protein02/results/phot_s2601/candidate_02/native_00/events.jsonl",
+    "sha256_original": "ade79560fb8dc147efb5ddc8752bcb44e97e4e7eb7494e204b49443c604e2042",
+    "bytes": 175084
+  },
+  {
+    "source": "experiments/portfolio_protein02/results/phot_s2601/candidate_02/native_00/final.json",
+    "sha256_original": "38201fbec676ea25ad49f9e3cd18e59b1931f716cf340b2b6a7122e99a3b3f83",
+    "bytes": 208
+  },
+  {
+    "source": "experiments/portfolio_protein02/results/phot_s2601/candidate_02/native_00/invocation.json",
+    "sha256_original": "b9c88ff41e079da972ecdd2260aefd47135d5bed3ad8ee2abeaab24dfb9ffdd3",
+    "bytes": 874
+  },
+  {
+    "source": "experiments/portfolio_protein02/results/phot_s2601/candidate_02/native_00/prompt.txt",
+    "sha256_original": "01e8e0d3449cb7a7880dbab31a2df5cf98bba96925afe663cae0f6b4d589577d",
+    "bytes": 3144
+  },
+  {
+    "source": "experiments/portfolio_protein02/results/phot_s2601/candidate_02/native_00/response_schema.json",
+    "sha256_original": "2220c764a860921c4cfee46e364d20de4c4526e1690bb9ad97e1d91bf4790686",
+    "bytes": 261
+  },
+  {
+    "source": "experiments/portfolio_protein02/results/phot_s2601/candidate_02/native_00/stderr.txt",
+    "sha256_original": "b6b90297943653da9c60a89aaa140f36536aa1871af20496806f8d3028b191dd",
+    "bytes": 931
+  },
+  {
+    "source": "experiments/portfolio_protein02/results/ras_abundance_s2601/candidate_00/native_00/command.json",
+    "sha256_original": "6c7ee74516e869ea4d565418315f43e806772abe59f9c1fb346ee850edf378c0",
+    "bytes": 2646
+  },
+  {
+    "source": "experiments/portfolio_protein02/results/ras_abundance_s2601/candidate_00/native_00/events.jsonl",
+    "sha256_original": "cf8caecddc076c71d9e6d98faa8f61a08eab968b480457fa973d2cbbea60bb7a",
+    "bytes": 86590
+  },
+  {
+    "source": "experiments/portfolio_protein02/results/ras_abundance_s2601/candidate_00/native_00/final.json",
+    "sha256_original": "16868b5442855b8c6542bab2b04938352fd6ce3b2fff976981bc107588431bf2",
+    "bytes": 231
+  },
+  {
+    "source": "experiments/portfolio_protein02/results/ras_abundance_s2601/candidate_00/native_00/invocation.json",
+    "sha256_original": "702960860e4a3b9911df1b246341a3af6e97b0c593863bc732129ca0384b18a1",
+    "bytes": 874
+  },
+  {
+    "source": "experiments/portfolio_protein02/results/ras_abundance_s2601/candidate_00/native_00/prompt.txt",
+    "sha256_original": "01e8e0d3449cb7a7880dbab31a2df5cf98bba96925afe663cae0f6b4d589577d",
+    "bytes": 3144
+  },
+  {
+    "source": "experiments/portfolio_protein02/results/ras_abundance_s2601/candidate_00/native_00/response_schema.json",
+    "sha256_original": "2220c764a860921c4cfee46e364d20de4c4526e1690bb9ad97e1d91bf4790686",
+    "bytes": 261
+  },
+  {
+    "source": "experiments/portfolio_protein02/results/ras_abundance_s2601/candidate_00/native_00/stderr.txt",
+    "sha256_original": "37e6e0fe5b63b7514efa3ab52bd409b5caf57c447ca30eac77cf12db3682cc27",
+    "bytes": 1404
+  },
+  {
+    "source": "experiments/portfolio_protein02/results/ras_abundance_s2601/candidate_01/native_00/command.json",
+    "sha256_original": "493870af25a4e5ae78f8eb778c0e2583080edafe75ba188c7c6d7f86db34289b",
+    "bytes": 2646
+  },
+  {
+    "source": "experiments/portfolio_protein02/results/ras_abundance_s2601/candidate_01/native_00/events.jsonl",
+    "sha256_original": "beaa3349c859dc1d6ba84cbe71d3b01ae38d867748f95ff8bba08e69bf3aaeaf",
+    "bytes": 148606
+  },
+  {
+    "source": "experiments/portfolio_protein02/results/ras_abundance_s2601/candidate_01/native_00/final.json",
+    "sha256_original": "bcff58303b4ce92bd691ab5bda1a2ef9aa4dc2711f9f6f9861502746f8da6a76",
+    "bytes": 284
+  },
+  {
+    "source": "experiments/portfolio_protein02/results/ras_abundance_s2601/candidate_01/native_00/invocation.json",
+    "sha256_original": "3aa8650d6c13b884b1e967e9388a38b05a59255eb028dd539bcc460c773db142",
+    "bytes": 894
+  },
+  {
+    "source": "experiments/portfolio_protein02/results/ras_abundance_s2601/candidate_01/native_00/prompt.txt",
+    "sha256_original": "01e8e0d3449cb7a7880dbab31a2df5cf98bba96925afe663cae0f6b4d589577d",
+    "bytes": 3144
+  },
+  {
+    "source": "experiments/portfolio_protein02/results/ras_abundance_s2601/candidate_01/native_00/response_schema.json",
+    "sha256_original": "2220c764a860921c4cfee46e364d20de4c4526e1690bb9ad97e1d91bf4790686",
+    "bytes": 261
+  },
+  {
+    "source": "experiments/portfolio_protein02/results/ras_abundance_s2601/candidate_01/native_00/stderr.txt",
+    "sha256_original": "d4b3790b30a6201039c722f76eb69f09a16f0d5de2fa48d160825dbedfd248c7",
+    "bytes": 756
+  },
+  {
+    "source": "experiments/portfolio_protein02/results/ras_abundance_s2601/candidate_02/native_00/command.json",
+    "sha256_original": "9f55f73d5da3c2734ee8ec75224aa87e17d01521021834d04bfdcd57928ecf71",
+    "bytes": 2646
+  },
+  {
+    "source": "experiments/portfolio_protein02/results/ras_abundance_s2601/candidate_02/native_00/events.jsonl",
+    "sha256_original": "3a29748876b464708df59cf12cf16648db2dd3f6b03835f77f95c197c8ebebea",
+    "bytes": 176624
+  },
+  {
+    "source": "experiments/portfolio_protein02/results/ras_abundance_s2601/candidate_02/native_00/invocation.json",
+    "sha256_original": "1f5760ec0b790f96b22b7ac4fcae95f2969b2f69ad372c492a7ff8f9ba9249bc",
+    "bytes": 700
+  },
+  {
+    "source": "experiments/portfolio_protein02/results/ras_abundance_s2601/candidate_02/native_00/prompt.txt",
+    "sha256_original": "01e8e0d3449cb7a7880dbab31a2df5cf98bba96925afe663cae0f6b4d589577d",
+    "bytes": 3144
+  },
+  {
+    "source": "experiments/portfolio_protein02/results/ras_abundance_s2601/candidate_02/native_00/response_schema.json",
+    "sha256_original": "2220c764a860921c4cfee46e364d20de4c4526e1690bb9ad97e1d91bf4790686",
+    "bytes": 261
+  },
+  {
+    "source": "experiments/portfolio_protein02/results/ras_abundance_s2601/candidate_02/native_00/stderr.txt",
+    "sha256_original": "3dae7119feb4ec042644c040c3740a5cf2b9d7708dd384f47357a488fb09e992",
+    "bytes": 518
+  },
+  {
+    "source": "experiments/portfolio_protein02/results/yap1_s2601/candidate_00/native_00/command.json",
+    "sha256_original": "7f3a65298079c7154efa421930c40c349a51066d3d7a3cbf3ebb7119601b0d6b",
+    "bytes": 2583
+  },
+  {
+    "source": "experiments/portfolio_protein02/results/yap1_s2601/candidate_00/native_00/events.jsonl",
+    "sha256_original": "60847f4cb4370cd241a028b8ec14ceeb5241d4389a11c29269ee9233529c04e4",
+    "bytes": 128105
+  },
+  {
+    "source": "experiments/portfolio_protein02/results/yap1_s2601/candidate_00/native_00/final.json",
+    "sha256_original": "a195d104c441ef25c653b81dae0c2924361b8e01e8a49d8b9bbdfd58e43335cf",
+    "bytes": 232
+  },
+  {
+    "source": "experiments/portfolio_protein02/results/yap1_s2601/candidate_00/native_00/invocation.json",
+    "sha256_original": "b0b23fdf2ce7a987777a635f3106faab72d576d26e360ceb180e015c8850be46",
+    "bytes": 894
+  },
+  {
+    "source": "experiments/portfolio_protein02/results/yap1_s2601/candidate_00/native_00/prompt.txt",
+    "sha256_original": "01e8e0d3449cb7a7880dbab31a2df5cf98bba96925afe663cae0f6b4d589577d",
+    "bytes": 3144
+  },
+  {
+    "source": "experiments/portfolio_protein02/results/yap1_s2601/candidate_00/native_00/response_schema.json",
+    "sha256_original": "2220c764a860921c4cfee46e364d20de4c4526e1690bb9ad97e1d91bf4790686",
+    "bytes": 261
+  },
+  {
+    "source": "experiments/portfolio_protein02/results/yap1_s2601/candidate_00/native_00/stderr.txt",
+    "sha256_original": "d5d1e22bd4eb1397a78e80b8e3dc62d059e2e4413a36c9aa0359b6029732992c",
+    "bytes": 945
+  },
+  {
+    "source": "experiments/portfolio_protein02/results/yap1_s2601/candidate_01/native_00/command.json",
+    "sha256_original": "79a39e62c18113a371d6ba52289aca2c894190ad08bcb6a6377df95ba2cf070f",
+    "bytes": 2583
+  },
+  {
+    "source": "experiments/portfolio_protein02/results/yap1_s2601/candidate_01/native_00/events.jsonl",
+    "sha256_original": "d9bb2aac3fbaa9dad0cec2d7f5465a975e0e72b1d40e9aea14b55d7bea289428",
+    "bytes": 279710
+  },
+  {
+    "source": "experiments/portfolio_protein02/results/yap1_s2601/candidate_01/native_00/final.json",
+    "sha256_original": "99347d0b445c04a31007c48cee7f2b0d31e6d8408b7979bf4bb9277f954aa9a1",
+    "bytes": 218
+  },
+  {
+    "source": "experiments/portfolio_protein02/results/yap1_s2601/candidate_01/native_00/invocation.json",
+    "sha256_original": "2b2a57463880d7f1a7bd61024d48d43ac196b3d71a60fe96a9db8e2c9458c353",
+    "bytes": 874
+  },
+  {
+    "source": "experiments/portfolio_protein02/results/yap1_s2601/candidate_01/native_00/prompt.txt",
+    "sha256_original": "01e8e0d3449cb7a7880dbab31a2df5cf98bba96925afe663cae0f6b4d589577d",
+    "bytes": 3144
+  },
+  {
+    "source": "experiments/portfolio_protein02/results/yap1_s2601/candidate_01/native_00/response_schema.json",
+    "sha256_original": "2220c764a860921c4cfee46e364d20de4c4526e1690bb9ad97e1d91bf4790686",
+    "bytes": 261
+  },
+  {
+    "source": "experiments/portfolio_protein02/results/yap1_s2601/candidate_01/native_00/stderr.txt",
+    "sha256_original": "1f0e80ee8211a8b5a4cc45e0c36b3f0ae447916bf34a4a81a62a2f1b7564cd78",
+    "bytes": 848
+  },
+  {
+    "source": "experiments/portfolio_protein02/results/yap1_s2601/candidate_02/native_00/command.json",
+    "sha256_original": "1c4391380159f440fe9d4d8ee83efbefcdc2f6bd60d8ce4df46c1b00abbdfd24",
+    "bytes": 2583
+  },
+  {
+    "source": "experiments/portfolio_protein02/results/yap1_s2601/candidate_02/native_00/events.jsonl",
+    "sha256_original": "1a2ef04edd4bc9cd2b2c9be8cef751c98b46d6799245761d8c3329e03b58f2df",
+    "bytes": 109038
+  },
+  {
+    "source": "experiments/portfolio_protein02/results/yap1_s2601/candidate_02/native_00/final.json",
+    "sha256_original": "2a7c4f6f7d42d5ebe62caf680cd28addf72a980c5f3f1711b3c444a04a7e03b3",
+    "bytes": 199
+  },
+  {
+    "source": "experiments/portfolio_protein02/results/yap1_s2601/candidate_02/native_00/invocation.json",
+    "sha256_original": "85e7881966c5b06c67fccede4eaa8adb8adb99d99c9b9a49c93b78247d0818f2",
+    "bytes": 874
+  },
+  {
+    "source": "experiments/portfolio_protein02/results/yap1_s2601/candidate_02/native_00/prompt.txt",
+    "sha256_original": "01e8e0d3449cb7a7880dbab31a2df5cf98bba96925afe663cae0f6b4d589577d",
+    "bytes": 3144
+  },
+  {
+    "source": "experiments/portfolio_protein02/results/yap1_s2601/candidate_02/native_00/response_schema.json",
+    "sha256_original": "2220c764a860921c4cfee46e364d20de4c4526e1690bb9ad97e1d91bf4790686",
+    "bytes": 261
+  },
+  {
+    "source": "experiments/portfolio_protein02/results/yap1_s2601/candidate_02/native_00/stderr.txt",
+    "sha256_original": "d52a3fee72e863bd9a621d0e67446e549a182be721e6581ddf3209a486ad5c3b",
+    "bytes": 945
+  },
+  {
+    "source": "experiments/portfolio_protein02/results/ynzc_s2601/candidate_00/native_00/command.json",
+    "sha256_original": "60282ebe0f46c1d6428d37f5cdf6b0c40b1001d022ef07c54dd9dc5093be4f0b",
+    "bytes": 2583
+  },
+  {
+    "source": "experiments/portfolio_protein02/results/ynzc_s2601/candidate_00/native_00/events.jsonl",
+    "sha256_original": "365b20e44733ec3369d3f831083e97ac7b342781bda8d72668f36a6b5a464581",
+    "bytes": 54312
+  },
+  {
+    "source": "experiments/portfolio_protein02/results/ynzc_s2601/candidate_00/native_00/final.json",
+    "sha256_original": "3691dc4fb00e193e98f10bd3b2663314edde1e69ae411c5dc3a20403ed64ca43",
+    "bytes": 244
+  },
+  {
+    "source": "experiments/portfolio_protein02/results/ynzc_s2601/candidate_00/native_00/invocation.json",
+    "sha256_original": "23ff4786faa35bab74d100c703111ee421dfc2bf8ca6460a2675513629447118",
+    "bytes": 893
+  },
+  {
+    "source": "experiments/portfolio_protein02/results/ynzc_s2601/candidate_00/native_00/prompt.txt",
+    "sha256_original": "01e8e0d3449cb7a7880dbab31a2df5cf98bba96925afe663cae0f6b4d589577d",
+    "bytes": 3144
+  },
+  {
+    "source": "experiments/portfolio_protein02/results/ynzc_s2601/candidate_00/native_00/response_schema.json",
+    "sha256_original": "2220c764a860921c4cfee46e364d20de4c4526e1690bb9ad97e1d91bf4790686",
+    "bytes": 261
+  },
+  {
+    "source": "experiments/portfolio_protein02/results/ynzc_s2601/candidate_00/native_00/stderr.txt",
+    "sha256_original": "190b609ab247193f7f6d69779b3eb314ecddeffe565cb2c901e42fb78b57f9e0",
+    "bytes": 976
+  },
+  {
+    "source": "experiments/portfolio_protein02/results/ynzc_s2601/candidate_01/native_00/command.json",
+    "sha256_original": "ede68024eaf55e2acb663e517555530ca52ae9c6cefe40b32134715a0b26073e",
+    "bytes": 2583
+  },
+  {
+    "source": "experiments/portfolio_protein02/results/ynzc_s2601/candidate_01/native_00/events.jsonl",
+    "sha256_original": "fe1c0806843744f78534082d35e7dc63d2b19054f617b406f0104458675384af",
+    "bytes": 95690
+  },
+  {
+    "source": "experiments/portfolio_protein02/results/ynzc_s2601/candidate_01/native_00/final.json",
+    "sha256_original": "c2646a20f75f8059afd31645901bfcfd25c9a8a08beb2bd5cf7be021a7014080",
+    "bytes": 234
+  },
+  {
+    "source": "experiments/portfolio_protein02/results/ynzc_s2601/candidate_01/native_00/invocation.json",
+    "sha256_original": "8985a81dc31ecf98fd9c55037bf395578a1fc0c59b25ae7c5c47c9b242797107",
+    "bytes": 874
+  },
+  {
+    "source": "experiments/portfolio_protein02/results/ynzc_s2601/candidate_01/native_00/prompt.txt",
+    "sha256_original": "01e8e0d3449cb7a7880dbab31a2df5cf98bba96925afe663cae0f6b4d589577d",
+    "bytes": 3144
+  },
+  {
+    "source": "experiments/portfolio_protein02/results/ynzc_s2601/candidate_01/native_00/response_schema.json",
+    "sha256_original": "2220c764a860921c4cfee46e364d20de4c4526e1690bb9ad97e1d91bf4790686",
+    "bytes": 261
+  },
+  {
+    "source": "experiments/portfolio_protein02/results/ynzc_s2601/candidate_01/native_00/stderr.txt",
+    "sha256_original": "2357f784ee439a1851bcfab008855d9aa1d86918b074d9d846b93b848cc300f9",
+    "bytes": 702
+  },
+  {
+    "source": "experiments/portfolio_protein02/results/ynzc_s2601/candidate_02/native_00/command.json",
+    "sha256_original": "a378b88c186e2297d9d652a1dd38468d15b0e9087df4f633ad7afb0f218351f3",
+    "bytes": 2583
+  },
+  {
+    "source": "experiments/portfolio_protein02/results/ynzc_s2601/candidate_02/native_00/events.jsonl",
+    "sha256_original": "9068d9e8a56300ee1f5211d9c25e5db4f729925dbbde3d095f7d791c051de0ce",
+    "bytes": 80876
+  },
+  {
+    "source": "experiments/portfolio_protein02/results/ynzc_s2601/candidate_02/native_00/final.json",
+    "sha256_original": "df240908ae6531afd6460d906fb7f077738086264d9b6bdf43eb049d221e52c0",
+    "bytes": 219
+  },
+  {
+    "source": "experiments/portfolio_protein02/results/ynzc_s2601/candidate_02/native_00/invocation.json",
+    "sha256_original": "a8ad0dbb4edd0b91e55b46401b15bca0831d71c122b235edfb8f6c5175f7e604",
+    "bytes": 892
+  },
+  {
+    "source": "experiments/portfolio_protein02/results/ynzc_s2601/candidate_02/native_00/prompt.txt",
+    "sha256_original": "01e8e0d3449cb7a7880dbab31a2df5cf98bba96925afe663cae0f6b4d589577d",
+    "bytes": 3144
+  },
+  {
+    "source": "experiments/portfolio_protein02/results/ynzc_s2601/candidate_02/native_00/response_schema.json",
+    "sha256_original": "2220c764a860921c4cfee46e364d20de4c4526e1690bb9ad97e1d91bf4790686",
+    "bytes": 261
+  },
+  {
+    "source": "experiments/portfolio_protein02/results/ynzc_s2601/candidate_02/native_00/stderr.txt",
+    "sha256_original": "88642c8dadc5a126b9b678e3dfad51f29768249eb88ba69823a9c180c72d102a",
+    "bytes": 518
+  }
+]

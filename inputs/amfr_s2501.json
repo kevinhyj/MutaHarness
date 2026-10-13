@@ -1,0 +1,1804 @@
+{
+  "case_id": "amfr",
+  "domain": "protein",
+  "assay": "AMFR_HUMAN_Tsuboyama_2023_4G3O",
+  "reference_sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLTRSVEITTDNILEGRI",
+  "context": {
+    "assay_description": "{\"DMS_id\": \"AMFR_HUMAN_Tsuboyama_2023_4G3O\", \"UniProt_ID\": \"AMFR_HUMAN\", \"molecule_name\": \"E3 ubiquitin-protein ligase AMFR\", \"selection_assay\": \"Stability\", \"selection_type\": \"cDNA display proteolysis\", \"source_organism\": \"Homo sapiens\"}",
+    "endpoint": "Stability",
+    "higher_is_better": true,
+    "readout": "ProteinGym DMS_score in original units; higher is the ranking target; no measured WT is assumed."
+  },
+  "query": [
+    {
+      "mutation": "T32E",
+      "mutation_order": 1,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLERSVEITTDNILEGRI",
+      "id": "M002"
+    },
+    {
+      "mutation": "Q14H",
+      "mutation_order": 1,
+      "sequence": "YFQGQLNAMAHQIHEMFPQVPYHLVLQDLQLTRSVEITTDNILEGRI",
+      "id": "M003"
+    },
+    {
+      "mutation": "T38H:N41I",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLTRSVEIHTDIILEGRI",
+      "id": "M005"
+    },
+    {
+      "mutation": "E15I",
+      "mutation_order": 1,
+      "sequence": "YFQGQLNAMAHQIQIMFPQVPYHLVLQDLQLTRSVEITTDNILEGRI",
+      "id": "M009"
+    },
+    {
+      "mutation": "T32A:N41L",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLARSVEITTDLILEGRI",
+      "id": "M011"
+    },
+    {
+      "mutation": "D28S:T32K",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQSLQLKRSVEITTDNILEGRI",
+      "id": "M012"
+    },
+    {
+      "mutation": "T32Y:N41L",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLYRSVEITTDLILEGRI",
+      "id": "M013"
+    },
+    {
+      "mutation": "P18K",
+      "mutation_order": 1,
+      "sequence": "YFQGQLNAMAHQIQEMFKQVPYHLVLQDLQLTRSVEITTDNILEGRI",
+      "id": "M014"
+    },
+    {
+      "mutation": "P18A",
+      "mutation_order": 1,
+      "sequence": "YFQGQLNAMAHQIQEMFAQVPYHLVLQDLQLTRSVEITTDNILEGRI",
+      "id": "M015"
+    },
+    {
+      "mutation": "T38E:N41D",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLTRSVEIETDDILEGRI",
+      "id": "M018"
+    },
+    {
+      "mutation": "D28K:T38R",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQKLQLTRSVEIRTDNILEGRI",
+      "id": "M019"
+    },
+    {
+      "mutation": "D28Q:T32A",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQQLQLARSVEITTDNILEGRI",
+      "id": "M022"
+    },
+    {
+      "mutation": "T32R:N41E",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLRRSVEITTDEILEGRI",
+      "id": "M023"
+    },
+    {
+      "mutation": "D28Y:T38M",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQYLQLTRSVEIMTDNILEGRI",
+      "id": "M024"
+    },
+    {
+      "mutation": "D28N:T38L",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQNLQLTRSVEILTDNILEGRI",
+      "id": "M026"
+    },
+    {
+      "mutation": "V35N",
+      "mutation_order": 1,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLTRSNEITTDNILEGRI",
+      "id": "M028"
+    },
+    {
+      "mutation": "D28F:T38L",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQFLQLTRSVEILTDNILEGRI",
+      "id": "M029"
+    },
+    {
+      "mutation": "D28S:T32E",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQSLQLERSVEITTDNILEGRI",
+      "id": "M030"
+    },
+    {
+      "mutation": "T38R:N41W",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLTRSVEIRTDWILEGRI",
+      "id": "M031"
+    },
+    {
+      "mutation": "T32L:N41I",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLLRSVEITTDIILEGRI",
+      "id": "M033"
+    },
+    {
+      "mutation": "L6P",
+      "mutation_order": 1,
+      "sequence": "YFQGQPNAMAHQIQEMFPQVPYHLVLQDLQLTRSVEITTDNILEGRI",
+      "id": "M034"
+    },
+    {
+      "mutation": "T32Y:N41P",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLYRSVEITTDPILEGRI",
+      "id": "M035"
+    },
+    {
+      "mutation": "E44R",
+      "mutation_order": 1,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLTRSVEITTDNILRGRI",
+      "id": "M036"
+    },
+    {
+      "mutation": "T32L:T38F",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLLRSVEIFTDNILEGRI",
+      "id": "M038"
+    },
+    {
+      "mutation": "T32D:N41L",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLDRSVEITTDLILEGRI",
+      "id": "M041"
+    },
+    {
+      "mutation": "T38W:N41E",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLTRSVEIWTDEILEGRI",
+      "id": "M043"
+    },
+    {
+      "mutation": "T32C:N41Y",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLCRSVEITTDYILEGRI",
+      "id": "M044"
+    },
+    {
+      "mutation": "N41V:R46H",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLTRSVEITTDVILEGHI",
+      "id": "M045"
+    },
+    {
+      "mutation": "D28T:T32G",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQTLQLGRSVEITTDNILEGRI",
+      "id": "M047"
+    },
+    {
+      "mutation": "T38N:N41A",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLTRSVEINTDAILEGRI",
+      "id": "M048"
+    },
+    {
+      "mutation": "Y22G",
+      "mutation_order": 1,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPGHLVLQDLQLTRSVEITTDNILEGRI",
+      "id": "M049"
+    },
+    {
+      "mutation": "D28G:T32M",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQGLQLMRSVEITTDNILEGRI",
+      "id": "M050"
+    },
+    {
+      "mutation": "D28M:N41R",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQMLQLTRSVEITTDRILEGRI",
+      "id": "M051"
+    },
+    {
+      "mutation": "T38V:N41T",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLTRSVEIVTDTILEGRI",
+      "id": "M053"
+    },
+    {
+      "mutation": "Q30G",
+      "mutation_order": 1,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLGLTRSVEITTDNILEGRI",
+      "id": "M054"
+    },
+    {
+      "mutation": "D28N:T32V",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQNLQLVRSVEITTDNILEGRI",
+      "id": "M055"
+    },
+    {
+      "mutation": "N41C:R46P",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLTRSVEITTDCILEGPI",
+      "id": "M056"
+    },
+    {
+      "mutation": "D28V:T38V",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQVLQLTRSVEIVTDNILEGRI",
+      "id": "M057"
+    },
+    {
+      "mutation": "D28V:T32M",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQVLQLMRSVEITTDNILEGRI",
+      "id": "M058"
+    },
+    {
+      "mutation": "N41W:R46D",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLTRSVEITTDWILEGDI",
+      "id": "M059"
+    },
+    {
+      "mutation": "T32Q:N41K",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLQRSVEITTDKILEGRI",
+      "id": "M061"
+    },
+    {
+      "mutation": "G4W",
+      "mutation_order": 1,
+      "sequence": "YFQWQLNAMAHQIQEMFPQVPYHLVLQDLQLTRSVEITTDNILEGRI",
+      "id": "M062"
+    },
+    {
+      "mutation": "D28C:T38A",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQCLQLTRSVEIATDNILEGRI",
+      "id": "M063"
+    },
+    {
+      "mutation": "Y22S",
+      "mutation_order": 1,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPSHLVLQDLQLTRSVEITTDNILEGRI",
+      "id": "M064"
+    },
+    {
+      "mutation": "L24N",
+      "mutation_order": 1,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHNVLQDLQLTRSVEITTDNILEGRI",
+      "id": "M065"
+    },
+    {
+      "mutation": "T38A:N41V",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLTRSVEIATDVILEGRI",
+      "id": "M066"
+    },
+    {
+      "mutation": "N41A:R46T",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLTRSVEITTDAILEGTI",
+      "id": "M067"
+    },
+    {
+      "mutation": "Q30L",
+      "mutation_order": 1,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLLLTRSVEITTDNILEGRI",
+      "id": "M068"
+    },
+    {
+      "mutation": "T38E:N41E",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLTRSVEIETDEILEGRI",
+      "id": "M069"
+    },
+    {
+      "mutation": "D28F",
+      "mutation_order": 1,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQFLQLTRSVEITTDNILEGRI",
+      "id": "M071"
+    },
+    {
+      "mutation": "N41W:R46T",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLTRSVEITTDWILEGTI",
+      "id": "M073"
+    },
+    {
+      "mutation": "T32L:T38V",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLLRSVEIVTDNILEGRI",
+      "id": "M074"
+    },
+    {
+      "mutation": "T32S:N41W",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLSRSVEITTDWILEGRI",
+      "id": "M077"
+    },
+    {
+      "mutation": "P18R",
+      "mutation_order": 1,
+      "sequence": "YFQGQLNAMAHQIQEMFRQVPYHLVLQDLQLTRSVEITTDNILEGRI",
+      "id": "M078"
+    },
+    {
+      "mutation": "T38N:N41P",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLTRSVEINTDPILEGRI",
+      "id": "M079"
+    },
+    {
+      "mutation": "Q12Y",
+      "mutation_order": 1,
+      "sequence": "YFQGQLNAMAHYIQEMFPQVPYHLVLQDLQLTRSVEITTDNILEGRI",
+      "id": "M081"
+    },
+    {
+      "mutation": "D28Y:T38E",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQYLQLTRSVEIETDNILEGRI",
+      "id": "M082"
+    },
+    {
+      "mutation": "D28C:T38M",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQCLQLTRSVEIMTDNILEGRI",
+      "id": "M083"
+    },
+    {
+      "mutation": "D28T:T38Q",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQTLQLTRSVEIQTDNILEGRI",
+      "id": "M084"
+    },
+    {
+      "mutation": "D28M:N41G",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQMLQLTRSVEITTDGILEGRI",
+      "id": "M087"
+    },
+    {
+      "mutation": "T38H:N41F",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLTRSVEIHTDFILEGRI",
+      "id": "M088"
+    },
+    {
+      "mutation": "D28G:T38H",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQGLQLTRSVEIHTDNILEGRI",
+      "id": "M090"
+    },
+    {
+      "mutation": "T38P:N41L",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLTRSVEIPTDLILEGRI",
+      "id": "M092"
+    },
+    {
+      "mutation": "D28W",
+      "mutation_order": 1,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQWLQLTRSVEITTDNILEGRI",
+      "id": "M093"
+    },
+    {
+      "mutation": "A10M",
+      "mutation_order": 1,
+      "sequence": "YFQGQLNAMMHQIQEMFPQVPYHLVLQDLQLTRSVEITTDNILEGRI",
+      "id": "M094"
+    },
+    {
+      "mutation": "V35K",
+      "mutation_order": 1,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLTRSKEITTDNILEGRI",
+      "id": "M096"
+    },
+    {
+      "mutation": "E44A",
+      "mutation_order": 1,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLTRSVEITTDNILAGRI",
+      "id": "M098"
+    },
+    {
+      "mutation": "D28A:T32A",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQALQLARSVEITTDNILEGRI",
+      "id": "M099"
+    },
+    {
+      "mutation": "T38D:N41E",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLTRSVEIDTDEILEGRI",
+      "id": "M100"
+    },
+    {
+      "mutation": "P18L",
+      "mutation_order": 1,
+      "sequence": "YFQGQLNAMAHQIQEMFLQVPYHLVLQDLQLTRSVEITTDNILEGRI",
+      "id": "M101"
+    },
+    {
+      "mutation": "T38N:N41V",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLTRSVEINTDVILEGRI",
+      "id": "M104"
+    },
+    {
+      "mutation": "R33C",
+      "mutation_order": 1,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLTCSVEITTDNILEGRI",
+      "id": "M106"
+    },
+    {
+      "mutation": "D28Q:T38M",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQQLQLTRSVEIMTDNILEGRI",
+      "id": "M107"
+    },
+    {
+      "mutation": "R33I",
+      "mutation_order": 1,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLTISVEITTDNILEGRI",
+      "id": "M109"
+    },
+    {
+      "mutation": "S34T",
+      "mutation_order": 1,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLTRTVEITTDNILEGRI",
+      "id": "M112"
+    },
+    {
+      "mutation": "D28W:T32V",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQWLQLVRSVEITTDNILEGRI",
+      "id": "M113"
+    },
+    {
+      "mutation": "T38H:N41R",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLTRSVEIHTDRILEGRI",
+      "id": "M117"
+    },
+    {
+      "mutation": "D28Q:T32D",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQQLQLDRSVEITTDNILEGRI",
+      "id": "M118"
+    },
+    {
+      "mutation": "D28M:T32Y",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQMLQLYRSVEITTDNILEGRI",
+      "id": "M119"
+    },
+    {
+      "mutation": "T32V:T38H",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLVRSVEIHTDNILEGRI",
+      "id": "M124"
+    },
+    {
+      "mutation": "N41W:R46E",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLTRSVEITTDWILEGEI",
+      "id": "M125"
+    },
+    {
+      "mutation": "V35I",
+      "mutation_order": 1,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLTRSIEITTDNILEGRI",
+      "id": "M126"
+    },
+    {
+      "mutation": "D28K:N41T",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQKLQLTRSVEITTDTILEGRI",
+      "id": "M128"
+    },
+    {
+      "mutation": "T32C:T38F",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLCRSVEIFTDNILEGRI",
+      "id": "M130"
+    },
+    {
+      "mutation": "H23C",
+      "mutation_order": 1,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYCLVLQDLQLTRSVEITTDNILEGRI",
+      "id": "M131"
+    },
+    {
+      "mutation": "T32E:N41F",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLERSVEITTDFILEGRI",
+      "id": "M132"
+    },
+    {
+      "mutation": "T32K:N41Q",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLKRSVEITTDQILEGRI",
+      "id": "M133"
+    },
+    {
+      "mutation": "D28V:N41T",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQVLQLTRSVEITTDTILEGRI",
+      "id": "M134"
+    },
+    {
+      "mutation": "T32L:N41L",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLLRSVEITTDLILEGRI",
+      "id": "M135"
+    },
+    {
+      "mutation": "T32Y:N41M",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLYRSVEITTDMILEGRI",
+      "id": "M137"
+    },
+    {
+      "mutation": "D28S:N41A",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQSLQLTRSVEITTDAILEGRI",
+      "id": "M138"
+    },
+    {
+      "mutation": "D28A:N41D",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQALQLTRSVEITTDDILEGRI",
+      "id": "M139"
+    },
+    {
+      "mutation": "T38Y:N41F",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLTRSVEIYTDFILEGRI",
+      "id": "M140"
+    },
+    {
+      "mutation": "T38W:N41M",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLTRSVEIWTDMILEGRI",
+      "id": "M141"
+    },
+    {
+      "mutation": "D28S:T38R",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQSLQLTRSVEIRTDNILEGRI",
+      "id": "M142"
+    },
+    {
+      "mutation": "D28G:N41T",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQGLQLTRSVEITTDTILEGRI",
+      "id": "M143"
+    },
+    {
+      "mutation": "D28M:T38A",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQMLQLTRSVEIATDNILEGRI",
+      "id": "M144"
+    },
+    {
+      "mutation": "T38I:N41S",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLTRSVEIITDSILEGRI",
+      "id": "M145"
+    },
+    {
+      "mutation": "D28P:T32H",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQPLQLHRSVEITTDNILEGRI",
+      "id": "M146"
+    },
+    {
+      "mutation": "Q14V",
+      "mutation_order": 1,
+      "sequence": "YFQGQLNAMAHQIVEMFPQVPYHLVLQDLQLTRSVEITTDNILEGRI",
+      "id": "M148"
+    },
+    {
+      "mutation": "T32F:T38C",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLFRSVEICTDNILEGRI",
+      "id": "M149"
+    },
+    {
+      "mutation": "I13V",
+      "mutation_order": 1,
+      "sequence": "YFQGQLNAMAHQVQEMFPQVPYHLVLQDLQLTRSVEITTDNILEGRI",
+      "id": "M150"
+    },
+    {
+      "mutation": "D28M:N41V",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQMLQLTRSVEITTDVILEGRI",
+      "id": "M151"
+    },
+    {
+      "mutation": "T38N",
+      "mutation_order": 1,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLTRSVEINTDNILEGRI",
+      "id": "M152"
+    },
+    {
+      "mutation": "D28W:N41S",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQWLQLTRSVEITTDSILEGRI",
+      "id": "M153"
+    },
+    {
+      "mutation": "N41C",
+      "mutation_order": 1,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLTRSVEITTDCILEGRI",
+      "id": "M154"
+    },
+    {
+      "mutation": "D28E:T38I",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQELQLTRSVEIITDNILEGRI",
+      "id": "M155"
+    },
+    {
+      "mutation": "T32L:N41C",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLLRSVEITTDCILEGRI",
+      "id": "M156"
+    },
+    {
+      "mutation": "D28F:N41P",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQFLQLTRSVEITTDPILEGRI",
+      "id": "M157"
+    },
+    {
+      "mutation": "Y1Q",
+      "mutation_order": 1,
+      "sequence": "QFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLTRSVEITTDNILEGRI",
+      "id": "M158"
+    },
+    {
+      "mutation": "T38M:N41S",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLTRSVEIMTDSILEGRI",
+      "id": "M159"
+    },
+    {
+      "mutation": "D28K:T32N",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQKLQLNRSVEITTDNILEGRI",
+      "id": "M160"
+    },
+    {
+      "mutation": "T32N:N41Y",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLNRSVEITTDYILEGRI",
+      "id": "M161"
+    },
+    {
+      "mutation": "D28K:N41K",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQKLQLTRSVEITTDKILEGRI",
+      "id": "M162"
+    },
+    {
+      "mutation": "T32E:T38F",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLERSVEIFTDNILEGRI",
+      "id": "M163"
+    },
+    {
+      "mutation": "N41E:R46L",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLTRSVEITTDEILEGLI",
+      "id": "M165"
+    },
+    {
+      "mutation": "D28W:N41I",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQWLQLTRSVEITTDIILEGRI",
+      "id": "M166"
+    },
+    {
+      "mutation": "D28T:T38P",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQTLQLTRSVEIPTDNILEGRI",
+      "id": "M167"
+    },
+    {
+      "mutation": "D40Y",
+      "mutation_order": 1,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLTRSVEITTYNILEGRI",
+      "id": "M168"
+    },
+    {
+      "mutation": "T32L:N41S",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLLRSVEITTDSILEGRI",
+      "id": "M169"
+    },
+    {
+      "mutation": "D28N:T32D",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQNLQLDRSVEITTDNILEGRI",
+      "id": "M170"
+    },
+    {
+      "mutation": "D28M:T38G",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQMLQLTRSVEIGTDNILEGRI",
+      "id": "M171"
+    },
+    {
+      "mutation": "Y1D",
+      "mutation_order": 1,
+      "sequence": "DFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLTRSVEITTDNILEGRI",
+      "id": "M172"
+    },
+    {
+      "mutation": "D28S",
+      "mutation_order": 1,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQSLQLTRSVEITTDNILEGRI",
+      "id": "M173"
+    },
+    {
+      "mutation": "L43K",
+      "mutation_order": 1,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLTRSVEITTDNIKEGRI",
+      "id": "M174"
+    },
+    {
+      "mutation": "D28I:T38E",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQILQLTRSVEIETDNILEGRI",
+      "id": "M175"
+    },
+    {
+      "mutation": "T32E:N41Q",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLERSVEITTDQILEGRI",
+      "id": "M177"
+    },
+    {
+      "mutation": "N41W:R46I",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLTRSVEITTDWILEGII",
+      "id": "M178"
+    },
+    {
+      "mutation": "N41H:R46Y",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLTRSVEITTDHILEGYI",
+      "id": "M179"
+    },
+    {
+      "mutation": "T38F:N41S",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLTRSVEIFTDSILEGRI",
+      "id": "M180"
+    },
+    {
+      "mutation": "D28A:T32L",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQALQLLRSVEITTDNILEGRI",
+      "id": "M181"
+    },
+    {
+      "mutation": "T38G:N41F",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLTRSVEIGTDFILEGRI",
+      "id": "M182"
+    },
+    {
+      "mutation": "T32A:N41D",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLARSVEITTDDILEGRI",
+      "id": "M183"
+    },
+    {
+      "mutation": "D28I:T32K",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQILQLKRSVEITTDNILEGRI",
+      "id": "M184"
+    },
+    {
+      "mutation": "D28A:T32Y",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQALQLYRSVEITTDNILEGRI",
+      "id": "M185"
+    },
+    {
+      "mutation": "D28M:T38R",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQMLQLTRSVEIRTDNILEGRI",
+      "id": "M186"
+    },
+    {
+      "mutation": "T32G:T38M",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLGRSVEIMTDNILEGRI",
+      "id": "M187"
+    },
+    {
+      "mutation": "T32G:N41I",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLGRSVEITTDIILEGRI",
+      "id": "M188"
+    },
+    {
+      "mutation": "L26T",
+      "mutation_order": 1,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVTQDLQLTRSVEITTDNILEGRI",
+      "id": "M189"
+    },
+    {
+      "mutation": "D28H:T38G",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQHLQLTRSVEIGTDNILEGRI",
+      "id": "M190"
+    },
+    {
+      "mutation": "D28N:N41P",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQNLQLTRSVEITTDPILEGRI",
+      "id": "M191"
+    },
+    {
+      "mutation": "T32M:T38L",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLMRSVEILTDNILEGRI",
+      "id": "M192"
+    },
+    {
+      "mutation": "T38N:N41E",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLTRSVEINTDEILEGRI",
+      "id": "M193"
+    },
+    {
+      "mutation": "D28M:T32M",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQMLQLMRSVEITTDNILEGRI",
+      "id": "M194"
+    },
+    {
+      "mutation": "D28T:T38D",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQTLQLTRSVEIDTDNILEGRI",
+      "id": "M195"
+    },
+    {
+      "mutation": "R33F",
+      "mutation_order": 1,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLTFSVEITTDNILEGRI",
+      "id": "M197"
+    },
+    {
+      "mutation": "D28N:T32A",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQNLQLARSVEITTDNILEGRI",
+      "id": "M198"
+    },
+    {
+      "mutation": "T32R:N41S",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLRRSVEITTDSILEGRI",
+      "id": "M200"
+    },
+    {
+      "mutation": "F17I",
+      "mutation_order": 1,
+      "sequence": "YFQGQLNAMAHQIQEMIPQVPYHLVLQDLQLTRSVEITTDNILEGRI",
+      "id": "M203"
+    },
+    {
+      "mutation": "D40V",
+      "mutation_order": 1,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLTRSVEITTVNILEGRI",
+      "id": "M204"
+    },
+    {
+      "mutation": "D28E:N41G",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQELQLTRSVEITTDGILEGRI",
+      "id": "M205"
+    },
+    {
+      "mutation": "D28F:N41E",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQFLQLTRSVEITTDEILEGRI",
+      "id": "M207"
+    },
+    {
+      "mutation": "T32F",
+      "mutation_order": 1,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLFRSVEITTDNILEGRI",
+      "id": "M208"
+    },
+    {
+      "mutation": "T38I:N41A",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLTRSVEIITDAILEGRI",
+      "id": "M209"
+    },
+    {
+      "mutation": "D28A:N41F",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQALQLTRSVEITTDFILEGRI",
+      "id": "M211"
+    },
+    {
+      "mutation": "E44F",
+      "mutation_order": 1,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLTRSVEITTDNILFGRI",
+      "id": "M212"
+    },
+    {
+      "mutation": "Q12D",
+      "mutation_order": 1,
+      "sequence": "YFQGQLNAMAHDIQEMFPQVPYHLVLQDLQLTRSVEITTDNILEGRI",
+      "id": "M213"
+    },
+    {
+      "mutation": "D28R:T32W",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQRLQLWRSVEITTDNILEGRI",
+      "id": "M214"
+    },
+    {
+      "mutation": "T38D:N41K",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLTRSVEIDTDKILEGRI",
+      "id": "M216"
+    },
+    {
+      "mutation": "D28R:T32Y",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQRLQLYRSVEITTDNILEGRI",
+      "id": "M217"
+    },
+    {
+      "mutation": "Q3M",
+      "mutation_order": 1,
+      "sequence": "YFMGQLNAMAHQIQEMFPQVPYHLVLQDLQLTRSVEITTDNILEGRI",
+      "id": "M218"
+    },
+    {
+      "mutation": "D28C:T38K",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQCLQLTRSVEIKTDNILEGRI",
+      "id": "M219"
+    },
+    {
+      "mutation": "F2N",
+      "mutation_order": 1,
+      "sequence": "YNQGQLNAMAHQIQEMFPQVPYHLVLQDLQLTRSVEITTDNILEGRI",
+      "id": "M220"
+    },
+    {
+      "mutation": "T38D:N41D",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLTRSVEIDTDDILEGRI",
+      "id": "M223"
+    },
+    {
+      "mutation": "D28A:N41W",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQALQLTRSVEITTDWILEGRI",
+      "id": "M224"
+    },
+    {
+      "mutation": "P18H",
+      "mutation_order": 1,
+      "sequence": "YFQGQLNAMAHQIQEMFHQVPYHLVLQDLQLTRSVEITTDNILEGRI",
+      "id": "M225"
+    },
+    {
+      "mutation": "I47G",
+      "mutation_order": 1,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLTRSVEITTDNILEGRG",
+      "id": "M226"
+    },
+    {
+      "mutation": "T38F:N41L",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLTRSVEIFTDLILEGRI",
+      "id": "M228"
+    },
+    {
+      "mutation": "T38R:N41Y",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLTRSVEIRTDYILEGRI",
+      "id": "M229"
+    },
+    {
+      "mutation": "D28I:T32H",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQILQLHRSVEITTDNILEGRI",
+      "id": "M231"
+    },
+    {
+      "mutation": "S34A",
+      "mutation_order": 1,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLTRAVEITTDNILEGRI",
+      "id": "M232"
+    },
+    {
+      "mutation": "D28Q:N41L",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQQLQLTRSVEITTDLILEGRI",
+      "id": "M234"
+    },
+    {
+      "mutation": "D28R:T32H",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQRLQLHRSVEITTDNILEGRI",
+      "id": "M235"
+    },
+    {
+      "mutation": "D28H:T32N",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQHLQLNRSVEITTDNILEGRI",
+      "id": "M236"
+    },
+    {
+      "mutation": "T38G:N41T",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLTRSVEIGTDTILEGRI",
+      "id": "M237"
+    },
+    {
+      "mutation": "D28H:T32P",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQHLQLPRSVEITTDNILEGRI",
+      "id": "M238"
+    },
+    {
+      "mutation": "T32W:T38E",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLWRSVEIETDNILEGRI",
+      "id": "M239"
+    },
+    {
+      "mutation": "T32Q:N41A",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLQRSVEITTDAILEGRI",
+      "id": "M240"
+    },
+    {
+      "mutation": "T32C:N41K",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLCRSVEITTDKILEGRI",
+      "id": "M241"
+    },
+    {
+      "mutation": "T32C:T38Y",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLCRSVEIYTDNILEGRI",
+      "id": "M242"
+    },
+    {
+      "mutation": "L26N",
+      "mutation_order": 1,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVNQDLQLTRSVEITTDNILEGRI",
+      "id": "M243"
+    },
+    {
+      "mutation": "D28E:T32I",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQELQLIRSVEITTDNILEGRI",
+      "id": "M244"
+    },
+    {
+      "mutation": "N41R:R46Y",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLTRSVEITTDRILEGYI",
+      "id": "M245"
+    },
+    {
+      "mutation": "T32Y:N41S",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLYRSVEITTDSILEGRI",
+      "id": "M246"
+    },
+    {
+      "mutation": "T32W:N41E",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLWRSVEITTDEILEGRI",
+      "id": "M247"
+    },
+    {
+      "mutation": "D28G",
+      "mutation_order": 1,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQGLQLTRSVEITTDNILEGRI",
+      "id": "M248"
+    }
+  ],
+  "support": [
+    {
+      "mutation": "P18Y",
+      "mutation_order": 1,
+      "sequence": "YFQGQLNAMAHQIQEMFYQVPYHLVLQDLQLTRSVEITTDNILEGRI",
+      "id": "S001",
+      "fitness": -1.5996227892059445
+    },
+    {
+      "mutation": "Q14N",
+      "mutation_order": 1,
+      "sequence": "YFQGQLNAMAHQINEMFPQVPYHLVLQDLQLTRSVEITTDNILEGRI",
+      "id": "S002",
+      "fitness": -0.1049581325146351
+    },
+    {
+      "mutation": "Q3D",
+      "mutation_order": 1,
+      "sequence": "YFDGQLNAMAHQIQEMFPQVPYHLVLQDLQLTRSVEITTDNILEGRI",
+      "id": "S003",
+      "fitness": 0.2637323234851254
+    },
+    {
+      "mutation": "A8W",
+      "mutation_order": 1,
+      "sequence": "YFQGQLNWMAHQIQEMFPQVPYHLVLQDLQLTRSVEITTDNILEGRI",
+      "id": "S004",
+      "fitness": 0.3841982696289898
+    },
+    {
+      "mutation": "T32N",
+      "mutation_order": 1,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLNRSVEITTDNILEGRI",
+      "id": "S005",
+      "fitness": -1.818552021818162
+    },
+    {
+      "mutation": "Q30C",
+      "mutation_order": 1,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLCLTRSVEITTDNILEGRI",
+      "id": "S006",
+      "fitness": 0.2238959212691287
+    },
+    {
+      "mutation": "L26I",
+      "mutation_order": 1,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVIQDLQLTRSVEITTDNILEGRI",
+      "id": "S007",
+      "fitness": -0.034393589705937
+    },
+    {
+      "mutation": "Q19A",
+      "mutation_order": 1,
+      "sequence": "YFQGQLNAMAHQIQEMFPAVPYHLVLQDLQLTRSVEITTDNILEGRI",
+      "id": "S008",
+      "fitness": -0.2169224811177432
+    },
+    {
+      "mutation": "A8Q",
+      "mutation_order": 1,
+      "sequence": "YFQGQLNQMAHQIQEMFPQVPYHLVLQDLQLTRSVEITTDNILEGRI",
+      "id": "S009",
+      "fitness": 0.012908335657515
+    },
+    {
+      "mutation": "Q14C",
+      "mutation_order": 1,
+      "sequence": "YFQGQLNAMAHQICEMFPQVPYHLVLQDLQLTRSVEITTDNILEGRI",
+      "id": "S010",
+      "fitness": 0.0522999259786498
+    },
+    {
+      "mutation": "Q14T",
+      "mutation_order": 1,
+      "sequence": "YFQGQLNAMAHQITEMFPQVPYHLVLQDLQLTRSVEITTDNILEGRI",
+      "id": "S011",
+      "fitness": 0.0139093940718355
+    },
+    {
+      "mutation": "A8V",
+      "mutation_order": 1,
+      "sequence": "YFQGQLNVMAHQIQEMFPQVPYHLVLQDLQLTRSVEITTDNILEGRI",
+      "id": "S012",
+      "fitness": -0.1461288769314928
+    },
+    {
+      "mutation": "L31M",
+      "mutation_order": 1,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQMTRSVEITTDNILEGRI",
+      "id": "S013",
+      "fitness": 0.1145763127218719
+    },
+    {
+      "mutation": "H11G",
+      "mutation_order": 1,
+      "sequence": "YFQGQLNAMAGQIQEMFPQVPYHLVLQDLQLTRSVEITTDNILEGRI",
+      "id": "S014",
+      "fitness": -0.5721575221367794
+    },
+    {
+      "mutation": "L26S",
+      "mutation_order": 1,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVSQDLQLTRSVEITTDNILEGRI",
+      "id": "S015",
+      "fitness": -2.480863633330316
+    },
+    {
+      "mutation": "I47V",
+      "mutation_order": 1,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLTRSVEITTDNILEGRV",
+      "id": "S016",
+      "fitness": -0.1213740572965758
+    },
+    {
+      "mutation": "Q3L",
+      "mutation_order": 1,
+      "sequence": "YFLGQLNAMAHQIQEMFPQVPYHLVLQDLQLTRSVEITTDNILEGRI",
+      "id": "S017",
+      "fitness": -0.5877270368640215
+    },
+    {
+      "mutation": "Q3I",
+      "mutation_order": 1,
+      "sequence": "YFIGQLNAMAHQIQEMFPQVPYHLVLQDLQLTRSVEITTDNILEGRI",
+      "id": "S018",
+      "fitness": -0.4242920420871909
+    },
+    {
+      "mutation": "Q12H",
+      "mutation_order": 1,
+      "sequence": "YFQGQLNAMAHHIQEMFPQVPYHLVLQDLQLTRSVEITTDNILEGRI",
+      "id": "S019",
+      "fitness": -0.0739968129354959
+    },
+    {
+      "mutation": "L26C",
+      "mutation_order": 1,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVCQDLQLTRSVEITTDNILEGRI",
+      "id": "S020",
+      "fitness": -0.1933251345153399
+    },
+    {
+      "mutation": "Q27K",
+      "mutation_order": 1,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLKDLQLTRSVEITTDNILEGRI",
+      "id": "S021",
+      "fitness": -0.0289214569903619
+    },
+    {
+      "mutation": "I37K",
+      "mutation_order": 1,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLTRSVEKTTDNILEGRI",
+      "id": "S022",
+      "fitness": 0.2157379229130294
+    },
+    {
+      "mutation": "L24T",
+      "mutation_order": 1,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHTVLQDLQLTRSVEITTDNILEGRI",
+      "id": "S023",
+      "fitness": -0.9519996381569776
+    },
+    {
+      "mutation": "Q3F",
+      "mutation_order": 1,
+      "sequence": "YFFGQLNAMAHQIQEMFPQVPYHLVLQDLQLTRSVEITTDNILEGRI",
+      "id": "S024",
+      "fitness": -0.8883286748174091
+    },
+    {
+      "mutation": "L29V",
+      "mutation_order": 1,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDVQLTRSVEITTDNILEGRI",
+      "id": "S025",
+      "fitness": -1.2088122710708866
+    },
+    {
+      "mutation": "H23E",
+      "mutation_order": 1,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYELVLQDLQLTRSVEITTDNILEGRI",
+      "id": "S026",
+      "fitness": -0.0775892290659938
+    },
+    {
+      "mutation": "A10Y",
+      "mutation_order": 1,
+      "sequence": "YFQGQLNAMYHQIQEMFPQVPYHLVLQDLQLTRSVEITTDNILEGRI",
+      "id": "S027",
+      "fitness": -1.219317629020343
+    },
+    {
+      "mutation": "F17Y",
+      "mutation_order": 1,
+      "sequence": "YFQGQLNAMAHQIQEMYPQVPYHLVLQDLQLTRSVEITTDNILEGRI",
+      "id": "S028",
+      "fitness": -0.4577651724024636
+    },
+    {
+      "mutation": "H11Y",
+      "mutation_order": 1,
+      "sequence": "YFQGQLNAMAYQIQEMFPQVPYHLVLQDLQLTRSVEITTDNILEGRI",
+      "id": "S029",
+      "fitness": 0.097362479323054
+    },
+    {
+      "mutation": "I47R",
+      "mutation_order": 1,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLTRSVEITTDNILEGRR",
+      "id": "S030",
+      "fitness": -2.11639116334654
+    },
+    {
+      "mutation": "L26E",
+      "mutation_order": 1,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVEQDLQLTRSVEITTDNILEGRI",
+      "id": "S031",
+      "fitness": -1.6358669920071611
+    },
+    {
+      "mutation": "E44L",
+      "mutation_order": 1,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLTRSVEITTDNILLGRI",
+      "id": "S032",
+      "fitness": 0.1072523817184429
+    },
+    {
+      "mutation": "D28W:N41L",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQWLQLTRSVEITTDLILEGRI",
+      "id": "M001",
+      "fitness": 0.2931848341162553
+    },
+    {
+      "mutation": "T38Q:N41Y",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLTRSVEIQTDYILEGRI",
+      "id": "M004",
+      "fitness": -2.6449755356833444
+    },
+    {
+      "mutation": "I37E",
+      "mutation_order": 1,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLTRSVEETTDNILEGRI",
+      "id": "M006",
+      "fitness": -0.1746219204906203
+    },
+    {
+      "mutation": "T32H:N41W",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLHRSVEITTDWILEGRI",
+      "id": "M007",
+      "fitness": -1.621916887359859
+    },
+    {
+      "mutation": "T32D:N41M",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLDRSVEITTDMILEGRI",
+      "id": "M008",
+      "fitness": -2.6203170964171965
+    },
+    {
+      "mutation": "D28N:T38M",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQNLQLTRSVEIMTDNILEGRI",
+      "id": "M010",
+      "fitness": -1.999912530138999
+    },
+    {
+      "mutation": "T32C:N41D",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLCRSVEITTDDILEGRI",
+      "id": "M016",
+      "fitness": -1.3667502844038433
+    },
+    {
+      "mutation": "V35F",
+      "mutation_order": 1,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLTRSFEITTDNILEGRI",
+      "id": "M017",
+      "fitness": -0.2023845986927996
+    },
+    {
+      "mutation": "D28S:T32V",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQSLQLVRSVEITTDNILEGRI",
+      "id": "M020",
+      "fitness": -1.3465204483037183
+    },
+    {
+      "mutation": "E15C",
+      "mutation_order": 1,
+      "sequence": "YFQGQLNAMAHQIQCMFPQVPYHLVLQDLQLTRSVEITTDNILEGRI",
+      "id": "M021",
+      "fitness": 0.4047056673761711
+    },
+    {
+      "mutation": "Q5Y",
+      "mutation_order": 1,
+      "sequence": "YFQGYLNAMAHQIQEMFPQVPYHLVLQDLQLTRSVEITTDNILEGRI",
+      "id": "M025",
+      "fitness": 0.186513837370887
+    },
+    {
+      "mutation": "T32Y:T38S",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLYRSVEISTDNILEGRI",
+      "id": "M027",
+      "fitness": -1.984713536056085
+    },
+    {
+      "mutation": "Q3G",
+      "mutation_order": 1,
+      "sequence": "YFGGQLNAMAHQIQEMFPQVPYHLVLQDLQLTRSVEITTDNILEGRI",
+      "id": "M032",
+      "fitness": -0.5001619359289164
+    },
+    {
+      "mutation": "T38R:N41T",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLTRSVEIRTDTILEGRI",
+      "id": "M037",
+      "fitness": -2.3826244265561414
+    },
+    {
+      "mutation": "S34F",
+      "mutation_order": 1,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLTRFVEITTDNILEGRI",
+      "id": "M039",
+      "fitness": -2.169177821866448
+    },
+    {
+      "mutation": "G45R",
+      "mutation_order": 1,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLTRSVEITTDNILERRI",
+      "id": "M040",
+      "fitness": -1.1704467799314258
+    },
+    {
+      "mutation": "T32C:T38Q",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLCRSVEIQTDNILEGRI",
+      "id": "M042",
+      "fitness": -0.5879425816914865
+    },
+    {
+      "mutation": "I42L",
+      "mutation_order": 1,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLTRSVEITTDNLLEGRI",
+      "id": "M046",
+      "fitness": -0.7845908466573774
+    },
+    {
+      "mutation": "T32G:T38G",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLGRSVEIGTDNILEGRI",
+      "id": "M052",
+      "fitness": -2.6150221335004056
+    },
+    {
+      "mutation": "D28R:T32M",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQRLQLMRSVEITTDNILEGRI",
+      "id": "M060",
+      "fitness": -1.463345005019395
+    },
+    {
+      "mutation": "T32D:N41F",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLDRSVEITTDFILEGRI",
+      "id": "M070",
+      "fitness": -1.4157485981688085
+    },
+    {
+      "mutation": "D28W:T38K",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQWLQLTRSVEIKTDNILEGRI",
+      "id": "M072",
+      "fitness": -0.6136939526966613
+    },
+    {
+      "mutation": "D40F",
+      "mutation_order": 1,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLTRSVEITTFNILEGRI",
+      "id": "M075",
+      "fitness": 0.5839235691657949
+    },
+    {
+      "mutation": "N41S",
+      "mutation_order": 1,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLTRSVEITTDSILEGRI",
+      "id": "M076",
+      "fitness": -1.6471936521717634
+    },
+    {
+      "mutation": "G4I",
+      "mutation_order": 1,
+      "sequence": "YFQIQLNAMAHQIQEMFPQVPYHLVLQDLQLTRSVEITTDNILEGRI",
+      "id": "M080",
+      "fitness": 0.2360929377362559
+    },
+    {
+      "mutation": "D28W:T38G",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQWLQLTRSVEIGTDNILEGRI",
+      "id": "M085",
+      "fitness": -0.47154764752925793
+    },
+    {
+      "mutation": "T32M:N41V",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLMRSVEITTDVILEGRI",
+      "id": "M086",
+      "fitness": -2.173831885808809
+    },
+    {
+      "mutation": "T32M:T38A",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLMRSVEIATDNILEGRI",
+      "id": "M089",
+      "fitness": -2.1502714769568474
+    },
+    {
+      "mutation": "T38W:N41A",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLTRSVEIWTDAILEGRI",
+      "id": "M091",
+      "fitness": -1.8797221683434904
+    },
+    {
+      "mutation": "D28P:N41C",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQPLQLTRSVEITTDCILEGRI",
+      "id": "M095",
+      "fitness": -2.2148440014718846
+    },
+    {
+      "mutation": "H11N",
+      "mutation_order": 1,
+      "sequence": "YFQGQLNAMANQIQEMFPQVPYHLVLQDLQLTRSVEITTDNILEGRI",
+      "id": "M097",
+      "fitness": -0.2594245066597089
+    },
+    {
+      "mutation": "N41L:R46C",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLTRSVEITTDLILEGCI",
+      "id": "M102",
+      "fitness": -0.0304363267359017
+    },
+    {
+      "mutation": "T32V:N41A",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLVRSVEITTDAILEGRI",
+      "id": "M103",
+      "fitness": -2.1142615177423583
+    },
+    {
+      "mutation": "D28A:N41Q",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQALQLTRSVEITTDQILEGRI",
+      "id": "M105",
+      "fitness": -1.0082214356509323
+    },
+    {
+      "mutation": "N41K:R46T",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLTRSVEITTDKILEGTI",
+      "id": "M108",
+      "fitness": -1.06805870047441
+    },
+    {
+      "mutation": "D28Y:N41W",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQYLQLTRSVEITTDWILEGRI",
+      "id": "M110",
+      "fitness": 0.1741440717425169
+    },
+    {
+      "mutation": "D28K:T32G",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQKLQLGRSVEITTDNILEGRI",
+      "id": "M111",
+      "fitness": -2.740986852935291
+    },
+    {
+      "mutation": "D28G:T32K",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQGLQLKRSVEITTDNILEGRI",
+      "id": "M114",
+      "fitness": -2.318199587997767
+    },
+    {
+      "mutation": "T32I:T38M",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLIRSVEIMTDNILEGRI",
+      "id": "M115",
+      "fitness": -2.008020463674531
+    },
+    {
+      "mutation": "T38N:N41D",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLTRSVEINTDDILEGRI",
+      "id": "M116",
+      "fitness": -3.0229811894709444
+    },
+    {
+      "mutation": "T38M:N41Q",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLTRSVEIMTDQILEGRI",
+      "id": "M120",
+      "fitness": -2.7581547698767923
+    },
+    {
+      "mutation": "D28R:N41L",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQRLQLTRSVEITTDLILEGRI",
+      "id": "M121",
+      "fitness": -1.4347160696199177
+    },
+    {
+      "mutation": "Q30W",
+      "mutation_order": 1,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLWLTRSVEITTDNILEGRI",
+      "id": "M122",
+      "fitness": 0.5511831287601758
+    },
+    {
+      "mutation": "D28R:N41G",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQRLQLTRSVEITTDGILEGRI",
+      "id": "M123",
+      "fitness": -2.313223692055881
+    },
+    {
+      "mutation": "T32H:N41Q",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLHRSVEITTDQILEGRI",
+      "id": "M127",
+      "fitness": -2.9496101769707908
+    },
+    {
+      "mutation": "D28I:N41I",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQILQLTRSVEITTDIILEGRI",
+      "id": "M129",
+      "fitness": 0.1786862285933015
+    },
+    {
+      "mutation": "Q14W",
+      "mutation_order": 1,
+      "sequence": "YFQGQLNAMAHQIWEMFPQVPYHLVLQDLQLTRSVEITTDNILEGRI",
+      "id": "M136",
+      "fitness": 0.8064939133569058
+    },
+    {
+      "mutation": "Q5M",
+      "mutation_order": 1,
+      "sequence": "YFQGMLNAMAHQIQEMFPQVPYHLVLQDLQLTRSVEITTDNILEGRI",
+      "id": "M147",
+      "fitness": 0.2485479211498424
+    },
+    {
+      "mutation": "D28V:N41I",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQVLQLTRSVEITTDIILEGRI",
+      "id": "M164",
+      "fitness": -0.22985739571591374
+    },
+    {
+      "mutation": "M9L",
+      "mutation_order": 1,
+      "sequence": "YFQGQLNALAHQIQEMFPQVPYHLVLQDLQLTRSVEITTDNILEGRI",
+      "id": "M176",
+      "fitness": 0.0001912724761483
+    },
+    {
+      "mutation": "T32Y:N41R",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLYRSVEITTDRILEGRI",
+      "id": "M196",
+      "fitness": -1.0452191979236116
+    },
+    {
+      "mutation": "M9N",
+      "mutation_order": 1,
+      "sequence": "YFQGQLNANAHQIQEMFPQVPYHLVLQDLQLTRSVEITTDNILEGRI",
+      "id": "M199",
+      "fitness": -1.7131855499281472
+    },
+    {
+      "mutation": "N41K:R46D",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLTRSVEITTDKILEGDI",
+      "id": "M201",
+      "fitness": -1.9732438055944124
+    },
+    {
+      "mutation": "T32V:T38G",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLVRSVEIGTDNILEGRI",
+      "id": "M202",
+      "fitness": -2.2612941400297464
+    },
+    {
+      "mutation": "D28L:T38K",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQLLQLTRSVEIKTDNILEGRI",
+      "id": "M206",
+      "fitness": -0.9476291438352809
+    },
+    {
+      "mutation": "T38A:N41E",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLTRSVEIATDEILEGRI",
+      "id": "M210",
+      "fitness": -3.232359989552464
+    },
+    {
+      "mutation": "D28P:T32L",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQPLQLLRSVEITTDNILEGRI",
+      "id": "M215",
+      "fitness": -2.5529363393062376
+    },
+    {
+      "mutation": "D28W:T32G",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQWLQLGRSVEITTDNILEGRI",
+      "id": "M221",
+      "fitness": -0.8884085807543391
+    },
+    {
+      "mutation": "D28A:T32Q",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQALQLQRSVEITTDNILEGRI",
+      "id": "M222",
+      "fitness": -1.746468433990179
+    },
+    {
+      "mutation": "D28L:T32M",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQLLQLMRSVEITTDNILEGRI",
+      "id": "M227",
+      "fitness": -0.4687429976025024
+    },
+    {
+      "mutation": "Q19T",
+      "mutation_order": 1,
+      "sequence": "YFQGQLNAMAHQIQEMFPTVPYHLVLQDLQLTRSVEITTDNILEGRI",
+      "id": "M230",
+      "fitness": -0.08675991543525
+    },
+    {
+      "mutation": "T32H:T38A",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLHRSVEIATDNILEGRI",
+      "id": "M233",
+      "fitness": -2.522562184406375
+    },
+    {
+      "mutation": "Q27F",
+      "mutation_order": 1,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLFDLQLTRSVEITTDNILEGRI",
+      "id": "M249",
+      "fitness": -0.0840806019972557
+    },
+    {
+      "mutation": "F17V",
+      "mutation_order": 1,
+      "sequence": "YFQGQLNAMAHQIQEMVPQVPYHLVLQDLQLTRSVEITTDNILEGRI",
+      "id": "M250",
+      "fitness": -2.826249553340706
+    }
+  ]
+}

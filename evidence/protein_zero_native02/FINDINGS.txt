@@ -1,0 +1,39 @@
+蛋白 zero-shot 扩展结果：24/24 原生会话成功，6000个新预测
+
+新增6个assay：平均Spearman basic0.5233、MSA0.5850、structure0.5316、joint0.5901。
+joint-basic +0.0669，4升2降；MSA-basic +0.0617，5升1降。
+累计两批10个assay：basic0.5051→joint0.5736，+0.0685；7升3降。
+KRAS两个端点先平均、再与其他新增蛋白等权，basic0.5206→joint0.6110。
+
+这轮新增数据支持整体排序的正向信号，但联合证据没有在所有端点上占优。
+joint在两个新增稳定性集UBE4B和CBX4最好；MSA在GFP、PAB1和KRAS丰度最好；basic在KRAS–RAF1结合最好。
+新增joint相对MSA的宏平均优势只有0.0052；尚不能把整体改进解释成普遍的结构增益。
+
+Top25：新增basic25.33%、MSA30.67%、structure28.67%、joint26.00%。
+累计10个assay：basic27.2%、MSA26.4%、structure31.2%、joint24.4%。
+头部选择仍未获得与全局Spearman相同的收益。UBE4B虽Spearman明显改善，joint的Top25仍低于basic。
+
+固定MSA补充诊断（只比较预先固定的完整LR/LOR共同子集，不替代250候选主结果）：
+- PAB1的240候选子集：固定LR0.6740、Codex MSA0.6860、joint0.6596、basic0.4144。
+  此处很大一部分排序信号已经存在于简单自然序列频率先验中。
+- UBE4B的240候选子集：固定LR0.2843、joint0.4509，支持在该稳定性任务上结合其他信息。
+- KRAS–RAF1的完整250候选：basic0.7007、固定LR0.6328、joint0.6158；增加工具信息不能保证改善。
+
+更值得检验的下一假设：依据任务端点与MSA/结构可靠性决定证据融合方式。
+稳定性任务可以重点研究WT局部几何和缺失MSA位点的物理先验；功能/结合任务要单独验证结构权重。
+这是从本轮结果提出的后续假设；没有据此修改当前程序、挑选最优arm、融合现有预测或补跑。
+
+运行设置：gpt-6.1-sol/high/Fast off，4个worker；与native01提示词、工具和预算相同。
+零support、零实验反馈；宿主评分器在所有24个条件终止后才读取实验标签；此前仅有隔离的确定性标签导出，未把标签传给模型。每条件一次原生会话，生成seed未独立控制。
+端点和输入可用性选择的小样本扩展，非随机全基准或完全未使用过的holdout；两KRAS端点共享蛋白。
+模态包同时改变输入、预处理和工具可用性；没有拆分内部因果贡献，也没有独立验证LLM直接3D理解。
+
+用量：CLI回报9,684,518 input+output tokens，包含cached input；joint/basic2.40倍。
+24个原生会话、0额外格式修复，2个会话有CLI自动重连日志，最终均成功。
+底层每次重连/失败流费用未单独暴露；这些用量不是独立核验过的全部API账单。
+壁钟66.8分钟；准备与事后评估另计。旧native01协议和结果保留。
+
+主表：FINAL_REPORT.txt；机器结果：results/SUMMARY.json和final_stats.json。
+输入：protocol.json、PREPARATION_AUDIT.json、MSA_INPUT_AUDIT.json、INPUT_COVERAGE.json。
+输出绑定：FINAL_OUTPUT_BINDING_AUDIT.json；传输：TRANSPORT_AUDIT.json。
+固定方法：FIXED_BASELINE_DIAGNOSTIC.json；全部程序和调用记录：results/<case>/<arm>/。

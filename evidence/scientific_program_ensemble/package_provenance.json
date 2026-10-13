@@ -1,0 +1,15 @@
+{
+  "data_source": "RNAGym public historical measurements",
+  "dataset_export_hashes": [
+    "2bb0a2725eef7db5a6b2397ab12c5b14b1eee707163c88884fb389491080a808",
+    "2bb0a2725eef7db5a6b2397ab12c5b14b1eee707163c88884fb389491080a808"
+  ],
+  "scientific_program_count": 48,
+  "condition_count": 16,
+  "assay_count": 10,
+  "host_execute_function_AST_equal": true,
+  "historical_source_records_preserved": true,
+  "portable_offline_demo_is_new_wrapper": true,
+  "native_generation_snapshot_source_hashes_unchanged": true,
+  "fresh_native_reproduction_wrapper_not_model_dispatched_at_packaging": true
+}

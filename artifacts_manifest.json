@@ -1,0 +1,519 @@
+{
+  "conditions": {
+    "gfp_s2501": {
+      "cohort": "prospective_protein",
+      "case_id": "gfp",
+      "seed": 2501,
+      "input_sha256": "570d91e133fdf6f2757b15be928b8b33581c939138d0eb80ef1e1af616d9b704",
+      "candidates": [
+        {
+          "index": 0,
+          "code_sha256": {
+            "further_validation.py": "a80d7e1e114a16963b893388059e4e61f878136ac80d3275e6c070b159c5fa48",
+            "final_validation.py": "931dabc732d68c04b124b994c62783f0558dc5a18664c0353cc14df5b0a801a1",
+            "ensemble_explore.py": "638955577c07922a8e168bc9fa440d5f8f02d5238b7762e370f804da1a78134b",
+            "ge_explore.py": "a587b8ccc6bf99458980b30c58f2a4578fbbf36d76177662b498052330502289",
+            "finalize_artifact.py": "b58b17386dfc6924390f089a8c37ee34036a5966a610f652b7e36e6520271b9f",
+            "proposal.py": "2702964cedffce85230f2693f30de48531f9916e55c1bb00707fc9fd92595ee9",
+            "model_dev.py": "26bcc9fd85a913aa0d7f45d0bf42d8ee7cc706166e91dca9a81a38fd16bdc12a"
+          },
+          "original_status": "complete",
+          "accepted_status": "complete"
+        },
+        {
+          "index": 1,
+          "code_sha256": {
+            "explore_deepset.py": "0d82a9e95b0b7e418e41c5667ba3cd28364b93c8f9600b09131a63da44f4b2c3",
+            "model_helpers.py": "7be5b043bfdc0a9c0ccdeb45ac6950c6793fe9b5c321e1ffed04c1b9f21989d2",
+            "proposal.py": "a75db428d24ba9b35a5d98139e848f484cd847eed5eb272b72e37c3864722c0e",
+            "explore.py": "fbcfd23dec80a13d35cf48f1e673602ebeb1e09a09b7c4482b69738aa77b6364",
+            "explore_latent.py": "e73911a071c44148c59078ce9d0adb3ea1c16ae46788392f8ee4839d4bfd2ae0",
+            "confirm.py": "c41f010213c63fa092a684fa9fc414254c6cd95fa4907c0e369e5ef8a8717223"
+          },
+          "original_status": "complete",
+          "accepted_status": "complete"
+        },
+        {
+          "index": 2,
+          "code_sha256": {
+            "validate_final.py": "66aa090c204c5e5e39cd16a76719c313a2fb64aff256a18540d47672c7818fbd",
+            "proposal.py": "de726359f5ae3be21460ac2a145b21337ab52d17255db8815258317f6ceead87",
+            "extra_features.py": "2020e517415aae054496d0ab641b5c87b2e53ac8bc5bd612994a372e9d43b7dc",
+            "explore.py": "0e6b2cf14f82b65a81e30db89cd55c0c19366e7b641c4a98cdaee35a51d29fc6",
+            "anchors_explore.py": "f87f772ab36ba747ea10f84639cdafe19836b9747ccb5839073deb2c587a1b2b",
+            "explore2.py": "2d0f98ae4d45e3b1fc862b33b26cc95519d5a1bb96c64f052360bdda2e39196a"
+          },
+          "original_status": "complete",
+          "accepted_status": "complete"
+        }
+      ]
+    },
+    "pabp_s2501": {
+      "cohort": "prospective_protein",
+      "case_id": "pabp",
+      "seed": 2501,
+      "input_sha256": "61a6579bad4c3801082154ea08e79235c125000152f91da455001f1718181a11",
+      "candidates": [
+        {
+          "index": 0,
+          "code_sha256": {
+            "ensemble_validation.py": "4aa41b1ff4d8bb7ecf2c5b6adc0012f0183fb44e2881e8a915aa161bef19ef55",
+            "explore4.py": "89dbf3bcf245ecd277df57562cbb50e650dcfa20d669fbb982041debdbf2d67d",
+            "explore_rank_trees.py": "750fb7fa5f6f18ba66312b4f84b5509d9929907aeff9cbd6b227698f65fa21d8",
+            "proposal.py": "0b32007a986f0d07de2defd2f17a8ecd06e52ccf30079335e38ecd3d6b50636b",
+            "proposal_initial.py": "e781d284fa019c253623e7bdc2efd4faea5ff72c17c5478d548b7079e5456429",
+            "explore.py": "85b9c38ad2ec21847b0074f9b35dd7428d0d27545e7303db03ba974c82aaa44c",
+            "explore3.py": "0bba1865ea79950f6541918840c03433005e61a16f020957dbd2c5b824f4d34f",
+            "explore2.py": "0de99a052581b7d0bf25977ce3a697cee022372aa41e6a24065eb4f2997b814a"
+          },
+          "original_status": "complete",
+          "accepted_status": "complete"
+        },
+        {
+          "index": 1,
+          "code_sha256": {
+            "explore_advanced.py": "52471e0efe2e72beae3e9de9ac0862cda0ccc56361e0fe3d3395245c6e34d465",
+            "advanced.py": "7f86e67af0a9e7ff36212d3deb8f03e6c7b510bf60f3215c6ec2bb14cff5cde9",
+            "early_proposal.py": "432e3615ebb0a262b23e97d59cc699f78fb80058d143430dd61be83bf548e026",
+            "build_final.py": "5f0d72a5d9ffa7cb4e02ba5bfdb1ab7cebb3491bad48e408add08b127413c915",
+            "final_validate.py": "74a6e507aba1080b32a8acbb3d8b75aaefb9c7deb1ecf39de403cdca5a5a9a85",
+            "refine.py": "997ab9792b3cf047d0939faf1e9d2da41384cde93b6c2c439d06c30c5a0180a7",
+            "proposal.py": "3444ab2e72b5119db0897456e178948e286eee9bebd23d8fd54aa36dd6bb339c",
+            "verify_final.py": "6a540b8022bab21d0d64399e3d3e72021d35a3627ccd475ab5305cc6dbf0b47a",
+            "explore.py": "bcb7ab8d686c8fd1b3c224ab0e14c1d1da12b419ef5257497c98f7372e8f7f26"
+          },
+          "original_status": "complete",
+          "accepted_status": "complete"
+        },
+        {
+          "index": 2,
+          "code_sha256": {
+            "validate_ensemble.py": "e0968c64988d18319410595118373e4db3ae7c063b85289f8a80d1d4b3095f42",
+            "proposal.py": "8d2f42c0f2aeaceba64c4099ad29f22c88269925ac8cf00c0f4b7a9d3d063535",
+            "explore.py": "8d441d033c70d1a55c29af71fdcd57a0d6e633f3dc1218abc9de2065bbb88e46",
+            "explore_chem.py": "714424ced068b06157a7702b8f8e619538b0d98ffcf5b7051674c6c8c90f926e",
+            "explore_nonlinear.py": "fd01a40b015453a5037b1d18627ef803de09e8f7b91a2d7db744c140af8b5a1e"
+          },
+          "original_status": "complete",
+          "accepted_status": "complete"
+        }
+      ]
+    },
+    "gcn4_s2501": {
+      "cohort": "prospective_protein",
+      "case_id": "gcn4",
+      "seed": 2501,
+      "input_sha256": "da75485fa49e40cdb564ffd5dfa4ed128a2179be355fc8f675b8e6de1dbebc65",
+      "candidates": [
+        {
+          "index": 0,
+          "code_sha256": {
+            "final_validation.py": "7a99d02de321e2da5693f452984a7517445a3e99b947a9ee5429b220d55ba128",
+            "proposal_baseline.py": "adc13e58dd4508ad99d9279a9e835490fb2d37db6b84dc69ad9aeb32eefce5ed",
+            "confirm_validation.py": "f49c318cc7a0fa876c2b80b30a9b6acea21b7d76c8ed75038a4772da8f1ea41b",
+            "proposal.py": "c3d40d77c36bf2928d5f641565290726193aff7f9b1156c522a86af626bd3b1a",
+            "explore.py": "a475da6d4be50d5114d60f1967392a3c13d4ea1583bdfbf1558010d116e06e9e",
+            "explore3.py": "036817462c8b1ea215a1cfd83df48cfa08cc87edf658510cc6db49cceb158ba8",
+            "explore2.py": "89a5bac4c34bba72d4810df935ee4ca2f9afae0c25bc082bb43e0d42daf86d8a"
+          },
+          "original_status": "complete",
+          "accepted_status": "complete"
+        },
+        {
+          "index": 1,
+          "code_sha256": {
+            "validate_final.py": "3be9d87895f7c5c96c17f73b3e43e739ff03c20e524a69c67249667c1b55a76a",
+            "explore4.py": "b5630cf238984b1f922bc36e5d6c13dddd88b7122fbd68af82e3daf6baecaba8",
+            "blend_search.py": "4f7262bb19a8ed1ac5c83a1a82e738181575392642d626815581a4313c3b20c3",
+            "proposal.py": "e9675bfe0cbcabcd68d9a973ad458dae1f09443fdfec8c421d4eb491086d2a8c",
+            "explore.py": "4dac24d66413f234f44c660f655ddc404b5a228d1c0b8a6f1adfcaf8598279d5",
+            "proposal_early.py": "97e760ed0798424f3aa6f943dda9796503bab1d7ed6555baa9fee58d780a706a",
+            "explore3.py": "2e54777955c9bcace78a7e748f9a0085823285a16d559ebda40222d8ac875bab",
+            "explore2.py": "086be8ec9af0e780c2dfe56873b3a76897b35402d5de085e5409e99370706725"
+          },
+          "original_status": "complete",
+          "accepted_status": "complete"
+        },
+        {
+          "index": 2,
+          "code_sha256": {
+            "baseline_proposal.py": "73e965970c14701804f76e31e54ab17a6639496b64f50bba00a014bd7804d5e5",
+            "nonlinear.py": "4a2764f5b0989ac32c662abc6a886f5b97fa480f6d34d51072525d8933134cee",
+            "final_validation.py": "3e253df1aadb229d1f639eb9b9ce1986a0f36196a17b2ec7e31d84844dc5c8d3",
+            "refine.py": "a7d4dd4d99ccc1c99f31fd7c130aff0af06cb8530183050fb3c18472eb588794",
+            "proposal.py": "339195143ceab836584d0e84382218bdce90bb3f397819cc43c084bf505c3865",
+            "explore.py": "ec30cb07c485ea2c16c5a942af39ef0ab7e39f1e1a72d77cb9881aab6d6b796d",
+            "verify_models.py": "9cef11129d8341cc45101d0740e87572242d2f5b606635c925dcc8f0e4aa6208"
+          },
+          "original_status": "complete",
+          "accepted_status": "complete"
+        }
+      ]
+    },
+    "amfr_s2501": {
+      "cohort": "prospective_protein",
+      "case_id": "amfr",
+      "seed": 2501,
+      "input_sha256": "705136600825af7e0f5dbead7985300773bcfa6086a07820be1a3a9a1eea5a87",
+      "candidates": [
+        {
+          "index": 0,
+          "code_sha256": {
+            "finalize.py": "fb8e8a6f65a5f0d73890df3f236a92620e2fabe68f35fa39fcc5985851e2a3ea",
+            "blend_check.py": "3c6e01140ee046f79561e16b20fe8b318bafcb9af24494718c5e066c5c90298b",
+            "proposal.py": "c9b6e0b4640e2a4d273d3eeefa9d35261fd617bbe0aa12b3758c90fd3bd44f36",
+            "explore.py": "3ea7bb7cb15bfdc844d7e979bf2d2786fba1cdb57b6e587435975fda372f30a4",
+            "explore_trees.py": "5e001f071e70e6b9f42f672195f01be259e46c3f4aae1d415ee087b3c371b44f",
+            "explore2.py": "374822692d90861ff9c03ac1f98119f74080db2ad731c23278e5b8e47ff4ae6d",
+            "confirm.py": "ac7a160787ce65d83f8033ae52239274d8e3cb29436744fbd0688006da2bed24"
+          },
+          "original_status": "complete",
+          "accepted_status": "complete"
+        },
+        {
+          "index": 1,
+          "code_sha256": {
+            "nonlinear.py": "a80ac37fe5c8ef57bcca12ed9488a4e42d9d968121272664b3c50e02aaee04aa",
+            "build_final.py": "9af1b3a05c0c9ed206fb381c87b7b12e4daad6590ee43b3e6c71cd799b1b843c",
+            "final_validate.py": "2c5551e6d51d5d55d151084c121f4612222d1d2b4413f87008efe822c192186e",
+            "refine.py": "a134ac1cf952c65f3a8c2ead4eda2010972588535d36afddf6f22878893c4a39",
+            "proposal.py": "29ae6f27837d0b23ec75ec61da7ab96380d51a168424d29e2c9e5760eb2e8983",
+            "explore.py": "217743bea3d74d856e6f4ea906221dcc2021b7549b39e4caff0f48f95a32954c",
+            "rank_explore.py": "20763459c995c765f34dd3ea39e5454ee76bc39f2403f2f3d4481d8c110d6c4b"
+          },
+          "original_status": "complete",
+          "accepted_status": "complete"
+        },
+        {
+          "index": 2,
+          "code_sha256": {
+            "baseline_proposal.py": "9d22eca1156bda398f54474cca6ed5132d103c14c9e586d94c421c9d8e5caf6e",
+            "final_validation.py": "e320cb0911e759cdac6999fb4e223c51c4583b0bafa32923db142402f388f557",
+            "validate_blends.py": "39b34326fa7d6055ef54280bdd9085d30e3fdcc83453801aa909b388779a44ce",
+            "proposal.py": "d25eac185b63d9efa1ea8ef7dc69e6106c97dd95aab0fb819b86b26d23f61cea",
+            "exploration_utils.py": "53aba24964131199e6f697c75fa10d6a1d0cb93e4f5dd9780ebd02f35418436e",
+            "explore.py": "de20411250392c24f01deca54d69ed0c675a0345d5c2a087be3773a693ea751d",
+            "explore3.py": "34c7c59f8b783d7cad31c3d102b8fb9f061e743908d4c3ca4ed982cd5acebe0a",
+            "validate_candidates.py": "54280d637ae065649101a2e43bbf57efea4e317496a20f69a1996871479daeb8",
+            "explore2.py": "7825ba262f96715726c1669c8c4d81adacb133428d7fd74b8680283df0a74748"
+          },
+          "original_status": "complete",
+          "accepted_status": "complete"
+        }
+      ]
+    },
+    "his7_s2601": {
+      "cohort": "prospective_protein_additional6",
+      "case_id": "his7",
+      "seed": 2601,
+      "input_sha256": "66ca64fcfefcf71990018df0017c6b19614d19b94b9be3386ae3bb4f45462e6a",
+      "candidates": [
+        {
+          "index": 0,
+          "code_sha256": {
+            "fresh_validation.py": "185e8830dc520cb882ed8cf0de74e2ea50c28b373741ada7157102a42a2ebe94",
+            "ordinal_check.py": "fde3bffe556b91cfd28da8c2e0d726cce0c9794022dbea2fe5fcae90fe187113",
+            "proposal.py": "0cd7f6165f36ce9f9e60f5e8a575eea0a3541afea2789917a6f8993e94246082",
+            "ensemble_check.py": "362b5756e4dc26871432a86fa17b36c6abbba3ba6dc035281c34ae4406038c96",
+            "explore.py": "cb4e0a24f28b0a04c41d1b90b41a6c5ed811d28a900d678057effd97c3528bd3",
+            "explore3.py": "1254fc88ece6e5d5d9541f21ae088e0a5c1584d5bbc213d921361e00af71002a",
+            "explore2.py": "b13c64e7b0975fec382a3c5b0be10e4aee6e44ac14950d9ae56e78e41662febb"
+          },
+          "original_status": "complete",
+          "accepted_status": "complete",
+          "completion_only_recovery": false
+        },
+        {
+          "index": 1,
+          "code_sha256": {
+            "stability.py": "201e1b1633e71ce5fdd467ece0e87ed2f2eafa2c9eeb3664a868473991176e71",
+            "analyze_validation.py": "eafd54238a392fcef9bcaa8db8455d99c4f84fdfe8168f0c372743709e400326",
+            "proposal.py": "acc8286853d2ff290b035aab35bd2382bcb6e29171c755072638fb88b06791a7",
+            "experiment.py": "4140c5e9016500bc58795f6327d3a375973e9f043b7e4a6cda3c169c6cd53313",
+            "proposal_early.py": "a413c8feb178cfbe6fcb7ac55f67251620876bbeeb89f4e6f473e205a9410eae",
+            "experiment2.py": "8c3a477c44ca8c9976fa99ffd6be75d542c5a3011bf8c0dbf2639b492870d9e1"
+          },
+          "original_status": "complete",
+          "accepted_status": "complete",
+          "completion_only_recovery": false
+        },
+        {
+          "index": 2,
+          "code_sha256": {
+            "final_validation.py": "843a14f1a805d131654a46906226658daf4335f002033a5e5c2884dfb48a02a6",
+            "proposal.py": "65ff18da43794f8454704d92da0b0ed8b1ae17ab5fef9cce327db5a7fcefabd7",
+            "ensemble_check.py": "401b0f4f1e75035e2259924d84c0e709ee7d33295662e3e96196b9d0a15031ac",
+            "explore_rank.py": "9dc9d6966047730df2814b8a604e3e2fff7486fdee19a2eb6df0ca739b462b0f",
+            "explore.py": "3d835fae93ec781c28c53a55a241a231deae321cdddaf2799a561a4fb2d1d9e7",
+            "explore3.py": "23fcbe140a22748d6a38a2a1b131a1065669be83c1c3b36ae1a9007e65c40fc9",
+            "explore2.py": "c4ca507763e34954eb65274f9416ac86a44c19cec725e1ffca9fc67829b862f6"
+          },
+          "original_status": "complete",
+          "accepted_status": "complete",
+          "completion_only_recovery": false
+        }
+      ]
+    },
+    "grb2_s2601": {
+      "cohort": "prospective_protein_additional6",
+      "case_id": "grb2",
+      "seed": 2601,
+      "input_sha256": "fc855591a96b389c5a5df6698b3d87786445a1e10704f1b9a8871b7343ea329c",
+      "candidates": [
+        {
+          "index": 0,
+          "code_sha256": {
+            "validate_final.py": "d341efa59fadc3ea7f0a3bdc04a99fc7c8b8273e1df8d4298c8aa7e6aa10b442",
+            "proposal.py": "4e29c0301560679c49bda4d99ea150a33cca404e26eb7b77fdc557fdd56357d5",
+            "proposal_initial.py": "27d6e2310c29d200b28838f1123f4c4180d24dc56e0e6d2b88cd588219e7089b",
+            "explore_initial.py": "fbbda901d3a73b702339279a578093322468ba570319669e1e1a0e7d808616b3",
+            "explore.py": "fbbda901d3a73b702339279a578093322468ba570319669e1e1a0e7d808616b3",
+            "explore_nonlinear.py": "f0ac246d767d12073f5d258cce3b7b588e81540d6e15d9c5b84e07f749237114",
+            "validate_candidates.py": "650367f7fa578227566b3c34f28d97d7c5641892cd1f8a32887eeaf0bec9543a"
+          },
+          "original_status": "complete",
+          "accepted_status": "complete",
+          "completion_only_recovery": false
+        },
+        {
+          "index": 1,
+          "code_sha256": {
+            "explore_blend.py": "741408285d7fd7659bfca02e0d1565e24a019979f4fe7874a29f57ea1fad4697",
+            "nonlinear.py": "9a0abf00e2a3082672e8510969a94192505360201a80eb71e892b4bae09989f7",
+            "validate_final.py": "2c195c7251713366b52b67ea8778118b3cd83b05311269785e4baecb94617abe",
+            "proposal.py": "476790fb9f03fcd1ce414c76c12fd02965cd28a35d986f8c4c5a83bf2239fd45",
+            "explore_pool.py": "8a49db599ba474d19c96a50c4afa6e1843273646af96c666390c7517a19164cf",
+            "explore_transfer.py": "378187855ca57e27478460df60d291759154ea84e4d2aded8feed7a9d7486d53",
+            "explore_refine.py": "e0f92c4ada27db36548014f8736ff9c05603734b5008ad86d03b11880c54d37d",
+            "ranking.py": "5f402890c8094f09c9aa26e62adc3632e00f158d35cbdf2e65e44bc1085f4260",
+            "explore_rank.py": "a5613cf06bed38833d67f2fe776263833c84c7cb6e892dd76c21d7fde1e919fa",
+            "explore.py": "f914fab0f2442010fe62b145fade9c0f0c8d9c530b4a2674043fbe2af2c2a81f"
+          },
+          "original_status": "complete",
+          "accepted_status": "complete",
+          "completion_only_recovery": false
+        },
+        {
+          "index": 2,
+          "code_sha256": {
+            "early_proposal.py": "e5e515e7bc5f05854cfa3306675d467ada7b27fc46bfdb4d926bd6485ffde6da",
+            "validate_final.py": "45f7645b0846f2ea73679f8e8645c52f5973aecf69ab565168d07d6616efb4a0",
+            "blend_check.py": "f6eba16f962d7774d2b25d7ce7c2ca459d0220490f55d90d66241774d89d8d1b",
+            "proposal.py": "22ab03874599350053b4cdc245b0a093d8bde62ac6c5e2e1b1623c835842e1f7",
+            "explore.py": "85eaecc30f3381577dbbc62512c746fad902b4b16477a6331c483f43ff7ed8cc",
+            "explore3.py": "b983cf4000f1a6b0408ecf3fcf3221336b8072e34bd6bb22cbaea8d3b0daa1b4",
+            "explore2.py": "139e360c43c264632adc296d364d40a7ffad7bdc015c71b5e3ebb01cd3b52e60"
+          },
+          "original_status": "complete",
+          "accepted_status": "complete",
+          "completion_only_recovery": false
+        }
+      ]
+    },
+    "yap1_s2601": {
+      "cohort": "prospective_protein_additional6",
+      "case_id": "yap1",
+      "seed": 2601,
+      "input_sha256": "4d2bcdaedc3b4ad575d2429ea245bd6ede9f56da27e26701901b13e1b95e821d",
+      "candidates": [
+        {
+          "index": 0,
+          "code_sha256": {
+            "audit_validation.py": "fc78b2c6d1c91cc7de38d7849482e2e0c197410bd715605c5e367a69d5891c17",
+            "proposal.py": "3d14266298d07a9503d30174622a288a45d0acc1a3d55d175c32b7677359df96",
+            "proposal_initial.py": "e01ec60cc9ece5e88cf73e900c326a39fb2e403f006764f4c76de5b64abc377f",
+            "explore_refine.py": "b57937005bbea10a11c81acd108bb39cb5f643540b5ffe8d5ecad77ca4196be6",
+            "explore_kernels.py": "609642374abf61253ef041efb4b58e2999c1d2c1af8da849ac88e934acc2d7e1",
+            "explore.py": "bf037f8e7debe92e15689587320dcefa82468d167f05a4b9fa11c748881ca8fc",
+            "audit_ensemble.py": "090cd9cafa6d63cedc18c41a8b99fde75bd09e1befbfa0a06000bc9c0f695839",
+            "explore_trees.py": "9b8930e67ab84126a734601bb1860ed51e4d906c463f33c07b3be1648ab1d958"
+          },
+          "original_status": "complete",
+          "accepted_status": "complete",
+          "completion_only_recovery": false
+        },
+        {
+          "index": 1,
+          "code_sha256": {
+            "baseline_proposal.py": "2d91740ffcfa9d33f31ee6151dd19906527d7b2824700f8029c2da1ce9515e9f",
+            "validate_final.py": "d3f6560a4cd83204dcd118ffa8846d9f5017d99b5e4895571c2474b9ac937f3c",
+            "proposal.py": "5ca287e9860d872979bc385cca77cef1ea8e84c32f0b239269f408aeb69a8e0d",
+            "explore.py": "4c1aec740d938656a126ad0f3c383f127d002fed6f237286d273b2e9d92ddc11",
+            "explore3.py": "fd8bb78a2ab77c9219c6fda836d1a3255d9d5cec27938d7ac921b7c2169c6b42",
+            "explore2.py": "e6a5b35eadcd019b0749003c0bed4bac27daef0f256d9abadc9962d0090f8ab6"
+          },
+          "original_status": "complete",
+          "accepted_status": "complete",
+          "completion_only_recovery": false
+        },
+        {
+          "index": 2,
+          "code_sha256": {
+            "final_validation.py": "11ae5def5d29f8d15393401fe48c422d099e9924be1d5ba6544bdb0554de95ff",
+            "build_final.py": "d425a7fb2ff9a9e9f9e7496a5bce68dc54a17b59dbd2106aad1d03dbd4676439",
+            "ranking_explore.py": "ff06cc545784ac4a6c94789ceaea01495d837ed4beb0928dbdba52cfb29c4282",
+            "refine.py": "4e56eea45be3e425c7f754dab2d31b0e4c8dd5716c8e20fef187f6789b51f6aa",
+            "scientific_model.py": "5169edf589aeacb59f7b7a4d83481dbf2b383c93c885df40bf88c7f8cf779f6d",
+            "proposal.py": "06293cfcdeec6c6757b71c136bbe331260998845b9bf5d3a30ea52b4d7cbbd43",
+            "assess.py": "2556a7fd24908d87144a8efdfa214329289305501a5f7a1227291da965fae318",
+            "explore.py": "ae0ee5d30972b86cbf55f8654015297a0e47423a52662333b62bf03d5dcf7bd1",
+            "rank_refine.py": "c552ebdf227f9ebb65f464e0c9ace9d72f51e6fcc18b2a05579525935339faac"
+          },
+          "original_status": "complete",
+          "accepted_status": "complete",
+          "completion_only_recovery": false
+        }
+      ]
+    },
+    "phot_s2601": {
+      "cohort": "prospective_protein_additional6",
+      "case_id": "phot",
+      "seed": 2601,
+      "input_sha256": "c9d2023db17e1a52b6f3bfe8d011f990d75b2f5ed5abba87dcf57fbfccb52048",
+      "candidates": [
+        {
+          "index": 0,
+          "code_sha256": {
+            "final_validation.py": "b0fe1ae82ccf532303de1eb4cd7be4772818ff1544dc1e13373a7e1b095b10eb",
+            "explore4.py": "c3e24ac6f561baa5cd810b23e95e12aeb6b91f9fd881b1156e3f62445de47ab0",
+            "proposal.py": "e12066face1a3379b8a2c4e13daf27953b50334a79dbb20eb3aee3178a950ebc",
+            "proposal_initial.py": "5995174934a7beaf7e1f28f2dc2a847a1aff8d37bca8695099bc6a27c9f0e034",
+            "ensemble_check.py": "150866529c6de1778715ac37e8f25a5e67233940ca107e941bf22318bdbc79d5",
+            "explore.py": "625849166e6abfcd2c66fdb6443571e36323d708434505e3a61e2471c66d8d8c",
+            "singles_explore.py": "2dc3a8e5990482d88eeb6b73d86be3a17d8a30ee0141c38e2ab125a114953d7b",
+            "explore3.py": "5b261e3a718eb1bdb8faa78bea25791dab88993dd15f4fa0c8215a5794248b8b",
+            "explore2.py": "39f70a39cc14282f1ea16e09af8905a7aa8cbbbb89a408e02f3ab836ea3623b3"
+          },
+          "original_status": "complete",
+          "accepted_status": "complete",
+          "completion_only_recovery": false
+        },
+        {
+          "index": 1,
+          "code_sha256": {
+            "validate_final.py": "9e658220bec6c492b9a2bb24c8992f2f0e53003c96f4e7b6755d9b360efc38e1",
+            "explore_sparse.py": "38aea46ab52c08c0d55d3a891ff9ef1808b7aad75854b9406ff1b24f5b20be2f",
+            "proposal.py": "a786c99d0fd5343da11ee37b7bd64c105266c2301a636399a15ad9d024a22323",
+            "explore_refine.py": "5a32f86281de1aeeb87b7df523f10ee392c416af9d1aa019bd9d75a9356e4305",
+            "explore.py": "ebee0816fcb2a5439c932e06d1c76c2607441e6fbcb03d1838013de537100266"
+          },
+          "original_status": "complete",
+          "accepted_status": "complete",
+          "completion_only_recovery": false
+        },
+        {
+          "index": 2,
+          "code_sha256": {
+            "validate_final.py": "b1e4eba07356432415c6a6fe972dbf42d0fa8189c0ee8067683cc6357df0c0d5",
+            "proposal_baseline.py": "2e170733842006084a20920d8f31ddf8457c8881ae92a494ee51f38370b0d147",
+            "proposal.py": "193663de91db31ea340ffbced9e77bd1d8b07102b84a8a1e1814c3fe3b376015",
+            "explore.py": "2862efe4dc27e942469c2becb834eaac5de91536086739786cae28f36d408384",
+            "explore3.py": "bcc13f90f6e6c800989b218746360c6fd7a2c0fb0207f25eef4f22d9c70a02e1",
+            "explore2.py": "1ded25350361842dcf953fc36bd65bb145b205aaa28b0ade919f1408ca8bcd79"
+          },
+          "original_status": "complete",
+          "accepted_status": "complete",
+          "completion_only_recovery": false
+        }
+      ]
+    },
+    "ras_abundance_s2601": {
+      "cohort": "prospective_protein_additional6",
+      "case_id": "ras_abundance",
+      "seed": 2601,
+      "input_sha256": "29b561550730cfa093f1ef26d879de7fe12ed173d924efa3827d47c382a36d82",
+      "candidates": [
+        {
+          "index": 0,
+          "code_sha256": {
+            "final_validation.py": "51d46e2e8bf726c68df7712eb112fea6ae37fcdc45cb55a9130d1f222c0fcda7",
+            "proposal.py": "aec24e55afcfe794e0d0bf4b70669bc5f4d7d7d90cfa98cf3b352223c51b0c3a",
+            "explore_rank.py": "a0d42434a54e624a2c270a405cbb6734db5325cbed9310be0d08ef190a6bb47f",
+            "explore.py": "5bebe987718a03a03cd9c66a7b242e648e1a291c2b7fb8ceb75349947164a1fd",
+            "model_features.py": "73150911da3f14771d77cb58b91ffee4adc1c5421f9d6fc62f05d38c7b0d612a",
+            "explore2.py": "1dc1ae4c7fb0cfeaf0560ad3a9299252f7451e8d0745ded66124b1ba07aaf2b2"
+          },
+          "original_status": "complete",
+          "accepted_status": "complete",
+          "completion_only_recovery": false
+        },
+        {
+          "index": 1,
+          "code_sha256": {
+            "proposal.py": "27304544bcfa292c44f3043f295c16c2df7dc9ea9e265a38417447097f7fcef2",
+            "explore_length.py": "6b0c1f657dc9628f19f236de4998fc86fad5ed81cd4683d078cbcc351a71b7b7",
+            "explore.py": "18f0da1f2a6dfad7504451bdd8b6501609742c1b8259cffb76b3302b7350a11a",
+            "explore_more.py": "03e351b0f187d7c1b6ae942f74b6301edfb82b022ea654a09ac4b361860abffe",
+            "validate_finalists.py": "4d78843af09863721260d39582b1d0854ae196953aef62fcfadfeb96d957eba1"
+          },
+          "original_status": "complete",
+          "accepted_status": "complete",
+          "completion_only_recovery": false
+        },
+        {
+          "index": 2,
+          "code_sha256": {
+            "proposal.py": "5dad623215ce75706ad9891e55af2ec80faf70f01a4323107ee86445274ea5ab"
+          },
+          "original_status": "failed",
+          "accepted_status": "complete",
+          "completion_only_recovery": true
+        }
+      ]
+    },
+    "ynzc_s2601": {
+      "cohort": "prospective_protein_additional6",
+      "case_id": "ynzc",
+      "seed": 2601,
+      "input_sha256": "fcd82c1ac3b2109820a3ca290c10d2449fd774965be78c6fe980165c5bdf8597",
+      "candidates": [
+        {
+          "index": 0,
+          "code_sha256": {
+            "final_validation.py": "db1169f63787cb5e0180310942d2f186492d4d1e20195f5ec97cbb7f5645f7b6",
+            "explore_v3.py": "afc909d235cf3efbcdd3a71e06ad7635427a96e0ba3a19289cd320bffaa17e5d",
+            "explore_v2.py": "3db6b68d26d5368498e0daada4964273fc4f63edb77efbba9751ef82dd8ff016",
+            "proposal.py": "10514ac0c3000238e4a78f5a34f0eb7580733f5c3c425fa7d2aad371dd3bfd8b",
+            "explore_v1.py": "6232af10cf111638a63914e290a22cdd74fd4884a0b9aed576b51ad2b1e41b30",
+            "explore_trees.py": "1f531be993847fd353ad00a43c098eb3d2a1fcd3bfdb7cc749224695420a35e8"
+          },
+          "original_status": "complete",
+          "accepted_status": "complete",
+          "completion_only_recovery": false
+        },
+        {
+          "index": 1,
+          "code_sha256": {
+            "nonlinear.py": "63df09782feb5f1f0b943760adb87f7c5a0803f67feddf25c8c3e6f453873bc2",
+            "finalize.py": "5d1b6b3a63223feed4ed5242d882c1ad5cf7a4161622e48cd4eac629c3e08891",
+            "proposal.py": "fcf918347ac27a1ed0b8d6d50f554dd2ba2ecb95b59e03867d6dbe0d8d95b686",
+            "kernel_search.py": "25b4c613208bdc3af2d2b02e85f7f783c92c455727e60cae4b4fa955cc6b3d90",
+            "validate.py": "b50a0f98e82c0202f3ab792dc1092e2dc8a56ce5df13ee0ba29760bd171867b3",
+            "explore.py": "431d9c4085dac7ffeaa8d4391634a266d2a7090f4f15cfa8d7d72db3b3ee798f"
+          },
+          "original_status": "complete",
+          "accepted_status": "complete",
+          "completion_only_recovery": false
+        },
+        {
+          "index": 2,
+          "code_sha256": {
+            "final_checks.py": "73f48b0c2593b25e80dc6a77d651af025be43741839fd10ab1c787e54cc386c0",
+            "explore4.py": "06c8daffe2b9c0ed3ce785f560db6838ad552741019aaf576fd6c5448fb9c11c",
+            "proposal.py": "015affdc0703aa302f50d6ce936b0e4cfda3134cb79b8ea74fc30ddf07665ab7",
+            "explore.py": "12b457720e6b9f2e8ffa486bb4004552143093946eb5323fab76c3b9815c0b59",
+            "explore3.py": "d53a1c49565bfbd9c64d118b5db3074080f0a42fb59d6adc9158e42de8c86337",
+            "audit_models.py": "8813ab55caccc6f2af0770594eb200a1ca82bfe62c33748cbc677165b58cb5ca",
+            "explore2.py": "9596fc0bb4c1bcb9df817ce31b20daafbd6af27272ae8d607c1865bb5d5cec7a",
+            "nonlinear_baselines.py": "25b49c0220135e7ecab59afbafd3456e2b39903be2c15bffa07cec32b2183ace"
+          },
+          "original_status": "complete",
+          "accepted_status": "complete",
+          "completion_only_recovery": false
+        }
+      ]
+    }
+  },
+  "new_model_calls_for_demo": 0,
+  "scope": "10 protein assays, 30 frozen scientific programs; no new model calls during packaging"
+}

@@ -1,0 +1,84 @@
+Decision: support-only hierarchical kernel ensemble for ordinal KRAS abundance
+
+Assay interpretation
+The endpoint is the supplied RASK_HUMAN_Weng_2022_abundance yeast-growth DMS
+score. Higher measured fitness is the signed ranking target. Negative values
+are retained in their original units; no WT measurement, fitness=0 WT anchor,
+probability calibration, or wet-lab improvement is assumed. The final output is
+a monotone percentile ranking in [-1,1], with average ranks for exact ties.
+selected_ids is always empty because no further measurements are permitted.
+
+Model and feedback use
+proposal.py is self-contained apart from NumPy/SciPy. On EVERY invocation it
+extracts the supplied substitutions from reference/variant sequence differences,
+constructs feature kernels, and solves new regularized support-only regressions.
+All 96 current supports are used, including all 64 feedback variants. No support
+outcomes, mutation-effect coefficients, IDs, prediction lists, fitted states or
+training files are embedded or read. Query sequences only define features; they
+do not affect the support/support kernel or the fitted support coefficients.
+Assignment metadata does not filter query coverage.
+
+The kernel shares information through exact substitutions, common sites, nearby
+sequence positions, amino-acid properties (hydropathy, volume, charge, aromatic,
+glycine, proline and polar indicators), substitution identity, and soft Ras
+segment hypotheses. Intercept and mutation-count terms learn assay baseline and
+mutation burden from the observations. Feedback gives repeated backgrounds
+(e.g. multiple substitutions combined with a shared mutation), so background
+effects are inferred jointly rather than estimated from an assumed WT value.
+Quadratic positive-semidefinite kernel terms permit strongly regularized
+combination effects. They do not assert additivity, physical contacts or specific
+epistasis. A small sequence-environment term is retained in some ensemble members.
+
+Ten kernel configurations fit original assay scores; the leading five also fit
+monotone normal-rank transformed support outcomes. The two ensemble means receive
+equal weight, followed by output ranking. This tests sensitivity to assay scale
+while preserving signed direction. Kernel variance weights, distance scales and
+ridge strengths in CONFIGS are validation-selected configurations, not learned
+mutation coefficients. No randomized inference is performed. Development searches
+used seeds 20261013 and 718; all validation splits and tree baselines were seeded.
+
+Validation and selection
+All development used only the 96 public measured support outcomes. Initial
+selection used repeated four-fold feedback holdouts, retaining original supports,
+plus repeated mixed-support holdouts (70/30 weighting of their mean Spearman
+correlations). We tested exact/site baselines, physicochemical transfer, regional
+and sequence-environment hypotheses, several positional distance scales,
+quadratic combination terms, assay transformations, and ExtraTrees, random
+forest and gradient-boosting baselines. Tree models and their tested blends were
+inferior. Short-range positional transfer was more useful than extensive
+sequence-environment hypotheses. The final ensemble spreads regularization and
+feature assumptions rather than choosing one finely tuned member.
+
+The actual final propose function was rerun on 16 feedback folds (seeds
+101,211,307,409; 32 original supports plus 48 feedback records for each fit).
+Mean signed Spearman: 0.620772; fold standard deviation: 0.131708.
+On 12 mixed-support folds (seeds 113,223,317; 72 training records): mean 0.609783;
+fold standard deviation: 0.093983. Fitting only the original 32 supports and
+predicting the observed 64 feedback variants gave Spearman 0.531685. These are
+different validation designs, so their difference is not a causal improvement
+estimate. Logs and development files remain in the workspace.
+
+A two-repeat outer feedback audit with model selection repeated inside the
+outer training folds gave mean Spearman 0.553676 over eight folds, ranging
+0.147059 to 0.750000. The candidate configurations were originally developed on
+this same dataset, so even this audit is a sensitivity check rather than a fully
+independent unbiased estimate. The final 0.62 validation figure was also involved
+in ensemble selection. Repeated folds overlap and their standard deviations are
+not confidence intervals. No internal result establishes experimental mechanisms
+or predicts a guaranteed held-out correlation.
+
+Limitations and delivery checks
+Only 157 of 353 query mutation occurrences have exact substitution support.
+Unseen effects require uncertain sharing by position and chemistry. There are
+too few repeated combinations to identify detailed epistasis, and the data do
+not establish which effects arise from folding, abundance, localization or
+yeast-growth coupling. Ras segment and secondary-structure annotations are soft
+expert hypotheses, not coordinates, MSA-derived conservation or measured burial.
+No external sequences or pretrained predictors are used.
+
+Local checks verified all 186 current query IDs, finite bounded scores, empty
+selection, exact deterministic repeatability, fitting a changed public support
+subset, and sensitivity to changed supplied support outcomes. A full invocation
+took approximately 0.04 seconds locally, well within the 120-second fit limit.
+The required protected executor is run after saving this note and proposal.py;
+its contract output is trial_output.json.

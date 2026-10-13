@@ -1,0 +1,4 @@
+2026-10-13T07:14:04.823022Z  WARN codex_core::responses_retry: stream disconnected - retrying sampling request (1/5 in 185ms)... turn_id=01a1341c-5f29-7202-8674-4b8461df99a3 retries=1 max_retries=5 sampling_error=unexpected status 503 Service Unavailable: An error occurred while processing your request. You can retry your request, or contact us through our help center at help.openai.com if the error persists.
+2026-10-13T07:18:03.754302Z ERROR codex_models_manager::manager: failed to refresh available models: request timed out
+2026-10-13T07:21:52.373601Z  WARN codex_analytics::client: failed to send events request: error sending request for url (https://chatgpt.com/backend-api/codex/analytics-events/events)
+2026-10-13T07:22:38.761838Z ERROR codex_models_manager::manager: failed to refresh available models: request timed out

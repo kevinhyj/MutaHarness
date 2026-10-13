@@ -1,0 +1,65 @@
+The delivered proposal.py ranks the current unmeasured variants for the YnzC
+cDNA-display proteolysis stability assay. Higher supplied fitness is better.
+The numerical assay values are converted to empirical training ranks because
+the objective is signed rank correlation. Neither zero fitness nor a measured
+wild-type value is assumed. Returned scores are bounded ordinal ranks, not
+probabilities, stability estimates in physical units, or evidence of improvement
+in a future wet-lab experiment. No additional measurements are selected.
+
+All 96 observed supports, including the 64 independently sampled feedback
+variants, enter every full-data fit. In particular, the feedback provides direct
+information about five recurring double-mutant position pairs and additional
+single mutants. The model is rebuilt from the supplied support records on every
+invocation: no outcome, variant ID, coefficient, fitted state or training dataset
+is stored in the predictor. It can also fit a smaller supplied support subset.
+Query sequences determine the feature layout and prediction inputs, but their
+outcomes are never available or used.
+
+The final model is an equal ordinal ensemble of four regularized kernel
+regressions. Kernels share information through generic hydropathy, side-chain
+volume, charge, helix propensity and residue classes; source-residue contexts;
+site-specific mutation indicators, descriptors and amino-acid identities; and
+pair-specific offsets and descriptor-product interactions. One member uses a
+Gaussian similarity between amino-acid property vectors and a product kernel
+for double-mutant combinations. This allows smooth nonlinear residue effects
+and nonadditive combinations while regularization shrinks poorly supported
+parameters. Intercepts and all fitted coefficients are estimated afresh using
+only that invocation's supports. The fixed code stores generic constants and
+validation-selected kernel amplitudes, not learned model coefficients.
+
+Sequence-derived context features include distance from termini and the Gly20
+region, candidate hydrophobic packing inferred from reference neighbors at
+helical spacings, and sine/cosine helical phase. These are predictive hypotheses
+based on sequence, not observed structure or experimentally established contact
+maps. Charge interactions do not establish salt bridges, and learned statistical
+nonadditivity does not prove a biochemical mechanism.
+
+Development compared raw-scale, empirical-rank and normal-rank targets; additive
+and interaction kernels; smooth amino-acid kernels; and ExtraTrees and gradient
+boosting. Tree models were weaker, particularly for single mutants. Broad kernel
+amplitudes were explored with seeded repeated stratified four-fold validation.
+Metrics were Spearman correlations, assessed overall and separately within
+single and double mutants to detect inflated performance from order separation.
+Every validation fit ranked its own training outcomes, excluding held-out labels
+from the target transformation. Rounded final amplitudes were subsequently
+checked on eight additional split seeds, and on feedback-only validation with
+the original 32 singles always retained for training.
+
+For the four-member rank-voting ensemble, the additional ordinary support
+validation gave mean correlations approximately 0.854 overall, 0.665 for doubles,
+and 0.618 for singles (between-split SD approximately 0.020, 0.047 and 0.069).
+Conditional feedback validation gave approximately 0.852 overall, 0.666 for
+doubles and 0.305 for its 17 singles. These comparisons reuse a small public
+support dataset during model development and are not an untouched external test
+or a nested estimate of the entire feature/hyperparameter selection procedure.
+They cannot establish accuracy on the hidden queries. Final models use more
+training records than each validation fit, without claiming a quantified gain.
+
+Limitations include sparse per-site observations, poorly identified higher-order
+effects, lower confidence in unseen substitutions/sites, and substantial split
+variability. Overall ranking is easier than fine ordering within mutation-order
+groups. Proteolysis-specific sequence effects may coexist with folding stability
+and are not separately identifiable here. No external sequences, MSA, structure,
+pretrained predictions, hidden labels or measured WT were used. Prediction is
+deterministic (no stochastic fitting); development seeds and all exploration
+files are left in the workspace. The predictor performs no data-file reads.

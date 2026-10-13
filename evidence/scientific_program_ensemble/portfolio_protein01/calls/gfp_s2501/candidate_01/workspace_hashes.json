@@ -1,0 +1,21 @@
+{
+  "assignment.json": "2ef303d2664920fc0365eeaed3da78917593d6edfea5967638a3b83790eb8aa4",
+  "case.json": "570d91e133fdf6f2757b15be928b8b33581c939138d0eb80ef1e1af616d9b704",
+  "confirm.py": "c41f010213c63fa092a684fa9fc414254c6cd95fa4907c0e369e5ef8a8717223",
+  "confirm_log.txt": "aae12f840c8cfa3fa6832f36b7f76c6c0251ab42e733934bea2650afda717f8f",
+  "damage_log.txt": "308aca73b41540147fd5aac388ea75f88f083e31782cbeabfa72cc3841b9835f",
+  "damage_predictions.npz": "752189457f68368bd75e135b33924fc9d22d815b0d81121b38f272617c1b4428",
+  "decision_note.txt": "9a0bf4dff81e54a84a294746a0989a544cd12f9aee03f6405911d10da76d10e5",
+  "explore.py": "fbcfd23dec80a13d35cf48f1e673602ebeb1e09a09b7c4482b69738aa77b6364",
+  "explore_deepset.py": "0d82a9e95b0b7e418e41c5667ba3cd28364b93c8f9600b09131a63da44f4b2c3",
+  "explore_latent.py": "e73911a071c44148c59078ce9d0adb3ea1c16ae46788392f8ee4839d4bfd2ae0",
+  "folds.npz": "0eb1f510347b68c5ddacf59e99e5f50b12b585d05f2ace97ac0b884365caf500",
+  "host_output.json": "38a5063f646394abcc7139e2631dbbc7596dc1a30bff4a8ea7233949d59f3ff3",
+  "latent_log.txt": "10995d661e29e6199b31fefd912e8b6576a175595e3447b5f282ae9953226e76",
+  "latent_predictions.npz": "9e3cb63ef731ac9477f727f487803e9faec878234b179716c4b596d2f9fb0f9a",
+  "model_helpers.py": "7be5b043bfdc0a9c0ccdeb45ac6950c6793fe9b5c321e1ffed04c1b9f21989d2",
+  "proposal.py": "a75db428d24ba9b35a5d98139e848f484cd847eed5eb272b72e37c3864722c0e",
+  "trial_output.json": "38a5063f646394abcc7139e2631dbbc7596dc1a30bff4a8ea7233949d59f3ff3",
+  "validation_log.txt": "0cd67bcb65a620d7652ec7d1e37e6eec4963712178beb66ff53e7806c98128e4",
+  "validation_predictions.npz": "769b460b5ce524a538a320410b82ce429b60190c486c5e3e13a3edd3f1ae95ae"
+}

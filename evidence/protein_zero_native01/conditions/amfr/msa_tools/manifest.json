@@ -1,0 +1,64 @@
+{
+  "run_id": "protein_zero_native01",
+  "case_id": "amfr",
+  "arm": "msa_tools",
+  "status": "complete",
+  "started_at_utc": "2026-10-13T03:32:39.389145+00:00",
+  "finished_at_utc": "2026-10-13T03:46:04.530932+00:00",
+  "support_count": 0,
+  "query_count": 250,
+  "prediction_count": 250,
+  "invocations": [
+    {
+      "started_at_utc": "2026-10-13T03:32:39.403132+00:00",
+      "finished_at_utc": "2026-10-13T03:46:04.499496+00:00",
+      "wall_seconds": 805.094,
+      "exit_code": 0,
+      "timed_out": false,
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "reasoning_output_tokens": 12400,
+        "output_tokens": 21790,
+        "input_tokens": 357261,
+        "cached_input_tokens": 299648
+      },
+      "usage_known": true,
+      "observed_item_types": [
+        "agent_message",
+        "command_execution",
+        "error"
+      ],
+      "malformed_jsonl_lines": 0,
+      "model_requested": "gpt-6.1-sol",
+      "reasoning_effort": "high",
+      "cli_version": "codex-cli 0.162.0-alpha.17.2",
+      "backend_model_identifier": null,
+      "backend_model_identifier_status": "not provided by native exec JSONL",
+      "service_tier_requested": null,
+      "fast_mode": false
+    }
+  ],
+  "known_input_plus_output_tokens": 379051,
+  "unknown_usage": false,
+  "errors": [
+    []
+  ],
+  "protocol_sha256": "abdeafc53343b416dac32749d129f64b0e1b390f1367739e6a64825b5260e015",
+  "initial_input_sha256": {
+    "case.json": "ad15398209131f79e4a0125f43b8ef65311ef53f58e4e38387923087f3bf492d",
+    "evidence_manifest.json": "ac2809c942f63eb73a08311e4e29175620f5e30ee6f464126b4a90ffa947159a",
+    "msa_evidence.json": "77a3a3cd2d2e7f49b3ceafb902fa9cea1971bfdfb1c1a312ace9966485f96610",
+    "msa_tools.py": "475d0090a9ac45f5ac2df109ca7c09d6f221f92c3753be4b14802190a24ae101",
+    "raw_evidence/AMFR_HUMAN_2023-08-07_b04.a2m": "23fe63b7fe8826769b6bf4501945f6ed01a569bdb3a1f37a010bc72dddaba04c",
+    "raw_evidence/msa_profile.json": "7da6b4199e30715e3d55de6dadafc52424e04acb316b0d4a227785b1d20091ca"
+  },
+  "final_case_sha256": "ad15398209131f79e4a0125f43b8ef65311ef53f58e4e38387923087f3bf492d",
+  "model_requested": "gpt-6.1-sol",
+  "reasoning_effort": "high",
+  "fast_mode": false,
+  "label_access": "OS denied",
+  "tool_network": "disabled",
+  "prediction_sha256": "de12bb8c234e57c7f14d5341c48b02de5cac61bccf248897b2986a046ea52573",
+  "checkpoint_contract_valid": true,
+  "wall_seconds": 805.179
+}

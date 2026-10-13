@@ -1,0 +1,29 @@
+{
+  "candidates": 250,
+  "unique_ids": 250,
+  "mutation_identities_and_full_sequences_verified": true,
+  "higher_assay_is_better": true,
+  "score_decreases_monotonically_with_latent_cost": true,
+  "score_range": [
+    -0.969312,
+    0.587539
+  ],
+  "source_hashes_verified": true,
+  "reference_mapping": "exact_whole_chain_sequence",
+  "WT_coordinates_residues": 577,
+  "mutated_positions": 75,
+  "missing_mutated_coordinates": 0,
+  "missing_mutated_backbone_or_sidechain_atoms": 0,
+  "mutation_confidence_min": 84.22,
+  "supplied_chains": [
+    "A"
+  ],
+  "RNA_partner_coordinates_supplied": false,
+  "MSA_present": false,
+  "measured_supports": 0,
+  "internal_repeat_anchor_RMSD_A": [
+    0.21762984602533197,
+    0.2285185028122912
+  ],
+  "scientific_ordering_validated_against_outcomes": false
+}

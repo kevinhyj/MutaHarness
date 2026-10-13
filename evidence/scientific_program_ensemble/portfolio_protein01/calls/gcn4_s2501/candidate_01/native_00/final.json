@@ -1,0 +1,1 @@
+{"status":"ready","summary":"Saved deterministic support-only ensemble in proposal.py and documented validation and limitations in decision_note.txt. All 186 query scores meet the contract; protected executor succeeded and wrote trial_output.json."}

@@ -1,0 +1,4 @@
+2026-10-13T07:13:29.057958Z ERROR codex_models_manager::manager: failed to refresh available models: request timed out
+2026-10-13T07:17:08.529588Z  WARN codex_core::responses_retry: stream disconnected - retrying sampling request (1/5 in 199ms)... turn_id=01a1341c-5e6b-7551-9087-e98e684a7682 retries=1 max_retries=5 sampling_error=stream disconnected before completion: websocket closed by server before response.completed
+2026-10-13T07:18:04.067080Z ERROR codex_models_manager::manager: failed to refresh available models: request timed out
+2026-10-13T07:24:44.497354Z  WARN codex_core::responses_retry: stream disconnected - retrying sampling request (1/5 in 191ms)... turn_id=01a1341c-5e6b-7551-9087-e98e684a7682 retries=1 max_retries=5 sampling_error=stream disconnected before completion: websocket closed by server before response.completed

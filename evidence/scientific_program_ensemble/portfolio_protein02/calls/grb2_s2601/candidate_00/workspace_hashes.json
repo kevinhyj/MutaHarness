@@ -1,0 +1,21 @@
+{
+  "assignment.json": "86b6752897ff051a35711aa6160eeb8bb4bcc5f182136115089149315575c3a1",
+  "case.json": "fc855591a96b389c5a5df6698b3d87786445a1e10704f1b9a8871b7343ea329c",
+  "confirmatory_predictions.npz": "8725f665fd282c86f4e1a217b8b95288f2dc8f20d8b5e96102490c250231317b",
+  "decision_note.txt": "422eb5e59455e60feacb6493b239a5dc1227f3ea9199c5fe38de86dd5389836d",
+  "explore.py": "fbbda901d3a73b702339279a578093322468ba570319669e1e1a0e7d808616b3",
+  "explore_initial.py": "fbbda901d3a73b702339279a578093322468ba570319669e1e1a0e7d808616b3",
+  "explore_nonlinear.py": "f0ac246d767d12073f5d258cce3b7b588e81540d6e15d9c5b84e07f749237114",
+  "final_validation.json": "503ab7a7273a6e0c9971f12343d10057c40be7ef1b871e4da0e20a4d1c3c4ced",
+  "host_output.json": "62b836e007d9a86a69d0c493236df4ba59e992d1e5f8edb88af24c75d90676a6",
+  "proposal.py": "4e29c0301560679c49bda4d99ea150a33cca404e26eb7b77fdc557fdd56357d5",
+  "proposal_initial.py": "27d6e2310c29d200b28838f1123f4c4180d24dc56e0e6d2b88cd588219e7089b",
+  "trial_output.json": "62b836e007d9a86a69d0c493236df4ba59e992d1e5f8edb88af24c75d90676a6",
+  "validate_candidates.py": "650367f7fa578227566b3c34f28d97d7c5641892cd1f8a32887eeaf0bec9543a",
+  "validate_final.py": "d341efa59fadc3ea7f0a3bdc04a99fc7c8b8273e1df8d4298c8aa7e6aa10b442",
+  "validation_confirmatory.json": "1d7acf324be8c6986eea32d5b2c01be85f3e81df342852e04ce6d844c0a8833d",
+  "validation_grid.json": "1d3d651d2924dc28162c9a699e196018b3ff2733f93c117380404e5f089f100f",
+  "validation_nonlinear.json": "b6e93d0af7a418b304c39cd65031c88f3cb6d77a56a320db46d20409f9f87dda",
+  "validation_similarity.json": "eb5692a50a4f0ac30b5bc25c6acb32f94e81ddfbf7ca5d5d8ddc78842d979fe6",
+  "validation_splits.npz": "04948a439b02f31181ea92c6818cf51eaea77c9f93f2af6d689984095d7f7b11"
+}

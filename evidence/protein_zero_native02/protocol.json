@@ -1,0 +1,423 @@
+{
+  "run_id": "protein_zero_native02",
+  "frozen_at_utc": "2026-10-13T05:00:37.280407+00:00",
+  "cases": [
+    "ube4b",
+    "cbx4",
+    "gfp",
+    "pabp",
+    "kras_abundance",
+    "kras_raf1"
+  ],
+  "arms": [
+    "basic",
+    "msa_tools",
+    "structure_tools",
+    "joint_tools"
+  ],
+  "conditions": 24,
+  "support_count": 0,
+  "query_count": 250,
+  "model": "gpt-6.1-sol",
+  "reasoning_effort": "high",
+  "fast_mode": false,
+  "scientific_model": "Native Codex freely writes/selects its predictor; no compulsory CR25 fitting wrapper",
+  "budget": {
+    "main_timeout_seconds": 1200,
+    "condition_wall_seconds": 1500,
+    "max_attempts": 2,
+    "max_workers": 4,
+    "soft_retry_token_admission": 800000
+  },
+  "retry_policy": "At most one technical/output-contract correction; no timeout retry, no outcome-based retries; preserve failures and unknown usage",
+  "execution_fingerprint": {
+    "sha256": "e0d526add953676e4b0f85937a5b40ec97ee221a3408f3e98178906f6f30925b",
+    "details": {
+      "cli_version": "codex-cli 0.162.0-alpha.17.2",
+      "cli_entrypoint_sha256": "0d5ac7aae20c4eda6242428d5e218c55ba96d8763fda2a271088ff37104b9d28",
+      "runtime_interpreter_sha256": "760d13aa43656d9e51bcbc1847088691a035f9dc37030070f1d4993f55d4e689",
+      "runtime": {
+        "python": "3.14.3 (main, Feb  3 2026, 15:32:20) [Clang 16.0.0 (clang-1600.0.26.6)]",
+        "packages": {
+          "numpy": "2.5.4",
+          "scipy": "1.18.1",
+          "scikit-learn": "1.9.1"
+        }
+      },
+      "permissions_sha256": "bfc7554a64d7fc00fddb732637b41dff08cd4a0fdf5dc90d8ced41a54c9ca15e",
+      "tool_network": false,
+      "web_search": "disabled",
+      "model": "gpt-6.1-sol",
+      "reasoning_effort": "high",
+      "fast_mode": false,
+      "service_tier_requested": null
+    }
+  },
+  "transport_sha256": "ed02ca73e4f9b6595e3baccee81dc61c99758d89fa38133ee32469c991f5ffca",
+  "label_sha256": {
+    "ube4b": "c644ee0f55123a6b8df10aaa6390c76522e0c1c664234b7658309fa0188bbf2d",
+    "cbx4": "128d6548d262e97026297d36a54dbb98dddad6a6cb05b03647ca7bfbd3db0e66",
+    "gfp": "5e65c9e535226385817eb7295b9326292944cc20799f2807a641fb2f3473f1fd",
+    "pabp": "a83d082edd5790ab931b05f42610880fb4c0d0293e443677e1e5b0a336df74eb",
+    "kras_abundance": "044ff201a9bdceb8ab92e16941abf1c809b34decb6cc229ad05d31ecb53f3b0f",
+    "kras_raf1": "8129e6c2e5e88384152a78d3069ff7b56e477056dbd6c22059770cd13f41470b"
+  },
+  "label_hash_source": "/Users/hyj/Desktop/Kimi/explorations/protein_zero_native02/export_audit.json",
+  "label_hash_source_sha256": "51e18ff889f8811b2343d3d35694b945dbc5d9696b9d51b1a71339e5ef057a3a",
+  "implementation_sha256": {
+    "export_inputs.py": "3f6a0dcb0a269b36a27b6c56c1feb79bdd88fdc5a5c23bda75504135fef24dc3",
+    "prepare_run.py": "a7929b76b57c093f693a11c4574e65297c70de716c149acfffa2a25d6d605630",
+    "legacy_preparation.py": "0de8c3d4e384addd2a8ff61e07e42da484342d13546b8ffce75847f7853fd5cd",
+    "run.py": "eabd8b4ee053920c1143ba92ed469093f7849349985c086da74f312592015654",
+    "score.py": "77135e8a97e08d343d88add6f2271a08b8ce32804c5122d93c9c44ddbf7ffeda",
+    "prompt.txt": "ac369a88d1c85c749bb642fe4338075b26bb53948c118bdbbc5669a0b6e5390a",
+    "msa_tools.py": "475d0090a9ac45f5ac2df109ca7c09d6f221f92c3753be4b14802190a24ae101",
+    "structure_tools.py": "852a24ba0a243546bf3ffe970f51c6a2fc650a83ae956f09eba9e761bb8c63c2",
+    "PREPARATION_AUDIT.json": "13d73bae1819c41b5d2785d3c2d7e15d5bbefcd087976c80bde6c364bcdfadb7",
+    "export_audit.json": "51e18ff889f8811b2343d3d35694b945dbc5d9696b9d51b1a71339e5ef057a3a"
+  },
+  "input_sha256": {
+    "ube4b": {
+      "basic": {
+        "case.json": "066ed93a4a5fd89f1bdcfb56c2e148264b203d6ebcfd49b66dc63f734256734f",
+        "evidence_manifest.json": "11dc79fc8d12bcfa5328d813d1ec67b4b7e31f5ec3acf75f0bc38afaf3b96243"
+      },
+      "msa_tools": {
+        "case.json": "e3c4e0f769c8fa17958e30d03a6f31a18bc3359eca37dc9c8b9a44a8232cb5aa",
+        "evidence_manifest.json": "0eadca6d3e095b091b8f2387e61cbb46366e3395a4024cc87f3c91b9e2c929a0",
+        "msa_evidence.json": "879d202699c0dba9becbd76326640ee999f8ce4ed0c9b610654deca0e0f34bc6",
+        "msa_tools.py": "475d0090a9ac45f5ac2df109ca7c09d6f221f92c3753be4b14802190a24ae101",
+        "raw_evidence/UBE4B_HUMAN_2023-08-07_b04.a2m": "1017330409b543bd04fd07b592034c309fc79d8e98cf4531ce15ba6e11c7b6d5",
+        "raw_evidence/msa_profile.json": "f94914a35bfa8d9f0790fd5a68804bcf9b989231415fd8da669de994cf645b49"
+      },
+      "structure_tools": {
+        "case.json": "fa0cdd5a880c1897ea80a75c7598e233c8e5d09679586d5f83c8fb0d794de6d5",
+        "evidence_manifest.json": "ff908dc3c3e9073210eec7816f7a006ec5256c03c9169de4c24a667418fa7bbf",
+        "raw_evidence/UBE4B_HUMAN.pdb": "8fd6a316ee05505972d71d293082071eddc2e9ad76947bf9937784c354bf9a24",
+        "raw_evidence/UBE4B_HUMAN_Tsuboyama_2023_3L1X.json": "b42027cd6d7a9a8a42b5ade38286110387a13eff9bd78b5ee223c167ef514c1a",
+        "structure_evidence.json": "04d2d17a5f8a5bd3013aca65fc335392728c1479fbd1ab902001cd805a1257e8",
+        "structure_tools.py": "852a24ba0a243546bf3ffe970f51c6a2fc650a83ae956f09eba9e761bb8c63c2"
+      },
+      "joint_tools": {
+        "case.json": "496f485f7d76e5abf997c1cf8577bcd0b120393fbb1242abe1f72facc3dc9832",
+        "evidence_manifest.json": "0910b0b561d56b45a6bcef2534bf6826ab216f76537d279422048f5e766c3fa0",
+        "msa_evidence.json": "879d202699c0dba9becbd76326640ee999f8ce4ed0c9b610654deca0e0f34bc6",
+        "msa_tools.py": "475d0090a9ac45f5ac2df109ca7c09d6f221f92c3753be4b14802190a24ae101",
+        "raw_evidence/UBE4B_HUMAN.pdb": "8fd6a316ee05505972d71d293082071eddc2e9ad76947bf9937784c354bf9a24",
+        "raw_evidence/UBE4B_HUMAN_2023-08-07_b04.a2m": "1017330409b543bd04fd07b592034c309fc79d8e98cf4531ce15ba6e11c7b6d5",
+        "raw_evidence/UBE4B_HUMAN_Tsuboyama_2023_3L1X.json": "b42027cd6d7a9a8a42b5ade38286110387a13eff9bd78b5ee223c167ef514c1a",
+        "raw_evidence/msa_profile.json": "f94914a35bfa8d9f0790fd5a68804bcf9b989231415fd8da669de994cf645b49",
+        "structure_evidence.json": "04d2d17a5f8a5bd3013aca65fc335392728c1479fbd1ab902001cd805a1257e8",
+        "structure_tools.py": "852a24ba0a243546bf3ffe970f51c6a2fc650a83ae956f09eba9e761bb8c63c2"
+      }
+    },
+    "cbx4": {
+      "basic": {
+        "case.json": "53b0e1d1a1bcab918b553349918096b10654e54849a81ffc17d5c2dceead6ef4",
+        "evidence_manifest.json": "1d766fe5d8b362b9fbf993e1c7d52ed2b1faca004abbce40c88f0ca22298eb22"
+      },
+      "msa_tools": {
+        "case.json": "69335eec4f24ba2173607d039bd9b5b11829033c22cf4e3971d2b25b1a0d3fcd",
+        "evidence_manifest.json": "f5c50f9c4bc3984a02e26d90139c46865486d2c2eea6afafdb91926b7364d8eb",
+        "msa_evidence.json": "66e0d45a3d74574224f1e4354bc1c9b7a81889627cf9b681243cef80baa7aa45",
+        "msa_tools.py": "475d0090a9ac45f5ac2df109ca7c09d6f221f92c3753be4b14802190a24ae101",
+        "raw_evidence/CBX4_HUMAN_2023-08-07_b03.a2m": "3b7c43b4015d0757e8396981760caf3d00a6e92d12936b3ce61a18d3cea789ad",
+        "raw_evidence/msa_profile.json": "224b621bddd2077b8cf83c125a08298c3a22e7690d447c64b79991ec012f4198"
+      },
+      "structure_tools": {
+        "case.json": "aeec776c981eed2c2d9ec6dbaeeebfdb5c20044c49242029c3be2e1c59eaffa1",
+        "evidence_manifest.json": "10ca1c431c1103c20721451fd3eb1c47d51c0d44f6e18d9c1e1456edd96db643",
+        "raw_evidence/CBX4_HUMAN.pdb": "bd3d346fab261e5c85c39ee48091cb81d95224b5c8921bf160c713cdefa68f44",
+        "raw_evidence/CBX4_HUMAN_Tsuboyama_2023_2K28.json": "18f8b9ff1d0f7ab582b98e38f8595898c12c6eede46a41e59f2db4fdad8c019a",
+        "structure_evidence.json": "6001e046bc701d7b1ce1c1c2eb8fe00f8f9c4df17b0a438b5ff3f1cba6934c33",
+        "structure_tools.py": "852a24ba0a243546bf3ffe970f51c6a2fc650a83ae956f09eba9e761bb8c63c2"
+      },
+      "joint_tools": {
+        "case.json": "382a964dfc66950c8a1a55d250ae8d53ab6f44572b9221f6ae5c176b440c9db3",
+        "evidence_manifest.json": "31fd044f7eaabf181a69616288d3235977cb09fb3cb4c13ee44a35866257d29f",
+        "msa_evidence.json": "66e0d45a3d74574224f1e4354bc1c9b7a81889627cf9b681243cef80baa7aa45",
+        "msa_tools.py": "475d0090a9ac45f5ac2df109ca7c09d6f221f92c3753be4b14802190a24ae101",
+        "raw_evidence/CBX4_HUMAN.pdb": "bd3d346fab261e5c85c39ee48091cb81d95224b5c8921bf160c713cdefa68f44",
+        "raw_evidence/CBX4_HUMAN_2023-08-07_b03.a2m": "3b7c43b4015d0757e8396981760caf3d00a6e92d12936b3ce61a18d3cea789ad",
+        "raw_evidence/CBX4_HUMAN_Tsuboyama_2023_2K28.json": "18f8b9ff1d0f7ab582b98e38f8595898c12c6eede46a41e59f2db4fdad8c019a",
+        "raw_evidence/msa_profile.json": "224b621bddd2077b8cf83c125a08298c3a22e7690d447c64b79991ec012f4198",
+        "structure_evidence.json": "6001e046bc701d7b1ce1c1c2eb8fe00f8f9c4df17b0a438b5ff3f1cba6934c33",
+        "structure_tools.py": "852a24ba0a243546bf3ffe970f51c6a2fc650a83ae956f09eba9e761bb8c63c2"
+      }
+    },
+    "gfp": {
+      "basic": {
+        "case.json": "04985899eaa3e40b41e7df894ea07f67ec985ac2321500b450bba305a891dd12",
+        "evidence_manifest.json": "a077d3ae37fb6665dce6beada8f50462f5c64868a3ec121484d5195906c5655e"
+      },
+      "msa_tools": {
+        "case.json": "1475e588c97ef9a2740cb71c51e4a87015bacbc5563775a83af79c124ad75f28",
+        "evidence_manifest.json": "1b09044bb273384eef4934e69838a032069a99cb863baf5497720457a9492fab",
+        "msa_evidence.json": "fbfd220e883019e6427cb32c072565692761dc592f086aa6b6ed5a0bbe9d3f5f",
+        "msa_tools.py": "475d0090a9ac45f5ac2df109ca7c09d6f221f92c3753be4b14802190a24ae101",
+        "raw_evidence/GFP_AEQVI_full_04-29-2022_b08.a2m": "caf7b7da575b832f5829deac1ceee69ea0098b3660d8eea0c49b01405bb9b8f8",
+        "raw_evidence/msa_profile.json": "8141d78096cc8fc60d13571f10ac38a4738e57d6253ac71acf4988c64cb83e26"
+      },
+      "structure_tools": {
+        "case.json": "af476bab5c9a1a63835e39d5e99ba02bf7bc25f47d8d896640906b61d17f91ff",
+        "evidence_manifest.json": "8c8ac07637bb390300789c97fb2bcf7f655e56c6a28cefabf6f91ebce82c3736",
+        "raw_evidence/GFP_AEQVI.pdb": "70bf9c39c1cc353d330fb37aba49d448caf03693b35196f3adc7375ef434fcc5",
+        "raw_evidence/GFP_AEQVI_Sarkisyan_2016.json": "1061cf8371241b93be68e1c206e5a454e3ebc0713bc5763ab2a1738b5ad406a2",
+        "structure_evidence.json": "4cd4b97bc460182b2490e810ad9811585a07a1302a96b30bdac19c29167af3c9",
+        "structure_tools.py": "852a24ba0a243546bf3ffe970f51c6a2fc650a83ae956f09eba9e761bb8c63c2"
+      },
+      "joint_tools": {
+        "case.json": "c8bed056e1f04599ce56668707954e9730373be2b263dfa1b23b0994e28f92ce",
+        "evidence_manifest.json": "e54f98fcb19452385778b82e652fa2b0a0d1f89563858f7dfa4229f6f84c04df",
+        "msa_evidence.json": "fbfd220e883019e6427cb32c072565692761dc592f086aa6b6ed5a0bbe9d3f5f",
+        "msa_tools.py": "475d0090a9ac45f5ac2df109ca7c09d6f221f92c3753be4b14802190a24ae101",
+        "raw_evidence/GFP_AEQVI.pdb": "70bf9c39c1cc353d330fb37aba49d448caf03693b35196f3adc7375ef434fcc5",
+        "raw_evidence/GFP_AEQVI_Sarkisyan_2016.json": "1061cf8371241b93be68e1c206e5a454e3ebc0713bc5763ab2a1738b5ad406a2",
+        "raw_evidence/GFP_AEQVI_full_04-29-2022_b08.a2m": "caf7b7da575b832f5829deac1ceee69ea0098b3660d8eea0c49b01405bb9b8f8",
+        "raw_evidence/msa_profile.json": "8141d78096cc8fc60d13571f10ac38a4738e57d6253ac71acf4988c64cb83e26",
+        "structure_evidence.json": "4cd4b97bc460182b2490e810ad9811585a07a1302a96b30bdac19c29167af3c9",
+        "structure_tools.py": "852a24ba0a243546bf3ffe970f51c6a2fc650a83ae956f09eba9e761bb8c63c2"
+      }
+    },
+    "pabp": {
+      "basic": {
+        "case.json": "666061abaf238f2da4ffdf342adb1e20c62febe555d82c20438aa9caf113fdd7",
+        "evidence_manifest.json": "1de024c93db7d11ffdc048f493190d4725a1fe4da7453c4aaafbcc9bf1198189"
+      },
+      "msa_tools": {
+        "case.json": "5031f2a030ac28b840f6177150da6051f2b36d7dcfb142b9befada72a14276a0",
+        "evidence_manifest.json": "8143e8a67c3bfb36e4a77e1a453616ec4fb067cfb707076ef240c145d6a6920f",
+        "msa_evidence.json": "c074d12eda88af1eafbf03fe7890da1469876190028ab0528ad4e28fc1e5993d",
+        "msa_tools.py": "475d0090a9ac45f5ac2df109ca7c09d6f221f92c3753be4b14802190a24ae101",
+        "raw_evidence/PABP_YEAST_full_11-26-2021_b07.a2m": "5042bb63da3c87faff94bd71be47f597b00d6ef4251b22137e00415a845888b5",
+        "raw_evidence/msa_profile.json": "9b6b1ed757e1ece9025051042db91da8f3fd532b2f3c727cc07cb5a8e3f7e5ef"
+      },
+      "structure_tools": {
+        "case.json": "29d96ebc4c7a407c2690df86d2ef7cb57ff09428fc9786417cbf61f41b0c3d0b",
+        "evidence_manifest.json": "cd0fcfab1251bebfd0035ba1b6c748811a78d0cbce18d1a4a040a32f5e574a5a",
+        "raw_evidence/PABP_YEAST.pdb": "1768fe74df0da7b93789c0fec61d84f646497cd705b2301c0872ef244e8b7edf",
+        "raw_evidence/PABP_YEAST_Melamed_2013.json": "4b198c26c5483cb1b1ce979829d43419fc049435d5c032534856147c7d5f8294",
+        "structure_evidence.json": "7b1904f2d2c6b64470c8996f32ad1d97cb346ed795b149c7673bfbaa433046b5",
+        "structure_tools.py": "852a24ba0a243546bf3ffe970f51c6a2fc650a83ae956f09eba9e761bb8c63c2"
+      },
+      "joint_tools": {
+        "case.json": "5954755944213fe7172d3a7553e6388580bdc32611f2e3a8af20c9bd99caa1d3",
+        "evidence_manifest.json": "7b4fb65562f8dc4910e234f68a8e406720b9850f876225f1997042169fabcb9e",
+        "msa_evidence.json": "c074d12eda88af1eafbf03fe7890da1469876190028ab0528ad4e28fc1e5993d",
+        "msa_tools.py": "475d0090a9ac45f5ac2df109ca7c09d6f221f92c3753be4b14802190a24ae101",
+        "raw_evidence/PABP_YEAST.pdb": "1768fe74df0da7b93789c0fec61d84f646497cd705b2301c0872ef244e8b7edf",
+        "raw_evidence/PABP_YEAST_Melamed_2013.json": "4b198c26c5483cb1b1ce979829d43419fc049435d5c032534856147c7d5f8294",
+        "raw_evidence/PABP_YEAST_full_11-26-2021_b07.a2m": "5042bb63da3c87faff94bd71be47f597b00d6ef4251b22137e00415a845888b5",
+        "raw_evidence/msa_profile.json": "9b6b1ed757e1ece9025051042db91da8f3fd532b2f3c727cc07cb5a8e3f7e5ef",
+        "structure_evidence.json": "7b1904f2d2c6b64470c8996f32ad1d97cb346ed795b149c7673bfbaa433046b5",
+        "structure_tools.py": "852a24ba0a243546bf3ffe970f51c6a2fc650a83ae956f09eba9e761bb8c63c2"
+      }
+    },
+    "kras_abundance": {
+      "basic": {
+        "case.json": "c13b14211c09cd89523b77210ec187e43bbce716b4b4830a9a1d10ad08e0c0cd",
+        "evidence_manifest.json": "7542b23107b63e6b3953ccf105f11767839ae1c2fdd90cc1073b7ebab38f5889"
+      },
+      "msa_tools": {
+        "case.json": "e5c6b920808ab743cbaf655304053ea67ad1d53af21e6a866bbc4fb084e58585",
+        "evidence_manifest.json": "78882c28913f9c2e11056a38e774d7d6d579ce2d2bf1a0c42605dfd16d838d85",
+        "msa_evidence.json": "ccd025bd356a1f09f32e7dc22a4434dbdb34e878fc12ceb86e22e763f457be3c",
+        "msa_tools.py": "475d0090a9ac45f5ac2df109ca7c09d6f221f92c3753be4b14802190a24ae101",
+        "raw_evidence/RASK_HUMAN_2023-08-07_b03.a2m": "da157db51c417545904d28116caf3c311e40b675ef0c28b7ab826a8c41c8c9e9",
+        "raw_evidence/msa_profile.json": "51f82593a0d1876994e746fec7d4f1514f03dc9802a62cd6324c27f02b06ea11"
+      },
+      "structure_tools": {
+        "case.json": "4c38e68f17aaef6808ac3b01b53263fa66ebb1dab3f1db0e3644102d19180a80",
+        "evidence_manifest.json": "8404f0730bd44d0a78146f93d565abc30cbba80ba69517696da22065a8a0d1ef",
+        "raw_evidence/RASK_HUMAN.pdb": "129b61778ab9d4d2c9bf752bf9996406bdc223138e980fa7d19180955e991a8c",
+        "raw_evidence/RASK_HUMAN_Weng_2022_abundance.json": "1f785d17eb8b714c7d4ce844d1156cff8dcd6aa4115bf46880a5c1f6a76c6369",
+        "structure_evidence.json": "96dc74aa407da295957cdd747da0656a989003af7917757b710c5140612e1161",
+        "structure_tools.py": "852a24ba0a243546bf3ffe970f51c6a2fc650a83ae956f09eba9e761bb8c63c2"
+      },
+      "joint_tools": {
+        "case.json": "3e7be0feba19aa3bcb9feac9ed5bf264bed7d6487928156337c98062784ac692",
+        "evidence_manifest.json": "7847fa1232e3b1f62c6f99b28ceadd581d65b6988541b1647a1eff7c1e32f449",
+        "msa_evidence.json": "ccd025bd356a1f09f32e7dc22a4434dbdb34e878fc12ceb86e22e763f457be3c",
+        "msa_tools.py": "475d0090a9ac45f5ac2df109ca7c09d6f221f92c3753be4b14802190a24ae101",
+        "raw_evidence/RASK_HUMAN.pdb": "129b61778ab9d4d2c9bf752bf9996406bdc223138e980fa7d19180955e991a8c",
+        "raw_evidence/RASK_HUMAN_2023-08-07_b03.a2m": "da157db51c417545904d28116caf3c311e40b675ef0c28b7ab826a8c41c8c9e9",
+        "raw_evidence/RASK_HUMAN_Weng_2022_abundance.json": "1f785d17eb8b714c7d4ce844d1156cff8dcd6aa4115bf46880a5c1f6a76c6369",
+        "raw_evidence/msa_profile.json": "51f82593a0d1876994e746fec7d4f1514f03dc9802a62cd6324c27f02b06ea11",
+        "structure_evidence.json": "96dc74aa407da295957cdd747da0656a989003af7917757b710c5140612e1161",
+        "structure_tools.py": "852a24ba0a243546bf3ffe970f51c6a2fc650a83ae956f09eba9e761bb8c63c2"
+      }
+    },
+    "kras_raf1": {
+      "basic": {
+        "case.json": "b3869f21b1de08dbb2bef63fce6b460052499e11a432ce1f77ca366e8eca82d7",
+        "evidence_manifest.json": "7a709d69f913d65ea801d809771086006919b46dc88140d2f9db4383c7014ad8"
+      },
+      "msa_tools": {
+        "case.json": "b13bf8ce4e76d29b51c025b44c95ce89d761f14c2807b1b74b9b64530fd28ee0",
+        "evidence_manifest.json": "6f77cd86da32c22c712eb16853dfed14a8c1380d9833e5da68afbd5d8e1f9368",
+        "msa_evidence.json": "d3799e3c73afc811afddfd3c8d01edaefdd3a2305c31c1ee9376004d635e7310",
+        "msa_tools.py": "475d0090a9ac45f5ac2df109ca7c09d6f221f92c3753be4b14802190a24ae101",
+        "raw_evidence/22908168931d659b32389a4c1079b6703ad9ab8a2fe991f257eb1b3885a82a5a.a3m": "6d63e3eb71d19b49ff20c5ee9a9c7c1b1105fccfeb6351e80a5298c53bee1300"
+      },
+      "structure_tools": {
+        "case.json": "8e4f3cc334e498821fecc86507cc371a4d47541515da258985b61225e075dcf4",
+        "evidence_manifest.json": "f85fa7cf8acc8ba57d4808332ac0aa6abc134579491361ef94c42e065ba55b84",
+        "raw_evidence/6VJJ.pdb": "b3e1b1a927f6a7c3aefd6e63f42e4e3c044d34b6e98d538a3714d194d0f9b6ea",
+        "structure_evidence.json": "e8d549fe382996be6263dece48e6fad79bc6c32d31cdbe391ea907f1d5d5cf70",
+        "structure_tools.py": "852a24ba0a243546bf3ffe970f51c6a2fc650a83ae956f09eba9e761bb8c63c2"
+      },
+      "joint_tools": {
+        "case.json": "4711db703942122bc5a80584b867299bbedcd75f91471d0647ab9e2bfd5294ea",
+        "evidence_manifest.json": "e280f405a692316f750a2e477e29ec1cdabef2c837260020a5aad7a22dfeb428",
+        "msa_evidence.json": "d3799e3c73afc811afddfd3c8d01edaefdd3a2305c31c1ee9376004d635e7310",
+        "msa_tools.py": "475d0090a9ac45f5ac2df109ca7c09d6f221f92c3753be4b14802190a24ae101",
+        "raw_evidence/22908168931d659b32389a4c1079b6703ad9ab8a2fe991f257eb1b3885a82a5a.a3m": "6d63e3eb71d19b49ff20c5ee9a9c7c1b1105fccfeb6351e80a5298c53bee1300",
+        "raw_evidence/6VJJ.pdb": "b3e1b1a927f6a7c3aefd6e63f42e4e3c044d34b6e98d538a3714d194d0f9b6ea",
+        "structure_evidence.json": "e8d549fe382996be6263dece48e6fad79bc6c32d31cdbe391ea907f1d5d5cf70",
+        "structure_tools.py": "852a24ba0a243546bf3ffe970f51c6a2fc650a83ae956f09eba9e761bb8c63c2"
+      }
+    }
+  },
+  "selection_rule": "Only final native output; no best-of-repeats, no target labels for choosing a predictor",
+  "scoring": "Host evaluator opens query outcome content only after all24 conditions terminal.",
+  "top25_ties": "Deterministic score descending, candidate ID ascending; shared across arms",
+  "cohort_selection": {
+    "rule": "Six assays chosen by endpoint diversity and verified public input availability before fresh inference; no performance-based selection.",
+    "cases": [
+      {
+        "case_id": "ube4b",
+        "assay": "UBE4B_HUMAN_Tsuboyama_2023_3L1X",
+        "domain": "protein",
+        "query_count": 250,
+        "raw_roles": {
+          "msa": "raw_evidence/ube4b/UBE4B_HUMAN_2023-08-07_b04.a2m",
+          "weighted_profile": "raw_evidence/ube4b/msa_profile.json",
+          "structure_features": "raw_evidence/ube4b/UBE4B_HUMAN_Tsuboyama_2023_3L1X.json",
+          "wt_structure": "raw_evidence/ube4b/UBE4B_HUMAN.pdb"
+        },
+        "support_count": 0,
+        "source_sampling": "uniform_all_valid_nonWT_orders_excluding_full_support_union",
+        "candidate_order_histogram": {
+          "1": 67,
+          "2": 183
+        }
+      },
+      {
+        "case_id": "cbx4",
+        "assay": "CBX4_HUMAN_Tsuboyama_2023_2K28",
+        "domain": "protein",
+        "query_count": 250,
+        "raw_roles": {
+          "msa": "raw_evidence/cbx4/CBX4_HUMAN_2023-08-07_b03.a2m",
+          "weighted_profile": "raw_evidence/cbx4/msa_profile.json",
+          "structure_features": "raw_evidence/cbx4/CBX4_HUMAN_Tsuboyama_2023_2K28.json",
+          "wt_structure": "raw_evidence/cbx4/CBX4_HUMAN.pdb"
+        },
+        "support_count": 0,
+        "source_sampling": "uniform_all_valid_nonWT_orders_excluding_full_support_union",
+        "candidate_order_histogram": {
+          "1": 99,
+          "2": 151
+        }
+      },
+      {
+        "case_id": "gfp",
+        "assay": "GFP_AEQVI_Sarkisyan_2016",
+        "domain": "protein",
+        "query_count": 250,
+        "raw_roles": {
+          "msa": "raw_evidence/gfp/GFP_AEQVI_full_04-29-2022_b08.a2m",
+          "weighted_profile": "raw_evidence/gfp/msa_profile.json",
+          "structure_features": "raw_evidence/gfp/GFP_AEQVI_Sarkisyan_2016.json",
+          "wt_structure": "raw_evidence/gfp/GFP_AEQVI.pdb"
+        },
+        "support_count": 0,
+        "source_sampling": "uniform_all_valid_nonWT_orders_excluding_full_support_union",
+        "candidate_order_histogram": {
+          "1": 4,
+          "2": 72,
+          "3": 52,
+          "4": 41,
+          "5": 35,
+          "6": 21,
+          "7": 13,
+          "8": 6,
+          "9": 3,
+          "10": 2,
+          "14": 1
+        }
+      },
+      {
+        "case_id": "pabp",
+        "assay": "PABP_YEAST_Melamed_2013",
+        "domain": "protein",
+        "query_count": 250,
+        "raw_roles": {
+          "msa": "raw_evidence/pabp/PABP_YEAST_full_11-26-2021_b07.a2m",
+          "weighted_profile": "raw_evidence/pabp/msa_profile.json",
+          "structure_features": "raw_evidence/pabp/PABP_YEAST_Melamed_2013.json",
+          "wt_structure": "raw_evidence/pabp/PABP_YEAST.pdb"
+        },
+        "support_count": 0,
+        "source_sampling": "uniform_all_valid_nonWT_orders_excluding_full_support_union",
+        "candidate_order_histogram": {
+          "1": 9,
+          "2": 241
+        }
+      },
+      {
+        "case_id": "kras_abundance",
+        "assay": "RASK_HUMAN_Weng_2022_abundance",
+        "domain": "protein",
+        "query_count": 250,
+        "raw_roles": {
+          "msa": "raw_evidence/kras_abundance/RASK_HUMAN_2023-08-07_b03.a2m",
+          "weighted_profile": "raw_evidence/kras_abundance/msa_profile.json",
+          "structure_features": "raw_evidence/kras_abundance/RASK_HUMAN_Weng_2022_abundance.json",
+          "wt_structure": "raw_evidence/kras_abundance/RASK_HUMAN.pdb"
+        },
+        "support_count": 0,
+        "source_sampling": "uniform_all_valid_nonWT_orders_excluding_full_support_union",
+        "candidate_order_histogram": {
+          "1": 24,
+          "2": 226
+        }
+      },
+      {
+        "case_id": "kras_raf1",
+        "assay": "bindinggym__KRAS_RAF1-RBD_norfitness_6VJJ",
+        "domain": "ppi",
+        "query_count": 250,
+        "raw_roles": {
+          "msa": "raw_evidence/kras_raf1/22908168931d659b32389a4c1079b6703ad9ab8a2fe991f257eb1b3885a82a5a.a3m",
+          "wt_structure": "raw_evidence/kras_raf1/6VJJ.pdb"
+        },
+        "support_count": 0,
+        "source_sampling": null,
+        "candidate_order_histogram": {
+          "1": 29,
+          "2": 221
+        }
+      }
+    ],
+    "prior_batch_sha256": "abdeafc53343b416dac32749d129f64b0e1b390f1367739e6a64825b5260e015",
+    "new_batch_primary": "New six-assay results separately, before any combined ten-assay aggregate.",
+    "protein_clusters": {
+      "ube4b": "UBE4B",
+      "cbx4": "CBX4",
+      "gfp": "GFP",
+      "pabp": "PABP",
+      "kras_abundance": "KRAS",
+      "kras_raf1": "KRAS"
+    }
+  },
+  "interpretation": [
+    "Six additional endpoint-selected assays; not a random sample or fully untouched holdout.",
+    "One native generation per case/arm; no independently controlled model sampling seed.",
+    "KRAS abundance and binding share a protein; report assay macro and protein-cluster sensitivity.",
+    "Unchanged native01 prompt, tools, model and call budgets; no outcome-driven changes.",
+    "Five monomer cases use full-reference public WT feature tables; complex CA summaries come from supplied WT coordinates.",
+    "No RNA inference, no measured supports, no new GPU or wet-lab measurements.",
+    "Runtime isolation does not establish absence of pretraining exposure."
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "advanced.py": "7f86e67af0a9e7ff36212d3deb8f03e6c7b510bf60f3215c6ec2bb14cff5cde9",
+  "advanced_cv_results.json": "61d4982a9005e4d3b369bb86422029eb8c1b47f1c4a8aa4ec953935993d44826",
+  "assignment.json": "7a15a4eb7aad8bd371e9761b5dabc8d5cf6ccd8a28798e825ce7f0923813eab4",
+  "build_final.py": "5f0d72a5d9ffa7cb4e02ba5bfdb1ab7cebb3491bad48e408add08b127413c915",
+  "case.json": "61a6579bad4c3801082154ea08e79235c125000152f91da455001f1718181a11",
+  "chosen_configs.json": "fcb0f48c0972174648d81f1829a0443759ebb1676512ea26d9b4b9ed861c7ade",
+  "cv_results.json": "f5f643272953cc9cf878ffdcecf665a9e4059073d6b0cf200959d55f693ce640",
+  "decision_note.txt": "227f9e8afa73664e39e452cbc34296fd79b27d9ab4abc6d2b342b772a09620b4",
+  "early_proposal.py": "432e3615ebb0a262b23e97d59cc699f78fb80058d143430dd61be83bf548e026",
+  "explore.py": "bcb7ab8d686c8fd1b3c224ab0e14c1d1da12b419ef5257497c98f7372e8f7f26",
+  "explore_advanced.py": "52471e0efe2e72beae3e9de9ac0862cda0ccc56361e0fe3d3395245c6e34d465",
+  "final_implementation_validation.json": "49eca8413e8196f541d6d671dfa7c5b1880712f64898d99c0277939398f3963a",
+  "final_validate.py": "74a6e507aba1080b32a8acbb3d8b75aaefb9c7deb1ecf39de403cdca5a5a9a85",
+  "fresh_validation.json": "e46d2c1851913cb2493dc734c41af395574b00a119c3720801f90cb3f6f334c0",
+  "host_output.json": "08ecb9fcfb14f6140833319a94a40b3c322a8aa76b1c41dc80874beaefaeb50d",
+  "proposal.py": "3444ab2e72b5119db0897456e178948e286eee9bebd23d8fd54aa36dd6bb339c",
+  "refine.py": "997ab9792b3cf047d0939faf1e9d2da41384cde93b6c2c439d06c30c5a0180a7",
+  "refine_cv_results.json": "6bc89d3bb6c1bd13bc881ee7490ba409a312cd8a751cc778075018037bb43707",
+  "tree_cv_results.json": "7e8e6b721dda229e310c14c6860108adf23abea998c2e0c32a7064af60196571",
+  "trial_output.json": "08ecb9fcfb14f6140833319a94a40b3c322a8aa76b1c41dc80874beaefaeb50d",
+  "verify_final.py": "6a540b8022bab21d0d64399e3d3e72021d35a3627ccd475ab5305cc6dbf0b47a"
+}

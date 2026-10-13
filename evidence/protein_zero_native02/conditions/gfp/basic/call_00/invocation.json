@@ -1,0 +1,28 @@
+{
+  "started_at_utc": "2026-10-13T05:30:17.409035+00:00",
+  "finished_at_utc": "2026-10-13T05:39:29.681215+00:00",
+  "wall_seconds": 552.269,
+  "exit_code": 0,
+  "timed_out": false,
+  "usage": {
+    "input_tokens": 147410,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 16568,
+    "reasoning_output_tokens": 6289,
+    "cached_input_tokens": 109952
+  },
+  "usage_known": true,
+  "observed_item_types": [
+    "agent_message",
+    "command_execution",
+    "error"
+  ],
+  "malformed_jsonl_lines": 0,
+  "model_requested": "gpt-6.1-sol",
+  "reasoning_effort": "high",
+  "cli_version": "codex-cli 0.162.0-alpha.17.2",
+  "backend_model_identifier": null,
+  "backend_model_identifier_status": "not provided by native exec JSONL",
+  "service_tier_requested": null,
+  "fast_mode": false
+}

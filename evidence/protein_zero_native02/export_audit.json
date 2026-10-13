@@ -1,0 +1,472 @@
+{
+  "selection": "Six assays chosen by endpoint diversity and verified public input availability before fresh inference; no performance-based selection.",
+  "cases": [
+    {
+      "case_id": "ube4b",
+      "assay": "UBE4B_HUMAN_Tsuboyama_2023_3L1X",
+      "domain": "protein",
+      "query_count": 250,
+      "raw_roles": {
+        "msa": "raw_evidence/ube4b/UBE4B_HUMAN_2023-08-07_b04.a2m",
+        "weighted_profile": "raw_evidence/ube4b/msa_profile.json",
+        "structure_features": "raw_evidence/ube4b/UBE4B_HUMAN_Tsuboyama_2023_3L1X.json",
+        "wt_structure": "raw_evidence/ube4b/UBE4B_HUMAN.pdb"
+      },
+      "support_count": 0,
+      "source_sampling": "uniform_all_valid_nonWT_orders_excluding_full_support_union",
+      "candidate_order_histogram": {
+        "1": 67,
+        "2": 183
+      }
+    },
+    {
+      "case_id": "cbx4",
+      "assay": "CBX4_HUMAN_Tsuboyama_2023_2K28",
+      "domain": "protein",
+      "query_count": 250,
+      "raw_roles": {
+        "msa": "raw_evidence/cbx4/CBX4_HUMAN_2023-08-07_b03.a2m",
+        "weighted_profile": "raw_evidence/cbx4/msa_profile.json",
+        "structure_features": "raw_evidence/cbx4/CBX4_HUMAN_Tsuboyama_2023_2K28.json",
+        "wt_structure": "raw_evidence/cbx4/CBX4_HUMAN.pdb"
+      },
+      "support_count": 0,
+      "source_sampling": "uniform_all_valid_nonWT_orders_excluding_full_support_union",
+      "candidate_order_histogram": {
+        "1": 99,
+        "2": 151
+      }
+    },
+    {
+      "case_id": "gfp",
+      "assay": "GFP_AEQVI_Sarkisyan_2016",
+      "domain": "protein",
+      "query_count": 250,
+      "raw_roles": {
+        "msa": "raw_evidence/gfp/GFP_AEQVI_full_04-29-2022_b08.a2m",
+        "weighted_profile": "raw_evidence/gfp/msa_profile.json",
+        "structure_features": "raw_evidence/gfp/GFP_AEQVI_Sarkisyan_2016.json",
+        "wt_structure": "raw_evidence/gfp/GFP_AEQVI.pdb"
+      },
+      "support_count": 0,
+      "source_sampling": "uniform_all_valid_nonWT_orders_excluding_full_support_union",
+      "candidate_order_histogram": {
+        "1": 4,
+        "2": 72,
+        "3": 52,
+        "4": 41,
+        "5": 35,
+        "6": 21,
+        "7": 13,
+        "8": 6,
+        "9": 3,
+        "10": 2,
+        "14": 1
+      }
+    },
+    {
+      "case_id": "pabp",
+      "assay": "PABP_YEAST_Melamed_2013",
+      "domain": "protein",
+      "query_count": 250,
+      "raw_roles": {
+        "msa": "raw_evidence/pabp/PABP_YEAST_full_11-26-2021_b07.a2m",
+        "weighted_profile": "raw_evidence/pabp/msa_profile.json",
+        "structure_features": "raw_evidence/pabp/PABP_YEAST_Melamed_2013.json",
+        "wt_structure": "raw_evidence/pabp/PABP_YEAST.pdb"
+      },
+      "support_count": 0,
+      "source_sampling": "uniform_all_valid_nonWT_orders_excluding_full_support_union",
+      "candidate_order_histogram": {
+        "1": 9,
+        "2": 241
+      }
+    },
+    {
+      "case_id": "kras_abundance",
+      "assay": "RASK_HUMAN_Weng_2022_abundance",
+      "domain": "protein",
+      "query_count": 250,
+      "raw_roles": {
+        "msa": "raw_evidence/kras_abundance/RASK_HUMAN_2023-08-07_b03.a2m",
+        "weighted_profile": "raw_evidence/kras_abundance/msa_profile.json",
+        "structure_features": "raw_evidence/kras_abundance/RASK_HUMAN_Weng_2022_abundance.json",
+        "wt_structure": "raw_evidence/kras_abundance/RASK_HUMAN.pdb"
+      },
+      "support_count": 0,
+      "source_sampling": "uniform_all_valid_nonWT_orders_excluding_full_support_union",
+      "candidate_order_histogram": {
+        "1": 24,
+        "2": 226
+      }
+    },
+    {
+      "case_id": "kras_raf1",
+      "assay": "bindinggym__KRAS_RAF1-RBD_norfitness_6VJJ",
+      "domain": "ppi",
+      "query_count": 250,
+      "raw_roles": {
+        "msa": "raw_evidence/kras_raf1/22908168931d659b32389a4c1079b6703ad9ab8a2fe991f257eb1b3885a82a5a.a3m",
+        "wt_structure": "raw_evidence/kras_raf1/6VJJ.pdb"
+      },
+      "support_count": 0,
+      "source_sampling": null,
+      "candidate_order_histogram": {
+        "1": 29,
+        "2": 221
+      }
+    }
+  ],
+  "files": [
+    {
+      "file": "raw_evidence/ube4b/UBE4B_HUMAN_2023-08-07_b04.a2m",
+      "sha256": "1017330409b543bd04fd07b592034c309fc79d8e98cf4531ce15ba6e11c7b6d5",
+      "bytes": 31000303,
+      "case_id": "ube4b",
+      "role": "msa",
+      "source_path": "/data/huangyanjie/EVAgent/experiments/proteingym_cr_msa_v1/inputs/UBE4B_HUMAN_Tsuboyama_2023_3L1X/UBE4B_HUMAN_2023-08-07_b04.a2m"
+    },
+    {
+      "file": "raw_evidence/ube4b/msa_profile.json",
+      "sha256": "f94914a35bfa8d9f0790fd5a68804bcf9b989231415fd8da669de994cf645b49",
+      "bytes": 61536,
+      "case_id": "ube4b",
+      "role": "weighted_profile",
+      "source_path": "/data/huangyanjie/EVAgent/experiments/proteingym_cr_msa_v1/inputs/UBE4B_HUMAN_Tsuboyama_2023_3L1X/msa_profile.json"
+    },
+    {
+      "file": "raw_evidence/ube4b/UBE4B_HUMAN_Tsuboyama_2023_3L1X.json",
+      "sha256": "b42027cd6d7a9a8a42b5ade38286110387a13eff9bd78b5ee223c167ef514c1a",
+      "bytes": 72032,
+      "case_id": "ube4b",
+      "role": "structure_features",
+      "source_path": "/data/huangyanjie/EVAgent/experiments/proteingym_structure_full_20260916/features/UBE4B_HUMAN_Tsuboyama_2023_3L1X.json"
+    },
+    {
+      "file": "raw_evidence/ube4b/UBE4B_HUMAN.pdb",
+      "sha256": "8fd6a316ee05505972d71d293082071eddc2e9ad76947bf9937784c354bf9a24",
+      "bytes": 90728,
+      "case_id": "ube4b",
+      "role": "wt_structure",
+      "source_path": "/data/huangyanjie/EVAgent/experiments/proteingym_structure_remainder_20260916/source_archives/ProteinGym_AF2_structures.zip",
+      "archive_member": "ProteinGym_AF2_structures/UBE4B_HUMAN.pdb"
+    },
+    {
+      "file": "public_cases/ube4b.json",
+      "sha256": "066ed93a4a5fd89f1bdcfb56c2e148264b203d6ebcfd49b66dc63f734256734f",
+      "bytes": 45587,
+      "case_id": "ube4b",
+      "role": "public_case",
+      "source_query": "/data/huangyanjie/EVAgent/experiments/fewshot_cumulative_random_query_expanded_seed42_20260929/dataset/protein/UBE4B_HUMAN_Tsuboyama_2023_3L1X/query_random_allorders_seed42_n250.json",
+      "source_query_sha256": "5c4b7e04d38d3c53b374193e5f5a0a103d0ca98266d0ee804af1b334b4e16c18",
+      "source_context": "/data/huangyanjie/EVAgent/experiments/fewshot_cumulative_random_query_expanded_seed42_20260929/contexts/UBE4B_HUMAN_Tsuboyama_2023_3L1X.json",
+      "source_context_sha256": "b5d76c8d1d7ed3c7cffa8b3db5cb46ad324630df61348d381720b5c26498101d"
+    },
+    {
+      "file": "provenance/ube4b_identities.json",
+      "sha256": "520d1152092274b4b09773fc2187f62617d7178e91bf40828e1eab66cfa0f22d",
+      "bytes": 20539,
+      "case_id": "ube4b",
+      "role": "identity_map"
+    },
+    {
+      "file": "evaluator/labels/ube4b.json",
+      "sha256": "c644ee0f55123a6b8df10aaa6390c76522e0c1c664234b7658309fa0188bbf2d",
+      "bytes": 8185,
+      "case_id": "ube4b",
+      "role": "host_only_outcomes",
+      "source_path": "/data/huangyanjie/EVAgent/experiments/fewshot_cumulative_random_query_expanded_seed42_20260929/evaluator_only/protein/UBE4B_HUMAN_Tsuboyama_2023_3L1X/labels.json",
+      "source_sha256": "542fa3a197e5bd99d7f7c0c8ec75b4719ac7361a9d88b1ac89ec5fda5215fa41"
+    },
+    {
+      "file": "raw_evidence/cbx4/CBX4_HUMAN_2023-08-07_b03.a2m",
+      "sha256": "3b7c43b4015d0757e8396981760caf3d00a6e92d12936b3ce61a18d3cea789ad",
+      "bytes": 8815295,
+      "case_id": "cbx4",
+      "role": "msa",
+      "source_path": "/data/huangyanjie/EVAgent/experiments/proteingym_cr_msa_v1/inputs/CBX4_HUMAN_Tsuboyama_2023_2K28/CBX4_HUMAN_2023-08-07_b03.a2m"
+    },
+    {
+      "file": "raw_evidence/cbx4/msa_profile.json",
+      "sha256": "224b621bddd2077b8cf83c125a08298c3a22e7690d447c64b79991ec012f4198",
+      "bytes": 43276,
+      "case_id": "cbx4",
+      "role": "weighted_profile",
+      "source_path": "/data/huangyanjie/EVAgent/experiments/proteingym_cr_msa_v1/inputs/CBX4_HUMAN_Tsuboyama_2023_2K28/msa_profile.json"
+    },
+    {
+      "file": "raw_evidence/cbx4/CBX4_HUMAN_Tsuboyama_2023_2K28.json",
+      "sha256": "18f8b9ff1d0f7ab582b98e38f8595898c12c6eede46a41e59f2db4fdad8c019a",
+      "bytes": 52590,
+      "case_id": "cbx4",
+      "role": "structure_features",
+      "source_path": "/data/huangyanjie/EVAgent/experiments/proteingym_structure_full_20260916/features/CBX4_HUMAN_Tsuboyama_2023_2K28.json"
+    },
+    {
+      "file": "raw_evidence/cbx4/CBX4_HUMAN.pdb",
+      "sha256": "bd3d346fab261e5c85c39ee48091cb81d95224b5c8921bf160c713cdefa68f44",
+      "bytes": 71288,
+      "case_id": "cbx4",
+      "role": "wt_structure",
+      "source_path": "/data/huangyanjie/EVAgent/experiments/proteingym_structure_remainder_20260916/source_archives/ProteinGym_AF2_structures.zip",
+      "archive_member": "ProteinGym_AF2_structures/CBX4_HUMAN.pdb"
+    },
+    {
+      "file": "public_cases/cbx4.json",
+      "sha256": "53b0e1d1a1bcab918b553349918096b10654e54849a81ffc17d5c2dceead6ef4",
+      "bytes": 40571,
+      "case_id": "cbx4",
+      "role": "public_case",
+      "source_query": "/data/huangyanjie/EVAgent/experiments/fewshot_cumulative_random_query_expanded_seed42_20260929/dataset/protein/CBX4_HUMAN_Tsuboyama_2023_2K28/query_random_allorders_seed42_n250.json",
+      "source_query_sha256": "3e4c43a93553544b178f2be083fa28eb7f1ec99ba77b0db66d4d0ee45872364d",
+      "source_context": "/data/huangyanjie/EVAgent/experiments/fewshot_cumulative_random_query_expanded_seed42_20260929/contexts/CBX4_HUMAN_Tsuboyama_2023_2K28.json",
+      "source_context_sha256": "fff865a7c5f1039229bd356a979d486f5235131e33d283351a053d4178ad08b7"
+    },
+    {
+      "file": "provenance/cbx4_identities.json",
+      "sha256": "195fe7c372128cd0ae60bbe80166a68c5d76b8178c7f079ca5a5a77fa5c2963a",
+      "bytes": 20539,
+      "case_id": "cbx4",
+      "role": "identity_map"
+    },
+    {
+      "file": "evaluator/labels/cbx4.json",
+      "sha256": "128d6548d262e97026297d36a54dbb98dddad6a6cb05b03647ca7bfbd3db0e66",
+      "bytes": 8174,
+      "case_id": "cbx4",
+      "role": "host_only_outcomes",
+      "source_path": "/data/huangyanjie/EVAgent/experiments/fewshot_cumulative_random_query_expanded_seed42_20260929/evaluator_only/protein/CBX4_HUMAN_Tsuboyama_2023_2K28/labels.json",
+      "source_sha256": "76fe3f25b566e587329aa7d0bbaa30754621b3de003468fa46c812e04468def4"
+    },
+    {
+      "file": "raw_evidence/gfp/GFP_AEQVI_full_04-29-2022_b08.a2m",
+      "sha256": "caf7b7da575b832f5829deac1ceee69ea0098b3660d8eea0c49b01405bb9b8f8",
+      "bytes": 107455,
+      "case_id": "gfp",
+      "role": "msa",
+      "source_path": "/data/huangyanjie/EVAgent/experiments/proteingym_cr_msa_v1/inputs/GFP_AEQVI_Sarkisyan_2016/GFP_AEQVI_full_04-29-2022_b08.a2m"
+    },
+    {
+      "file": "raw_evidence/gfp/msa_profile.json",
+      "sha256": "8141d78096cc8fc60d13571f10ac38a4738e57d6253ac71acf4988c64cb83e26",
+      "bytes": 218864,
+      "case_id": "gfp",
+      "role": "weighted_profile",
+      "source_path": "/data/huangyanjie/EVAgent/experiments/proteingym_cr_msa_v1/inputs/GFP_AEQVI_Sarkisyan_2016/msa_profile.json"
+    },
+    {
+      "file": "raw_evidence/gfp/GFP_AEQVI_Sarkisyan_2016.json",
+      "sha256": "1061cf8371241b93be68e1c206e5a454e3ebc0713bc5763ab2a1738b5ad406a2",
+      "bytes": 246388,
+      "case_id": "gfp",
+      "role": "structure_features",
+      "source_path": "/data/huangyanjie/EVAgent/experiments/proteingym_structure_full_20260916/features/GFP_AEQVI_Sarkisyan_2016.json"
+    },
+    {
+      "file": "raw_evidence/gfp/GFP_AEQVI.pdb",
+      "sha256": "70bf9c39c1cc353d330fb37aba49d448caf03693b35196f3adc7375ef434fcc5",
+      "bytes": 302624,
+      "case_id": "gfp",
+      "role": "wt_structure",
+      "source_path": "/data/huangyanjie/EVAgent/experiments/proteingym_structure_remainder_20260916/source_archives/ProteinGym_AF2_structures.zip",
+      "archive_member": "ProteinGym_AF2_structures/GFP_AEQVI.pdb"
+    },
+    {
+      "file": "public_cases/gfp.json",
+      "sha256": "04985899eaa3e40b41e7df894ea07f67ec985ac2321500b450bba305a891dd12",
+      "bytes": 91213,
+      "case_id": "gfp",
+      "role": "public_case",
+      "source_query": "/data/huangyanjie/EVAgent/experiments/fewshot_cumulative_random_query_expanded_seed42_20260929/dataset/protein/GFP_AEQVI_Sarkisyan_2016/query_random_allorders_seed42_n250.json",
+      "source_query_sha256": "93553b0aba41307ddda2f386f102b94fc249eda89374baacbe8d1c56732092ef",
+      "source_context": "/data/huangyanjie/EVAgent/experiments/fewshot_cumulative_random_query_expanded_seed42_20260929/contexts/GFP_AEQVI_Sarkisyan_2016.json",
+      "source_context_sha256": "be39bf981f15b2e76e84befb730be56b31d7b3b03775fc807f0a914680ea539a"
+    },
+    {
+      "file": "provenance/gfp_identities.json",
+      "sha256": "e455eebfbea5458056b9c467f0204d8008228b2765b13c7262fcb4c88c58a5a0",
+      "bytes": 20539,
+      "case_id": "gfp",
+      "role": "identity_map"
+    },
+    {
+      "file": "evaluator/labels/gfp.json",
+      "sha256": "5e65c9e535226385817eb7295b9326292944cc20799f2807a641fb2f3473f1fd",
+      "bytes": 6961,
+      "case_id": "gfp",
+      "role": "host_only_outcomes",
+      "source_path": "/data/huangyanjie/EVAgent/experiments/fewshot_cumulative_random_query_expanded_seed42_20260929/evaluator_only/protein/GFP_AEQVI_Sarkisyan_2016/labels.json",
+      "source_sha256": "2007f8cc2b7f6ac943fe7d7f60d11c133a6f4163a18ccb12bb3757cb154abf71"
+    },
+    {
+      "file": "raw_evidence/pabp/PABP_YEAST_full_11-26-2021_b07.a2m",
+      "sha256": "5042bb63da3c87faff94bd71be47f597b00d6ef4251b22137e00415a845888b5",
+      "bytes": 4827902,
+      "case_id": "pabp",
+      "role": "msa",
+      "source_path": "/data/huangyanjie/EVAgent/experiments/proteingym_safe_expansion_v1/inputs/PABP_YEAST_Melamed_2013/PABP_YEAST_full_11-26-2021_b07.a2m"
+    },
+    {
+      "file": "raw_evidence/pabp/msa_profile.json",
+      "sha256": "9b6b1ed757e1ece9025051042db91da8f3fd532b2f3c727cc07cb5a8e3f7e5ef",
+      "bytes": 527041,
+      "case_id": "pabp",
+      "role": "weighted_profile",
+      "source_path": "/data/huangyanjie/EVAgent/experiments/proteingym_safe_expansion_v1/inputs/PABP_YEAST_Melamed_2013/msa_profile.json"
+    },
+    {
+      "file": "raw_evidence/pabp/PABP_YEAST_Melamed_2013.json",
+      "sha256": "4b198c26c5483cb1b1ce979829d43419fc049435d5c032534856147c7d5f8294",
+      "bytes": 596439,
+      "case_id": "pabp",
+      "role": "structure_features",
+      "source_path": "/data/huangyanjie/EVAgent/experiments/proteingym_structure_full_20260916/features/PABP_YEAST_Melamed_2013.json"
+    },
+    {
+      "file": "raw_evidence/pabp/PABP_YEAST.pdb",
+      "sha256": "1768fe74df0da7b93789c0fec61d84f646497cd705b2301c0872ef244e8b7edf",
+      "bytes": 374462,
+      "case_id": "pabp",
+      "role": "wt_structure",
+      "source_path": "/data/huangyanjie/EVAgent/experiments/proteingym_structure_remainder_20260916/source_archives/ProteinGym_AF2_structures.zip",
+      "archive_member": "ProteinGym_AF2_structures/PABP_YEAST.pdb"
+    },
+    {
+      "file": "public_cases/pabp.json",
+      "sha256": "666061abaf238f2da4ffdf342adb1e20c62febe555d82c20438aa9caf113fdd7",
+      "bytes": 173908,
+      "case_id": "pabp",
+      "role": "public_case",
+      "source_query": "/data/huangyanjie/EVAgent/experiments/fewshot_cumulative_random_query_expanded_seed42_20260929/dataset/protein/PABP_YEAST_Melamed_2013/query_random_allorders_seed42_n250.json",
+      "source_query_sha256": "ae42a6e34a9821dc501852094bf4ccd6ecf6f03769145987c52a1136b44a0d40",
+      "source_context": "/data/huangyanjie/EVAgent/experiments/fewshot_cumulative_random_query_expanded_seed42_20260929/contexts/PABP_YEAST_Melamed_2013.json",
+      "source_context_sha256": "9d33efdbba5ba4f1388342a129ce508a4056d6c5fff8dcd44899ad9d4618454a"
+    },
+    {
+      "file": "provenance/pabp_identities.json",
+      "sha256": "2c6b610c86ebf3a2ba72985d7a14137c46bcaa4af94d4ae4f488915ffdcdc1de",
+      "bytes": 20539,
+      "case_id": "pabp",
+      "role": "identity_map"
+    },
+    {
+      "file": "evaluator/labels/pabp.json",
+      "sha256": "a83d082edd5790ab931b05f42610880fb4c0d0293e443677e1e5b0a336df74eb",
+      "bytes": 6491,
+      "case_id": "pabp",
+      "role": "host_only_outcomes",
+      "source_path": "/data/huangyanjie/EVAgent/experiments/fewshot_cumulative_random_query_expanded_seed42_20260929/evaluator_only/protein/PABP_YEAST_Melamed_2013/labels.json",
+      "source_sha256": "ae4f0b3488e280cada65a9aa6780a6ae53f4a3161a2d99e01c48ca0d16e38e53"
+    },
+    {
+      "file": "raw_evidence/kras_abundance/RASK_HUMAN_2023-08-07_b03.a2m",
+      "sha256": "da157db51c417545904d28116caf3c311e40b675ef0c28b7ab826a8c41c8c9e9",
+      "bytes": 57400019,
+      "case_id": "kras_abundance",
+      "role": "msa",
+      "source_path": "/data/huangyanjie/EVAgent/experiments/proteingym_cr_msa_remainder_v1/inputs/RASK_HUMAN_Weng_2022_abundance/RASK_HUMAN_2023-08-07_b03.a2m"
+    },
+    {
+      "file": "raw_evidence/kras_abundance/msa_profile.json",
+      "sha256": "51f82593a0d1876994e746fec7d4f1514f03dc9802a62cd6324c27f02b06ea11",
+      "bytes": 158204,
+      "case_id": "kras_abundance",
+      "role": "weighted_profile",
+      "source_path": "/data/huangyanjie/EVAgent/experiments/proteingym_cr_msa_remainder_v1/inputs/RASK_HUMAN_Weng_2022_abundance/msa_profile.json"
+    },
+    {
+      "file": "raw_evidence/kras_abundance/RASK_HUMAN_Weng_2022_abundance.json",
+      "sha256": "1f785d17eb8b714c7d4ce844d1156cff8dcd6aa4115bf46880a5c1f6a76c6369",
+      "bytes": 194833,
+      "case_id": "kras_abundance",
+      "role": "structure_features",
+      "source_path": "/data/huangyanjie/EVAgent/experiments/proteingym_structure_remainder_20260916/features/RASK_HUMAN_Weng_2022_abundance.json"
+    },
+    {
+      "file": "raw_evidence/kras_abundance/RASK_HUMAN.pdb",
+      "sha256": "129b61778ab9d4d2c9bf752bf9996406bdc223138e980fa7d19180955e991a8c",
+      "bytes": 244547,
+      "case_id": "kras_abundance",
+      "role": "wt_structure",
+      "source_path": "/data/huangyanjie/EVAgent/experiments/proteingym_structure_remainder_20260916/source_archives/ProteinGym_AF2_structures.zip",
+      "archive_member": "ProteinGym_AF2_structures/RASK_HUMAN.pdb"
+    },
+    {
+      "file": "public_cases/kras_abundance.json",
+      "sha256": "c13b14211c09cd89523b77210ec187e43bbce716b4b4830a9a1d10ad08e0c0cd",
+      "bytes": 75750,
+      "case_id": "kras_abundance",
+      "role": "public_case",
+      "source_query": "/data/huangyanjie/EVAgent/experiments/fewshot_cumulative_random_query_expanded_seed42_20260929/dataset/protein/RASK_HUMAN_Weng_2022_abundance/query_random_allorders_seed42_n250.json",
+      "source_query_sha256": "c7252cc101b4827de445fb5b89edb4f46e8124816df660a7c0b617aab0fe65db",
+      "source_context": "/data/huangyanjie/EVAgent/experiments/fewshot_cumulative_random_query_expanded_seed42_20260929/contexts/RASK_HUMAN_Weng_2022_abundance.json",
+      "source_context_sha256": "9d7ec884a5bd78e879d82f85db785b0083bd987a39822a5931557af832c0ee4b"
+    },
+    {
+      "file": "provenance/kras_abundance_identities.json",
+      "sha256": "0c7064120527cd155216e81d8145c45057c92427b4a123b9e3caf4e31bc37957",
+      "bytes": 20539,
+      "case_id": "kras_abundance",
+      "role": "identity_map"
+    },
+    {
+      "file": "evaluator/labels/kras_abundance.json",
+      "sha256": "044ff201a9bdceb8ab92e16941abf1c809b34decb6cc229ad05d31ecb53f3b0f",
+      "bytes": 7984,
+      "case_id": "kras_abundance",
+      "role": "host_only_outcomes",
+      "source_path": "/data/huangyanjie/EVAgent/experiments/fewshot_cumulative_random_query_expanded_seed42_20260929/evaluator_only/protein/RASK_HUMAN_Weng_2022_abundance/labels.json",
+      "source_sha256": "defb8455ac9465c9bc4e8f4dd9faaf8fbde91e9c26b0f26037bd51670f55524e"
+    },
+    {
+      "file": "raw_evidence/kras_raf1/22908168931d659b32389a4c1079b6703ad9ab8a2fe991f257eb1b3885a82a5a.a3m",
+      "sha256": "6d63e3eb71d19b49ff20c5ee9a9c7c1b1105fccfeb6351e80a5298c53bee1300",
+      "bytes": 3741774,
+      "case_id": "kras_raf1",
+      "role": "msa",
+      "source_path": "/data/huangyanjie/EVAgent/data/final_mutation_data/msa_completion_20260927/aligned/22908168931d659b32389a4c1079b6703ad9ab8a2fe991f257eb1b3885a82a5a.a3m"
+    },
+    {
+      "file": "raw_evidence/kras_raf1/6VJJ.pdb",
+      "sha256": "b3e1b1a927f6a7c3aefd6e63f42e4e3c044d34b6e98d538a3714d194d0f9b6ea",
+      "bytes": 316476,
+      "case_id": "kras_raf1",
+      "role": "wt_structure",
+      "source_path": "/data/huangyanjie/EVAgent/data/final_mutation_data/bindinggym/source/raw/input/structures/6VJJ.pdb"
+    },
+    {
+      "file": "public_cases/kras_raf1.json",
+      "sha256": "b3869f21b1de08dbb2bef63fce6b460052499e11a432ce1f77ca366e8eca82d7",
+      "bytes": 151055,
+      "case_id": "kras_raf1",
+      "role": "public_case",
+      "source_query": "/data/huangyanjie/EVAgent/experiments/complex_fewshot_remainder_binding_seed42_20260930/datasets/bindinggym__KRAS_RAF1-RBD_norfitness_6VJJ/query_random_fullpool_0_n250.json",
+      "source_query_sha256": "61bd460acc21bccd5fd991889a44c6422f01449b6c28178d71ad19d90959ce58",
+      "source_context": "/data/huangyanjie/EVAgent/experiments/complex_fewshot_remainder_binding_seed42_20260930/datasets/bindinggym__KRAS_RAF1-RBD_norfitness_6VJJ/context.json",
+      "source_context_sha256": "fb5714690676f94716677b78fb1fbaacf13d22a01a288959df987a5776520e85"
+    },
+    {
+      "file": "provenance/kras_raf1_identities.json",
+      "sha256": "7fbdbd9f4b1a4228d2d1323d8e488223c6b0c964405adeb78813e578df3d3ff0",
+      "bytes": 13039,
+      "case_id": "kras_raf1",
+      "role": "identity_map"
+    },
+    {
+      "file": "evaluator/labels/kras_raf1.json",
+      "sha256": "8129e6c2e5e88384152a78d3069ff7b56e477056dbd6c22059770cd13f41470b",
+      "bytes": 8011,
+      "case_id": "kras_raf1",
+      "role": "host_only_outcomes",
+      "source_path": "/data/huangyanjie/EVAgent/experiments/complex_fewshot_remainder_binding_seed42_20260930/evaluator_only/bindinggym__KRAS_RAF1-RBD_norfitness_6VJJ__random_fullpool_all_n250.json",
+      "source_sha256": "8120646fb1c9cd18a8a0e8586bc78b225bc0092442a8ab7b00837bb96d679490"
+    }
+  ],
+  "remote_modified": false,
+  "previous_predictions_read": false,
+  "support_files_read": false,
+  "request_prompts_read": false,
+  "outcomes_scope": "Deterministic trusted export to evaluator only; never predictor input.",
+  "plan_path": "/data/huangyanjie/EVAgent/experiments/deepseek_v41_flash_max_fewshot_n250_cr25_seed42_20261012_v1/PLAN.json",
+  "plan_sha256": "2bb0a2725eef7db5a6b2397ab12c5b14b1eee707163c88884fb389491080a808"
+}

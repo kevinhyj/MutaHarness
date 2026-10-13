@@ -1,0 +1,49 @@
+Prospective frozen portfolio confirmation
+
+Primary: uniform-three rank ensemble versus support-CV-selected single from the same three native scientific sessions.
+{
+  "delta_vs_cv_single": {
+    "complete_assays": 4,
+    "wins": 3,
+    "mean_delta": 0.012716167937453532,
+    "assay_cluster_bootstrap95": [
+      -0.00943925323168543,
+      0.03487158910659249
+    ],
+    "prospective_stability_criteria_met": false
+  },
+  "delta_vs_direct00": {
+    "complete_assays": 4,
+    "wins": 3,
+    "mean_delta": 0.02475145913673492,
+    "assay_cluster_bootstrap95": [
+      0.003983934793414676,
+      0.043530304786995405
+    ],
+    "prospective_stability_criteria_met": true
+  },
+  "delta_vs_mean_single": {
+    "complete_assays": 4,
+    "wins": 4,
+    "mean_delta": 0.023493276955951284,
+    "assay_cluster_bootstrap95": [
+      0.013168911488786128,
+      0.034845928030901904
+    ],
+    "prospective_stability_criteria_met": true
+  }
+}
+
+case / direct00 / CV-selected / ensemble / delta_vs_CV
+gfp / 0.5303479432511691 / 0.5433016607675963 / 0.5818562430610039 / 0.03855458229340758
+pabp / 0.498906003993734 / 0.5537647868957922 / 0.53445831375789 / -0.019306473137902236
+gcn4 / 0.4196271137447608 / 0.3818996609614843 / 0.4130882568812617 / 0.031188595919777407
+amfr / 0.8098588266098238 / 0.8279149437717404 / 0.8283429104462717 / 0.00042796667453137704
+
+Only four additional assays; bounded replication, not universal superiority.
+Four protein assays selected by endpoint coverage and input availability, not by stored scores. This is a small cross-domain extension; no universal protein-engineering claim.
+Architecture was generated from all96 support outcomes; support-CV architecture selection is not nested. Remaining186 query outcomes are never used for model or portfolio selection.
+Generation maximum wait3600s and soft12-minute scientific target differ from the previous hard720-second campaign; cohorts are reported separately.
+Three scientific sessions per portfolio. CV-selected single shares the same generated program pool; one-call direct has lower inference budget.
+Pretraining exposure to public benchmarks cannot be excluded.
+Top20 overlap is an offline ranking metric, not new wet-lab validation.

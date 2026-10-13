@@ -1,0 +1,73 @@
+Decision: support-trained nonlinear chemistry ensemble for ordinal GCN4 ranking.
+
+Assay interpretation
+The supplied endpoint is Binding, selection is FACS, organism is S. cerevisiae,
+and outcomes are ProteinGym DMS_score in original assay units. Larger observed
+fitness is the signed ranking target. There is no measured WT; the reference is
+used only to locate substitutions and sequence features, never as a fitness
+anchor. No probability, absolute effect calibration, or wet-lab improvement is
+claimed. All observed values, including the extreme single-mutant outcome, are
+retained. Within each fit, observed fitness is converted to normal scores of its
+empirical ranks. This preserves ordering and limits extreme numerical leverage.
+
+Use of feedback and sequence hypotheses
+Every invocation fits anew using ONLY that invocation's support records. In the
+current case this includes 32 single mutants and 64 measured feedback variants.
+No outcome or prediction ID is embedded in proposal.py. No file is read by the
+predictor; no pretrained weights, external sequences, MSA, or structure are used.
+
+Features describe the assayed residues 101-144: residue composition, counts of
+acidic/basic/aromatic/hydrophobic/polar residues, coarse regional counts,
+mutation burden, and simple hydropathy/helix-propensity constants. The WxxLF
+pattern at 120-124 and its surrounding chemistry are assumed sequence
+annotations, not measured structural coordinates. Additional descriptors count
+local acidic-hydrophobic proximity and clustering. They express hypotheses
+about sequence context and combination effects; their presence does not
+establish a molecular mechanism. Correlated, redundant descriptors are handled
+with shrinkage or restricted tree leaves.
+
+The final predictor averages five families on the same transformed outcome:
+25% regularized radial-basis chemistry kernels (three smoothness/shrinkage
+settings), 25% global-composition ExtraTrees, 10% regional-chemistry ExtraTrees,
+15% strongly regularized focused chemistry/motif ridge regression, and 25%
+shallow robust gradient boosting on the focused descriptors. Each ExtraTrees
+family averages leaf sizes 3, 5, and 8 with fixed seeds. This combines smooth
+similarity regression, composition effects, and learned nonlinear interactions.
+All scaling statistics, target transforms, coefficients, and tree splits are
+estimated from the supplied supports. Final query scores are empirical ordinal
+ranks mapped strictly inside [-1,1]; ties remain ties. selected_ids is empty.
+
+Validation and model selection
+Development compared whole-domain and regional composition, chemistry,
+position-specific properties, exact substitution indicators, local context,
+linear/radial/polynomial kernels, raw/clipped/log/rank targets, single-mutant
+weighting, separate mutation-burden experts, elastic net, PLS, SVR, random
+forests, ExtraTrees, and gradient boosting. Six repeated stratified four-fold
+splits held out feedback variants while retaining original single mutants.
+There are 36 feedback variants with 2-6 substitutions and 28 with 36-44; these
+regimes were stratified. Selection favored rank targets, chemistry smoothing,
+and conservative trees over detailed mutation-specific coefficients.
+
+Confirmation used four additional four-fold partitions and three two-fold
+partitions, always recomputing scaling and outcome transforms inside the
+training fold. Four-fold fits contain 80 supports; two-fold fits contain 64.
+The final ensemble's mean signed Spearman correlation across all 64 feedback
+out-of-fold predictions was 0.434 (SD across partitions 0.030) and 0.400
+(SD 0.053), respectively. Corresponding within-regime means were 0.535/0.553
+for low mutation burden and 0.142/0.134 for high burden. These SDs describe
+split sensitivity, not confidence intervals. Validation artifacts and scripts
+are left in the workspace. Configuration selection used these observed data;
+these are internal validation estimates, not independent experimental proof
+or an unbiased guarantee of future query performance.
+
+Limitations and reproducibility
+Only 96 outcomes constrain many possible sequence effects; the extensively
+changed sequences have few close neighbors. Their ranking is particularly
+uncertain and unstable across splits. Arbitrary epistasis, assay noise, and
+sparse substitution coverage cannot be identified reliably. Fixed sequence
+annotations and model configurations may miss other predictive chemistry.
+There are no additional measurements to resolve these limitations. All model
+random seeds are fixed and computation is restricted to one thread. The model
+returns every current query ID and fits comfortably within the 120-second
+per-invocation limit on this machine. All needed prediction code is contained
+in proposal.py; exploration files are not imported or consumed by it.

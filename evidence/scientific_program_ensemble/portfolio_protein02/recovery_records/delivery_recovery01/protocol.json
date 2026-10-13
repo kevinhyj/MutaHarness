@@ -1,0 +1,16 @@
+{
+  "registered_at_utc": "2026-10-13T07:41:19.739838+00:00",
+  "reason": "explicit terminal model capacity failure",
+  "scientific_program_frozen": true,
+  "original_manifest_sha256": "62f549f7f5e2e176e8367ab598049d20b73e8bba99c47f02e59a028af40f8101",
+  "hashes": {
+    "proposal.py": "5dad623215ce75706ad9891e55af2ec80faf70f01a4323107ee86445274ea5ab",
+    "case.json": "29b561550730cfa093f1ef26d879de7fe12ed173d924efa3827d47c382a36d82",
+    "assignment.json": "e95a22371940539c1430f234fe8a916e516d48f74d52b8ddc8ca17c817ca6ea0"
+  },
+  "maximum_new_native_calls": 1,
+  "generation_wait_seconds": 3600,
+  "query_quality_read_for_recovery": false,
+  "original_usage_unknown": true,
+  "prompt": "A previous native science session explicitly failed with model capacity after saving its final predictor. This is completion-only recovery, not a new scientific experiment. Read the saved proposal.py, case.json and assignment.json. The scientific program is frozen read-only. Do not change code, data, model choices or hyperparameters; do not run model search. There are no extra measurements or external tools. Run /Users/hyj/Desktop/Kimi/.work/venv/bin/python /Users/hyj/Desktop/Kimi/.work/venv/share/portfolio_protein02/executor.py --output trial_output.json, write decision_note.txt summarizing the existing implementation and its limitations, and return JSON {\"status\":\"ready\",\"summary\":\"brief handoff\"}. If execution fails, report failure; do not redesign. All hidden labels, global memory and network tools remain blocked."
+}

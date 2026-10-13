@@ -1,0 +1,4291 @@
+{
+  "case_id": "amfr",
+  "domain": "protein",
+  "assay": "AMFR_HUMAN_Tsuboyama_2023_4G3O",
+  "reference_sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLTRSVEITTDNILEGRI",
+  "context": {
+    "assay_description": "{\"DMS_id\": \"AMFR_HUMAN_Tsuboyama_2023_4G3O\", \"UniProt_ID\": \"AMFR_HUMAN\", \"molecule_name\": \"E3 ubiquitin-protein ligase AMFR\", \"selection_assay\": \"Stability\", \"selection_type\": \"cDNA display proteolysis\", \"source_organism\": \"Homo sapiens\"}",
+    "endpoint": "Stability",
+    "higher_is_better": true,
+    "readout": "ProteinGym DMS_score in original units; higher is the ranking target; no measured WT is assumed."
+  },
+  "query": [
+    {
+      "id": "M001",
+      "mutation": "D28W:N41L",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQWLQLTRSVEITTDLILEGRI"
+    },
+    {
+      "id": "M002",
+      "mutation": "T32E",
+      "mutation_order": 1,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLERSVEITTDNILEGRI"
+    },
+    {
+      "id": "M003",
+      "mutation": "Q14H",
+      "mutation_order": 1,
+      "sequence": "YFQGQLNAMAHQIHEMFPQVPYHLVLQDLQLTRSVEITTDNILEGRI"
+    },
+    {
+      "id": "M004",
+      "mutation": "T38Q:N41Y",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLTRSVEIQTDYILEGRI"
+    },
+    {
+      "id": "M005",
+      "mutation": "T38H:N41I",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLTRSVEIHTDIILEGRI"
+    },
+    {
+      "id": "M006",
+      "mutation": "I37E",
+      "mutation_order": 1,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLTRSVEETTDNILEGRI"
+    },
+    {
+      "id": "M007",
+      "mutation": "T32H:N41W",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLHRSVEITTDWILEGRI"
+    },
+    {
+      "id": "M008",
+      "mutation": "T32D:N41M",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLDRSVEITTDMILEGRI"
+    },
+    {
+      "id": "M009",
+      "mutation": "E15I",
+      "mutation_order": 1,
+      "sequence": "YFQGQLNAMAHQIQIMFPQVPYHLVLQDLQLTRSVEITTDNILEGRI"
+    },
+    {
+      "id": "M010",
+      "mutation": "D28N:T38M",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQNLQLTRSVEIMTDNILEGRI"
+    },
+    {
+      "id": "M011",
+      "mutation": "T32A:N41L",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLARSVEITTDLILEGRI"
+    },
+    {
+      "id": "M012",
+      "mutation": "D28S:T32K",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQSLQLKRSVEITTDNILEGRI"
+    },
+    {
+      "id": "M013",
+      "mutation": "T32Y:N41L",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLYRSVEITTDLILEGRI"
+    },
+    {
+      "id": "M014",
+      "mutation": "P18K",
+      "mutation_order": 1,
+      "sequence": "YFQGQLNAMAHQIQEMFKQVPYHLVLQDLQLTRSVEITTDNILEGRI"
+    },
+    {
+      "id": "M015",
+      "mutation": "P18A",
+      "mutation_order": 1,
+      "sequence": "YFQGQLNAMAHQIQEMFAQVPYHLVLQDLQLTRSVEITTDNILEGRI"
+    },
+    {
+      "id": "M016",
+      "mutation": "T32C:N41D",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLCRSVEITTDDILEGRI"
+    },
+    {
+      "id": "M017",
+      "mutation": "V35F",
+      "mutation_order": 1,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLTRSFEITTDNILEGRI"
+    },
+    {
+      "id": "M018",
+      "mutation": "T38E:N41D",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLTRSVEIETDDILEGRI"
+    },
+    {
+      "id": "M019",
+      "mutation": "D28K:T38R",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQKLQLTRSVEIRTDNILEGRI"
+    },
+    {
+      "id": "M020",
+      "mutation": "D28S:T32V",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQSLQLVRSVEITTDNILEGRI"
+    },
+    {
+      "id": "M021",
+      "mutation": "E15C",
+      "mutation_order": 1,
+      "sequence": "YFQGQLNAMAHQIQCMFPQVPYHLVLQDLQLTRSVEITTDNILEGRI"
+    },
+    {
+      "id": "M022",
+      "mutation": "D28Q:T32A",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQQLQLARSVEITTDNILEGRI"
+    },
+    {
+      "id": "M023",
+      "mutation": "T32R:N41E",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLRRSVEITTDEILEGRI"
+    },
+    {
+      "id": "M024",
+      "mutation": "D28Y:T38M",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQYLQLTRSVEIMTDNILEGRI"
+    },
+    {
+      "id": "M025",
+      "mutation": "Q5Y",
+      "mutation_order": 1,
+      "sequence": "YFQGYLNAMAHQIQEMFPQVPYHLVLQDLQLTRSVEITTDNILEGRI"
+    },
+    {
+      "id": "M026",
+      "mutation": "D28N:T38L",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQNLQLTRSVEILTDNILEGRI"
+    },
+    {
+      "id": "M027",
+      "mutation": "T32Y:T38S",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLYRSVEISTDNILEGRI"
+    },
+    {
+      "id": "M028",
+      "mutation": "V35N",
+      "mutation_order": 1,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLTRSNEITTDNILEGRI"
+    },
+    {
+      "id": "M029",
+      "mutation": "D28F:T38L",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQFLQLTRSVEILTDNILEGRI"
+    },
+    {
+      "id": "M030",
+      "mutation": "D28S:T32E",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQSLQLERSVEITTDNILEGRI"
+    },
+    {
+      "id": "M031",
+      "mutation": "T38R:N41W",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLTRSVEIRTDWILEGRI"
+    },
+    {
+      "id": "M032",
+      "mutation": "Q3G",
+      "mutation_order": 1,
+      "sequence": "YFGGQLNAMAHQIQEMFPQVPYHLVLQDLQLTRSVEITTDNILEGRI"
+    },
+    {
+      "id": "M033",
+      "mutation": "T32L:N41I",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLLRSVEITTDIILEGRI"
+    },
+    {
+      "id": "M034",
+      "mutation": "L6P",
+      "mutation_order": 1,
+      "sequence": "YFQGQPNAMAHQIQEMFPQVPYHLVLQDLQLTRSVEITTDNILEGRI"
+    },
+    {
+      "id": "M035",
+      "mutation": "T32Y:N41P",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLYRSVEITTDPILEGRI"
+    },
+    {
+      "id": "M036",
+      "mutation": "E44R",
+      "mutation_order": 1,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLTRSVEITTDNILRGRI"
+    },
+    {
+      "id": "M037",
+      "mutation": "T38R:N41T",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLTRSVEIRTDTILEGRI"
+    },
+    {
+      "id": "M038",
+      "mutation": "T32L:T38F",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLLRSVEIFTDNILEGRI"
+    },
+    {
+      "id": "M039",
+      "mutation": "S34F",
+      "mutation_order": 1,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLTRFVEITTDNILEGRI"
+    },
+    {
+      "id": "M040",
+      "mutation": "G45R",
+      "mutation_order": 1,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLTRSVEITTDNILERRI"
+    },
+    {
+      "id": "M041",
+      "mutation": "T32D:N41L",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLDRSVEITTDLILEGRI"
+    },
+    {
+      "id": "M042",
+      "mutation": "T32C:T38Q",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLCRSVEIQTDNILEGRI"
+    },
+    {
+      "id": "M043",
+      "mutation": "T38W:N41E",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLTRSVEIWTDEILEGRI"
+    },
+    {
+      "id": "M044",
+      "mutation": "T32C:N41Y",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLCRSVEITTDYILEGRI"
+    },
+    {
+      "id": "M045",
+      "mutation": "N41V:R46H",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLTRSVEITTDVILEGHI"
+    },
+    {
+      "id": "M046",
+      "mutation": "I42L",
+      "mutation_order": 1,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLTRSVEITTDNLLEGRI"
+    },
+    {
+      "id": "M047",
+      "mutation": "D28T:T32G",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQTLQLGRSVEITTDNILEGRI"
+    },
+    {
+      "id": "M048",
+      "mutation": "T38N:N41A",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLTRSVEINTDAILEGRI"
+    },
+    {
+      "id": "M049",
+      "mutation": "Y22G",
+      "mutation_order": 1,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPGHLVLQDLQLTRSVEITTDNILEGRI"
+    },
+    {
+      "id": "M050",
+      "mutation": "D28G:T32M",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQGLQLMRSVEITTDNILEGRI"
+    },
+    {
+      "id": "M051",
+      "mutation": "D28M:N41R",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQMLQLTRSVEITTDRILEGRI"
+    },
+    {
+      "id": "M052",
+      "mutation": "T32G:T38G",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLGRSVEIGTDNILEGRI"
+    },
+    {
+      "id": "M053",
+      "mutation": "T38V:N41T",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLTRSVEIVTDTILEGRI"
+    },
+    {
+      "id": "M054",
+      "mutation": "Q30G",
+      "mutation_order": 1,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLGLTRSVEITTDNILEGRI"
+    },
+    {
+      "id": "M055",
+      "mutation": "D28N:T32V",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQNLQLVRSVEITTDNILEGRI"
+    },
+    {
+      "id": "M056",
+      "mutation": "N41C:R46P",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLTRSVEITTDCILEGPI"
+    },
+    {
+      "id": "M057",
+      "mutation": "D28V:T38V",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQVLQLTRSVEIVTDNILEGRI"
+    },
+    {
+      "id": "M058",
+      "mutation": "D28V:T32M",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQVLQLMRSVEITTDNILEGRI"
+    },
+    {
+      "id": "M059",
+      "mutation": "N41W:R46D",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLTRSVEITTDWILEGDI"
+    },
+    {
+      "id": "M060",
+      "mutation": "D28R:T32M",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQRLQLMRSVEITTDNILEGRI"
+    },
+    {
+      "id": "M061",
+      "mutation": "T32Q:N41K",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLQRSVEITTDKILEGRI"
+    },
+    {
+      "id": "M062",
+      "mutation": "G4W",
+      "mutation_order": 1,
+      "sequence": "YFQWQLNAMAHQIQEMFPQVPYHLVLQDLQLTRSVEITTDNILEGRI"
+    },
+    {
+      "id": "M063",
+      "mutation": "D28C:T38A",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQCLQLTRSVEIATDNILEGRI"
+    },
+    {
+      "id": "M064",
+      "mutation": "Y22S",
+      "mutation_order": 1,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPSHLVLQDLQLTRSVEITTDNILEGRI"
+    },
+    {
+      "id": "M065",
+      "mutation": "L24N",
+      "mutation_order": 1,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHNVLQDLQLTRSVEITTDNILEGRI"
+    },
+    {
+      "id": "M066",
+      "mutation": "T38A:N41V",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLTRSVEIATDVILEGRI"
+    },
+    {
+      "id": "M067",
+      "mutation": "N41A:R46T",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLTRSVEITTDAILEGTI"
+    },
+    {
+      "id": "M068",
+      "mutation": "Q30L",
+      "mutation_order": 1,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLLLTRSVEITTDNILEGRI"
+    },
+    {
+      "id": "M069",
+      "mutation": "T38E:N41E",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLTRSVEIETDEILEGRI"
+    },
+    {
+      "id": "M070",
+      "mutation": "T32D:N41F",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLDRSVEITTDFILEGRI"
+    },
+    {
+      "id": "M071",
+      "mutation": "D28F",
+      "mutation_order": 1,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQFLQLTRSVEITTDNILEGRI"
+    },
+    {
+      "id": "M072",
+      "mutation": "D28W:T38K",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQWLQLTRSVEIKTDNILEGRI"
+    },
+    {
+      "id": "M073",
+      "mutation": "N41W:R46T",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLTRSVEITTDWILEGTI"
+    },
+    {
+      "id": "M074",
+      "mutation": "T32L:T38V",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLLRSVEIVTDNILEGRI"
+    },
+    {
+      "id": "M075",
+      "mutation": "D40F",
+      "mutation_order": 1,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLTRSVEITTFNILEGRI"
+    },
+    {
+      "id": "M076",
+      "mutation": "N41S",
+      "mutation_order": 1,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLTRSVEITTDSILEGRI"
+    },
+    {
+      "id": "M077",
+      "mutation": "T32S:N41W",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLSRSVEITTDWILEGRI"
+    },
+    {
+      "id": "M078",
+      "mutation": "P18R",
+      "mutation_order": 1,
+      "sequence": "YFQGQLNAMAHQIQEMFRQVPYHLVLQDLQLTRSVEITTDNILEGRI"
+    },
+    {
+      "id": "M079",
+      "mutation": "T38N:N41P",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLTRSVEINTDPILEGRI"
+    },
+    {
+      "id": "M080",
+      "mutation": "G4I",
+      "mutation_order": 1,
+      "sequence": "YFQIQLNAMAHQIQEMFPQVPYHLVLQDLQLTRSVEITTDNILEGRI"
+    },
+    {
+      "id": "M081",
+      "mutation": "Q12Y",
+      "mutation_order": 1,
+      "sequence": "YFQGQLNAMAHYIQEMFPQVPYHLVLQDLQLTRSVEITTDNILEGRI"
+    },
+    {
+      "id": "M082",
+      "mutation": "D28Y:T38E",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQYLQLTRSVEIETDNILEGRI"
+    },
+    {
+      "id": "M083",
+      "mutation": "D28C:T38M",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQCLQLTRSVEIMTDNILEGRI"
+    },
+    {
+      "id": "M084",
+      "mutation": "D28T:T38Q",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQTLQLTRSVEIQTDNILEGRI"
+    },
+    {
+      "id": "M085",
+      "mutation": "D28W:T38G",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQWLQLTRSVEIGTDNILEGRI"
+    },
+    {
+      "id": "M086",
+      "mutation": "T32M:N41V",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLMRSVEITTDVILEGRI"
+    },
+    {
+      "id": "M087",
+      "mutation": "D28M:N41G",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQMLQLTRSVEITTDGILEGRI"
+    },
+    {
+      "id": "M088",
+      "mutation": "T38H:N41F",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLTRSVEIHTDFILEGRI"
+    },
+    {
+      "id": "M089",
+      "mutation": "T32M:T38A",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLMRSVEIATDNILEGRI"
+    },
+    {
+      "id": "M090",
+      "mutation": "D28G:T38H",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQGLQLTRSVEIHTDNILEGRI"
+    },
+    {
+      "id": "M091",
+      "mutation": "T38W:N41A",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLTRSVEIWTDAILEGRI"
+    },
+    {
+      "id": "M092",
+      "mutation": "T38P:N41L",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLTRSVEIPTDLILEGRI"
+    },
+    {
+      "id": "M093",
+      "mutation": "D28W",
+      "mutation_order": 1,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQWLQLTRSVEITTDNILEGRI"
+    },
+    {
+      "id": "M094",
+      "mutation": "A10M",
+      "mutation_order": 1,
+      "sequence": "YFQGQLNAMMHQIQEMFPQVPYHLVLQDLQLTRSVEITTDNILEGRI"
+    },
+    {
+      "id": "M095",
+      "mutation": "D28P:N41C",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQPLQLTRSVEITTDCILEGRI"
+    },
+    {
+      "id": "M096",
+      "mutation": "V35K",
+      "mutation_order": 1,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLTRSKEITTDNILEGRI"
+    },
+    {
+      "id": "M097",
+      "mutation": "H11N",
+      "mutation_order": 1,
+      "sequence": "YFQGQLNAMANQIQEMFPQVPYHLVLQDLQLTRSVEITTDNILEGRI"
+    },
+    {
+      "id": "M098",
+      "mutation": "E44A",
+      "mutation_order": 1,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLTRSVEITTDNILAGRI"
+    },
+    {
+      "id": "M099",
+      "mutation": "D28A:T32A",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQALQLARSVEITTDNILEGRI"
+    },
+    {
+      "id": "M100",
+      "mutation": "T38D:N41E",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLTRSVEIDTDEILEGRI"
+    },
+    {
+      "id": "M101",
+      "mutation": "P18L",
+      "mutation_order": 1,
+      "sequence": "YFQGQLNAMAHQIQEMFLQVPYHLVLQDLQLTRSVEITTDNILEGRI"
+    },
+    {
+      "id": "M102",
+      "mutation": "N41L:R46C",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLTRSVEITTDLILEGCI"
+    },
+    {
+      "id": "M103",
+      "mutation": "T32V:N41A",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLVRSVEITTDAILEGRI"
+    },
+    {
+      "id": "M104",
+      "mutation": "T38N:N41V",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLTRSVEINTDVILEGRI"
+    },
+    {
+      "id": "M105",
+      "mutation": "D28A:N41Q",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQALQLTRSVEITTDQILEGRI"
+    },
+    {
+      "id": "M106",
+      "mutation": "R33C",
+      "mutation_order": 1,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLTCSVEITTDNILEGRI"
+    },
+    {
+      "id": "M107",
+      "mutation": "D28Q:T38M",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQQLQLTRSVEIMTDNILEGRI"
+    },
+    {
+      "id": "M108",
+      "mutation": "N41K:R46T",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLTRSVEITTDKILEGTI"
+    },
+    {
+      "id": "M109",
+      "mutation": "R33I",
+      "mutation_order": 1,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLTISVEITTDNILEGRI"
+    },
+    {
+      "id": "M110",
+      "mutation": "D28Y:N41W",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQYLQLTRSVEITTDWILEGRI"
+    },
+    {
+      "id": "M111",
+      "mutation": "D28K:T32G",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQKLQLGRSVEITTDNILEGRI"
+    },
+    {
+      "id": "M112",
+      "mutation": "S34T",
+      "mutation_order": 1,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLTRTVEITTDNILEGRI"
+    },
+    {
+      "id": "M113",
+      "mutation": "D28W:T32V",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQWLQLVRSVEITTDNILEGRI"
+    },
+    {
+      "id": "M114",
+      "mutation": "D28G:T32K",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQGLQLKRSVEITTDNILEGRI"
+    },
+    {
+      "id": "M115",
+      "mutation": "T32I:T38M",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLIRSVEIMTDNILEGRI"
+    },
+    {
+      "id": "M116",
+      "mutation": "T38N:N41D",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLTRSVEINTDDILEGRI"
+    },
+    {
+      "id": "M117",
+      "mutation": "T38H:N41R",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLTRSVEIHTDRILEGRI"
+    },
+    {
+      "id": "M118",
+      "mutation": "D28Q:T32D",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQQLQLDRSVEITTDNILEGRI"
+    },
+    {
+      "id": "M119",
+      "mutation": "D28M:T32Y",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQMLQLYRSVEITTDNILEGRI"
+    },
+    {
+      "id": "M120",
+      "mutation": "T38M:N41Q",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLTRSVEIMTDQILEGRI"
+    },
+    {
+      "id": "M121",
+      "mutation": "D28R:N41L",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQRLQLTRSVEITTDLILEGRI"
+    },
+    {
+      "id": "M122",
+      "mutation": "Q30W",
+      "mutation_order": 1,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLWLTRSVEITTDNILEGRI"
+    },
+    {
+      "id": "M123",
+      "mutation": "D28R:N41G",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQRLQLTRSVEITTDGILEGRI"
+    },
+    {
+      "id": "M124",
+      "mutation": "T32V:T38H",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLVRSVEIHTDNILEGRI"
+    },
+    {
+      "id": "M125",
+      "mutation": "N41W:R46E",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLTRSVEITTDWILEGEI"
+    },
+    {
+      "id": "M126",
+      "mutation": "V35I",
+      "mutation_order": 1,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLTRSIEITTDNILEGRI"
+    },
+    {
+      "id": "M127",
+      "mutation": "T32H:N41Q",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLHRSVEITTDQILEGRI"
+    },
+    {
+      "id": "M128",
+      "mutation": "D28K:N41T",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQKLQLTRSVEITTDTILEGRI"
+    },
+    {
+      "id": "M129",
+      "mutation": "D28I:N41I",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQILQLTRSVEITTDIILEGRI"
+    },
+    {
+      "id": "M130",
+      "mutation": "T32C:T38F",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLCRSVEIFTDNILEGRI"
+    },
+    {
+      "id": "M131",
+      "mutation": "H23C",
+      "mutation_order": 1,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYCLVLQDLQLTRSVEITTDNILEGRI"
+    },
+    {
+      "id": "M132",
+      "mutation": "T32E:N41F",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLERSVEITTDFILEGRI"
+    },
+    {
+      "id": "M133",
+      "mutation": "T32K:N41Q",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLKRSVEITTDQILEGRI"
+    },
+    {
+      "id": "M134",
+      "mutation": "D28V:N41T",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQVLQLTRSVEITTDTILEGRI"
+    },
+    {
+      "id": "M135",
+      "mutation": "T32L:N41L",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLLRSVEITTDLILEGRI"
+    },
+    {
+      "id": "M136",
+      "mutation": "Q14W",
+      "mutation_order": 1,
+      "sequence": "YFQGQLNAMAHQIWEMFPQVPYHLVLQDLQLTRSVEITTDNILEGRI"
+    },
+    {
+      "id": "M137",
+      "mutation": "T32Y:N41M",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLYRSVEITTDMILEGRI"
+    },
+    {
+      "id": "M138",
+      "mutation": "D28S:N41A",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQSLQLTRSVEITTDAILEGRI"
+    },
+    {
+      "id": "M139",
+      "mutation": "D28A:N41D",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQALQLTRSVEITTDDILEGRI"
+    },
+    {
+      "id": "M140",
+      "mutation": "T38Y:N41F",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLTRSVEIYTDFILEGRI"
+    },
+    {
+      "id": "M141",
+      "mutation": "T38W:N41M",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLTRSVEIWTDMILEGRI"
+    },
+    {
+      "id": "M142",
+      "mutation": "D28S:T38R",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQSLQLTRSVEIRTDNILEGRI"
+    },
+    {
+      "id": "M143",
+      "mutation": "D28G:N41T",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQGLQLTRSVEITTDTILEGRI"
+    },
+    {
+      "id": "M144",
+      "mutation": "D28M:T38A",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQMLQLTRSVEIATDNILEGRI"
+    },
+    {
+      "id": "M145",
+      "mutation": "T38I:N41S",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLTRSVEIITDSILEGRI"
+    },
+    {
+      "id": "M146",
+      "mutation": "D28P:T32H",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQPLQLHRSVEITTDNILEGRI"
+    },
+    {
+      "id": "M147",
+      "mutation": "Q5M",
+      "mutation_order": 1,
+      "sequence": "YFQGMLNAMAHQIQEMFPQVPYHLVLQDLQLTRSVEITTDNILEGRI"
+    },
+    {
+      "id": "M148",
+      "mutation": "Q14V",
+      "mutation_order": 1,
+      "sequence": "YFQGQLNAMAHQIVEMFPQVPYHLVLQDLQLTRSVEITTDNILEGRI"
+    },
+    {
+      "id": "M149",
+      "mutation": "T32F:T38C",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLFRSVEICTDNILEGRI"
+    },
+    {
+      "id": "M150",
+      "mutation": "I13V",
+      "mutation_order": 1,
+      "sequence": "YFQGQLNAMAHQVQEMFPQVPYHLVLQDLQLTRSVEITTDNILEGRI"
+    },
+    {
+      "id": "M151",
+      "mutation": "D28M:N41V",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQMLQLTRSVEITTDVILEGRI"
+    },
+    {
+      "id": "M152",
+      "mutation": "T38N",
+      "mutation_order": 1,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLTRSVEINTDNILEGRI"
+    },
+    {
+      "id": "M153",
+      "mutation": "D28W:N41S",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQWLQLTRSVEITTDSILEGRI"
+    },
+    {
+      "id": "M154",
+      "mutation": "N41C",
+      "mutation_order": 1,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLTRSVEITTDCILEGRI"
+    },
+    {
+      "id": "M155",
+      "mutation": "D28E:T38I",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQELQLTRSVEIITDNILEGRI"
+    },
+    {
+      "id": "M156",
+      "mutation": "T32L:N41C",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLLRSVEITTDCILEGRI"
+    },
+    {
+      "id": "M157",
+      "mutation": "D28F:N41P",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQFLQLTRSVEITTDPILEGRI"
+    },
+    {
+      "id": "M158",
+      "mutation": "Y1Q",
+      "mutation_order": 1,
+      "sequence": "QFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLTRSVEITTDNILEGRI"
+    },
+    {
+      "id": "M159",
+      "mutation": "T38M:N41S",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLTRSVEIMTDSILEGRI"
+    },
+    {
+      "id": "M160",
+      "mutation": "D28K:T32N",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQKLQLNRSVEITTDNILEGRI"
+    },
+    {
+      "id": "M161",
+      "mutation": "T32N:N41Y",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLNRSVEITTDYILEGRI"
+    },
+    {
+      "id": "M162",
+      "mutation": "D28K:N41K",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQKLQLTRSVEITTDKILEGRI"
+    },
+    {
+      "id": "M163",
+      "mutation": "T32E:T38F",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLERSVEIFTDNILEGRI"
+    },
+    {
+      "id": "M164",
+      "mutation": "D28V:N41I",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQVLQLTRSVEITTDIILEGRI"
+    },
+    {
+      "id": "M165",
+      "mutation": "N41E:R46L",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLTRSVEITTDEILEGLI"
+    },
+    {
+      "id": "M166",
+      "mutation": "D28W:N41I",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQWLQLTRSVEITTDIILEGRI"
+    },
+    {
+      "id": "M167",
+      "mutation": "D28T:T38P",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQTLQLTRSVEIPTDNILEGRI"
+    },
+    {
+      "id": "M168",
+      "mutation": "D40Y",
+      "mutation_order": 1,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLTRSVEITTYNILEGRI"
+    },
+    {
+      "id": "M169",
+      "mutation": "T32L:N41S",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLLRSVEITTDSILEGRI"
+    },
+    {
+      "id": "M170",
+      "mutation": "D28N:T32D",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQNLQLDRSVEITTDNILEGRI"
+    },
+    {
+      "id": "M171",
+      "mutation": "D28M:T38G",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQMLQLTRSVEIGTDNILEGRI"
+    },
+    {
+      "id": "M172",
+      "mutation": "Y1D",
+      "mutation_order": 1,
+      "sequence": "DFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLTRSVEITTDNILEGRI"
+    },
+    {
+      "id": "M173",
+      "mutation": "D28S",
+      "mutation_order": 1,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQSLQLTRSVEITTDNILEGRI"
+    },
+    {
+      "id": "M174",
+      "mutation": "L43K",
+      "mutation_order": 1,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLTRSVEITTDNIKEGRI"
+    },
+    {
+      "id": "M175",
+      "mutation": "D28I:T38E",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQILQLTRSVEIETDNILEGRI"
+    },
+    {
+      "id": "M176",
+      "mutation": "M9L",
+      "mutation_order": 1,
+      "sequence": "YFQGQLNALAHQIQEMFPQVPYHLVLQDLQLTRSVEITTDNILEGRI"
+    },
+    {
+      "id": "M177",
+      "mutation": "T32E:N41Q",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLERSVEITTDQILEGRI"
+    },
+    {
+      "id": "M178",
+      "mutation": "N41W:R46I",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLTRSVEITTDWILEGII"
+    },
+    {
+      "id": "M179",
+      "mutation": "N41H:R46Y",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLTRSVEITTDHILEGYI"
+    },
+    {
+      "id": "M180",
+      "mutation": "T38F:N41S",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLTRSVEIFTDSILEGRI"
+    },
+    {
+      "id": "M181",
+      "mutation": "D28A:T32L",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQALQLLRSVEITTDNILEGRI"
+    },
+    {
+      "id": "M182",
+      "mutation": "T38G:N41F",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLTRSVEIGTDFILEGRI"
+    },
+    {
+      "id": "M183",
+      "mutation": "T32A:N41D",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLARSVEITTDDILEGRI"
+    },
+    {
+      "id": "M184",
+      "mutation": "D28I:T32K",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQILQLKRSVEITTDNILEGRI"
+    },
+    {
+      "id": "M185",
+      "mutation": "D28A:T32Y",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQALQLYRSVEITTDNILEGRI"
+    },
+    {
+      "id": "M186",
+      "mutation": "D28M:T38R",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQMLQLTRSVEIRTDNILEGRI"
+    },
+    {
+      "id": "M187",
+      "mutation": "T32G:T38M",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLGRSVEIMTDNILEGRI"
+    },
+    {
+      "id": "M188",
+      "mutation": "T32G:N41I",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLGRSVEITTDIILEGRI"
+    },
+    {
+      "id": "M189",
+      "mutation": "L26T",
+      "mutation_order": 1,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVTQDLQLTRSVEITTDNILEGRI"
+    },
+    {
+      "id": "M190",
+      "mutation": "D28H:T38G",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQHLQLTRSVEIGTDNILEGRI"
+    },
+    {
+      "id": "M191",
+      "mutation": "D28N:N41P",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQNLQLTRSVEITTDPILEGRI"
+    },
+    {
+      "id": "M192",
+      "mutation": "T32M:T38L",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLMRSVEILTDNILEGRI"
+    },
+    {
+      "id": "M193",
+      "mutation": "T38N:N41E",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLTRSVEINTDEILEGRI"
+    },
+    {
+      "id": "M194",
+      "mutation": "D28M:T32M",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQMLQLMRSVEITTDNILEGRI"
+    },
+    {
+      "id": "M195",
+      "mutation": "D28T:T38D",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQTLQLTRSVEIDTDNILEGRI"
+    },
+    {
+      "id": "M196",
+      "mutation": "T32Y:N41R",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLYRSVEITTDRILEGRI"
+    },
+    {
+      "id": "M197",
+      "mutation": "R33F",
+      "mutation_order": 1,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLTFSVEITTDNILEGRI"
+    },
+    {
+      "id": "M198",
+      "mutation": "D28N:T32A",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQNLQLARSVEITTDNILEGRI"
+    },
+    {
+      "id": "M199",
+      "mutation": "M9N",
+      "mutation_order": 1,
+      "sequence": "YFQGQLNANAHQIQEMFPQVPYHLVLQDLQLTRSVEITTDNILEGRI"
+    },
+    {
+      "id": "M200",
+      "mutation": "T32R:N41S",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLRRSVEITTDSILEGRI"
+    },
+    {
+      "id": "M201",
+      "mutation": "N41K:R46D",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLTRSVEITTDKILEGDI"
+    },
+    {
+      "id": "M202",
+      "mutation": "T32V:T38G",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLVRSVEIGTDNILEGRI"
+    },
+    {
+      "id": "M203",
+      "mutation": "F17I",
+      "mutation_order": 1,
+      "sequence": "YFQGQLNAMAHQIQEMIPQVPYHLVLQDLQLTRSVEITTDNILEGRI"
+    },
+    {
+      "id": "M204",
+      "mutation": "D40V",
+      "mutation_order": 1,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLTRSVEITTVNILEGRI"
+    },
+    {
+      "id": "M205",
+      "mutation": "D28E:N41G",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQELQLTRSVEITTDGILEGRI"
+    },
+    {
+      "id": "M206",
+      "mutation": "D28L:T38K",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQLLQLTRSVEIKTDNILEGRI"
+    },
+    {
+      "id": "M207",
+      "mutation": "D28F:N41E",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQFLQLTRSVEITTDEILEGRI"
+    },
+    {
+      "id": "M208",
+      "mutation": "T32F",
+      "mutation_order": 1,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLFRSVEITTDNILEGRI"
+    },
+    {
+      "id": "M209",
+      "mutation": "T38I:N41A",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLTRSVEIITDAILEGRI"
+    },
+    {
+      "id": "M210",
+      "mutation": "T38A:N41E",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLTRSVEIATDEILEGRI"
+    },
+    {
+      "id": "M211",
+      "mutation": "D28A:N41F",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQALQLTRSVEITTDFILEGRI"
+    },
+    {
+      "id": "M212",
+      "mutation": "E44F",
+      "mutation_order": 1,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLTRSVEITTDNILFGRI"
+    },
+    {
+      "id": "M213",
+      "mutation": "Q12D",
+      "mutation_order": 1,
+      "sequence": "YFQGQLNAMAHDIQEMFPQVPYHLVLQDLQLTRSVEITTDNILEGRI"
+    },
+    {
+      "id": "M214",
+      "mutation": "D28R:T32W",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQRLQLWRSVEITTDNILEGRI"
+    },
+    {
+      "id": "M215",
+      "mutation": "D28P:T32L",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQPLQLLRSVEITTDNILEGRI"
+    },
+    {
+      "id": "M216",
+      "mutation": "T38D:N41K",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLTRSVEIDTDKILEGRI"
+    },
+    {
+      "id": "M217",
+      "mutation": "D28R:T32Y",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQRLQLYRSVEITTDNILEGRI"
+    },
+    {
+      "id": "M218",
+      "mutation": "Q3M",
+      "mutation_order": 1,
+      "sequence": "YFMGQLNAMAHQIQEMFPQVPYHLVLQDLQLTRSVEITTDNILEGRI"
+    },
+    {
+      "id": "M219",
+      "mutation": "D28C:T38K",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQCLQLTRSVEIKTDNILEGRI"
+    },
+    {
+      "id": "M220",
+      "mutation": "F2N",
+      "mutation_order": 1,
+      "sequence": "YNQGQLNAMAHQIQEMFPQVPYHLVLQDLQLTRSVEITTDNILEGRI"
+    },
+    {
+      "id": "M221",
+      "mutation": "D28W:T32G",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQWLQLGRSVEITTDNILEGRI"
+    },
+    {
+      "id": "M222",
+      "mutation": "D28A:T32Q",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQALQLQRSVEITTDNILEGRI"
+    },
+    {
+      "id": "M223",
+      "mutation": "T38D:N41D",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLTRSVEIDTDDILEGRI"
+    },
+    {
+      "id": "M224",
+      "mutation": "D28A:N41W",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQALQLTRSVEITTDWILEGRI"
+    },
+    {
+      "id": "M225",
+      "mutation": "P18H",
+      "mutation_order": 1,
+      "sequence": "YFQGQLNAMAHQIQEMFHQVPYHLVLQDLQLTRSVEITTDNILEGRI"
+    },
+    {
+      "id": "M226",
+      "mutation": "I47G",
+      "mutation_order": 1,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLTRSVEITTDNILEGRG"
+    },
+    {
+      "id": "M227",
+      "mutation": "D28L:T32M",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQLLQLMRSVEITTDNILEGRI"
+    },
+    {
+      "id": "M228",
+      "mutation": "T38F:N41L",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLTRSVEIFTDLILEGRI"
+    },
+    {
+      "id": "M229",
+      "mutation": "T38R:N41Y",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLTRSVEIRTDYILEGRI"
+    },
+    {
+      "id": "M230",
+      "mutation": "Q19T",
+      "mutation_order": 1,
+      "sequence": "YFQGQLNAMAHQIQEMFPTVPYHLVLQDLQLTRSVEITTDNILEGRI"
+    },
+    {
+      "id": "M231",
+      "mutation": "D28I:T32H",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQILQLHRSVEITTDNILEGRI"
+    },
+    {
+      "id": "M232",
+      "mutation": "S34A",
+      "mutation_order": 1,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLTRAVEITTDNILEGRI"
+    },
+    {
+      "id": "M233",
+      "mutation": "T32H:T38A",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLHRSVEIATDNILEGRI"
+    },
+    {
+      "id": "M234",
+      "mutation": "D28Q:N41L",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQQLQLTRSVEITTDLILEGRI"
+    },
+    {
+      "id": "M235",
+      "mutation": "D28R:T32H",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQRLQLHRSVEITTDNILEGRI"
+    },
+    {
+      "id": "M236",
+      "mutation": "D28H:T32N",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQHLQLNRSVEITTDNILEGRI"
+    },
+    {
+      "id": "M237",
+      "mutation": "T38G:N41T",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLTRSVEIGTDTILEGRI"
+    },
+    {
+      "id": "M238",
+      "mutation": "D28H:T32P",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQHLQLPRSVEITTDNILEGRI"
+    },
+    {
+      "id": "M239",
+      "mutation": "T32W:T38E",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLWRSVEIETDNILEGRI"
+    },
+    {
+      "id": "M240",
+      "mutation": "T32Q:N41A",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLQRSVEITTDAILEGRI"
+    },
+    {
+      "id": "M241",
+      "mutation": "T32C:N41K",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLCRSVEITTDKILEGRI"
+    },
+    {
+      "id": "M242",
+      "mutation": "T32C:T38Y",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLCRSVEIYTDNILEGRI"
+    },
+    {
+      "id": "M243",
+      "mutation": "L26N",
+      "mutation_order": 1,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVNQDLQLTRSVEITTDNILEGRI"
+    },
+    {
+      "id": "M244",
+      "mutation": "D28E:T32I",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQELQLIRSVEITTDNILEGRI"
+    },
+    {
+      "id": "M245",
+      "mutation": "N41R:R46Y",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLTRSVEITTDRILEGYI"
+    },
+    {
+      "id": "M246",
+      "mutation": "T32Y:N41S",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLYRSVEITTDSILEGRI"
+    },
+    {
+      "id": "M247",
+      "mutation": "T32W:N41E",
+      "mutation_order": 2,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQDLQLWRSVEITTDEILEGRI"
+    },
+    {
+      "id": "M248",
+      "mutation": "D28G",
+      "mutation_order": 1,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLQGLQLTRSVEITTDNILEGRI"
+    },
+    {
+      "id": "M249",
+      "mutation": "Q27F",
+      "mutation_order": 1,
+      "sequence": "YFQGQLNAMAHQIQEMFPQVPYHLVLFDLQLTRSVEITTDNILEGRI"
+    },
+    {
+      "id": "M250",
+      "mutation": "F17V",
+      "mutation_order": 1,
+      "sequence": "YFQGQLNAMAHQIQEMVPQVPYHLVLQDLQLTRSVEITTDNILEGRI"
+    }
+  ],
+  "evidence": {
+    "format": "protein_site_table_v1",
+    "coordinate_system": "1-based full reference sequence; chains separate",
+    "sites": [
+      {
+        "position": 1,
+        "WT": "Y",
+        "chain": null,
+        "msa": {
+          "frequencies": {
+            "A": 0.05,
+            "C": 0.05,
+            "D": 0.05,
+            "E": 0.05,
+            "F": 0.05,
+            "G": 0.05,
+            "H": 0.05,
+            "I": 0.05,
+            "K": 0.05,
+            "L": 0.05,
+            "M": 0.05,
+            "N": 0.05,
+            "P": 0.05,
+            "Q": 0.05,
+            "R": 0.05,
+            "S": 0.05,
+            "T": 0.05,
+            "V": 0.05,
+            "W": 0.05,
+            "Y": 0.05
+          },
+          "non_gap_depth": 0.0,
+          "depth_kind": "effective_weighted",
+          "neff": 631.201790072901,
+          "gap_fraction": 1.0,
+          "entropy_bits": 4.321928094887363,
+          "homolog_support": "none",
+          "msa_column_1based": "query_insertion_unaligned_uniform_pseudocount_only",
+          "profile_scope": "full20AA, not query-dependent"
+        },
+        "wt_structure": {
+          "pLDDT": 65.3,
+          "confidence": "low",
+          "absolute_SASA_A2": 256.29,
+          "phi_deg": null,
+          "psi_deg": 133.57,
+          "CA_neighbors_within8A": 2,
+          "contacts_complete": true,
+          "nearest_nonlocal_position_WT_distanceA": [
+            [
+              4,
+              "G",
+              5.6
+            ],
+            [
+              5,
+              "Q",
+              7.21
+            ],
+            [
+              6,
+              "L",
+              9.27
+            ]
+          ]
+        }
+      },
+      {
+        "position": 2,
+        "WT": "F",
+        "chain": null,
+        "msa": {
+          "frequencies": {
+            "A": 0.05,
+            "C": 0.05,
+            "D": 0.05,
+            "E": 0.05,
+            "F": 0.05,
+            "G": 0.05,
+            "H": 0.05,
+            "I": 0.05,
+            "K": 0.05,
+            "L": 0.05,
+            "M": 0.05,
+            "N": 0.05,
+            "P": 0.05,
+            "Q": 0.05,
+            "R": 0.05,
+            "S": 0.05,
+            "T": 0.05,
+            "V": 0.05,
+            "W": 0.05,
+            "Y": 0.05
+          },
+          "non_gap_depth": 0.0,
+          "depth_kind": "effective_weighted",
+          "neff": 631.201790072901,
+          "gap_fraction": 1.0,
+          "entropy_bits": 4.321928094887363,
+          "homolog_support": "none",
+          "msa_column_1based": "query_insertion_unaligned_uniform_pseudocount_only",
+          "profile_scope": "full20AA, not query-dependent"
+        },
+        "wt_structure": {
+          "pLDDT": 85.8,
+          "confidence": "confident",
+          "absolute_SASA_A2": 110.66,
+          "phi_deg": -47.34,
+          "psi_deg": -37.51,
+          "CA_neighbors_within8A": 2,
+          "contacts_complete": true,
+          "nearest_nonlocal_position_WT_distanceA": [
+            [
+              5,
+              "Q",
+              5.39
+            ],
+            [
+              6,
+              "L",
+              6.51
+            ],
+            [
+              7,
+              "N",
+              8.85
+            ]
+          ]
+        }
+      },
+      {
+        "position": 3,
+        "WT": "Q",
+        "chain": null,
+        "msa": {
+          "frequencies": {
+            "A": 0.05,
+            "C": 0.05,
+            "D": 0.05,
+            "E": 0.05,
+            "F": 0.05,
+            "G": 0.05,
+            "H": 0.05,
+            "I": 0.05,
+            "K": 0.05,
+            "L": 0.05,
+            "M": 0.05,
+            "N": 0.05,
+            "P": 0.05,
+            "Q": 0.05,
+            "R": 0.05,
+            "S": 0.05,
+            "T": 0.05,
+            "V": 0.05,
+            "W": 0.05,
+            "Y": 0.05
+          },
+          "non_gap_depth": 0.0,
+          "depth_kind": "effective_weighted",
+          "neff": 631.201790072901,
+          "gap_fraction": 1.0,
+          "entropy_bits": 4.321928094887363,
+          "homolog_support": "none",
+          "msa_column_1based": "query_insertion_unaligned_uniform_pseudocount_only",
+          "profile_scope": "full20AA, not query-dependent"
+        },
+        "wt_structure": {
+          "pLDDT": 89.13,
+          "confidence": "confident",
+          "absolute_SASA_A2": 83.11,
+          "phi_deg": -58.36,
+          "psi_deg": -34.82,
+          "CA_neighbors_within8A": 2,
+          "contacts_complete": true,
+          "nearest_nonlocal_position_WT_distanceA": [
+            [
+              6,
+              "L",
+              5.09
+            ],
+            [
+              7,
+              "N",
+              6.17
+            ],
+            [
+              8,
+              "A",
+              8.71
+            ]
+          ]
+        }
+      },
+      {
+        "position": 4,
+        "WT": "G",
+        "chain": null,
+        "msa": {
+          "frequencies": {
+            "A": 0.05,
+            "C": 0.05,
+            "D": 0.05,
+            "E": 0.05,
+            "F": 0.05,
+            "G": 0.05,
+            "H": 0.05,
+            "I": 0.05,
+            "K": 0.05,
+            "L": 0.05,
+            "M": 0.05,
+            "N": 0.05,
+            "P": 0.05,
+            "Q": 0.05,
+            "R": 0.05,
+            "S": 0.05,
+            "T": 0.05,
+            "V": 0.05,
+            "W": 0.05,
+            "Y": 0.05
+          },
+          "non_gap_depth": 0.0,
+          "depth_kind": "effective_weighted",
+          "neff": 631.201790072901,
+          "gap_fraction": 1.0,
+          "entropy_bits": 4.321928094887363,
+          "homolog_support": "none",
+          "msa_column_1based": "query_insertion_unaligned_uniform_pseudocount_only",
+          "profile_scope": "full20AA, not query-dependent"
+        },
+        "wt_structure": {
+          "pLDDT": 94.51,
+          "confidence": "very_high",
+          "absolute_SASA_A2": 39.71,
+          "phi_deg": -68.72,
+          "psi_deg": -35.08,
+          "CA_neighbors_within8A": 3,
+          "contacts_complete": true,
+          "nearest_nonlocal_position_WT_distanceA": [
+            [
+              7,
+              "N",
+              5.1
+            ],
+            [
+              1,
+              "Y",
+              5.6
+            ],
+            [
+              8,
+              "A",
+              6.27
+            ]
+          ]
+        }
+      },
+      {
+        "position": 5,
+        "WT": "Q",
+        "chain": null,
+        "msa": {
+          "frequencies": {
+            "A": 0.05,
+            "C": 0.05,
+            "D": 0.05,
+            "E": 0.05,
+            "F": 0.05,
+            "G": 0.05,
+            "H": 0.05,
+            "I": 0.05,
+            "K": 0.05,
+            "L": 0.05,
+            "M": 0.05,
+            "N": 0.05,
+            "P": 0.05,
+            "Q": 0.05,
+            "R": 0.05,
+            "S": 0.05,
+            "T": 0.05,
+            "V": 0.05,
+            "W": 0.05,
+            "Y": 0.05
+          },
+          "non_gap_depth": 0.0,
+          "depth_kind": "effective_weighted",
+          "neff": 631.201790072901,
+          "gap_fraction": 1.0,
+          "entropy_bits": 4.321928094887363,
+          "homolog_support": "none",
+          "msa_column_1based": "query_insertion_unaligned_uniform_pseudocount_only",
+          "profile_scope": "full20AA, not query-dependent"
+        },
+        "wt_structure": {
+          "pLDDT": 95.55,
+          "confidence": "very_high",
+          "absolute_SASA_A2": 121.22,
+          "phi_deg": -68.28,
+          "psi_deg": -44.82,
+          "CA_neighbors_within8A": 4,
+          "contacts_complete": true,
+          "nearest_nonlocal_position_WT_distanceA": [
+            [
+              8,
+              "A",
+              5.12
+            ],
+            [
+              2,
+              "F",
+              5.39
+            ],
+            [
+              9,
+              "M",
+              6.22
+            ]
+          ]
+        }
+      },
+      {
+        "position": 6,
+        "WT": "L",
+        "chain": null,
+        "msa": {
+          "frequencies": {
+            "A": 0.05,
+            "C": 0.05,
+            "D": 0.05,
+            "E": 0.05,
+            "F": 0.05,
+            "G": 0.05,
+            "H": 0.05,
+            "I": 0.05,
+            "K": 0.05,
+            "L": 0.05,
+            "M": 0.05,
+            "N": 0.05,
+            "P": 0.05,
+            "Q": 0.05,
+            "R": 0.05,
+            "S": 0.05,
+            "T": 0.05,
+            "V": 0.05,
+            "W": 0.05,
+            "Y": 0.05
+          },
+          "non_gap_depth": 0.0,
+          "depth_kind": "effective_weighted",
+          "neff": 631.201790072901,
+          "gap_fraction": 1.0,
+          "entropy_bits": 4.321928094887363,
+          "homolog_support": "none",
+          "msa_column_1based": null,
+          "profile_scope": "full20AA, not query-dependent"
+        },
+        "wt_structure": {
+          "pLDDT": 97.27,
+          "confidence": "very_high",
+          "absolute_SASA_A2": 1.7,
+          "phi_deg": -60.21,
+          "psi_deg": -41.52,
+          "CA_neighbors_within8A": 8,
+          "contacts_complete": true,
+          "nearest_nonlocal_position_WT_distanceA": [
+            [
+              9,
+              "M",
+              5.05
+            ],
+            [
+              3,
+              "Q",
+              5.09
+            ],
+            [
+              10,
+              "A",
+              6.03
+            ]
+          ]
+        }
+      },
+      {
+        "position": 7,
+        "WT": "N",
+        "chain": null,
+        "msa": {
+          "frequencies": {
+            "A": 0.05,
+            "C": 0.05,
+            "D": 0.05,
+            "E": 0.05,
+            "F": 0.05,
+            "G": 0.05,
+            "H": 0.05,
+            "I": 0.05,
+            "K": 0.05,
+            "L": 0.05,
+            "M": 0.05,
+            "N": 0.05,
+            "P": 0.05,
+            "Q": 0.05,
+            "R": 0.05,
+            "S": 0.05,
+            "T": 0.05,
+            "V": 0.05,
+            "W": 0.05,
+            "Y": 0.05
+          },
+          "non_gap_depth": 0.0,
+          "depth_kind": "effective_weighted",
+          "neff": 631.201790072901,
+          "gap_fraction": 1.0,
+          "entropy_bits": 4.321928094887363,
+          "homolog_support": "none",
+          "msa_column_1based": null,
+          "profile_scope": "full20AA, not query-dependent"
+        },
+        "wt_structure": {}
+      },
+      {
+        "position": 8,
+        "WT": "A",
+        "chain": null,
+        "msa": {
+          "frequencies": {
+            "A": 0.4427101243626553,
+            "C": 0.00046064900432181367,
+            "D": 0.21790004224007611,
+            "E": 0.33155880032379775,
+            "F": 0.00046064900432181367,
+            "G": 0.00046064900432181367,
+            "H": 0.00046064900432181367,
+            "I": 0.00046064900432181367,
+            "K": 0.00046064900432181367,
+            "L": 0.00046064900432181367,
+            "M": 0.00046064900432181367,
+            "N": 0.00046064900432181367,
+            "P": 0.00046064900432181367,
+            "Q": 0.00046064900432181367,
+            "R": 0.00046064900432181367,
+            "S": 0.00046064900432181367,
+            "T": 0.00046064900432181367,
+            "V": 0.00046064900432181367,
+            "W": 0.00046064900432181367,
+            "Y": 0.00046064900432181367
+          },
+          "non_gap_depth": 107.54251182765944,
+          "depth_kind": "effective_weighted",
+          "neff": 631.201790072901,
+          "gap_fraction": 0.8296226127380932,
+          "entropy_bits": 1.6142972168178826,
+          "homolog_support": "low",
+          "msa_column_1based": null,
+          "profile_scope": "full20AA, not query-dependent"
+        },
+        "wt_structure": {}
+      },
+      {
+        "position": 9,
+        "WT": "M",
+        "chain": null,
+        "msa": {
+          "frequencies": {
+            "A": 0.13518605649091067,
+            "C": 0.00018621548411308707,
+            "D": 0.19496642047942445,
+            "E": 0.00018621548411308707,
+            "F": 0.00018621548411308707,
+            "G": 0.00018621548411308707,
+            "H": 0.00024019098675456157,
+            "I": 0.003910525166374829,
+            "K": 0.014476119815778296,
+            "L": 0.15126041549569896,
+            "M": 0.346676104176138,
+            "N": 0.003910525166374829,
+            "P": 0.003910525166374829,
+            "Q": 0.1116236322017957,
+            "R": 0.003910525166374829,
+            "S": 0.012166078295388355,
+            "T": 0.00018621548411308707,
+            "V": 0.009010753639296487,
+            "W": 0.003910525166374829,
+            "Y": 0.003910525166374829
+          },
+          "non_gap_depth": 267.5061354491629,
+          "depth_kind": "effective_weighted",
+          "neff": 631.201790072901,
+          "gap_fraction": 0.5761955373759837,
+          "entropy_bits": 2.5744054606158953,
+          "homolog_support": "low",
+          "msa_column_1based": null,
+          "profile_scope": "full20AA, not query-dependent"
+        },
+        "wt_structure": {
+          "pLDDT": 98.17,
+          "confidence": "very_high",
+          "absolute_SASA_A2": 35.42,
+          "phi_deg": -61.36,
+          "psi_deg": -43.54,
+          "CA_neighbors_within8A": 7,
+          "contacts_complete": true,
+          "nearest_nonlocal_position_WT_distanceA": [
+            [
+              6,
+              "L",
+              5.05
+            ],
+            [
+              12,
+              "Q",
+              5.18
+            ],
+            [
+              35,
+              "V",
+              6.16
+            ]
+          ]
+        }
+      },
+      {
+        "position": 10,
+        "WT": "A",
+        "chain": null,
+        "msa": {
+          "frequencies": {
+            "A": 0.10535109403079404,
+            "C": 0.00010967224866609748,
+            "D": 0.00010967224866609748,
+            "E": 0.00010967224866609748,
+            "F": 0.0023694026470060183,
+            "G": 0.00010967224866609748,
+            "H": 0.00010967224866609748,
+            "I": 0.35723369580339687,
+            "K": 0.0023031172219880472,
+            "L": 0.09282951831421712,
+            "M": 0.057254181413407795,
+            "N": 0.00010967224866609748,
+            "P": 0.00010967224866609748,
+            "Q": 0.00010967224866609748,
+            "R": 0.00010967224866609748,
+            "S": 0.0030620306726732785,
+            "T": 0.012687457581587033,
+            "V": 0.36570310757960284,
+            "W": 0.00010967224866609748,
+            "Y": 0.00010967224866609748
+          },
+          "non_gap_depth": 454.9038463068943,
+          "depth_kind": "effective_weighted",
+          "neff": 631.201790072901,
+          "gap_fraction": 0.2793052024545828,
+          "entropy_bits": 2.1201061962854952,
+          "homolog_support": "adequate",
+          "msa_column_1based": null,
+          "profile_scope": "full20AA, not query-dependent"
+        },
+        "wt_structure": {
+          "pLDDT": 98.01,
+          "confidence": "very_high",
+          "absolute_SASA_A2": 0.0,
+          "phi_deg": -65.67,
+          "psi_deg": -37.09,
+          "CA_neighbors_within8A": 9,
+          "contacts_complete": true,
+          "nearest_nonlocal_position_WT_distanceA": [
+            [
+              7,
+              "N",
+              4.99
+            ],
+            [
+              13,
+              "I",
+              5.12
+            ],
+            [
+              26,
+              "L",
+              5.72
+            ]
+          ]
+        }
+      },
+      {
+        "position": 11,
+        "WT": "H",
+        "chain": null,
+        "msa": {
+          "frequencies": {
+            "A": 0.08463781623712839,
+            "C": 0.004718820392649911,
+            "D": 0.09964997644611685,
+            "E": 0.20802112781331827,
+            "F": 0.001926257136524478,
+            "G": 0.0020269562127276275,
+            "H": 0.02190918791870692,
+            "I": 0.0007357088436761498,
+            "K": 0.13210516813369177,
+            "L": 0.012933440773807208,
+            "M": 0.002473259634307043,
+            "N": 0.056499302470880815,
+            "P": 0.001926257136524478,
+            "Q": 0.1452819477508727,
+            "R": 0.06555818618795226,
+            "S": 0.10920101592467557,
+            "T": 0.04702802555145002,
+            "V": 0.0013495617681544294,
+            "W": 9.172653031068943e-05,
+            "Y": 0.001926257136524478
+          },
+          "non_gap_depth": 544.0985645117464,
+          "depth_kind": "effective_weighted",
+          "neff": 631.201790072901,
+          "gap_fraction": 0.1379958468607868,
+          "entropy_bits": 3.2944105318624337,
+          "homolog_support": "adequate",
+          "msa_column_1based": null,
+          "profile_scope": "full20AA, not query-dependent"
+        },
+        "wt_structure": {
+          "pLDDT": 97.76,
+          "confidence": "very_high",
+          "absolute_SASA_A2": 118.59,
+          "phi_deg": -61.83,
+          "psi_deg": -44.97,
+          "CA_neighbors_within8A": 5,
+          "contacts_complete": true,
+          "nearest_nonlocal_position_WT_distanceA": [
+            [
+              14,
+              "Q",
+              4.98
+            ],
+            [
+              8,
+              "A",
+              5.15
+            ],
+            [
+              7,
+              "N",
+              6.14
+            ]
+          ]
+        }
+      },
+      {
+        "position": 12,
+        "WT": "Q",
+        "chain": null,
+        "msa": {
+          "frequencies": {
+            "A": 0.059749608466067194,
+            "C": 8.379390379110629e-05,
+            "D": 0.04132933431321882,
+            "E": 0.098840810403466,
+            "F": 0.0001316761345288813,
+            "G": 0.0034355500554353576,
+            "H": 0.017474006163050407,
+            "I": 0.02167276738337986,
+            "K": 0.019356391775745555,
+            "L": 0.007532140907444999,
+            "M": 0.015494132202209299,
+            "N": 0.030746464155665416,
+            "P": 0.0034355500554353576,
+            "Q": 0.363284009920429,
+            "R": 0.06003857469467576,
+            "S": 0.07996690366953806,
+            "T": 0.14654723960947524,
+            "V": 0.030698495181756012,
+            "W": 8.379390379110629e-05,
+            "Y": 9.875710089666098e-05
+          },
+          "non_gap_depth": 595.7021195795737,
+          "depth_kind": "effective_weighted",
+          "neff": 631.201790072901,
+          "gap_fraction": 0.056241397048679476,
+          "entropy_bits": 3.0831659605928268,
+          "homolog_support": "adequate",
+          "msa_column_1based": null,
+          "profile_scope": "full20AA, not query-dependent"
+        },
+        "wt_structure": {
+          "pLDDT": 97.89,
+          "confidence": "very_high",
+          "absolute_SASA_A2": 103.43,
+          "phi_deg": -58.95,
+          "psi_deg": -43.77,
+          "CA_neighbors_within8A": 5,
+          "contacts_complete": true,
+          "nearest_nonlocal_position_WT_distanceA": [
+            [
+              9,
+              "M",
+              5.18
+            ],
+            [
+              15,
+              "E",
+              5.37
+            ],
+            [
+              8,
+              "A",
+              6.44
+            ]
+          ]
+        }
+      },
+      {
+        "position": 13,
+        "WT": "I",
+        "chain": null,
+        "msa": {
+          "frequencies": {
+            "A": 0.006562829272700116,
+            "C": 0.003685935545055593,
+            "D": 7.93625543709429e-05,
+            "E": 7.93625543709429e-05,
+            "F": 0.05283560765493122,
+            "G": 7.93625543709429e-05,
+            "H": 7.93625543709429e-05,
+            "I": 0.20889949865632967,
+            "K": 7.93625543709429e-05,
+            "L": 0.3642912384290379,
+            "M": 0.01145655385856206,
+            "N": 7.93625543709429e-05,
+            "P": 7.93625543709429e-05,
+            "Q": 7.93625543709429e-05,
+            "R": 7.93625543709429e-05,
+            "S": 7.93625543709429e-05,
+            "T": 7.93625543709429e-05,
+            "V": 0.3512366233765612,
+            "W": 7.93625543709429e-05,
+            "Y": 7.93625543709429e-05
+          },
+          "non_gap_depth": 629.020044041155,
+          "depth_kind": "effective_weighted",
+          "neff": 631.201790072901,
+          "gap_fraction": 0.003456495317438857,
+          "entropy_bits": 1.9222823274623468,
+          "homolog_support": "adequate",
+          "msa_column_1based": null,
+          "profile_scope": "full20AA, not query-dependent"
+        },
+        "wt_structure": {
+          "pLDDT": 98.1,
+          "confidence": "very_high",
+          "absolute_SASA_A2": 0.0,
+          "phi_deg": -64.99,
+          "psi_deg": -38.91,
+          "CA_neighbors_within8A": 7,
+          "contacts_complete": true,
+          "nearest_nonlocal_position_WT_distanceA": [
+            [
+              10,
+              "A",
+              5.12
+            ],
+            [
+              16,
+              "M",
+              5.26
+            ],
+            [
+              17,
+              "F",
+              6.05
+            ]
+          ]
+        }
+      },
+      {
+        "position": 14,
+        "WT": "Q",
+        "chain": null,
+        "msa": {
+          "frequencies": {
+            "A": 0.054498726064579436,
+            "C": 0.009435661108366156,
+            "D": 0.0019364154645725234,
+            "E": 0.012665731021635152,
+            "F": 0.00175668628773011,
+            "G": 0.005416678386831273,
+            "H": 0.07132302206865715,
+            "I": 0.008824436317515337,
+            "K": 0.2603889866991561,
+            "L": 0.04804130556137772,
+            "M": 0.01254050847500804,
+            "N": 0.004039912497246698,
+            "P": 0.0001108995587479486,
+            "Q": 0.23342937074934206,
+            "R": 0.1195264439237958,
+            "S": 0.08000179630875284,
+            "T": 0.04186718104572172,
+            "V": 0.028165414837622995,
+            "W": 0.002254957694541621,
+            "Y": 0.003775865928799201
+          },
+          "non_gap_depth": 630.2017900729011,
+          "depth_kind": "effective_weighted",
+          "neff": 631.201790072901,
+          "gap_fraction": 0.0015842794106848412,
+          "entropy_bits": 3.141702223041798,
+          "homolog_support": "adequate",
+          "msa_column_1based": null,
+          "profile_scope": "full20AA, not query-dependent"
+        },
+        "wt_structure": {
+          "pLDDT": 97.38,
+          "confidence": "very_high",
+          "absolute_SASA_A2": 46.08,
+          "phi_deg": -65.78,
+          "psi_deg": -28.91,
+          "CA_neighbors_within8A": 8,
+          "contacts_complete": true,
+          "nearest_nonlocal_position_WT_distanceA": [
+            [
+              11,
+              "H",
+              4.98
+            ],
+            [
+              17,
+              "F",
+              4.99
+            ],
+            [
+              18,
+              "P",
+              5.02
+            ]
+          ]
+        }
+      },
+      {
+        "position": 15,
+        "WT": "E",
+        "chain": null,
+        "msa": {
+          "frequencies": {
+            "A": 0.14229749784774398,
+            "C": 0.001660862111571879,
+            "D": 0.1331202039707715,
+            "E": 0.3553290319193165,
+            "F": 0.00021090312527896875,
+            "G": 0.02089066411416039,
+            "H": 0.004620716405320933,
+            "I": 0.00893001075244943,
+            "K": 0.001593071821303639,
+            "L": 0.002282471322920418,
+            "M": 0.0025971306811989913,
+            "N": 0.043855057409270946,
+            "P": 0.0018083468145641648,
+            "Q": 0.06212016589422239,
+            "R": 0.008088614179733175,
+            "S": 0.11937651617587988,
+            "T": 0.07413116050959195,
+            "V": 0.016929397600741684,
+            "W": 7.908867197961328e-05,
+            "Y": 7.908867197961328e-05
+          },
+          "non_gap_depth": 631.201790072901,
+          "depth_kind": "effective_weighted",
+          "neff": 631.201790072901,
+          "gap_fraction": 0.0,
+          "entropy_bits": 2.8719169197147556,
+          "homolog_support": "adequate",
+          "msa_column_1based": null,
+          "profile_scope": "full20AA, not query-dependent"
+        },
+        "wt_structure": {
+          "pLDDT": 97.82,
+          "confidence": "very_high",
+          "absolute_SASA_A2": 160.09,
+          "phi_deg": -66.04,
+          "psi_deg": -30.92,
+          "CA_neighbors_within8A": 3,
+          "contacts_complete": true,
+          "nearest_nonlocal_position_WT_distanceA": [
+            [
+              12,
+              "Q",
+              5.37
+            ],
+            [
+              18,
+              "P",
+              5.95
+            ],
+            [
+              11,
+              "H",
+              6.44
+            ]
+          ]
+        }
+      },
+      {
+        "position": 16,
+        "WT": "M",
+        "chain": null,
+        "msa": {
+          "frequencies": {
+            "A": 0.031217428668524498,
+            "C": 0.004033522270960277,
+            "D": 7.908867197961328e-05,
+            "E": 7.908867197961328e-05,
+            "F": 0.007548003733604131,
+            "G": 7.908867197961328e-05,
+            "H": 0.0008699753917757461,
+            "I": 0.10919910153386093,
+            "K": 7.908867197961328e-05,
+            "L": 0.15712015316118355,
+            "M": 0.5058538441439411,
+            "N": 7.908867197961328e-05,
+            "P": 7.908867197961328e-05,
+            "Q": 0.003242635551164144,
+            "R": 7.908867197961328e-05,
+            "S": 0.003242635551164144,
+            "T": 0.006406182430348676,
+            "V": 0.17055471951565632,
+            "W": 7.908867197961328e-05,
+            "Y": 7.908867197961328e-05
+          },
+          "non_gap_depth": 631.201790072901,
+          "depth_kind": "effective_weighted",
+          "neff": 631.201790072901,
+          "gap_fraction": 0.0,
+          "entropy_bits": 2.0612427949935768,
+          "homolog_support": "adequate",
+          "msa_column_1based": null,
+          "profile_scope": "full20AA, not query-dependent"
+        },
+        "wt_structure": {}
+      },
+      {
+        "position": 17,
+        "WT": "F",
+        "chain": null,
+        "msa": {
+          "frequencies": {
+            "A": 0.041892516322153725,
+            "C": 0.023946292349382906,
+            "D": 7.908867197961327e-05,
+            "E": 7.908867197961327e-05,
+            "F": 0.7758226689976698,
+            "G": 0.0032426355511641436,
+            "H": 0.0016608621115718786,
+            "I": 0.0032426355511641436,
+            "K": 7.908867197961327e-05,
+            "L": 0.12511536818136015,
+            "M": 0.005014861143371213,
+            "N": 7.908867197961327e-05,
+            "P": 7.908867197961327e-05,
+            "Q": 7.908867197961327e-05,
+            "R": 7.908867197961327e-05,
+            "S": 7.908867197961327e-05,
+            "T": 0.0024517488313680114,
+            "V": 0.011942389468921602,
+            "W": 7.908867197961327e-05,
+            "Y": 0.004956223444055764
+          },
+          "non_gap_depth": 631.2017900729011,
+          "depth_kind": "effective_weighted",
+          "neff": 631.201790072901,
+          "gap_fraction": -2.220446049250313e-16,
+          "entropy_bits": 1.2324288604347908,
+          "homolog_support": "adequate",
+          "msa_column_1based": null,
+          "profile_scope": "full20AA, not query-dependent"
+        },
+        "wt_structure": {
+          "pLDDT": 97.83,
+          "confidence": "very_high",
+          "absolute_SASA_A2": 26.88,
+          "phi_deg": -127.38,
+          "psi_deg": 61.35,
+          "CA_neighbors_within8A": 3,
+          "contacts_complete": true,
+          "nearest_nonlocal_position_WT_distanceA": [
+            [
+              14,
+              "Q",
+              4.99
+            ],
+            [
+              20,
+              "V",
+              5.67
+            ],
+            [
+              13,
+              "I",
+              6.05
+            ]
+          ]
+        }
+      },
+      {
+        "position": 18,
+        "WT": "P",
+        "chain": null,
+        "msa": {
+          "frequencies": {
+            "A": 0.003443399103112394,
+            "C": 7.90886719796133e-05,
+            "D": 0.003242635551164145,
+            "E": 0.009039794592172143,
+            "F": 7.90886719796133e-05,
+            "G": 0.008877703429711592,
+            "H": 0.0016608621115718793,
+            "I": 7.90886719796133e-05,
+            "K": 7.90886719796133e-05,
+            "L": 7.90886719796133e-05,
+            "M": 7.90886719796133e-05,
+            "N": 0.001759722951546396,
+            "P": 0.9327309042633568,
+            "Q": 0.014526257566307025,
+            "R": 0.0016608621115718793,
+            "S": 0.016600650939472786,
+            "T": 0.004163635892604157,
+            "V": 0.0016608621115718793,
+            "W": 7.90886719796133e-05,
+            "Y": 7.90886719796133e-05
+          },
+          "non_gap_depth": 631.2017900729008,
+          "depth_kind": "effective_weighted",
+          "neff": 631.201790072901,
+          "gap_fraction": 2.220446049250313e-16,
+          "entropy_bits": 0.5610739390708457,
+          "homolog_support": "adequate",
+          "msa_column_1based": null,
+          "profile_scope": "full20AA, not query-dependent"
+        },
+        "wt_structure": {
+          "pLDDT": 97.42,
+          "confidence": "very_high",
+          "absolute_SASA_A2": 98.16,
+          "phi_deg": -54.92,
+          "psi_deg": -25.28,
+          "CA_neighbors_within8A": 3,
+          "contacts_complete": true,
+          "nearest_nonlocal_position_WT_distanceA": [
+            [
+              14,
+              "Q",
+              5.02
+            ],
+            [
+              15,
+              "E",
+              5.95
+            ],
+            [
+              21,
+              "P",
+              7.66
+            ]
+          ]
+        }
+      },
+      {
+        "position": 19,
+        "WT": "Q",
+        "chain": null,
+        "msa": {
+          "frequencies": {
+            "A": 0.034046371051268946,
+            "C": 7.908867197961328e-05,
+            "D": 0.2629222252057179,
+            "E": 0.02890339636461336,
+            "F": 0.003242635551164144,
+            "G": 0.061177632865384725,
+            "H": 0.13095944290154296,
+            "I": 0.0020563054714699456,
+            "K": 0.010360616029329339,
+            "L": 0.00858960759376759,
+            "M": 0.0032920659711514026,
+            "N": 0.18083625233276865,
+            "P": 7.908867197961328e-05,
+            "Q": 0.1209209191102028,
+            "R": 0.01095378106917644,
+            "S": 0.07466948681604756,
+            "T": 0.056579227810189196,
+            "V": 0.001708794640044372,
+            "W": 7.908867197961328e-05,
+            "Y": 0.008543973200221858
+          },
+          "non_gap_depth": 631.201790072901,
+          "depth_kind": "effective_weighted",
+          "neff": 631.201790072901,
+          "gap_fraction": 0.0,
+          "entropy_bits": 3.1284246558903703,
+          "homolog_support": "adequate",
+          "msa_column_1based": null,
+          "profile_scope": "full20AA, not query-dependent"
+        },
+        "wt_structure": {
+          "pLDDT": 97.22,
+          "confidence": "very_high",
+          "absolute_SASA_A2": 151.49,
+          "phi_deg": -75.92,
+          "psi_deg": -18.74,
+          "CA_neighbors_within8A": 1,
+          "contacts_complete": true,
+          "nearest_nonlocal_position_WT_distanceA": [
+            [
+              14,
+              "Q",
+              7.98
+            ],
+            [
+              22,
+              "Y",
+              8.87
+            ],
+            [
+              16,
+              "M",
+              9.04
+            ]
+          ]
+        }
+      },
+      {
+        "position": 20,
+        "WT": "V",
+        "chain": null,
+        "msa": {
+          "frequencies": {
+            "A": 0.03156185700588097,
+            "C": 0.01040580955617483,
+            "D": 7.908867197961327e-05,
+            "E": 0.004824408990756409,
+            "F": 0.04249466450155823,
+            "G": 7.908867197961327e-05,
+            "H": 0.006406182430348674,
+            "I": 0.18286860766806828,
+            "K": 0.009410312558307349,
+            "L": 0.2433493842860299,
+            "M": 0.08791620907341478,
+            "N": 7.908867197961327e-05,
+            "P": 7.908867197961327e-05,
+            "Q": 0.001715406023281957,
+            "R": 0.0033496313337883065,
+            "S": 0.0021881199247693003,
+            "T": 0.027033368029598243,
+            "V": 0.20441382314820888,
+            "W": 0.09879987880777455,
+            "Y": 0.04294598197412077
+          },
+          "non_gap_depth": 631.2017900729011,
+          "depth_kind": "effective_weighted",
+          "neff": 631.201790072901,
+          "gap_fraction": -2.220446049250313e-16,
+          "entropy_bits": 3.0203785138993244,
+          "homolog_support": "adequate",
+          "msa_column_1based": null,
+          "profile_scope": "full20AA, not query-dependent"
+        },
+        "wt_structure": {}
+      },
+      {
+        "position": 21,
+        "WT": "P",
+        "chain": null,
+        "msa": {
+          "frequencies": {
+            "A": 0.021852998677086448,
+            "C": 0.001660862111571879,
+            "D": 0.30073920150461547,
+            "E": 0.09436284075590332,
+            "F": 7.908867197961328e-05,
+            "G": 0.0750562218698277,
+            "H": 0.017049885690335206,
+            "I": 7.908867197961328e-05,
+            "K": 0.006406182430348676,
+            "L": 0.0001423596095633039,
+            "M": 7.908867197961328e-05,
+            "N": 0.01762659991496037,
+            "P": 0.15688834440327043,
+            "Q": 0.01237983889483714,
+            "R": 0.014842307441507425,
+            "S": 0.2185584296658418,
+            "T": 0.060377621558860915,
+            "V": 0.001660862111571879,
+            "W": 7.908867197961328e-05,
+            "Y": 7.908867197961328e-05
+          },
+          "non_gap_depth": 631.201790072901,
+          "depth_kind": "effective_weighted",
+          "neff": 631.201790072901,
+          "gap_fraction": 0.0,
+          "entropy_bits": 2.842862698257702,
+          "homolog_support": "adequate",
+          "msa_column_1based": null,
+          "profile_scope": "full20AA, not query-dependent"
+        },
+        "wt_structure": {}
+      },
+      {
+        "position": 22,
+        "WT": "Y",
+        "chain": null,
+        "msa": {
+          "frequencies": {
+            "A": 0.04946659618852543,
+            "C": 0.001715406023281957,
+            "D": 0.12581608520375626,
+            "E": 0.15636846894450762,
+            "F": 0.0004089772502902996,
+            "G": 0.0021412702094400116,
+            "H": 0.010455211073510043,
+            "I": 0.040598604756068225,
+            "K": 0.06004532942928471,
+            "L": 0.07016870526130724,
+            "M": 0.005932295644046586,
+            "N": 0.02748122471995455,
+            "P": 0.057559710506446114,
+            "Q": 0.02343500101134722,
+            "R": 0.18768523113812138,
+            "S": 0.04834133501937466,
+            "T": 0.04690763742606852,
+            "V": 0.06620521494317849,
+            "W": 7.908867197961327e-05,
+            "Y": 0.019188606579510884
+          },
+          "non_gap_depth": 631.2017900729011,
+          "depth_kind": "effective_weighted",
+          "neff": 631.201790072901,
+          "gap_fraction": -2.220446049250313e-16,
+          "entropy_bits": 3.609374776263003,
+          "homolog_support": "adequate",
+          "msa_column_1based": null,
+          "profile_scope": "full20AA, not query-dependent"
+        },
+        "wt_structure": {
+          "pLDDT": 97.84,
+          "confidence": "very_high",
+          "absolute_SASA_A2": 74.0,
+          "phi_deg": -52.65,
+          "psi_deg": -33.27,
+          "CA_neighbors_within8A": 5,
+          "contacts_complete": true,
+          "nearest_nonlocal_position_WT_distanceA": [
+            [
+              25,
+              "V",
+              5.1
+            ],
+            [
+              26,
+              "L",
+              6.19
+            ],
+            [
+              14,
+              "Q",
+              6.68
+            ]
+          ]
+        }
+      },
+      {
+        "position": 23,
+        "WT": "H",
+        "chain": null,
+        "msa": {
+          "frequencies": {
+            "A": 0.11151606155238138,
+            "C": 7.908867197961327e-05,
+            "D": 0.21158826330960512,
+            "E": 0.26544107107932974,
+            "F": 0.0016608621115718786,
+            "G": 0.0893251402777489,
+            "H": 0.01072364716573363,
+            "I": 0.0037099777037709492,
+            "K": 0.022280408734828193,
+            "L": 0.005772919986875546,
+            "M": 7.908867197961327e-05,
+            "N": 0.02860885593280128,
+            "P": 0.00805762922382774,
+            "Q": 0.05053270167859535,
+            "R": 0.05010858280239098,
+            "S": 0.08476558697633944,
+            "T": 0.02355451626823805,
+            "V": 0.031718407377369175,
+            "W": 7.908867197961327e-05,
+            "Y": 0.0003981018026536836
+          },
+          "non_gap_depth": 631.2017900729011,
+          "depth_kind": "effective_weighted",
+          "neff": 631.201790072901,
+          "gap_fraction": -2.220446049250313e-16,
+          "entropy_bits": 3.158471822961369,
+          "homolog_support": "adequate",
+          "msa_column_1based": null,
+          "profile_scope": "full20AA, not query-dependent"
+        },
+        "wt_structure": {
+          "pLDDT": 97.39,
+          "confidence": "very_high",
+          "absolute_SASA_A2": 127.64,
+          "phi_deg": -69.24,
+          "psi_deg": -32.66,
+          "CA_neighbors_within8A": 2,
+          "contacts_complete": true,
+          "nearest_nonlocal_position_WT_distanceA": [
+            [
+              26,
+              "L",
+              5.0
+            ],
+            [
+              27,
+              "Q",
+              6.05
+            ],
+            [
+              20,
+              "V",
+              8.64
+            ]
+          ]
+        }
+      },
+      {
+        "position": 24,
+        "WT": "L",
+        "chain": null,
+        "msa": {
+          "frequencies": {
+            "A": 0.10020081055719064,
+            "C": 0.0016608919656036659,
+            "D": 0.1527369362349771,
+            "E": 0.022035851569863336,
+            "F": 0.07301140905893587,
+            "G": 0.0032652910072072066,
+            "H": 0.007355378704816233,
+            "I": 0.06182332478592733,
+            "K": 0.004824495709610648,
+            "L": 0.06330978794545508,
+            "M": 0.005504128337959311,
+            "N": 0.03200936520775903,
+            "P": 7.909009360017457e-05,
+            "Q": 0.06336585214892451,
+            "R": 0.009569901325621123,
+            "S": 0.022721302307645207,
+            "T": 0.07422750107315844,
+            "V": 0.27941483471407436,
+            "W": 7.909009360017457e-05,
+            "Y": 0.02280475715807067
+          },
+          "non_gap_depth": 631.1904264365372,
+          "depth_kind": "effective_weighted",
+          "neff": 631.201790072901,
+          "gap_fraction": 1.8003175121572568e-05,
+          "entropy_bits": 3.335186356309963,
+          "homolog_support": "adequate",
+          "msa_column_1based": null,
+          "profile_scope": "full20AA, not query-dependent"
+        },
+        "wt_structure": {
+          "pLDDT": 98.1,
+          "confidence": "very_high",
+          "absolute_SASA_A2": 52.63,
+          "phi_deg": -70.7,
+          "psi_deg": -41.78,
+          "CA_neighbors_within8A": 5,
+          "contacts_complete": true,
+          "nearest_nonlocal_position_WT_distanceA": [
+            [
+              27,
+              "Q",
+              4.97
+            ],
+            [
+              21,
+              "P",
+              5.54
+            ],
+            [
+              28,
+              "D",
+              6.17
+            ]
+          ]
+        }
+      },
+      {
+        "position": 25,
+        "WT": "V",
+        "chain": null,
+        "msa": {
+          "frequencies": {
+            "A": 0.009083520146202347,
+            "C": 0.004824495709610647,
+            "D": 7.909009360017456e-05,
+            "E": 7.909009360017456e-05,
+            "F": 7.909009360017456e-05,
+            "G": 7.909009360017456e-05,
+            "H": 0.0016608919656036657,
+            "I": 0.6847293639203355,
+            "K": 7.909009360017456e-05,
+            "L": 0.14273962540192076,
+            "M": 7.909009360017456e-05,
+            "N": 7.909009360017456e-05,
+            "P": 7.909009360017456e-05,
+            "Q": 7.909009360017456e-05,
+            "R": 7.909009360017456e-05,
+            "S": 7.909009360017456e-05,
+            "T": 0.0032627166461135296,
+            "V": 0.15267121499341132,
+            "W": 7.909009360017456e-05,
+            "Y": 7.909009360017456e-05
+          },
+          "non_gap_depth": 631.1904264365373,
+          "depth_kind": "effective_weighted",
+          "neff": 631.201790072901,
+          "gap_fraction": 1.8003175121350523e-05,
+          "entropy_bits": 1.3440216440050028,
+          "homolog_support": "adequate",
+          "msa_column_1based": null,
+          "profile_scope": "full20AA, not query-dependent"
+        },
+        "wt_structure": {}
+      },
+      {
+        "position": 26,
+        "WT": "L",
+        "chain": null,
+        "msa": {
+          "frequencies": {
+            "A": 0.06008039944419007,
+            "C": 0.00414667568275926,
+            "D": 0.016161112947066295,
+            "E": 0.19848665412518623,
+            "F": 0.006126317452488693,
+            "G": 0.007246808027898594,
+            "H": 0.018267398919249146,
+            "I": 0.055829813992566216,
+            "K": 0.12307947141505306,
+            "L": 0.10738342270863473,
+            "M": 0.0250187343421032,
+            "N": 0.003242768176980676,
+            "P": 7.909190675562625e-05,
+            "Q": 0.0579790201169773,
+            "R": 0.18960969358344665,
+            "S": 0.008006172893815,
+            "T": 0.017725039388623503,
+            "V": 0.09318261723575422,
+            "W": 0.0016609300418681512,
+            "Y": 0.006687857598583423
+          },
+          "non_gap_depth": 631.1759336829141,
+          "depth_kind": "effective_weighted",
+          "neff": 631.201790072901,
+          "gap_fraction": 4.09637462908119e-05,
+          "entropy_bits": 3.3835389159704796,
+          "homolog_support": "adequate",
+          "msa_column_1based": null,
+          "profile_scope": "full20AA, not query-dependent"
+        },
+        "wt_structure": {
+          "pLDDT": 97.66,
+          "confidence": "very_high",
+          "absolute_SASA_A2": 28.26,
+          "phi_deg": -60.74,
+          "psi_deg": -42.15,
+          "CA_neighbors_within8A": 7,
+          "contacts_complete": true,
+          "nearest_nonlocal_position_WT_distanceA": [
+            [
+              23,
+              "H",
+              5.0
+            ],
+            [
+              29,
+              "L",
+              5.05
+            ],
+            [
+              10,
+              "A",
+              5.72
+            ]
+          ]
+        }
+      },
+      {
+        "position": 27,
+        "WT": "Q",
+        "chain": null,
+        "msa": {
+          "frequencies": {
+            "A": 0.1545014563713462,
+            "C": 0.02215582553046496,
+            "D": 0.037701160331928635,
+            "E": 0.038483075999205585,
+            "F": 0.03867414069928645,
+            "G": 0.02813914282572391,
+            "H": 0.010295129862690678,
+            "I": 0.0008084467611779301,
+            "K": 0.04449795481244275,
+            "L": 0.03844669049986172,
+            "M": 0.02431316382892287,
+            "N": 0.012899513363715228,
+            "P": 0.0016609300418681506,
+            "Q": 0.053657903332621805,
+            "R": 0.12253770567826283,
+            "S": 0.15762261104580266,
+            "T": 0.05552022620865012,
+            "V": 0.0071657241678138505,
+            "W": 0.04733921990563809,
+            "Y": 0.10357997873257527
+          },
+          "non_gap_depth": 631.1759336829143,
+          "depth_kind": "effective_weighted",
+          "neff": 631.201790072901,
+          "gap_fraction": 4.096374629047883e-05,
+          "entropy_bits": 3.75459940352345,
+          "homolog_support": "adequate",
+          "msa_column_1based": null,
+          "profile_scope": "full20AA, not query-dependent"
+        },
+        "wt_structure": {
+          "pLDDT": 97.62,
+          "confidence": "very_high",
+          "absolute_SASA_A2": 114.86,
+          "phi_deg": -62.19,
+          "psi_deg": -45.08,
+          "CA_neighbors_within8A": 4,
+          "contacts_complete": true,
+          "nearest_nonlocal_position_WT_distanceA": [
+            [
+              24,
+              "L",
+              4.97
+            ],
+            [
+              30,
+              "Q",
+              5.25
+            ],
+            [
+              23,
+              "H",
+              6.05
+            ]
+          ]
+        }
+      },
+      {
+        "position": 28,
+        "WT": "D",
+        "chain": null,
+        "msa": {
+          "frequencies": {
+            "A": 0.15233940354813866,
+            "C": 0.07174676951895424,
+            "D": 0.22783067499266998,
+            "E": 0.04639352367079756,
+            "F": 0.0025012365903350486,
+            "G": 0.001660900186467542,
+            "H": 0.002376480765671245,
+            "I": 0.06001118948321963,
+            "K": 0.003242709887865201,
+            "L": 0.06585751190272364,
+            "M": 0.00482451958926286,
+            "N": 0.011905001109804764,
+            "P": 7.909048506988296e-05,
+            "Q": 0.007197234141359349,
+            "R": 0.003242709887865201,
+            "S": 0.039818784264360196,
+            "T": 0.01573900652890671,
+            "V": 0.27674783367079786,
+            "W": 0.001660900186467542,
+            "Y": 0.00482451958926286
+          },
+          "non_gap_depth": 631.1872973192778,
+          "depth_kind": "effective_weighted",
+          "neff": 631.201790072901,
+          "gap_fraction": 2.296057116923933e-05,
+          "entropy_bits": 3.001626815677832,
+          "homolog_support": "adequate",
+          "msa_column_1based": null,
+          "profile_scope": "full20AA, not query-dependent"
+        },
+        "wt_structure": {
+          "pLDDT": 98.51,
+          "confidence": "very_high",
+          "absolute_SASA_A2": 12.19,
+          "phi_deg": -66.39,
+          "psi_deg": -42.42,
+          "CA_neighbors_within8A": 7,
+          "contacts_complete": true,
+          "nearest_nonlocal_position_WT_distanceA": [
+            [
+              31,
+              "L",
+              5.28
+            ],
+            [
+              25,
+              "V",
+              5.29
+            ],
+            [
+              32,
+              "T",
+              6.07
+            ]
+          ]
+        }
+      },
+      {
+        "position": 29,
+        "WT": "L",
+        "chain": null,
+        "msa": {
+          "frequencies": {
+            "A": 0.0024900948541460056,
+            "C": 7.908867197961328e-05,
+            "D": 7.908867197961328e-05,
+            "E": 7.908867197961328e-05,
+            "F": 0.023927544155608802,
+            "G": 0.0021881199247693007,
+            "H": 7.908867197961328e-05,
+            "I": 0.012927194329357084,
+            "K": 7.908867197961328e-05,
+            "L": 0.9124961874560167,
+            "M": 0.013621188222311004,
+            "N": 7.908867197961328e-05,
+            "P": 7.908867197961328e-05,
+            "Q": 7.908867197961328e-05,
+            "R": 0.001660862111571879,
+            "S": 7.908867197961328e-05,
+            "T": 0.002319934378068656,
+            "V": 0.008383399229839007,
+            "W": 0.00020148780718615763,
+            "Y": 0.019072189483308934
+          },
+          "non_gap_depth": 631.201790072901,
+          "depth_kind": "effective_weighted",
+          "neff": 631.201790072901,
+          "gap_fraction": 0.0,
+          "entropy_bits": 0.6703894074834219,
+          "homolog_support": "adequate",
+          "msa_column_1based": null,
+          "profile_scope": "full20AA, not query-dependent"
+        },
+        "wt_structure": {}
+      },
+      {
+        "position": 30,
+        "WT": "Q",
+        "chain": null,
+        "msa": {
+          "frequencies": {
+            "A": 0.07747801535563999,
+            "C": 7.908867197961328e-05,
+            "D": 0.054347720503438154,
+            "E": 0.28552364113392753,
+            "F": 0.001660862111571879,
+            "G": 0.009569729309533207,
+            "H": 0.017890125104795925,
+            "I": 0.00713116192349513,
+            "K": 0.0485639218726895,
+            "L": 0.0737288057112383,
+            "M": 0.011132672112939848,
+            "N": 0.019225314236242148,
+            "P": 7.908867197961328e-05,
+            "Q": 0.18072087701164416,
+            "R": 0.1032566761395623,
+            "S": 0.050159506257346886,
+            "T": 0.020888197032837865,
+            "V": 0.028915778857625148,
+            "W": 0.001660862111571879,
+            "Y": 0.007987955869940942
+          },
+          "non_gap_depth": 631.201790072901,
+          "depth_kind": "effective_weighted",
+          "neff": 631.201790072901,
+          "gap_fraction": 0.0,
+          "entropy_bits": 3.2742966474083364,
+          "homolog_support": "adequate",
+          "msa_column_1based": null,
+          "profile_scope": "full20AA, not query-dependent"
+        },
+        "wt_structure": {
+          "pLDDT": 97.4,
+          "confidence": "very_high",
+          "absolute_SASA_A2": 90.91,
+          "phi_deg": -62.81,
+          "psi_deg": -31.16,
+          "CA_neighbors_within8A": 4,
+          "contacts_complete": true,
+          "nearest_nonlocal_position_WT_distanceA": [
+            [
+              27,
+              "Q",
+              5.25
+            ],
+            [
+              33,
+              "R",
+              5.73
+            ],
+            [
+              26,
+              "L",
+              6.2
+            ]
+          ]
+        }
+      },
+      {
+        "position": 31,
+        "WT": "L",
+        "chain": null,
+        "msa": {
+          "frequencies": {
+            "A": 0.16954815017117741,
+            "C": 0.009066009791567811,
+            "D": 0.018049792471791743,
+            "E": 0.17063814840289512,
+            "F": 0.016976446209211276,
+            "G": 0.004824408990756409,
+            "H": 0.04090861558145496,
+            "I": 0.026466278299674406,
+            "K": 0.08048300258429199,
+            "L": 0.03137780292003871,
+            "M": 0.0056152957105525415,
+            "N": 0.01902681717715605,
+            "P": 7.908867197961327e-05,
+            "Q": 0.05517314069600483,
+            "R": 0.2048526642691278,
+            "S": 0.07625140958549717,
+            "T": 0.029152732001280605,
+            "V": 0.036870327709404085,
+            "W": 7.908867197961327e-05,
+            "Y": 0.004560780084157698
+          },
+          "non_gap_depth": 631.2017900729011,
+          "depth_kind": "effective_weighted",
+          "neff": 631.201790072901,
+          "gap_fraction": -2.220446049250313e-16,
+          "entropy_bits": 3.443899052591124,
+          "homolog_support": "adequate",
+          "msa_column_1based": null,
+          "profile_scope": "full20AA, not query-dependent"
+        },
+        "wt_structure": {}
+      },
+      {
+        "position": 32,
+        "WT": "T",
+        "chain": null,
+        "msa": {
+          "frequencies": {
+            "A": 0.01734678205419518,
+            "C": 0.055995370621749876,
+            "D": 7.908867197961328e-05,
+            "E": 0.007987955869940942,
+            "F": 0.011147736621888348,
+            "G": 0.0029790066445654333,
+            "H": 0.0530032893197736,
+            "I": 0.001660862111571879,
+            "K": 0.028313744568701556,
+            "L": 0.012645399886518168,
+            "M": 7.908867197961328e-05,
+            "N": 0.24986455547056546,
+            "P": 7.908867197961328e-05,
+            "Q": 0.025118677771912772,
+            "R": 0.015228963171185533,
+            "S": 0.12032088069820697,
+            "T": 0.3072806179731644,
+            "V": 0.016358173654450015,
+            "W": 7.908867197961328e-05,
+            "Y": 0.07443162887369141
+          },
+          "non_gap_depth": 631.201790072901,
+          "depth_kind": "effective_weighted",
+          "neff": 631.201790072901,
+          "gap_fraction": 0.0,
+          "entropy_bits": 2.948985083250259,
+          "homolog_support": "adequate",
+          "msa_column_1based": null,
+          "profile_scope": "full20AA, not query-dependent"
+        },
+        "wt_structure": {
+          "pLDDT": 97.61,
+          "confidence": "very_high",
+          "absolute_SASA_A2": 36.24,
+          "phi_deg": -75.86,
+          "psi_deg": -35.01,
+          "CA_neighbors_within8A": 5,
+          "contacts_complete": true,
+          "nearest_nonlocal_position_WT_distanceA": [
+            [
+              29,
+              "L",
+              4.99
+            ],
+            [
+              28,
+              "D",
+              6.07
+            ],
+            [
+              37,
+              "I",
+              6.42
+            ]
+          ]
+        }
+      },
+      {
+        "position": 33,
+        "WT": "R",
+        "chain": null,
+        "msa": {
+          "frequencies": {
+            "A": 0.007592512510042873,
+            "C": 0.0024517488313680114,
+            "D": 0.018412344315828322,
+            "E": 0.004297151177558987,
+            "F": 9.83785919746409e-05,
+            "G": 0.6477327926281491,
+            "H": 0.008934693150055404,
+            "I": 7.908867197961327e-05,
+            "K": 0.018005854320691954,
+            "L": 0.0033553438402121986,
+            "M": 0.004033522270960276,
+            "N": 0.16641893673082117,
+            "P": 0.012970542204656578,
+            "Q": 0.012808598733460226,
+            "R": 0.06971019433657043,
+            "S": 0.007222640957653398,
+            "T": 0.002056305471469945,
+            "V": 7.908867197961327e-05,
+            "W": 0.004824408990756409,
+            "Y": 0.008915853593810768
+          },
+          "non_gap_depth": 631.2017900729011,
+          "depth_kind": "effective_weighted",
+          "neff": 631.201790072901,
+          "gap_fraction": -2.220446049250313e-16,
+          "entropy_bits": 1.8765383073089308,
+          "homolog_support": "adequate",
+          "msa_column_1based": null,
+          "profile_scope": "full20AA, not query-dependent"
+        },
+        "wt_structure": {
+          "pLDDT": 97.09,
+          "confidence": "very_high",
+          "absolute_SASA_A2": 177.24,
+          "phi_deg": 52.88,
+          "psi_deg": 26.61,
+          "CA_neighbors_within8A": 4,
+          "contacts_complete": true,
+          "nearest_nonlocal_position_WT_distanceA": [
+            [
+              29,
+              "L",
+              4.78
+            ],
+            [
+              30,
+              "Q",
+              5.73
+            ],
+            [
+              6,
+              "L",
+              7.38
+            ]
+          ]
+        }
+      },
+      {
+        "position": 34,
+        "WT": "S",
+        "chain": null,
+        "msa": {
+          "frequencies": {
+            "A": 0.009956164822792279,
+            "C": 0.014872656227295406,
+            "D": 0.28523181730126745,
+            "E": 0.003506264457762855,
+            "F": 7.908867197961328e-05,
+            "G": 0.0020563054714699456,
+            "H": 0.022223916826271332,
+            "I": 0.00022137259860322375,
+            "K": 0.003960091445466556,
+            "L": 0.0082461044696678,
+            "M": 0.000323886942392702,
+            "N": 0.3316939784947471,
+            "P": 7.908867197961328e-05,
+            "Q": 0.015369565254704847,
+            "R": 0.00935129392977999,
+            "S": 0.27282847131487087,
+            "T": 0.008085318818400692,
+            "V": 0.010146417542717886,
+            "W": 7.908867197961328e-05,
+            "Y": 0.0016891080658503121
+          },
+          "non_gap_depth": 631.201790072901,
+          "depth_kind": "effective_weighted",
+          "neff": 631.201790072901,
+          "gap_fraction": 0.0,
+          "entropy_bits": 2.273984384160029,
+          "homolog_support": "adequate",
+          "msa_column_1based": null,
+          "profile_scope": "full20AA, not query-dependent"
+        },
+        "wt_structure": {
+          "pLDDT": 97.75,
+          "confidence": "very_high",
+          "absolute_SASA_A2": 24.45,
+          "phi_deg": -144.25,
+          "psi_deg": 132.01,
+          "CA_neighbors_within8A": 4,
+          "contacts_complete": true,
+          "nearest_nonlocal_position_WT_distanceA": [
+            [
+              37,
+              "I",
+              5.48
+            ],
+            [
+              29,
+              "L",
+              6.24
+            ],
+            [
+              38,
+              "T",
+              6.27
+            ]
+          ]
+        }
+      },
+      {
+        "position": 35,
+        "WT": "V",
+        "chain": null,
+        "msa": {
+          "frequencies": {
+            "A": 0.06731425671685091,
+            "C": 0.001660862111571879,
+            "D": 7.908867197961328e-05,
+            "E": 0.006258430264481902,
+            "F": 0.003242635551164144,
+            "G": 0.001660862111571879,
+            "H": 0.0006449263251670904,
+            "I": 0.08682145917826992,
+            "K": 0.12158749223589042,
+            "L": 0.08085219843535214,
+            "M": 0.037946595151309215,
+            "N": 7.908867197961328e-05,
+            "P": 0.0442453983254502,
+            "Q": 0.012714663836839151,
+            "R": 0.019571606941604383,
+            "S": 0.01958762776028422,
+            "T": 0.028479044344658942,
+            "V": 0.4639320391424307,
+            "W": 7.908867197961328e-05,
+            "Y": 0.003242635551164144
+          },
+          "non_gap_depth": 631.201790072901,
+          "depth_kind": "effective_weighted",
+          "neff": 631.201790072901,
+          "gap_fraction": 0.0,
+          "entropy_bits": 2.71200389248496,
+          "homolog_support": "adequate",
+          "msa_column_1based": null,
+          "profile_scope": "full20AA, not query-dependent"
+        },
+        "wt_structure": {
+          "pLDDT": 97.94,
+          "confidence": "very_high",
+          "absolute_SASA_A2": 15.65,
+          "phi_deg": -67.54,
+          "psi_deg": -37.54,
+          "CA_neighbors_within8A": 8,
+          "contacts_complete": true,
+          "nearest_nonlocal_position_WT_distanceA": [
+            [
+              38,
+              "T",
+              5.21
+            ],
+            [
+              39,
+              "T",
+              5.95
+            ],
+            [
+              9,
+              "M",
+              6.16
+            ]
+          ]
+        }
+      },
+      {
+        "position": 36,
+        "WT": "E",
+        "chain": null,
+        "msa": {
+          "frequencies": {
+            "A": 0.04805480098094712,
+            "C": 7.9213970534249e-05,
+            "D": 0.2613887087429033,
+            "E": 0.48734471861042017,
+            "F": 7.9213970534249e-05,
+            "G": 0.010986931303662543,
+            "H": 0.0047002803912877715,
+            "I": 0.00018844547999543744,
+            "K": 0.001663493381219229,
+            "L": 7.9213970534249e-05,
+            "M": 0.0034968193770198255,
+            "N": 0.04079196539993052,
+            "P": 0.0072769976899518425,
+            "Q": 0.07744531836328451,
+            "R": 0.004832052202589188,
+            "S": 0.02493372486039548,
+            "T": 0.023662106668427385,
+            "V": 0.002837566695294457,
+            "W": 7.9213970534249e-05,
+            "Y": 7.9213970534249e-05
+          },
+          "non_gap_depth": 630.201790072901,
+          "depth_kind": "effective_weighted",
+          "neff": 631.201790072901,
+          "gap_fraction": 0.0015842794106849523,
+          "entropy_bits": 2.228824505319101,
+          "homolog_support": "adequate",
+          "msa_column_1based": null,
+          "profile_scope": "full20AA, not query-dependent"
+        },
+        "wt_structure": {}
+      },
+      {
+        "position": 37,
+        "WT": "I",
+        "chain": null,
+        "msa": {
+          "frequencies": {
+            "A": 0.27105734727221803,
+            "C": 7.908867197961328e-05,
+            "D": 0.020128691130545613,
+            "E": 0.04553345904055543,
+            "F": 0.002451748831368012,
+            "G": 0.018749099848154843,
+            "H": 0.008448394532597936,
+            "I": 0.03639712760783824,
+            "K": 0.03242782011667811,
+            "L": 0.1274868603325651,
+            "M": 0.01723374148280402,
+            "N": 0.01949355551924166,
+            "P": 0.007295929990119325,
+            "Q": 0.05746900992682053,
+            "R": 0.12022715223069885,
+            "S": 0.06272465677798088,
+            "T": 0.08475063718386641,
+            "V": 0.06156040840163908,
+            "W": 0.003242635551164144,
+            "Y": 0.003242635551164144
+          },
+          "non_gap_depth": 631.201790072901,
+          "depth_kind": "effective_weighted",
+          "neff": 631.201790072901,
+          "gap_fraction": 0.0,
+          "entropy_bits": 3.4494769811442523,
+          "homolog_support": "adequate",
+          "msa_column_1based": null,
+          "profile_scope": "full20AA, not query-dependent"
+        },
+        "wt_structure": {
+          "pLDDT": 98.52,
+          "confidence": "very_high",
+          "absolute_SASA_A2": 92.06,
+          "phi_deg": -63.68,
+          "psi_deg": -42.35,
+          "CA_neighbors_within8A": 4,
+          "contacts_complete": true,
+          "nearest_nonlocal_position_WT_distanceA": [
+            [
+              40,
+              "D",
+              5.09
+            ],
+            [
+              34,
+              "S",
+              5.48
+            ],
+            [
+              41,
+              "N",
+              6.24
+            ]
+          ]
+        }
+      },
+      {
+        "position": 38,
+        "WT": "T",
+        "chain": null,
+        "msa": {
+          "frequencies": {
+            "A": 0.3105313516135486,
+            "C": 0.0032426355511641436,
+            "D": 7.908867197961327e-05,
+            "E": 7.908867197961327e-05,
+            "F": 7.908867197961327e-05,
+            "G": 0.0016608621115718786,
+            "H": 7.908867197961327e-05,
+            "I": 0.015471721456011845,
+            "K": 0.00011587410080734038,
+            "L": 0.0016608621115718786,
+            "M": 0.0016608621115718786,
+            "N": 7.908867197961327e-05,
+            "P": 7.908867197961327e-05,
+            "Q": 7.908867197961327e-05,
+            "R": 7.908867197961327e-05,
+            "S": 0.010214680454239662,
+            "T": 0.5328463463813213,
+            "V": 0.1218039173883951,
+            "W": 7.908867197961327e-05,
+            "Y": 7.908867197961327e-05
+          },
+          "non_gap_depth": 631.2017900729011,
+          "depth_kind": "effective_weighted",
+          "neff": 631.201790072901,
+          "gap_fraction": -2.220446049250313e-16,
+          "entropy_bits": 1.6235386208700833,
+          "homolog_support": "adequate",
+          "msa_column_1based": null,
+          "profile_scope": "full20AA, not query-dependent"
+        },
+        "wt_structure": {
+          "pLDDT": 98.54,
+          "confidence": "very_high",
+          "absolute_SASA_A2": 0.0,
+          "phi_deg": -66.84,
+          "psi_deg": -32.94,
+          "CA_neighbors_within8A": 8,
+          "contacts_complete": true,
+          "nearest_nonlocal_position_WT_distanceA": [
+            [
+              41,
+              "N",
+              4.91
+            ],
+            [
+              35,
+              "V",
+              5.21
+            ],
+            [
+              42,
+              "I",
+              6.25
+            ]
+          ]
+        }
+      },
+      {
+        "position": 39,
+        "WT": "T",
+        "chain": null,
+        "msa": {
+          "frequencies": {
+            "A": 0.054898314594933474,
+            "C": 0.023805690265863603,
+            "D": 7.90886719796133e-05,
+            "E": 7.90886719796133e-05,
+            "F": 0.010096987122730628,
+            "G": 0.0016608621115718793,
+            "H": 7.90886719796133e-05,
+            "I": 0.4618498096369066,
+            "K": 7.90886719796133e-05,
+            "L": 0.018095451277759772,
+            "M": 0.016962108795717308,
+            "N": 7.90886719796133e-05,
+            "P": 7.90886719796133e-05,
+            "Q": 0.0016608621115718793,
+            "R": 7.90886719796133e-05,
+            "S": 0.026094508387071544,
+            "T": 0.08198635833555408,
+            "V": 0.30217724931250295,
+            "W": 7.90886719796133e-05,
+            "Y": 7.90886719796133e-05
+          },
+          "non_gap_depth": 631.2017900729008,
+          "depth_kind": "effective_weighted",
+          "neff": 631.201790072901,
+          "gap_fraction": 2.220446049250313e-16,
+          "entropy_bits": 2.139613566194304,
+          "homolog_support": "adequate",
+          "msa_column_1based": null,
+          "profile_scope": "full20AA, not query-dependent"
+        },
+        "wt_structure": {}
+      },
+      {
+        "position": 40,
+        "WT": "D",
+        "chain": null,
+        "msa": {
+          "frequencies": {
+            "A": 0.0394995993334857,
+            "C": 7.908867197961328e-05,
+            "D": 0.18677812646903663,
+            "E": 0.26866374059141457,
+            "F": 7.908867197961328e-05,
+            "G": 0.009003136389636929,
+            "H": 0.003242635551164144,
+            "I": 0.00482440899075641,
+            "K": 0.01602664534043046,
+            "L": 0.006406182430348676,
+            "M": 0.02062274212515449,
+            "N": 0.26222707978730414,
+            "P": 0.003242635551164144,
+            "Q": 0.022351947604407018,
+            "R": 0.006406182430348676,
+            "S": 0.05385755961703197,
+            "T": 0.09033903915666043,
+            "V": 0.006142553523749964,
+            "W": 7.908867197961328e-05,
+            "Y": 0.0001285190919668716
+          },
+          "non_gap_depth": 631.201790072901,
+          "depth_kind": "effective_weighted",
+          "neff": 631.201790072901,
+          "gap_fraction": 0.0,
+          "entropy_bits": 2.821335357823245,
+          "homolog_support": "adequate",
+          "msa_column_1based": null,
+          "profile_scope": "full20AA, not query-dependent"
+        },
+        "wt_structure": {
+          "pLDDT": 98.52,
+          "confidence": "very_high",
+          "absolute_SASA_A2": 79.45,
+          "phi_deg": -61.7,
+          "psi_deg": -42.95,
+          "CA_neighbors_within8A": 4,
+          "contacts_complete": true,
+          "nearest_nonlocal_position_WT_distanceA": [
+            [
+              37,
+              "I",
+              5.09
+            ],
+            [
+              43,
+              "L",
+              5.09
+            ],
+            [
+              44,
+              "E",
+              6.15
+            ]
+          ]
+        }
+      },
+      {
+        "position": 41,
+        "WT": "N",
+        "chain": null,
+        "msa": {
+          "frequencies": {
+            "A": 0.1662616507910851,
+            "C": 0.00505570794801755,
+            "D": 0.028581149853781546,
+            "E": 0.036268732341343986,
+            "F": 0.005027432176496199,
+            "G": 0.00016251127632271179,
+            "H": 0.05169983909762728,
+            "I": 0.01960830502433951,
+            "K": 0.056873323172407425,
+            "L": 0.01987221222520545,
+            "M": 0.014093091826581767,
+            "N": 0.1480099366682153,
+            "P": 7.917216025978268e-05,
+            "Q": 0.059798345603531096,
+            "R": 0.2110287560646996,
+            "S": 0.09686788967819779,
+            "T": 0.0467320069289632,
+            "V": 0.01693153198698495,
+            "W": 0.0016626153654554362,
+            "Y": 0.015385789810484435
+          },
+          "non_gap_depth": 630.5351234062342,
+          "depth_kind": "effective_weighted",
+          "neff": 631.201790072901,
+          "gap_fraction": 0.0010561862737901162,
+          "entropy_bits": 3.4619912024191386,
+          "homolog_support": "adequate",
+          "msa_column_1based": null,
+          "profile_scope": "full20AA, not query-dependent"
+        },
+        "wt_structure": {
+          "pLDDT": 98.56,
+          "confidence": "very_high",
+          "absolute_SASA_A2": 23.97,
+          "phi_deg": -60.53,
+          "psi_deg": -37.46,
+          "CA_neighbors_within8A": 6,
+          "contacts_complete": true,
+          "nearest_nonlocal_position_WT_distanceA": [
+            [
+              38,
+              "T",
+              4.91
+            ],
+            [
+              44,
+              "E",
+              5.1
+            ],
+            [
+              46,
+              "R",
+              5.13
+            ]
+          ]
+        }
+      },
+      {
+        "position": 42,
+        "WT": "I",
+        "chain": null,
+        "msa": {
+          "frequencies": {
+            "A": 0.019293725847379598,
+            "C": 0.0032512066717641803,
+            "D": 7.929772370156539e-05,
+            "E": 7.929772370156539e-05,
+            "F": 0.034304716732251224,
+            "G": 0.0016652521977328731,
+            "H": 0.0003058626485631807,
+            "I": 0.29447938742991026,
+            "K": 7.929772370156539e-05,
+            "L": 0.5615629129997737,
+            "M": 0.013885234747640769,
+            "N": 7.929772370156539e-05,
+            "P": 7.929772370156539e-05,
+            "Q": 7.929772370156539e-05,
+            "R": 7.929772370156539e-05,
+            "S": 0.0006079492150453345,
+            "T": 7.929772370156539e-05,
+            "V": 0.047647411636484935,
+            "W": 7.929772370156539e-05,
+            "Y": 0.022282660360139872
+          },
+          "non_gap_depth": 629.5351234062343,
+          "depth_kind": "effective_weighted",
+          "neff": 631.201790072901,
+          "gap_fraction": 0.0026404656844749574,
+          "entropy_bits": 1.7429136978541149,
+          "homolog_support": "adequate",
+          "msa_column_1based": null,
+          "profile_scope": "full20AA, not query-dependent"
+        },
+        "wt_structure": {
+          "pLDDT": 98.39,
+          "confidence": "very_high",
+          "absolute_SASA_A2": 20.42,
+          "phi_deg": -64.29,
+          "psi_deg": -48.48,
+          "CA_neighbors_within8A": 5,
+          "contacts_complete": true,
+          "nearest_nonlocal_position_WT_distanceA": [
+            [
+              45,
+              "G",
+              5.09
+            ],
+            [
+              39,
+              "T",
+              5.14
+            ],
+            [
+              47,
+              "I",
+              5.7
+            ]
+          ]
+        }
+      },
+      {
+        "position": 43,
+        "WT": "L",
+        "chain": null,
+        "msa": {
+          "frequencies": {
+            "A": 0.014452579881958444,
+            "C": 8.013325938820278e-05,
+            "D": 8.013325938820278e-05,
+            "E": 8.013325938820278e-05,
+            "F": 0.030584193999830728,
+            "G": 8.013325938820278e-05,
+            "H": 0.008906900328326504,
+            "I": 0.027877470571606992,
+            "K": 8.013325938820278e-05,
+            "L": 0.8058179512229104,
+            "M": 0.015305452543146733,
+            "N": 0.008755009999296013,
+            "P": 8.013325938820278e-05,
+            "Q": 0.0024841310410342863,
+            "R": 8.013325938820278e-05,
+            "S": 0.053511045957512875,
+            "T": 0.024947574274187485,
+            "V": 0.005033825657931647,
+            "W": 8.013325938820278e-05,
+            "Y": 0.0016827984471522585
+          },
+          "non_gap_depth": 622.9606423317532,
+          "depth_kind": "effective_weighted",
+          "neff": 631.201790072901,
+          "gap_fraction": 0.013056280686713384,
+          "entropy_bits": 1.2930145019219872,
+          "homolog_support": "adequate",
+          "msa_column_1based": null,
+          "profile_scope": "full20AA, not query-dependent"
+        },
+        "wt_structure": {
+          "pLDDT": 98.0,
+          "confidence": "very_high",
+          "absolute_SASA_A2": 128.45,
+          "phi_deg": -63.7,
+          "psi_deg": -32.72,
+          "CA_neighbors_within8A": 3,
+          "contacts_complete": true,
+          "nearest_nonlocal_position_WT_distanceA": [
+            [
+              40,
+              "D",
+              5.09
+            ],
+            [
+              39,
+              "T",
+              6.33
+            ],
+            [
+              46,
+              "R",
+              7.87
+            ]
+          ]
+        }
+      },
+      {
+        "position": 44,
+        "WT": "E",
+        "chain": null,
+        "msa": {
+          "frequencies": {
+            "A": 0.027269610290408117,
+            "C": 0.0057611506687973825,
+            "D": 0.09479205285592297,
+            "E": 0.4899621626703086,
+            "F": 9.444509293110465e-05,
+            "G": 0.012230652930612472,
+            "H": 9.444509293110465e-05,
+            "I": 0.0027225054659775847,
+            "K": 0.0019833469515531973,
+            "L": 0.00387224881017529,
+            "M": 0.0008897433834491866,
+            "N": 0.03166617735018372,
+            "P": 9.444509293110465e-05,
+            "Q": 0.09836837976252401,
+            "R": 0.05610181951134258,
+            "S": 0.15533428554282241,
+            "T": 0.017534742319024736,
+            "V": 0.0010388960222421511,
+            "W": 9.444509293110465e-05,
+            "Y": 9.444509293110465e-05
+          },
+          "non_gap_depth": 528.4081296153074,
+          "depth_kind": "effective_weighted",
+          "neff": 631.201790072901,
+          "gap_fraction": 0.16285387981190824,
+          "entropy_bits": 2.4260228162449993,
+          "homolog_support": "adequate",
+          "msa_column_1based": null,
+          "profile_scope": "full20AA, not query-dependent"
+        },
+        "wt_structure": {
+          "pLDDT": 98.03,
+          "confidence": "very_high",
+          "absolute_SASA_A2": 105.51,
+          "phi_deg": -83.89,
+          "psi_deg": -3.21,
+          "CA_neighbors_within8A": 2,
+          "contacts_complete": true,
+          "nearest_nonlocal_position_WT_distanceA": [
+            [
+              41,
+              "N",
+              5.1
+            ],
+            [
+              40,
+              "D",
+              6.15
+            ],
+            [
+              47,
+              "I",
+              8.26
+            ]
+          ]
+        }
+      },
+      {
+        "position": 45,
+        "WT": "G",
+        "chain": null,
+        "msa": {
+          "frequencies": {
+            "A": 0.00022531566344032397,
+            "C": 0.00022531566344032397,
+            "D": 0.006984785566650043,
+            "E": 0.006233733355182296,
+            "F": 0.00022531566344032397,
+            "G": 0.9739384882620692,
+            "H": 0.00022531566344032397,
+            "I": 0.00022531566344032397,
+            "K": 0.00022531566344032397,
+            "L": 0.00022531566344032397,
+            "M": 0.00022531566344032397,
+            "N": 0.004731628932246803,
+            "P": 0.00022531566344032397,
+            "Q": 0.00022531566344032397,
+            "R": 0.00022531566344032397,
+            "S": 0.004731628932246803,
+            "T": 0.00022531566344032397,
+            "V": 0.00022531566344032397,
+            "W": 0.00022531566344032397,
+            "Y": 0.00022531566344032397
+          },
+          "non_gap_depth": 220.91089264081617,
+          "depth_kind": "effective_weighted",
+          "neff": 631.201790072901,
+          "gap_fraction": 0.6500154211931148,
+          "entropy_bits": 0.24683001237671356,
+          "homolog_support": "low",
+          "msa_column_1based": null,
+          "profile_scope": "full20AA, not query-dependent"
+        },
+        "wt_structure": {
+          "pLDDT": 96.98,
+          "confidence": "very_high",
+          "absolute_SASA_A2": 65.23,
+          "phi_deg": 68.84,
+          "psi_deg": 30.29,
+          "CA_neighbors_within8A": 2,
+          "contacts_complete": true,
+          "nearest_nonlocal_position_WT_distanceA": [
+            [
+              42,
+              "I",
+              5.09
+            ],
+            [
+              41,
+              "N",
+              6.17
+            ],
+            [
+              40,
+              "D",
+              8.64
+            ]
+          ]
+        }
+      },
+      {
+        "position": 46,
+        "WT": "R",
+        "chain": null,
+        "msa": {
+          "frequencies": {
+            "A": 0.04696838386470985,
+            "C": 0.00046047435161480254,
+            "D": 0.00046047435161480254,
+            "E": 0.009669961383910852,
+            "F": 0.00046047435161480254,
+            "G": 0.00046047435161480254,
+            "H": 0.06201054601746007,
+            "I": 0.00046047435161480254,
+            "K": 0.0389612465282969,
+            "L": 0.00046047435161480254,
+            "M": 0.00046047435161480254,
+            "N": 0.14499674460710002,
+            "P": 0.00046047435161480254,
+            "Q": 0.01750898903640094,
+            "R": 0.5097085210876021,
+            "S": 0.03201149474003646,
+            "T": 0.13309889486671986,
+            "V": 0.00046047435161480254,
+            "W": 0.00046047435161480254,
+            "Y": 0.00046047435161480254
+          },
+          "non_gap_depth": 107.58368077322613,
+          "depth_kind": "effective_weighted",
+          "neff": 631.201790072901,
+          "gap_fraction": 0.8295573896252723,
+          "entropy_bits": 2.307127381232793,
+          "homolog_support": "low",
+          "msa_column_1based": null,
+          "profile_scope": "full20AA, not query-dependent"
+        },
+        "wt_structure": {
+          "pLDDT": 96.58,
+          "confidence": "very_high",
+          "absolute_SASA_A2": 180.18,
+          "phi_deg": -87.51,
+          "psi_deg": -14.37,
+          "CA_neighbors_within8A": 3,
+          "contacts_complete": true,
+          "nearest_nonlocal_position_WT_distanceA": [
+            [
+              41,
+              "N",
+              5.13
+            ],
+            [
+              42,
+              "I",
+              6.05
+            ],
+            [
+              43,
+              "L",
+              7.87
+            ]
+          ]
+        }
+      },
+      {
+        "position": 47,
+        "WT": "I",
+        "chain": null,
+        "msa": {
+          "frequencies": {
+            "A": 0.05,
+            "C": 0.05,
+            "D": 0.05,
+            "E": 0.05,
+            "F": 0.05,
+            "G": 0.05,
+            "H": 0.05,
+            "I": 0.05,
+            "K": 0.05,
+            "L": 0.05,
+            "M": 0.05,
+            "N": 0.05,
+            "P": 0.05,
+            "Q": 0.05,
+            "R": 0.05,
+            "S": 0.05,
+            "T": 0.05,
+            "V": 0.05,
+            "W": 0.05,
+            "Y": 0.05
+          },
+          "non_gap_depth": 0.0,
+          "depth_kind": "effective_weighted",
+          "neff": 631.201790072901,
+          "gap_fraction": 1.0,
+          "entropy_bits": 4.321928094887363,
+          "homolog_support": "none",
+          "msa_column_1based": "query_insertion_unaligned_uniform_pseudocount_only",
+          "profile_scope": "full20AA, not query-dependent"
+        },
+        "wt_structure": {
+          "pLDDT": 93.28,
+          "confidence": "very_high",
+          "absolute_SASA_A2": 61.38,
+          "phi_deg": -118.83,
+          "psi_deg": null,
+          "CA_neighbors_within8A": 5,
+          "contacts_complete": true,
+          "nearest_nonlocal_position_WT_distanceA": [
+            [
+              42,
+              "I",
+              5.7
+            ],
+            [
+              41,
+              "N",
+              6.32
+            ],
+            [
+              24,
+              "L",
+              6.39
+            ]
+          ]
+        }
+      }
+    ],
+    "source_metadata": [
+      {
+        "provenance": {
+          "MSA_method": {
+            "end": 47,
+            "mapping": "exact aligned WT region; 1-based full WT coordinates",
+            "neff": 631.201790072901,
+            "pseudocount_total": 1,
+            "selection": "lexically sorted unique aligned natural homologs; first 2048, same as RNA evidence extractor",
+            "sequences_total": 17787,
+            "sequences_used": 2048,
+            "start": 1,
+            "weighting": "inverse >=80pct identity neighbors, >=50pct pairwise coverage"
+          },
+          "MSA_profile_sha256": "7da6b4199e30715e3d55de6dadafc52424e04acb316b0d4a227785b1d20091ca",
+          "MSA_raw_sha256": "23fe63b7fe8826769b6bf4501945f6ed01a569bdb3a1f37a010bc72dddaba04c",
+          "WT_structure": {
+            "chain_id": "A",
+            "coordinate_system": "1-based full WT sequence; independent of PDB numbering",
+            "mapping": "unique exact whole-chain sequence match",
+            "model": "first",
+            "origin_asserted_by_caller": "alphafold",
+            "pdb_sha256": "6403b88f47df332dcc4a54d37bedfca47439853c78616baa8402f91b72e3bcc2",
+            "wt_sha256": "ba8bd075361c9c8ffd9036a5afc650f92bfe2bc4f373e67d6c3c0927e49159d6"
+          },
+          "structure_features_sha256": "613088ac459f605a10629df15f4d0a389969c9ee442331cb34eba533b4b4c58e",
+          "structure_limitations": [
+            "These are static wild-type coordinates, not a relaxed mutant structure.",
+            "Structural confidence is not a fitness measurement; geometry does not determine effect direction.",
+            "Unavailable measurements are null, not zero; contacts refer only to observed intrachain CA atoms.",
+            "SASA, when available, is isolated-chain absolute solvent-accessible area, not relative burial or an interface measurement."
+          ],
+          "structure_measurement_definitions": {
+            "contacts": "intrachain CA distance <=8 A; exclude |i-j|<=2",
+            "nearest": "up to three nearest observed nonlocal intrachain CA atoms, without 8 A cutoff",
+            "sasa": "isolated-chain ShrakeRupley; probe 1.4 A; 100 points per atom; absolute A^2",
+            "torsions": "signed degrees; all three consecutive bond lengths must be 0.8-1.9 A; no alternate backbone"
+          }
+        }
+      },
+      {
+        "provenance": {
+          "MSA_method": {
+            "end": 47,
+            "mapping": "exact aligned WT region; 1-based full WT coordinates",
+            "neff": 631.201790072901,
+            "pseudocount_total": 1,
+            "selection": "lexically sorted unique aligned natural homologs; first 2048, same as RNA evidence extractor",
+            "sequences_total": 17787,
+            "sequences_used": 2048,
+            "start": 1,
+            "weighting": "inverse >=80pct identity neighbors, >=50pct pairwise coverage"
+          }
+        }
+      }
+    ],
+    "interpretation": "Static WT observations and natural homolog frequencies; no mutant structure or measured phenotype.",
+    "missing_capabilities": [
+      "No fitted epistatic model or mutant coordinates; WT and natural homolog observations only."
+    ]
+  }
+}

@@ -1,0 +1,91 @@
+The deliverable is proposal.py, a self-contained deterministic predictor using
+only NumPy and SciPy. It fits from the support records passed to propose on every
+invocation. There are no stored fitness values, coefficients, prediction IDs,
+model files, external data, file reads, or cached fitted states. Query sequences
+are used only to construct feature columns and ordinal scores. selected_ids is
+always empty: no additional measurements are requested.
+
+Assay interpretation
+The supplied context identifies RASK_HUMAN_Weng_2022_abundance, with yeast growth
+as the endpoint and ProteinGym DMS_score in original units. Higher observed
+fitness is the signed ranking target. The model does not interpret these values
+as calibrated abundance, probabilities, stability measurements, or evidence of
+wet-lab improvement. No measured WT is supplied and no WT fitness is assumed.
+The current 96 supports comprise 32 original single mutants and 64 independently
+sampled feedback variants (59 doubles and 5 singles). All 96 outcomes inform the
+final fit, rather than treating feedback merely as a selection history.
+
+Model and use of feedback
+Each support outcome is converted to its empirical midrank within the current
+training set. This preserves assay direction and ties while reducing the
+influence of extreme fitness magnitudes. Feedback allows recurring exact
+substitution effects to be estimated in multiple backgrounds, supplies direct
+information about double variants, and informs the mutation-count component.
+The additive feature kernel combines exact position/substitution indicators,
+position indicators, regional chemical descriptors, and mutation count/count
+squared. Residue descriptors contain standard hydropathy, volume, charge,
+aromatic/glycine/proline/polar/cysteine indicators, signed changes, absolute
+changes, and products of original and substituted residue properties. Coarse
+KRAS sequence/fold partitions supply region context; they are assumed sequence
+annotations, never measured burial or structure coordinates. Their predictive
+value was assessed using observed supports, not taken as established mechanism.
+
+Training-only centering supplies an unpenalized intercept. Six kernel ridge
+models use alpha in {0.03, 0.1, 0.3} and regional weight in {0.03, 0.1}, with
+exact and position weights 1 and count weight 0.1. These are validation-selected
+configuration constants, not stored learned effects. Every model is freshly
+fit on every supplied subset. The models' query ranks are averaged and ranked
+again to produce finite scores strictly inside [-1,1]. Absolute score values
+carry no probability or assay-unit meaning. No random operations are used;
+sorting records and vocabulary makes the computation reproducible under record
+reordering, so no stochastic seed is required.
+
+Scientific development and validation
+An executable baseline was saved before development. Exploration compared
+mutation/position pooling strengths, regional versus generic chemical effects,
+substitution and amino-acid sharing, smooth sequence-neighborhood features,
+coarse sequence-context hypotheses, and several regularization strengths.
+Raw fitness, empirical ranks, Gaussianized ranks, asinh, signed square-root,
+exponential target links and mixed raw/rank targets were compared. Polynomial
+interaction kernels and regional RBF kernels tested nonlinear combination
+assumptions. Pairwise logistic ranking, including smoothed pairwise targets,
+was also evaluated. More complex nonlinear and pairwise approaches did not
+consistently improve the selected rank-regression model.
+
+The principal validation retains all 32 original supports and withholds 20 of
+the 64 feedback supports, repeated over 20 deterministic search splits. Thirty
+fresh splits with the same design provide a confirmation comparison. Fifteen
+additional splits withhold 24 of all 96 supports to check mixed single/double
+transfer. Outcomes and their ranks are computed only from each split's training
+records; validation outcomes never enter its fit. The final six-member ensemble
+has mean signed Spearman correlations 0.556 (search), 0.528 (fresh feedback
+confirmation), and 0.593 (mixed holdouts). Exact-substitution/raw-fitness ridge
+scores 0.402, 0.352, 0.375 under the same protocols. Exact-plus-position rank
+ridge scores 0.493, 0.504, 0.462. These support the chosen regional model and rank
+target but do not prove that its annotated regions correspond to physical
+mechanisms. The confirmation splits are internal public-data checks, not a
+blinded external evaluation; splits overlap and hyperparameter exploration
+creates selection uncertainty. These figures must not be read as experimental
+validation or guaranteed query performance. Exploration files are retained.
+
+Limitations
+There are only 96 measured variants, only 13 current queries have both exact
+substitutions observed, and 42 have neither observed (131 have one observed).
+Novel substitutions therefore require substantial shrinkage and extrapolation.
+Position sharing cannot distinguish all amino-acid changes; coarse chemical
+features cannot establish burial, contacts, folding free energies or biological
+mechanisms. Pair-specific epistasis is insufficiently sampled and is not claimed
+to be absent; rank fitting allows a flexible monotone assay-scale interpretation
+but the final predictor remains additive in its latent feature representation.
+The empirical support distribution, original-single sampling, and query
+composition can differ. Uncertainty is greatest for unseen positions and rare
+chemistries. Scores express a best supported ordering, not calibrated confidence.
+
+Artifact checks
+Local checks verified coverage of all current query IDs, finite bounded scores,
+empty selected_ids, exact repeat determinism, invariance to record reordering,
+and refitting after a smaller support invocation without surviving model state.
+The predictor fit itself takes far less than the 120-second limit locally.
+The required protected executor is run after this note is written; its output
+is trial_output.json. Success of that check verifies artifact execution and
+contracts, not experimentally established prediction quality.

@@ -1,0 +1,30 @@
+{
+  "candidate_count": 250,
+  "unique_ID_count": 250,
+  "complete_ID_coverage": true,
+  "mutation_sequence_identity_verified": true,
+  "scores_finite_and_in_range": true,
+  "higher_is_better": true,
+  "global_transform": "tanh(raw_stability_prior / 3)",
+  "fixed_partner_count": 0,
+  "reference_mapping": "exact whole chain, 47/47 observed residues",
+  "WT_standard_heavy_atoms_complete": true,
+  "WT_torsion_summary_missing_positions": [
+    1,
+    7,
+    8,
+    16,
+    20,
+    21,
+    25,
+    29,
+    31,
+    36,
+    39,
+    47
+  ],
+  "MSA_available": false,
+  "measured_support_count": 0,
+  "prediction_SHA256": "373b2263585fd8f129c38f73552380806bbaf7952d18f37aab367b5ac99bd10e",
+  "validation_scope": "Computational integrity only; no assay outcomes available to validate ranking accuracy."
+}

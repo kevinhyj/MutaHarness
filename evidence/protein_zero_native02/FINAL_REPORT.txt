@@ -1,0 +1,85 @@
+Protein-only zero-shot 扩展：6个新增数据集 × 4条件 × 250候选
+
+新增完成条件：24/24；实际调用：24；独立Spearman复核通过。
+提示词、模型、推理设置、MSA/结构工具与上一轮逐字节一致；零实验support，零反馈。
+
+新增数据集主结果（完整250候选；失败保持NA）
+dataset | basic | MSA | structure | joint | joint-basic | basic Top25 | joint Top25
+UBE4B（稳定性） | 0.3165 | 0.3533 | 0.3712 | 0.4820 | 0.1655 | 0.4000 | 0.3200
+CBX4（稳定性） | 0.6321 | 0.6443 | 0.6398 | 0.6915 | 0.0594 | 0.2800 | 0.4000
+GFP（荧光） | 0.7062 | 0.7431 | 0.7336 | 0.7346 | 0.0285 | 0.3200 | 0.4000
+PAB1（功能/生长） | 0.4115 | 0.6875 | 0.4594 | 0.6611 | 0.2497 | 0.1200 | 0.2000
+KRAS（丰度） | 0.3727 | 0.3857 | 0.3124 | 0.3559 | -0.0168 | 0.2000 | 0.1600
+KRAS–RAF1（结合） | 0.7007 | 0.6961 | 0.6735 | 0.6158 | -0.0849 | 0.2000 | 0.0800
+
+同四条件均完整的新增assay宏平均：
+basic: Spearman 0.5233; Top25 0.2533
+msa_tools: Spearman 0.5850; Top25 0.3067
+structure_tools: Spearman 0.5316; Top25 0.2867
+joint_tools: Spearman 0.5901; Top25 0.2600
+
+各证据条件相对basic：
+{"msa_tools": {"deltas": {"ube4b": 0.03678198364617774, "cbx4": 0.012212349253110877, "gfp": 0.03693120307913733, "pabp": 0.27604056564884405, "kras_abundance": 0.013007514175015833, "kras_raf1": -0.004643392605256258}, "mean_delta": 0.061721703866171596, "wins": 5, "losses": 1, "ties": 0}, "structure_tools": {"deltas": {"ube4b": 0.05473853981663712, "cbx4": 0.007729598131277937, "gfp": 0.027470827713131474, "pabp": 0.04792858405963396, "kras_abundance": -0.06033427734843755, "kras_raf1": -0.027186356579247506}, "mean_delta": 0.008391152632165907, "wins": 4, "losses": 2, "ties": 0}, "joint_tools": {"deltas": {"ube4b": 0.1655258484135746, "cbx4": 0.05940317650503246, "gfp": 0.02847385176151629, "pabp": 0.24967700277003335, "kras_abundance": -0.016824077185234987, "kras_raf1": -0.08491169618468108}, "mean_delta": 0.06689068434670677, "wins": 4, "losses": 2, "ties": 0}}
+
+每蛋白等权敏感性分析（KRAS两个端点先取平均，再与其他蛋白等权）：
+{"basic": 0.5205691917392347, "msa_tools": 0.5937988242216646, "structure_tools": 0.5393906382906022, "joint_tools": 0.6110115902922744}
+
+累计两批10个assay的匹配宏平均（次要汇总）：
+{"basic": {"spearman": 0.5050867801038631, "top25_overlap": 0.272}, "msa_tools": {"spearman": 0.543994486713244, "top25_overlap": 0.264}, "structure_tools": {"spearman": 0.5146705237680058, "top25_overlap": 0.312}, "joint_tools": {"spearman": 0.5735689527270961, "top25_overlap": 0.244}}
+
+新增已知I/O总量 9,684,518; joint/basic 2.40x；含cached input，不是账单费用。
+运行壁钟 66.8分钟；输入准备和事后评估另计。
+
+逐组用量：
+{
+  "basic": {
+    "planned_conditions": 6,
+    "complete": 6,
+    "actual_calls": 6,
+    "unknown_usage_conditions": 0,
+    "known_input_plus_output_tokens": 1381062,
+    "known_input_tokens": 1280411,
+    "known_output_tokens": 100651,
+    "known_cached_input_tokens": 1034112,
+    "sum_condition_wall_seconds": 3674.293
+  },
+  "msa_tools": {
+    "planned_conditions": 6,
+    "complete": 6,
+    "actual_calls": 6,
+    "unknown_usage_conditions": 0,
+    "known_input_plus_output_tokens": 2137025,
+    "known_input_tokens": 2045377,
+    "known_output_tokens": 91648,
+    "known_cached_input_tokens": 1740160,
+    "sum_condition_wall_seconds": 3181.69
+  },
+  "structure_tools": {
+    "planned_conditions": 6,
+    "complete": 6,
+    "actual_calls": 6,
+    "unknown_usage_conditions": 0,
+    "known_input_plus_output_tokens": 2848745,
+    "known_input_tokens": 2739322,
+    "known_output_tokens": 109423,
+    "known_cached_input_tokens": 2375296,
+    "sum_condition_wall_seconds": 3819.176
+  },
+  "joint_tools": {
+    "planned_conditions": 6,
+    "complete": 6,
+    "actual_calls": 6,
+    "unknown_usage_conditions": 0,
+    "known_input_plus_output_tokens": 3317686,
+    "known_input_tokens": 3195991,
+    "known_output_tokens": 121695,
+    "known_cached_input_tokens": 2814080,
+    "sum_condition_wall_seconds": 4306.542
+  }
+}
+
+解释限制：一次原生生成/条件，生成seed未独立控制；端点选择的小样本扩展，非随机全基准或完全未碰过的holdout。
+两个KRAS端点相关；MSA缺失未填成中性分数。证据输入、预处理与工具可用性一起改变，尚未拆分内部贡献。
+整体排序与头部筛选分别报告；失败/未知用量保留，不按结果补跑或挑最佳。
+
+传输审计：2个会话记录CLI自动重连，最终均成功；没有额外启动native会话。CLI均提供用量，但失败流和每个底层重试的token/费用未单独暴露；不能把CLI回报总量当成全部底层账单核验。详见TRANSPORT_AUDIT.json。

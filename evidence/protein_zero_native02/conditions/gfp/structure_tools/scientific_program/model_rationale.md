@@ -1,0 +1,11 @@
+Initial checkpoint used additive sequence/WT-exposure mutation burden, a substitution matrix, backbone constraints and basic chromophore penalties. It was saved before inspecting detailed WT atom geometry.
+
+One substantive refinement was made, without outcomes or parameter fitting:
+- Distinguish fluorescence from folding: chromophore substitutions at Ser65/Tyr66/Gly67 and Arg96-dependent maturation need functional penalties. In particular, Ser65Pro is not just an ordinary helix-disrupting substitution.
+- The source-verified coordinates show a cis peptide before Pro89 (omega 8.6 degrees). Removing this proline therefore receives a stronger conformational penalty. Complete raw atom/RSA observations replace the sparse nearest-three description; torsion constraints and potential loss of a WT backbone donor are reliability-weighted geometry priors, not energies.
+- Include modest background priors for established GFP engineering substitutions, including cycle3 and superfolder changes. They are not assay measurements and their background dependence remains uncertain.
+- Use one arctangent mapping of additive burden for all 250 candidates, avoiding near-floor numerical saturation. This monotonic transformation alone does not change ordering.
+
+Input integrity: reference SHA-256 and both local raw source hashes match; exact full-chain mapping has 238/238 residues, all with complete standard WT heavy atoms. All candidate mutations agree with their reference and full sequences. No identity substitutions, missing queried RSA, fixed partners, MSA, support labels or assay outcomes are present. Only terminal backbone torsions are missing in the full WT table. No unobserved pair geometry from the sparse graph was imputed; no contact-based epistasis was inferred.
+
+Computational verification establishes source/identity integrity, score bounds, higher score direction, and exactly one score per candidate. It cannot demonstrate assay accuracy. Static AlphaFold coordinates are not mature-chromophore or relaxed mutant coordinates; folding, expression, maturation, detection-spectrum differences and epistasis remain substantial sources of uncertainty. No further scientific model revisions were made after output integrity checks.

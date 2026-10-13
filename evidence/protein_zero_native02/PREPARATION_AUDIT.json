@@ -1,0 +1,272 @@
+{
+  "cases": [
+    {
+      "case_id": "ube4b",
+      "assay": "UBE4B_HUMAN_Tsuboyama_2023_3L1X",
+      "query_count": 250,
+      "support_count": 0,
+      "reference_length": 69,
+      "msa_method": {
+        "end": 69,
+        "mapping": "exact aligned WT region; 1-based full WT coordinates",
+        "neff": 1040.408469202043,
+        "pseudocount_total": 1,
+        "selection": "lexically sorted unique aligned natural homologs; first 2048, same as RNA evidence extractor",
+        "sequences_total": 310943,
+        "sequences_used": 2048,
+        "start": 1,
+        "weighting": "inverse >=80pct identity neighbors, >=50pct pairwise coverage"
+      },
+      "msa_complete_candidates": 240,
+      "coordinate_mapping": [
+        {
+          "chain": null,
+          "pdb_chain": "A",
+          "method": "exact_whole_chain_sequence",
+          "reference_length": 69,
+          "mapped_observed_residues": 69,
+          "unobserved_positions": []
+        }
+      ],
+      "raw_source": {
+        "path": "/Users/hyj/Desktop/Kimi/explorations/protein_zero_native02/raw_evidence/ube4b/UBE4B_HUMAN.pdb",
+        "sha256": "8fd6a316ee05505972d71d293082071eddc2e9ad76947bf9937784c354bf9a24",
+        "matches_declared_source_sha256": true,
+        "model_selection": "first",
+        "altloc_policy": "residue conformer with greatest summed occupancy, ties prefer A then lexical; shared blank-altloc atoms retained",
+        "zero_occupancy_atoms_included": false,
+        "occupancy_interpretation": "zero-occupancy atoms omitted",
+        "hydrogen_atoms_in_contact_graph": false,
+        "explicit_hydrogen_atoms_in_SASA": true,
+        "waters_included": false
+      },
+      "max_absolute_feature_vs_recomputed_SASA_difference_A2": 0.0049712620972712784,
+      "same_native01_tools_and_prompt": true
+    },
+    {
+      "case_id": "cbx4",
+      "assay": "CBX4_HUMAN_Tsuboyama_2023_2K28",
+      "query_count": 250,
+      "support_count": 0,
+      "reference_length": 50,
+      "msa_method": {
+        "end": 50,
+        "mapping": "exact aligned WT region; 1-based full WT coordinates",
+        "neff": 851.7653005890393,
+        "pseudocount_total": 1,
+        "selection": "lexically sorted unique aligned natural homologs; first 2048, same as RNA evidence extractor",
+        "sequences_total": 108263,
+        "sequences_used": 2048,
+        "start": 1,
+        "weighting": "inverse >=80pct identity neighbors, >=50pct pairwise coverage"
+      },
+      "msa_complete_candidates": 147,
+      "coordinate_mapping": [
+        {
+          "chain": null,
+          "pdb_chain": "A",
+          "method": "exact_whole_chain_sequence",
+          "reference_length": 50,
+          "mapped_observed_residues": 50,
+          "unobserved_positions": []
+        }
+      ],
+      "raw_source": {
+        "path": "/Users/hyj/Desktop/Kimi/explorations/protein_zero_native02/raw_evidence/cbx4/CBX4_HUMAN.pdb",
+        "sha256": "bd3d346fab261e5c85c39ee48091cb81d95224b5c8921bf160c713cdefa68f44",
+        "matches_declared_source_sha256": true,
+        "model_selection": "first",
+        "altloc_policy": "residue conformer with greatest summed occupancy, ties prefer A then lexical; shared blank-altloc atoms retained",
+        "zero_occupancy_atoms_included": false,
+        "occupancy_interpretation": "zero-occupancy atoms omitted",
+        "hydrogen_atoms_in_contact_graph": false,
+        "explicit_hydrogen_atoms_in_SASA": true,
+        "waters_included": false
+      },
+      "max_absolute_feature_vs_recomputed_SASA_difference_A2": 0.004912405458568969,
+      "same_native01_tools_and_prompt": true
+    },
+    {
+      "case_id": "gfp",
+      "assay": "GFP_AEQVI_Sarkisyan_2016",
+      "query_count": 250,
+      "support_count": 0,
+      "reference_length": 238,
+      "msa_method": {
+        "end": 238,
+        "mapping": "exact aligned WT region; 1-based full WT coordinates",
+        "neff": 13.877613896816763,
+        "pseudocount_total": 1,
+        "selection": "lexically sorted unique aligned natural homologs; first 2048, same as RNA evidence extractor",
+        "sequences_total": 396,
+        "sequences_used": 341,
+        "start": 1,
+        "weighting": "inverse >=80pct identity neighbors, >=50pct pairwise coverage"
+      },
+      "msa_complete_candidates": 233,
+      "coordinate_mapping": [
+        {
+          "chain": null,
+          "pdb_chain": "A",
+          "method": "exact_whole_chain_sequence",
+          "reference_length": 238,
+          "mapped_observed_residues": 238,
+          "unobserved_positions": []
+        }
+      ],
+      "raw_source": {
+        "path": "/Users/hyj/Desktop/Kimi/explorations/protein_zero_native02/raw_evidence/gfp/GFP_AEQVI.pdb",
+        "sha256": "70bf9c39c1cc353d330fb37aba49d448caf03693b35196f3adc7375ef434fcc5",
+        "matches_declared_source_sha256": true,
+        "model_selection": "first",
+        "altloc_policy": "residue conformer with greatest summed occupancy, ties prefer A then lexical; shared blank-altloc atoms retained",
+        "zero_occupancy_atoms_included": false,
+        "occupancy_interpretation": "zero-occupancy atoms omitted",
+        "hydrogen_atoms_in_contact_graph": false,
+        "explicit_hydrogen_atoms_in_SASA": true,
+        "waters_included": false
+      },
+      "max_absolute_feature_vs_recomputed_SASA_difference_A2": 0.004938516306684626,
+      "same_native01_tools_and_prompt": true
+    },
+    {
+      "case_id": "pabp",
+      "assay": "PABP_YEAST_Melamed_2013",
+      "query_count": 250,
+      "support_count": 0,
+      "reference_length": 577,
+      "msa_method": {
+        "end": 577,
+        "mapping": "exact aligned WT region; 1-based full WT coordinates",
+        "neff": 394.736382774463,
+        "pseudocount_total": 1,
+        "selection": "lexically sorted unique aligned natural homologs; first 2048, same as RNA evidence extractor",
+        "sequences_total": 7866,
+        "sequences_used": 2048,
+        "start": 1,
+        "weighting": "inverse >=80pct identity neighbors, >=50pct pairwise coverage"
+      },
+      "msa_complete_candidates": 240,
+      "coordinate_mapping": [
+        {
+          "chain": null,
+          "pdb_chain": "A",
+          "method": "exact_whole_chain_sequence",
+          "reference_length": 577,
+          "mapped_observed_residues": 577,
+          "unobserved_positions": []
+        }
+      ],
+      "raw_source": {
+        "path": "/Users/hyj/Desktop/Kimi/explorations/protein_zero_native02/raw_evidence/pabp/PABP_YEAST.pdb",
+        "sha256": "1768fe74df0da7b93789c0fec61d84f646497cd705b2301c0872ef244e8b7edf",
+        "matches_declared_source_sha256": true,
+        "model_selection": "first",
+        "altloc_policy": "residue conformer with greatest summed occupancy, ties prefer A then lexical; shared blank-altloc atoms retained",
+        "zero_occupancy_atoms_included": false,
+        "occupancy_interpretation": "zero-occupancy atoms omitted",
+        "hydrogen_atoms_in_contact_graph": false,
+        "explicit_hydrogen_atoms_in_SASA": true,
+        "waters_included": false
+      },
+      "max_absolute_feature_vs_recomputed_SASA_difference_A2": 0.004993658149402336,
+      "same_native01_tools_and_prompt": true
+    },
+    {
+      "case_id": "kras_abundance",
+      "assay": "RASK_HUMAN_Weng_2022_abundance",
+      "query_count": 250,
+      "support_count": 0,
+      "reference_length": 188,
+      "msa_method": {
+        "end": 188,
+        "mapping": "exact aligned WT region; 1-based full WT coordinates",
+        "neff": 418.6747782289292,
+        "pseudocount_total": 1,
+        "selection": "lexically sorted unique aligned natural homologs; first 2048, same as RNA evidence extractor",
+        "sequences_total": 260539,
+        "sequences_used": 2048,
+        "start": 1,
+        "weighting": "inverse >=80pct identity neighbors, >=50pct pairwise coverage"
+      },
+      "msa_complete_candidates": 133,
+      "coordinate_mapping": [
+        {
+          "chain": null,
+          "pdb_chain": "A",
+          "method": "exact_whole_chain_sequence",
+          "reference_length": 188,
+          "mapped_observed_residues": 188,
+          "unobserved_positions": []
+        }
+      ],
+      "raw_source": {
+        "path": "/Users/hyj/Desktop/Kimi/explorations/protein_zero_native02/raw_evidence/kras_abundance/RASK_HUMAN.pdb",
+        "sha256": "129b61778ab9d4d2c9bf752bf9996406bdc223138e980fa7d19180955e991a8c",
+        "matches_declared_source_sha256": true,
+        "model_selection": "first",
+        "altloc_policy": "residue conformer with greatest summed occupancy, ties prefer A then lexical; shared blank-altloc atoms retained",
+        "zero_occupancy_atoms_included": false,
+        "occupancy_interpretation": "zero-occupancy atoms omitted",
+        "hydrogen_atoms_in_contact_graph": false,
+        "explicit_hydrogen_atoms_in_SASA": true,
+        "waters_included": false
+      },
+      "max_absolute_feature_vs_recomputed_SASA_difference_A2": 0.004983422494706957,
+      "same_native01_tools_and_prompt": true
+    },
+    {
+      "case_id": "kras_raf1",
+      "assay": "bindinggym__KRAS_RAF1-RBD_norfitness_6VJJ",
+      "query_count": 250,
+      "support_count": 0,
+      "reference_length": 168,
+      "msa_method": {
+        "selection": "unique non-query rows capped2048 in file order; same as original public PPI evidence",
+        "sequences_total": 16088,
+        "sequences_used": 2048,
+        "weighting": "none; unique unweighted",
+        "pseudocount_total": 1,
+        "mapping": "exact full target-chain query; reference positions to A3M match columns"
+      },
+      "msa_complete_candidates": 250,
+      "coordinate_mapping": [
+        {
+          "chain": "A",
+          "pdb_chain": "A",
+          "method": "exact_whole_chain_sequence",
+          "reference_length": 168,
+          "mapped_observed_residues": 168,
+          "unobserved_positions": []
+        },
+        {
+          "chain": "B",
+          "pdb_chain": "B",
+          "method": "exact_whole_chain_sequence",
+          "reference_length": 77,
+          "mapped_observed_residues": 77,
+          "unobserved_positions": []
+        }
+      ],
+      "raw_source": {
+        "path": "/Users/hyj/Desktop/Kimi/explorations/protein_zero_native02/raw_evidence/kras_raf1/6VJJ.pdb",
+        "sha256": "b3e1b1a927f6a7c3aefd6e63f42e4e3c044d34b6e98d538a3714d194d0f9b6ea",
+        "matches_declared_source_sha256": true,
+        "model_selection": "first",
+        "altloc_policy": "residue conformer with greatest summed occupancy, ties prefer A then lexical; shared blank-altloc atoms retained",
+        "zero_occupancy_atoms_included": true,
+        "occupancy_interpretation": "file-wide zero placeholder in source-supplied modeled complex",
+        "hydrogen_atoms_in_contact_graph": false,
+        "explicit_hydrogen_atoms_in_SASA": true,
+        "waters_included": false
+      },
+      "max_absolute_feature_vs_recomputed_SASA_difference_A2": null,
+      "same_native01_tools_and_prompt": true
+    }
+  ],
+  "native_calls": 0,
+  "preparation_outcome_content_opened": false,
+  "selection_before_inference": "Six assays chosen by endpoint diversity and verified public input availability before fresh inference; no performance-based selection.",
+  "native01_untouched": true,
+  "source_inspection_note": "Parent metadata inspection displayed historical support-scale summaries; these were not used in selection or included in native02 inputs/prompts. No historical predictions or query-outcome values were inspected by the parent."
+}

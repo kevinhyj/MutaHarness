@@ -1,0 +1,33 @@
+{
+  "status": "completed_with_logged_CLI_reconnects",
+  "sessions_with_reconnect_logs": 2,
+  "entries": [
+    {
+      "case_id": "kras_abundance",
+      "arm": "joint_tools",
+      "invocation": "call_00",
+      "reconnect_log_events": [
+        "Reconnecting... 2/5 (stream disconnected before completion: IO error: peer closed connection without sending TLS close_notify: https://docs.rs/rustls/latest/rustls/manual/_03_howto/index.html#unexpected-eof)"
+      ],
+      "reported_usage_known": true,
+      "native_exit_code": 0,
+      "timed_out": false
+    },
+    {
+      "case_id": "kras_raf1",
+      "arm": "basic",
+      "invocation": "call_00",
+      "reconnect_log_events": [
+        "Reconnecting... 2/5 (stream disconnected before completion: IO error: peer closed connection without sending TLS close_notify: https://docs.rs/rustls/latest/rustls/manual/_03_howto/index.html#unexpected-eof)"
+      ],
+      "reported_usage_known": true,
+      "native_exit_code": 0,
+      "timed_out": false
+    }
+  ],
+  "additional_native_invocations_due_to_reconnects": 0,
+  "actual_underlying_API_retry_count": "not independently exposed",
+  "failed_stream_token_usage": "not separately exposed; cannot independently confirm all underlying billed usage",
+  "reported_usage_basis": "Sum of native CLI turn.completed reports, includes cached input; not invoiced cost",
+  "primary_predictions_changed_by_host": false
+}

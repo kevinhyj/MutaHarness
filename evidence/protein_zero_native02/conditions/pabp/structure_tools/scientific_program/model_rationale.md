@@ -1,0 +1,11 @@
+Initial checkpoint was saved before refinement and retained as initial_checkpoint_predictions.json, with its program predict_initial.py.
+
+Substantive revisions, made without assay outcomes:
+
+1. Replaced symmetric hydropathy differences with directional polarity and packing priors. A buried hydrophobic-to-charged change introduces desolvation risk, while polar-to-hydrophobic changes primarily risk losing polar contacts and overpacking. These are scientifically different effects. Standard BLOSUM62 provides a small general substitution prior.
+2. Added weak compatibility with two other RRM domains in the same supplied WT sequence. Both rigid WT anchor superpositions have CA RMSDs below 0.23 A and cover 75 queried positions with per-site distances below 3.2 A and source-asserted pLDDT at least 75. This supports within-protein folding compatibility, not independent homolog depth or evolutionary fitness. It also reduces glycine-specific penalties where aligned repeats supply a nonglycine residue. RNA specificity may differ between domains.
+3. Replaced hand-selected helix windows with directly computed WT nonlocal backbone N--O and i-to-i+4 distance contacts. This avoids overlooking amide-contact loss at S147 and A158 and helix propensity near A185. Distance contacts are only geometry priors, not validated hydrogen bonds or mutant energies.
+
+WT hashes and exact whole-chain mapping were verified, including the reference-sequence hash. All 577 residues have complete selected backbone and standard side-chain atoms; all 75 mutated positions are covered. MSA is disallowed/absent and no conservation score is imputed. Only chain A is supplied: no RNA or other binding-partner coordinates, so motif knowledge is used without inferring interface energy. Source-asserted AlphaFold confidence weights structural reliance, never fitness direction. Geometry-derived missingness remains explicit. Additive double-mutant costs represent an independence prior on a latent penalty, not validated epistasis.
+
+One global monotonic transform, score = 2 exp(-cost/1.5) - 1, maps all candidates to [-1,1]. Its scale is uncalibrated and used only for ordering. No candidate blocks are normalized separately. Execution/consistency checks cannot validate the scientific ranking without outcomes; no models were fitted or selected against hidden measurements.

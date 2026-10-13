@@ -1,0 +1,1 @@
+{"status":"ready","summary":"Saved deterministic support-only ensemble in proposal.py and documented validation and limitations in decision_note.txt. Protected executor passed: all 186 query IDs have finite scores in [-1,1], with no selections."}

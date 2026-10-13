@@ -1,0 +1,14 @@
+{
+  "candidates": 250,
+  "unique_ids": 250,
+  "mutation_and_sequence_checks": "pass",
+  "finite_and_bounds": "pass",
+  "one_global_higher_is_better_scale": "pass",
+  "input_hashes_match": "pass",
+  "fixed_partners": "none specified in case",
+  "outcome_validation": "unavailable: no measured supports or assay outcomes",
+  "score_range": [
+    -0.97763742,
+    0.68750028
+  ]
+}

@@ -1,0 +1,30 @@
+Final decision: deterministic, support-only hierarchical nonlinear kernel ensemble.
+
+Assay interpretation
+The case is YAP1_HUMAN_Araya_2012, a peptide-binding assay, with higher observed DMS_score as the signed ranking target. Its 96 supplied outcomes are positive and span a broad range. No wild-type outcome is present or assumed. Log fitness is a candidate latent scale for approximately multiplicative mutation effects, not an assertion about the assay's calibration or a proven mechanism. The final target is 87.5% Gaussian-transformed empirical training ranks and 12.5% standardized log fitness. This prioritizes ordinal prediction while retaining some quantitative information. Every transformation is recalculated from only the support records passed to that fit.
+
+Use of measured feedback
+All 32 original single-mutant records and all 64 supplied independently sampled feedback records enter the final fit with equal observation weight. There is no pseudo-labeling, hidden outcome access, additional measurement selection, or external data. Double mutants inform both inferred substitution effects and shared nonlinear combination effects. A broad intercept and a learned mutation-count component avoid fixing WT fitness to 1 or assigning every double mutant a predetermined penalty.
+
+Model
+Mutations are parsed from the record or recovered from differences against the supplied reference. Features distinguish mutation position, exact substitution, physicochemical changes, and similarities among mutations with the same reference residue. Scientific constants are hydropathy, approximate residue volumes, and simple charge, aromaticity, polarity, histidine, proline, glycine, beta-branching, and cysteine indicators. A Gaussian residue similarity kernel is centered against WT, so identity substitutions have zero mutational contribution. There are no pretrained predictor scores, MSA, external sequences, coordinates, or experimentally established structural annotations.
+
+The additive covariance is augmented by its positive-semidefinite elementwise square, allowing shrinkage-regularized nonlinear interactions that borrow information across chemically similar combinations. This is an empirical statistical model, not evidence that particular residues contact one another. Three nearby configurations are averaged with weights 0.6/0.2/0.2; all their fitted coefficients are freshly estimated from supplied supports. The returned scores are empirical ranks rescaled inside [-1,1], with ties preserved. They are arbitrary ordinal values, not calibrated binding values or probabilities. selected_ids is always empty.
+
+Validation and model selection
+Exploration files are retained. Repeated four-fold feedback validation held out the independently sampled feedback while preserving original singles, using discovery seeds 11,29,47,71,103. Comparisons included additive kernels, shared chemical features, centered Gaussian kernels, nonlinear kernels, raw/log/log1p/rank targets, mutation-count effects, and extra trees, random forests, and gradient boosting. Approximate sequence-derived WW element grouping was tested; it did not justify retention. Trees were substantially weaker on these small data. Gaussian-rank transformations in the later comparisons were calculated within each training fold; early exploratory globally transformed ranks were not used as final validation evidence.
+
+Additional split seeds 151,197,263 assessed the shortlist on feedback-only and all-support holdouts at two training sizes. Final-ensemble mean signed Spearman correlations were:
+* Keep all 32 original singles plus 48 feedback, hold out 16 feedback: 0.6816 over 12 folds, fold SD 0.1426.
+* Random 72/24 split of all supports: 0.6362 over 12 folds, fold SD 0.1241.
+* Keep original singles plus 32 feedback, hold out 32 feedback: 0.6793 over 6 folds, fold SD 0.0867.
+* Random 48/48 split of all supports: 0.4236 over 6 folds, fold SD 0.0676.
+These are overlapping internal folds, not independent experimental replications or unbiased confidence intervals. The additional splits informed the final ensemble weights, so these final numbers remain model-selection validation, not a locked external test. They suggest useful ranking signal and expose degradation when original and feedback observations are both sparse.
+
+Reusability and limitations
+proposal.py is self-contained apart from NumPy/SciPy. propose(case,assignment) performs no file reads or writes and has no fitted global state. It uses only outcomes in that invocation's support list. Vocabulary construction can inspect query sequences, but never query outcomes. There is no randomized deployed fit; all validation split and tree seeds were explicit. Contract and determinism checks covered public training subsets of sizes 1,16,32,48,72,96, and empty-support handling returns tied finite scores. Fitting the full supplied case takes substantially less than one second locally.
+
+Only 175 of 367 query mutation occurrences are directly represented among support substitutions; many alleles and one position lack direct measurements. Sparse and confounded double-mutant observations cannot identify all allele effects or pairwise epistasis. Property sharing, shrinkage, and ensembling reduce variance but cannot remove this uncertainty. Internal prediction gains do not establish folding, binding, stability, contact, or wet-lab improvement mechanisms. No calibrated probabilities, absolute fitness guarantees, or biological improvement claim is made.
+
+Artifact verification
+The required protected executor is run after writing this note, with output in trial_output.json; that output is the contract-verification record.

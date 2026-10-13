@@ -1,0 +1,6 @@
+2026-10-13T06:28:19.090345Z ERROR codex_models_manager::manager: failed to refresh available models: request timed out
+2026-10-13T06:28:26.081431Z  WARN codex_core::responses_retry: stream disconnected - retrying sampling request (1/5 in 182ms)... turn_id=01a133f2-8dd3-7250-8809-48fb6574c2d1 retries=1 max_retries=5 sampling_error=stream disconnected before completion: websocket closed by server before response.completed
+2026-10-13T06:32:54.097161Z ERROR codex_models_manager::manager: failed to refresh available models: request timed out
+2026-10-13T06:34:48.939112Z  WARN codex_analytics::client: failed to send events request: error sending request for url (https://chatgpt.com/backend-api/codex/analytics-events/events)
+2026-10-13T06:35:11.396834Z  WARN codex_core::responses_retry: stream disconnected - retrying sampling request (1/5 in 212ms)... turn_id=01a133f2-8dd3-7250-8809-48fb6574c2d1 retries=1 max_retries=5 sampling_error=stream disconnected before completion: IO error: peer closed connection without sending TLS close_notify: https://docs.rs/rustls/latest/rustls/manual/_03_howto/index.html#unexpected-eof
+2026-10-13T06:37:29.103314Z ERROR codex_models_manager::manager: failed to refresh available models: request timed out

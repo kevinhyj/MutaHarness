@@ -1,0 +1,80 @@
+Purpose and available evidence
+This proposal ranks the current fluorescence/FACS variants of Chlamydomonas
+reinhardtii phototropin (PHOT_CHLRE_Chen_2023). Higher observed fitness is better.
+Only the supplied 96 support outcomes and reference/variant sequences were used.
+No external sequences, pretrained predictions, structures, MSA, hidden labels,
+previous evaluation outputs, or additional measurements were used or requested.
+
+How the measured feedback is used
+The 64 measured combinations identify substitution main effects and departures
+from additivity within the recurring combinatorial mutation library. The 32
+original single mutants mostly cover a different set of substitutions. They
+provide a robust single-mutant baseline and same-position estimates for the four
+single-mutant queries. Each invocation reconstructs sequence differences and
+fits entirely afresh from its own supplied support records. There are no saved
+coefficients, fitness values, variant IDs, prediction lists, or fitted states in
+the executable. The exploratory files are retained for reproducibility but are
+never read by proposal.py. The assignment is not used to request experiments:
+selected_ids is always empty, and every supplied query ID receives a score.
+
+Model and assay interpretation
+The combination model averages 64 kernel-ridge configurations. Every model has
+shared substitution main effects and an independently fitted, unpenalized
+intercept. Pairwise effects have stronger regularization. The interaction
+families are all pairs involving residue 46, all pairs involving either 46 or
+60, and a small-prior ensemble of all distinct-position pairs. Fixed prior
+masses are 0.45, 0.45, and 0.10 respectively. Ratios and regularization strengths
+are documented in proposal.py. Same-position alternate substitutions are never
+allowed to form an interaction. Interactions involving positions 46 and 60 are
+validation-selected statistical hypotheses, not structural contact assertions.
+
+Both original assay units and a square-root transformation are considered.
+No measured WT is assumed and no additive effects are computed by subtracting
+an invented WT fitness. Transformations are modeling choices for this positive
+readout; they do not establish a fluorescence mechanism. Models are averaged
+on an assay-like scale after undoing the square-root transformation. On EVERY
+invocation with enough combination supports, two seeded four-fold support-only
+CV repetitions estimate signed Spearman correlation for each configuration.
+Smooth prior-weighted exponential weights (temperature 0.035) retain uncertainty
+rather than hard-selecting a winner. Small-data fallbacks are deterministic.
+Final values are average ranks mapped into [-1,1], without interpreting them as
+probabilities, calibrated assay values, or experimental improvement.
+
+Scientific validation
+Development compared raw, logarithmic, fractional-power, and squared targets;
+additive models; general pairwise kernels; kernels focused on different loci;
+RBF kernels; sparse elastic-net and Bayesian ARD fits; direct pairwise logistic
+ranking losses; gradient boosting; and mutation-burden interactions. Tests used
+multiple independently seeded splits of the observed feedback records, including
+training on only 32 combinations. Broad sparse selection and tree models were
+less reliable here. Focused regularized interactions and averaging of assay
+scales were retained. The initial executable additive baseline is preserved as
+proposal_baseline.py. Exploration scripts and their local results are retained.
+
+After fixing the complete predictor, final validation used four new repetitions
+of four-fold feedback holdout, with ensemble CV nested inside each training
+fold. The original single supports were retained, and no held-out feedback
+outcomes entered fitting or inner CV. With 48 training combinations, mean test
+Spearman rho was 0.85423 (fold SD 0.07364), versus 0.79357 for the early additive
+baseline. Eight new 32-training/32-test feedback splits gave mean rho 0.75559
+(SD 0.03035), versus 0.64878 for that baseline. These are descriptive internal
+estimates, not independent wet-lab evidence. Broad configuration searches and
+interaction-family selection used this small public dataset, so residual model
+selection optimism remains even though the final split seeds were new.
+
+Artifact checks and limitations
+The full supplied case fit took about 0.11 seconds in the local single-thread
+scientific environment, far below 120 seconds. Contract checks found 186 finite
+scores within [-1,1], exact query-ID coverage, and an empty selected_ids list.
+Repeated invocations and reordered supports produced identical outputs.
+The protected executor is the required final integration check.
+
+There are only 64 combination outcomes, no replicate uncertainty estimates,
+and no direct evidence for most pairwise or higher-order mechanisms. Assay
+transformations and locus-focused interactions remain predictive assumptions.
+Single-mutant queries outside measured positions receive a conservative median
+baseline rather than unsupported detailed structural predictions. Same-position
+single estimates are shrunk toward that baseline; their extrapolation remains
+uncertain. Validation primarily evaluates combinations because they constitute
+182 of the 186 current queries. Generalization to new mutation alphabets,
+unseen combinatorial regimes, or unrelated assay contexts is not established.

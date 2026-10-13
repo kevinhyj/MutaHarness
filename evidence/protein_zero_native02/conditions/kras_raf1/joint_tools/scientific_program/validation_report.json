@@ -1,0 +1,25 @@
+{
+  "candidates": 250,
+  "substitution_terms": 471,
+  "complete_MSA_candidates": 250,
+  "WT_coordinate_terms_present": 471,
+  "fixed_partner_chain": "B",
+  "source_hashes_verified": true,
+  "mutation_identities_verified": true,
+  "msa_profile_neff": null,
+  "msa_depth_kind": "unique_unweighted",
+  "mutated_site_non_gap_depth_range": [
+    548.0,
+    2048.0
+  ],
+  "mutated_site_gap_fraction_range": [
+    0.0,
+    0.732421875
+  ],
+  "raw_WT_origin": "source-supplied modeled complex; experimental assembly unverified",
+  "finite_global_scores": true,
+  "within_minus1_plus1": true,
+  "score_direction": "higher predicts better binding assay performance",
+  "score_transform": "tanh(latent / 7), identical for every candidate",
+  "validation_limit": "Integrity checks cannot establish heuristic accuracy without assay outcomes."
+}

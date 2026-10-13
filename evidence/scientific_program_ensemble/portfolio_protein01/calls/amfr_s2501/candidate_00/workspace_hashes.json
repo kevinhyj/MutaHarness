@@ -1,0 +1,22 @@
+{
+  "assignment.json": "663b02795c2498a191e01d9fb0575f2e3bbefeeab36ef3870a4b9a2350c0e70a",
+  "blend_check.py": "3c6e01140ee046f79561e16b20fe8b318bafcb9af24494718c5e066c5c90298b",
+  "blend_results.txt": "71eb9efb06bd4f4937988247b825d3243c5f0e4bd7771aa359d9491dad0102e4",
+  "case.json": "705136600825af7e0f5dbead7985300773bcfa6086a07820be1a3a9a1eea5a87",
+  "confirm.py": "ac7a160787ce65d83f8033ae52239274d8e3cb29436744fbd0688006da2bed24",
+  "confirmation_results.txt": "08bedc311096cecb4ddd18a5698a1a45ee638ebb960f840f88ef1e2ff12a0412",
+  "cv2_results.json": "ad24c60f4dbcc635652ab2c3ef344e9b5989650c43ad5aaf2ea431da39ca6cc0",
+  "cv_results.json": "fd645a20558f40a5c54dbe469dff8ba314ce702783cff816ea7294063035d828",
+  "decision_note.txt": "5fc5c217b529c3ebb2faef0edfad31d78929a690c08a092ec2919fa999ec46a3",
+  "exploration2_results.txt": "1dbb85298e0f79973653c57f9dab504e03e4693be73eef6d5c3450bffe4dc825",
+  "exploration_results.txt": "9a853ec265ccf37a1212d15f0365f52e8a0ff31209dcd7ca55d8f976d90a54a3",
+  "exploration_tree_results.txt": "a07a53d4ae18a805079c6253aceb3ffda30e60d467c61732edbe436a24ea0dea",
+  "explore.py": "3ea7bb7cb15bfdc844d7e979bf2d2786fba1cdb57b6e587435975fda372f30a4",
+  "explore2.py": "374822692d90861ff9c03ac1f98119f74080db2ad731c23278e5b8e47ff4ae6d",
+  "explore_trees.py": "5e001f071e70e6b9f42f672195f01be259e46c3f4aae1d415ee087b3c371b44f",
+  "finalize.py": "fb8e8a6f65a5f0d73890df3f236a92620e2fabe68f35fa39fcc5985851e2a3ea",
+  "host_output.json": "9c879305cd9e484c638de3158461a6d86b01d6d4d928fb2a240063e6f1aeabf3",
+  "proposal.py": "c9b6e0b4640e2a4d273d3eeefa9d35261fd617bbe0aa12b3758c90fd3bd44f36",
+  "tree_results.json": "d318bf662aebb3fb3cf798d8689415c4ec13695f61ddc401007f2dc43223431b",
+  "trial_output.json": "9c879305cd9e484c638de3158461a6d86b01d6d4d928fb2a240063e6f1aeabf3"
+}

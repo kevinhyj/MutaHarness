@@ -1,0 +1,2 @@
+2026-10-13T07:25:48.084965Z ERROR codex_models_manager::manager: failed to refresh available models: request timed out
+2026-10-13T07:27:48.407372Z  WARN codex_core::responses_retry: stream disconnected - retrying sampling request (1/5 in 191ms)... turn_id=01a13427-3648-7d12-84e0-4aca41ac630a retries=1 max_retries=5 sampling_error=stream disconnected before completion: IO error: peer closed connection without sending TLS close_notify: https://docs.rs/rustls/latest/rustls/manual/_03_howto/index.html#unexpected-eof

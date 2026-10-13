@@ -1,0 +1,23 @@
+{
+  "sha256": "435da45d87ee2a4570a814574b455a2fb451f9bd94d97397e6b648d7f29bae46",
+  "details": {
+    "cli_version": "codex-cli 0.162.0-alpha.17.2",
+    "cli_entrypoint_sha256": "0d5ac7aae20c4eda6242428d5e218c55ba96d8763fda2a271088ff37104b9d28",
+    "runtime_interpreter_sha256": "760d13aa43656d9e51bcbc1847088691a035f9dc37030070f1d4993f55d4e689",
+    "runtime": {
+      "python": "3.14.3 (main, Feb  3 2026, 15:32:20) [Clang 16.0.0 (clang-1600.0.26.6)]",
+      "packages": {
+        "numpy": "2.5.4",
+        "scipy": "1.18.1",
+        "scikit-learn": "1.9.1"
+      }
+    },
+    "permissions_sha256": "0acfe721f00ba1019aeb890ec984763760a09ea49e2fa9b16d3a388337e140ea",
+    "tool_network": false,
+    "web_search": "disabled",
+    "model": "gpt-6.1-sol",
+    "reasoning_effort": "high",
+    "fast_mode": false,
+    "service_tier_requested": null
+  }
+}

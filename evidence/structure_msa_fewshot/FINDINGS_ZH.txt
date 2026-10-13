@@ -1,0 +1,50 @@
+Protein 32-shot 实验结果
+
+设置：6个数据集、5种蛋白；每个数据集固定32个单突变测量，250个query与protein_zero_native02逐个一致。四组共享support及其归一化。Codex权重保持固定，support用于拟合/选择评分程序。
+
+原20分钟批次：20/24条件成功，2个容量失败、2个超时；原失败均保留。用户授权延长后，在独立namespace从相同干净输入补跑4组，每个新会话40分钟上限、整组45分钟上限、并发2。补跑成功4/4。补齐结果是另列的完成分析，不是统一40分钟预算的新四组实验。
+
+补齐后四组共同可评估的数据集：ube4b, cbx4, gfp, pabp, kras_abundance, kras_raf1。以下宏平均严格使用同一组case：
+条件 | zero-shot Spearman | 32-shot Spearman | few-minus-zero | few-minus-few-basic | Top25 overlap
+基础Codex | 0.5233 | 0.5480 | +0.0247 | +0.0000 | 0.3533
++MSA | 0.5850 | 0.5581 | -0.0269 | +0.0101 | 0.4133
++结构 | 0.5316 | 0.5558 | +0.0242 | +0.0078 | 0.3867
++MSA和结构 | 0.5901 | 0.5749 | -0.0152 | +0.0269 | 0.3533
+
+Top25 overlap独立对照（每case都是同一250条query，true/predicted top25取交集再除25；分数并列按ID固定处理）：
+条件 | zero-shot | 32-shot | 百分点变化
+基础Codex | 25.3% | 35.3% | +10.00
++MSA | 30.7% | 41.3% | +10.67
++结构 | 28.7% | 38.7% | +10.00
++MSA和结构 | 26.0% | 35.3% | +9.33
+这轮32-shot在选取最高fitness的25个候选方面，四组均高于各自zero-shot；其中MSA组最好。但联合组的整体Spearman低于zero-shot联合组。两类目标应分别报告。
+补跑4个新会话各用约18.2、13.5、8.7、12.4分钟，均未耗满原20分钟限时；成功同时伴随新会话/新程序生成，不能单独归因于增加到40分钟。
+
+逐数据集32-shot Spearman：
+case | basic | MSA | structure | joint
+ube4b | 0.3210* | 0.3922 | 0.3662 | 0.4210
+cbx4 | 0.6191 | 0.5691* | 0.5379 | 0.5927
+gfp | 0.6547 | 0.6934 | 0.7028* | 0.7430
+pabp | 0.5803 | 0.6880 | 0.6054 | 0.6281
+kras_abundance | 0.4717* | 0.3664 | 0.5068 | 0.4370
+kras_raf1 | 0.6412 | 0.6396 | 0.6157 | 0.6277
+*：延时补跑的有效结果；其原失败没有被覆盖。
+
+原批次的公平预算比较只有PABP与KRAS–RAF1这两个四组均成功的case：{"cases": ["pabp", "kras_raf1"], "macro_spearman": {"basic": 0.6107471387155636, "msa_tools": 0.6637741934358237, "structure_tools": 0.6105790433856813, "joint_tools": 0.6279078161182897}, "macro_top25": {"basic": 0.26, "msa_tools": 0.32, "structure_tools": 0.3, "joint_tools": 0.26}, "delta_from_basic": {"basic": 0.0, "msa_tools": 0.053027054720260036, "structure_tools": -0.0001680953298823784, "joint_tools": 0.017160677402726088}, "wins_over_basic": {"msa_tools": 1, "structure_tools": 1, "joint_tools": 1}, "equal_protein_macro": {"basic": 0.6107471387155636, "msa_tools": 0.6637741934358237, "structure_tools": 0.6105790433856813, "joint_tools": 0.6279078161182897}}
+
+预先定义的子集分析（结果打开前只按输入定义分组，至少25条query才算相关性）：
+联合组few-minus-zero：case | 单突变delta | 多突变delta
+ube4b | +0.1329 | -0.1334
+cbx4 | +0.0264 | -0.3031
+kras_raf1 | +0.2240 | -0.0334
+同样3个case的平均delta：单突变+0.1278；多突变-0.1566。其余case单突变query少于25，不混入该比较。
+
+解释边界：这提示单突变support的收益未可靠迁移到组合突变；子集标签范围不同，相关性也是探索性指标，尚未证明具体原因是epistasis或哪一项模型选择。Native程序确实拟合了正则化特征权重，其中一些以未验证的加和/乘法近似外推多突变。
+后续方向：保留zero-shot的MSA/结构先验，只用support拟合少量有收缩约束的校准/融合参数；另测相同总数的单/多突变混合support，匹配query突变阶数。两项尚未在本轮实施。
+
+原批与补跑合计33次native会话；已知CLI输入+输出10,178,717，9次用量未知。CLI内部重连/失败流费用未独立暴露，含缓存输入的这些用量不是全部账单。
+最终预测绑定原生final JSON，未拿checkpoint替代失败，原20成功case输入均未改变；补跑的成功输出也独立绑定。Spearman经scipy和独立平均秩Pearson重复核验。
+query标签仅在原批/补跑各自全终止后供host评估，测试native会话不读取query标签/旧预测；已知公共数据的预训练暴露未被排除。
+每条件一次有效程序生成，未验证多seed稳定性；few与zero的程序生成、监督信息、拟合流程不同，不是仅添加labels的严格消融。
+本轮只跑protein与protein–protein任务，没有RNA，也没有新实验反馈轮。
+应用规范：/Users/hyj/Desktop/Kimi/project/.agents/skills/few-shot-lab-loop/SKILL.md

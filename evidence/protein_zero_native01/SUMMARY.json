@@ -1,0 +1,315 @@
+{
+  "status": "scored_after_all_terminal",
+  "protocol_sha256": "abdeafc53343b416dac32749d129f64b0e1b390f1367739e6a64825b5260e015",
+  "rows": [
+    {
+      "case_id": "amfr",
+      "arm": "basic",
+      "status": "complete",
+      "wall_seconds": 594.301,
+      "known_input_plus_output_tokens": 223808,
+      "unknown_usage": false,
+      "checkpoint_contract_valid": true,
+      "attempts": 1,
+      "spearman": 0.43399422723453535,
+      "top25_overlap": 0.28,
+      "independent_spearman": 0.4339942272345354,
+      "distinct_prediction_scores": 249
+    },
+    {
+      "case_id": "amfr",
+      "arm": "msa_tools",
+      "status": "complete",
+      "wall_seconds": 805.179,
+      "known_input_plus_output_tokens": 379051,
+      "unknown_usage": false,
+      "checkpoint_contract_valid": true,
+      "attempts": 1,
+      "spearman": 0.4867981440967482,
+      "top25_overlap": 0.08,
+      "independent_spearman": 0.4867981440967482,
+      "distinct_prediction_scores": 245
+    },
+    {
+      "case_id": "amfr",
+      "arm": "structure_tools",
+      "status": "complete",
+      "wall_seconds": 985.673,
+      "known_input_plus_output_tokens": 483919,
+      "unknown_usage": false,
+      "checkpoint_contract_valid": true,
+      "attempts": 1,
+      "spearman": 0.6122751404022464,
+      "top25_overlap": 0.6,
+      "independent_spearman": 0.6122751404022464,
+      "distinct_prediction_scores": 250
+    },
+    {
+      "case_id": "amfr",
+      "arm": "joint_tools",
+      "status": "complete",
+      "wall_seconds": 940.433,
+      "known_input_plus_output_tokens": 902365,
+      "unknown_usage": false,
+      "checkpoint_contract_valid": true,
+      "attempts": 1,
+      "spearman": 0.6574366932149486,
+      "top25_overlap": 0.32,
+      "independent_spearman": 0.6574366932149487,
+      "distinct_prediction_scores": 249
+    },
+    {
+      "case_id": "his7",
+      "arm": "basic",
+      "status": "complete",
+      "wall_seconds": 682.859,
+      "known_input_plus_output_tokens": 228228,
+      "unknown_usage": false,
+      "checkpoint_contract_valid": true,
+      "attempts": 1,
+      "spearman": 0.5766928829558756,
+      "top25_overlap": 0.4,
+      "independent_spearman": 0.5766928829558756,
+      "distinct_prediction_scores": 250
+    },
+    {
+      "case_id": "his7",
+      "arm": "msa_tools",
+      "status": "complete",
+      "wall_seconds": 517.488,
+      "known_input_plus_output_tokens": 406301,
+      "unknown_usage": false,
+      "checkpoint_contract_valid": true,
+      "attempts": 1,
+      "spearman": 0.5987090263674707,
+      "top25_overlap": 0.28,
+      "independent_spearman": 0.5987090263674707,
+      "distinct_prediction_scores": 250
+    },
+    {
+      "case_id": "his7",
+      "arm": "structure_tools",
+      "status": "complete",
+      "wall_seconds": 576.213,
+      "known_input_plus_output_tokens": 343689,
+      "unknown_usage": false,
+      "checkpoint_contract_valid": true,
+      "attempts": 1,
+      "spearman": 0.491376306013687,
+      "top25_overlap": 0.32,
+      "independent_spearman": 0.491376306013687,
+      "distinct_prediction_scores": 250
+    },
+    {
+      "case_id": "his7",
+      "arm": "joint_tools",
+      "status": "complete",
+      "wall_seconds": 669.727,
+      "known_input_plus_output_tokens": 649662,
+      "unknown_usage": false,
+      "checkpoint_contract_valid": true,
+      "attempts": 1,
+      "spearman": 0.5971516990391995,
+      "top25_overlap": 0.24,
+      "independent_spearman": 0.5971516990391995,
+      "distinct_prediction_scores": 250
+    },
+    {
+      "case_id": "yap_peptide",
+      "arm": "basic",
+      "status": "complete",
+      "wall_seconds": 455.987,
+      "known_input_plus_output_tokens": 187792,
+      "unknown_usage": false,
+      "checkpoint_contract_valid": true,
+      "attempts": 1,
+      "spearman": 0.3537152297380888,
+      "top25_overlap": 0.32,
+      "independent_spearman": 0.3537152297380888,
+      "distinct_prediction_scores": 243
+    },
+    {
+      "case_id": "yap_peptide",
+      "arm": "msa_tools",
+      "status": "complete",
+      "wall_seconds": 460.902,
+      "known_input_plus_output_tokens": 283839,
+      "unknown_usage": false,
+      "checkpoint_contract_valid": true,
+      "attempts": 1,
+      "spearman": 0.37364751532057416,
+      "top25_overlap": 0.24,
+      "independent_spearman": 0.37364751532057416,
+      "distinct_prediction_scores": 249
+    },
+    {
+      "case_id": "yap_peptide",
+      "arm": "structure_tools",
+      "status": "complete",
+      "wall_seconds": 542.343,
+      "known_input_plus_output_tokens": 437841,
+      "unknown_usage": false,
+      "checkpoint_contract_valid": true,
+      "attempts": 1,
+      "spearman": 0.42892688503167753,
+      "top25_overlap": 0.4,
+      "independent_spearman": 0.4289268850316775,
+      "distinct_prediction_scores": 250
+    },
+    {
+      "case_id": "yap_peptide",
+      "arm": "joint_tools",
+      "status": "complete",
+      "wall_seconds": 599.067,
+      "known_input_plus_output_tokens": 597746,
+      "unknown_usage": false,
+      "checkpoint_contract_valid": true,
+      "attempts": 1,
+      "spearman": 0.4012574035035102,
+      "top25_overlap": 0.16,
+      "independent_spearman": 0.40125740350351013,
+      "distinct_prediction_scores": 250
+    },
+    {
+      "case_id": "bh3_mcl1",
+      "arm": "basic",
+      "status": "complete",
+      "wall_seconds": 348.746,
+      "known_input_plus_output_tokens": 147131,
+      "unknown_usage": false,
+      "checkpoint_contract_valid": true,
+      "attempts": 1,
+      "spearman": 0.5469212504431551,
+      "top25_overlap": 0.2,
+      "independent_spearman": 0.5469212504431552,
+      "distinct_prediction_scores": 167
+    },
+    {
+      "case_id": "bh3_mcl1",
+      "arm": "msa_tools",
+      "status": "complete",
+      "wall_seconds": 434.591,
+      "known_input_plus_output_tokens": 254772,
+      "unknown_usage": false,
+      "checkpoint_contract_valid": true,
+      "attempts": 1,
+      "spearman": 0.4709157474836415,
+      "top25_overlap": 0.2,
+      "independent_spearman": 0.47091574748364146,
+      "distinct_prediction_scores": 248
+    },
+    {
+      "case_id": "bh3_mcl1",
+      "arm": "structure_tools",
+      "status": "complete",
+      "wall_seconds": 592.468,
+      "known_input_plus_output_tokens": 527376,
+      "unknown_usage": false,
+      "checkpoint_contract_valid": true,
+      "attempts": 1,
+      "spearman": 0.42423577977247634,
+      "top25_overlap": 0.08,
+      "independent_spearman": 0.42423577977247634,
+      "distinct_prediction_scores": 250
+    },
+    {
+      "case_id": "bh3_mcl1",
+      "arm": "joint_tools",
+      "status": "complete",
+      "wall_seconds": 609.874,
+      "known_input_plus_output_tokens": 463400,
+      "unknown_usage": false,
+      "checkpoint_contract_valid": true,
+      "attempts": 1,
+      "spearman": 0.5389554147660858,
+      "top25_overlap": 0.16,
+      "independent_spearman": 0.5389554147660858,
+      "distinct_prediction_scores": 249
+    }
+  ],
+  "complete_conditions": 16,
+  "planned_conditions": 16,
+  "complete_all_arm_cases": [
+    "amfr",
+    "his7",
+    "yap_peptide",
+    "bh3_mcl1"
+  ],
+  "paired_case_macro_spearman": {
+    "basic": 0.4778308975929137,
+    "msa_tools": 0.48251760831710866,
+    "structure_tools": 0.4892035278050218,
+    "joint_tools": 0.548700302630936
+  },
+  "comparisons": [
+    {
+      "case_id": "amfr",
+      "arm": "msa_tools",
+      "delta_from_basic": 0.05280391686221286
+    },
+    {
+      "case_id": "his7",
+      "arm": "msa_tools",
+      "delta_from_basic": 0.02201614341159508
+    },
+    {
+      "case_id": "yap_peptide",
+      "arm": "msa_tools",
+      "delta_from_basic": 0.019932285582485387
+    },
+    {
+      "case_id": "bh3_mcl1",
+      "arm": "msa_tools",
+      "delta_from_basic": -0.07600550295951358
+    },
+    {
+      "case_id": "amfr",
+      "arm": "structure_tools",
+      "delta_from_basic": 0.17828091316771105
+    },
+    {
+      "case_id": "his7",
+      "arm": "structure_tools",
+      "delta_from_basic": -0.08531657694218864
+    },
+    {
+      "case_id": "yap_peptide",
+      "arm": "structure_tools",
+      "delta_from_basic": 0.07521165529358875
+    },
+    {
+      "case_id": "bh3_mcl1",
+      "arm": "structure_tools",
+      "delta_from_basic": -0.12268547067067875
+    },
+    {
+      "case_id": "amfr",
+      "arm": "joint_tools",
+      "delta_from_basic": 0.22344246598041323
+    },
+    {
+      "case_id": "his7",
+      "arm": "joint_tools",
+      "delta_from_basic": 0.020458816083323894
+    },
+    {
+      "case_id": "yap_peptide",
+      "arm": "joint_tools",
+      "delta_from_basic": 0.047542173765421414
+    },
+    {
+      "case_id": "bh3_mcl1",
+      "arm": "joint_tools",
+      "delta_from_basic": -0.007965835677069322
+    }
+  ],
+  "independent_arithmetic_verified": true,
+  "scorer_model_calls": 0,
+  "limitations": [
+    "One native program generation per condition; model sampling seed not independently controlled.",
+    "Four previously inspected development cases; no held-out generalization claim.",
+    "Evidence modalities include preprocessing/tools/raw inputs; this does not isolate each internal tool contribution.",
+    "No score-driven retries or model selection; only final valid submissions are scored.",
+    "Runtime label isolation does not establish absence of pretraining exposure."
+  ]
+}

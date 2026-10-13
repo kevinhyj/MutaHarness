@@ -1,0 +1,69 @@
+{
+  "run_id": "protein_zero_native02",
+  "case_id": "gfp",
+  "arm": "joint_tools",
+  "status": "complete",
+  "started_at_utc": "2026-10-13T05:18:12.317213+00:00",
+  "finished_at_utc": "2026-10-13T05:28:30.291363+00:00",
+  "support_count": 0,
+  "query_count": 250,
+  "prediction_count": 250,
+  "invocations": [
+    {
+      "started_at_utc": "2026-10-13T05:18:12.335238+00:00",
+      "finished_at_utc": "2026-10-13T05:28:30.269353+00:00",
+      "wall_seconds": 617.932,
+      "exit_code": 0,
+      "timed_out": false,
+      "usage": {
+        "input_tokens": 475438,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 17359,
+        "reasoning_output_tokens": 5425,
+        "cached_input_tokens": 418688
+      },
+      "usage_known": true,
+      "observed_item_types": [
+        "agent_message",
+        "command_execution",
+        "error",
+        "file_change"
+      ],
+      "malformed_jsonl_lines": 0,
+      "model_requested": "gpt-6.1-sol",
+      "reasoning_effort": "high",
+      "cli_version": "codex-cli 0.162.0-alpha.17.2",
+      "backend_model_identifier": null,
+      "backend_model_identifier_status": "not provided by native exec JSONL",
+      "service_tier_requested": null,
+      "fast_mode": false
+    }
+  ],
+  "known_input_plus_output_tokens": 492797,
+  "unknown_usage": false,
+  "errors": [
+    []
+  ],
+  "protocol_sha256": "6f4e892a01cf835ff5674aba7271b17dce52a582fb53a12df7fdf3076898332e",
+  "initial_input_sha256": {
+    "case.json": "c8bed056e1f04599ce56668707954e9730373be2b263dfa1b23b0994e28f92ce",
+    "evidence_manifest.json": "e54f98fcb19452385778b82e652fa2b0a0d1f89563858f7dfa4229f6f84c04df",
+    "msa_evidence.json": "fbfd220e883019e6427cb32c072565692761dc592f086aa6b6ed5a0bbe9d3f5f",
+    "msa_tools.py": "475d0090a9ac45f5ac2df109ca7c09d6f221f92c3753be4b14802190a24ae101",
+    "raw_evidence/GFP_AEQVI.pdb": "70bf9c39c1cc353d330fb37aba49d448caf03693b35196f3adc7375ef434fcc5",
+    "raw_evidence/GFP_AEQVI_Sarkisyan_2016.json": "1061cf8371241b93be68e1c206e5a454e3ebc0713bc5763ab2a1738b5ad406a2",
+    "raw_evidence/GFP_AEQVI_full_04-29-2022_b08.a2m": "caf7b7da575b832f5829deac1ceee69ea0098b3660d8eea0c49b01405bb9b8f8",
+    "raw_evidence/msa_profile.json": "8141d78096cc8fc60d13571f10ac38a4738e57d6253ac71acf4988c64cb83e26",
+    "structure_evidence.json": "4cd4b97bc460182b2490e810ad9811585a07a1302a96b30bdac19c29167af3c9",
+    "structure_tools.py": "852a24ba0a243546bf3ffe970f51c6a2fc650a83ae956f09eba9e761bb8c63c2"
+  },
+  "final_case_sha256": "c8bed056e1f04599ce56668707954e9730373be2b263dfa1b23b0994e28f92ce",
+  "model_requested": "gpt-6.1-sol",
+  "reasoning_effort": "high",
+  "fast_mode": false,
+  "label_access": "OS denied",
+  "tool_network": "disabled",
+  "prediction_sha256": "eaba55afab17a92a2d3cebded1acd7290840fee28e11e394b0d9d4f955524456",
+  "checkpoint_contract_valid": true,
+  "wall_seconds": 618.138
+}

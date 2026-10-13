@@ -1,0 +1,60 @@
+{
+  "run_id": "protein_zero_native01",
+  "case_id": "yap_peptide",
+  "arm": "basic",
+  "status": "complete",
+  "started_at_utc": "2026-10-13T03:43:55.266211+00:00",
+  "finished_at_utc": "2026-10-13T03:51:31.246776+00:00",
+  "support_count": 0,
+  "query_count": 250,
+  "prediction_count": 250,
+  "invocations": [
+    {
+      "started_at_utc": "2026-10-13T03:43:55.278862+00:00",
+      "finished_at_utc": "2026-10-13T03:51:31.222366+00:00",
+      "wall_seconds": 455.941,
+      "exit_code": 0,
+      "timed_out": false,
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "reasoning_output_tokens": 4274,
+        "output_tokens": 12996,
+        "input_tokens": 174796,
+        "cached_input_tokens": 124672
+      },
+      "usage_known": true,
+      "observed_item_types": [
+        "agent_message",
+        "command_execution",
+        "error"
+      ],
+      "malformed_jsonl_lines": 0,
+      "model_requested": "gpt-6.1-sol",
+      "reasoning_effort": "high",
+      "cli_version": "codex-cli 0.162.0-alpha.17.2",
+      "backend_model_identifier": null,
+      "backend_model_identifier_status": "not provided by native exec JSONL",
+      "service_tier_requested": null,
+      "fast_mode": false
+    }
+  ],
+  "known_input_plus_output_tokens": 187792,
+  "unknown_usage": false,
+  "errors": [
+    []
+  ],
+  "protocol_sha256": "abdeafc53343b416dac32749d129f64b0e1b390f1367739e6a64825b5260e015",
+  "initial_input_sha256": {
+    "case.json": "6c8c0ecdbd4ca72ac834f726fcc4ed70bb6299538ba809cad3a99f8eb4c62adf",
+    "evidence_manifest.json": "2baf717471210a23f4a86d3426e9c7a09a306e66eebba4a9773008f7fdc76a59"
+  },
+  "final_case_sha256": "6c8c0ecdbd4ca72ac834f726fcc4ed70bb6299538ba809cad3a99f8eb4c62adf",
+  "model_requested": "gpt-6.1-sol",
+  "reasoning_effort": "high",
+  "fast_mode": false,
+  "label_access": "OS denied",
+  "tool_network": "disabled",
+  "prediction_sha256": "c7eb4656c4e76b3515e866bfb72394a4c634fb97f29cd3c8246b733b7210bfca",
+  "checkpoint_contract_valid": true,
+  "wall_seconds": 455.987
+}

@@ -1,0 +1,11 @@
+{
+  "all_250_unique_IDs": true,
+  "finite_scores_in_range": true,
+  "mutation_identity_and_sidecars": true,
+  "source_hashes": true,
+  "MSA_fixed_tool_reproduced": true,
+  "exact_WT_mapping": true,
+  "global_monotonic_higher_is_better": true,
+  "supplied_fixed_partner_geometry": "single WT protein chain, no RNA coordinates",
+  "outcome_accuracy_validated": false
+}

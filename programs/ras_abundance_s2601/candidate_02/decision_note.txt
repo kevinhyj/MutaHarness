@@ -1,0 +1,16 @@
+Completion-only recovery
+
+The saved proposal.py was executed unchanged using:
+/Users/hyj/Desktop/Kimi/.work/venv/bin/python /Users/hyj/Desktop/Kimi/.work/venv/share/portfolio_protein02/executor.py --output trial_output.json
+The executor exited successfully (exit code 0).
+
+Existing implementation
+The case is KRAS RASK_HUMAN_Weng_2022_abundance, a yeast-growth assay with higher ProteinGym DMS_score as the ranking target. There are 96 supplied support records (37 single and 59 double mutants) and 186 unlabeled queries (19 single and 167 double mutants), against a 188-residue reference. Assignment round 3 uses the direct arm, batch_size 0 and remaining_budget 0; no measurements are selected.
+
+The deterministic predictor infers substitutions from full sequences, falling back to mutation strings. It uses fixed amino-acid hydropathy, sidechain volume and chemical descriptors, reference-sequence hydrophobic context, position distances, coarse sequence regions and mutation count. Its covariance combines exact-mutation and same-position terms, smooth chemical transfer, region transfer, descriptors, count and local chemical similarity with the saved fixed weights. Support fitness values become normalized midranks. Three fixed regularized kernel models combine this covariance with radial-basis terms (length/weight pairs 30/1, 30/0.3 and 10/0.3; regularization 0.1); their predictions are averaged. Coefficients are fitted only to supplied support outcomes at invocation. Final scores are centered query ranks, with larger values predicting higher assay ranking; selected_ids is empty.
+
+Limitations
+Scores are relative ranks within this query set, not calibrated abundance values, probabilities or original assay units. There is no measured wild-type baseline or uncertainty estimate. Coarse region boundaries and sequence hydrophobic context are assumed statistical priors, not measured structural coordinates or burial annotations. Sparse mutation coverage and the predominance of double-mutant queries limit transfer; nonlinear kernels allow combination effects but do not establish mechanistic epistasis. Performance on the unlabeled queries cannot be measured from the available files. The proposal documents earlier support-split configuration selection, but this recovery performed no new search or scientific validation and makes no new accuracy claim.
+
+Recovery scope
+No scientific code, input data, model choices or hyperparameters were changed. SHA-256 hashes of proposal.py, case.json and assignment.json matched before and after execution. No hidden labels, global memory, network resources or additional measurements were accessed. Deliverables are trial_output.json and this decision_note.txt.

@@ -1,0 +1,312 @@
+{
+  "status": "all_planned_attempts_terminal_and_scored",
+  "rows": [
+    {
+      "case_id": "his7",
+      "seed": 2601,
+      "native_statuses": [
+        "complete",
+        "complete",
+        "complete"
+      ],
+      "cv_statuses": [
+        "complete",
+        "complete",
+        "complete"
+      ],
+      "support_cv_rho": [
+        0.6285292998737892,
+        0.6027067683888814,
+        0.6456833728178668
+      ],
+      "cv_selected_candidate": 2,
+      "all_native_complete": true,
+      "same_budget_comparison_complete": true,
+      "known_input_plus_output_tokens": 3340768,
+      "unknown_usage": false,
+      "candidate_wall_seconds": [
+        731.4964497503825,
+        844.9067623750307,
+        682.8558526658453
+      ],
+      "candidate_rho": [
+        0.41951150364411816,
+        0.3852616784083778,
+        0.41234749884039706
+      ],
+      "ensemble_rho": 0.4197305035216187,
+      "delta_vs_direct00": 0.0002189998775005697,
+      "delta_vs_cv_single": 0.007383004681221661,
+      "delta_vs_mean_single": 0.014023609890654432,
+      "cv_selected_single_rho": 0.41234749884039706,
+      "candidate_top20_overlap_fraction": [
+        0.35,
+        0.3,
+        0.3
+      ],
+      "ensemble_top20_overlap_fraction": 0.35,
+      "top20_delta_vs_direct00": 0.0,
+      "top20_delta_vs_cv_single": 0.04999999999999999
+    },
+    {
+      "case_id": "grb2",
+      "seed": 2601,
+      "native_statuses": [
+        "complete",
+        "complete",
+        "complete"
+      ],
+      "cv_statuses": [
+        "complete",
+        "complete",
+        "complete"
+      ],
+      "support_cv_rho": [
+        0.6078027351379751,
+        0.5981569467757177,
+        0.6394504907387264
+      ],
+      "cv_selected_candidate": 2,
+      "all_native_complete": true,
+      "same_budget_comparison_complete": true,
+      "known_input_plus_output_tokens": 2258481,
+      "unknown_usage": false,
+      "candidate_wall_seconds": [
+        722.9127030828968,
+        739.0505962497555,
+        857.2498574997298
+      ],
+      "candidate_rho": [
+        0.6577801192601952,
+        0.5958891911111615,
+        0.6015068371804615
+      ],
+      "ensemble_rho": 0.6661323666146092,
+      "delta_vs_direct00": 0.008352247354413977,
+      "delta_vs_cv_single": 0.06462552943414768,
+      "delta_vs_mean_single": 0.047740317430669865,
+      "cv_selected_single_rho": 0.6015068371804615,
+      "candidate_top20_overlap_fraction": [
+        0.4,
+        0.5,
+        0.35
+      ],
+      "ensemble_top20_overlap_fraction": 0.35,
+      "top20_delta_vs_direct00": -0.050000000000000044,
+      "top20_delta_vs_cv_single": 0.0
+    },
+    {
+      "case_id": "yap1",
+      "seed": 2601,
+      "native_statuses": [
+        "complete",
+        "complete",
+        "complete"
+      ],
+      "cv_statuses": [
+        "complete",
+        "complete",
+        "complete"
+      ],
+      "support_cv_rho": [
+        0.6956900017119713,
+        0.5681055900416072,
+        0.6272193416933938
+      ],
+      "cv_selected_candidate": 0,
+      "all_native_complete": true,
+      "same_budget_comparison_complete": true,
+      "known_input_plus_output_tokens": 2132442,
+      "unknown_usage": false,
+      "candidate_wall_seconds": [
+        669.415252499748,
+        766.9796161670238,
+        713.2320372918621
+      ],
+      "candidate_rho": [
+        0.3830994662220134,
+        0.4663325345276416,
+        0.45081610664877414
+      ],
+      "ensemble_rho": 0.4633863873556208,
+      "delta_vs_direct00": 0.08028692113360741,
+      "delta_vs_cv_single": 0.08028692113360741,
+      "delta_vs_mean_single": 0.02997035155614447,
+      "cv_selected_single_rho": 0.3830994662220134,
+      "candidate_top20_overlap_fraction": [
+        0.2,
+        0.25,
+        0.2
+      ],
+      "ensemble_top20_overlap_fraction": 0.25,
+      "top20_delta_vs_direct00": 0.04999999999999999,
+      "top20_delta_vs_cv_single": 0.04999999999999999
+    },
+    {
+      "case_id": "phot",
+      "seed": 2601,
+      "native_statuses": [
+        "complete",
+        "complete",
+        "complete"
+      ],
+      "cv_statuses": [
+        "complete",
+        "complete",
+        "complete"
+      ],
+      "support_cv_rho": [
+        0.8970601741073309,
+        0.883073473246382,
+        0.8800540327006127
+      ],
+      "cv_selected_candidate": 0,
+      "all_native_complete": true,
+      "same_budget_comparison_complete": true,
+      "known_input_plus_output_tokens": 1987063,
+      "unknown_usage": false,
+      "candidate_wall_seconds": [
+        744.0131574170664,
+        769.7488086246885,
+        634.1890737498179
+      ],
+      "candidate_rho": [
+        0.8796287360325896,
+        0.8550135438180979,
+        0.827631639679346
+      ],
+      "ensemble_rho": 0.8611804111247897,
+      "delta_vs_direct00": -0.018448324907799907,
+      "delta_vs_cv_single": -0.018448324907799907,
+      "delta_vs_mean_single": 0.007089104614778519,
+      "cv_selected_single_rho": 0.8796287360325896,
+      "candidate_top20_overlap_fraction": [
+        0.7,
+        0.6,
+        0.6
+      ],
+      "ensemble_top20_overlap_fraction": 0.6,
+      "top20_delta_vs_direct00": -0.09999999999999998,
+      "top20_delta_vs_cv_single": -0.09999999999999998
+    },
+    {
+      "case_id": "ras_abundance",
+      "seed": 2601,
+      "native_statuses": [
+        "complete",
+        "complete",
+        "failed"
+      ],
+      "cv_statuses": [
+        "complete",
+        "complete",
+        "native_failed"
+      ],
+      "support_cv_rho": [
+        0.5415102138288025,
+        0.6201449229248414,
+        null
+      ],
+      "cv_selected_candidate": null,
+      "all_native_complete": false,
+      "same_budget_comparison_complete": false,
+      "known_input_plus_output_tokens": 1365700,
+      "unknown_usage": true,
+      "candidate_wall_seconds": [
+        655.365217583254,
+        752.4869652502239,
+        696.7679512090981
+      ],
+      "candidate_rho": null,
+      "ensemble_rho": null,
+      "delta_vs_direct00": null,
+      "delta_vs_cv_single": null,
+      "delta_vs_mean_single": null
+    },
+    {
+      "case_id": "ynzc",
+      "seed": 2601,
+      "native_statuses": [
+        "complete",
+        "complete",
+        "complete"
+      ],
+      "cv_statuses": [
+        "complete",
+        "complete",
+        "complete"
+      ],
+      "support_cv_rho": [
+        0.8467905392337993,
+        0.8853986620879797,
+        0.8908300001135645
+      ],
+      "cv_selected_candidate": 2,
+      "all_native_complete": true,
+      "same_budget_comparison_complete": true,
+      "known_input_plus_output_tokens": 1846860,
+      "unknown_usage": false,
+      "candidate_wall_seconds": [
+        678.1986103337258,
+        787.9134604167193,
+        710.4147047079168
+      ],
+      "candidate_rho": [
+        0.801085563429306,
+        0.8408179440437504,
+        0.7949186806306379
+      ],
+      "ensemble_rho": 0.8316136495248356,
+      "delta_vs_direct00": 0.030528086095529594,
+      "delta_vs_cv_single": 0.036694968894197766,
+      "delta_vs_mean_single": 0.019339586823604038,
+      "cv_selected_single_rho": 0.7949186806306379,
+      "candidate_top20_overlap_fraction": [
+        0.65,
+        0.8,
+        0.7
+      ],
+      "ensemble_top20_overlap_fraction": 0.75,
+      "top20_delta_vs_direct00": 0.09999999999999998,
+      "top20_delta_vs_cv_single": 0.050000000000000044
+    }
+  ],
+  "comparisons": {
+    "delta_vs_cv_single": {
+      "complete_assays": 5,
+      "wins": 4,
+      "mean_delta": 0.034108419847074925,
+      "assay_cluster_bootstrap95": null,
+      "prospective_stability_criteria_met": false
+    },
+    "delta_vs_direct00": {
+      "complete_assays": 5,
+      "wins": 4,
+      "mean_delta": 0.02018758591065033,
+      "assay_cluster_bootstrap95": null,
+      "prospective_stability_criteria_met": false
+    },
+    "delta_vs_mean_single": {
+      "complete_assays": 5,
+      "wins": 5,
+      "mean_delta": 0.023632594063170264,
+      "assay_cluster_bootstrap95": null,
+      "prospective_stability_criteria_met": false
+    }
+  },
+  "primary_comparison": "delta_vs_cv_single",
+  "planned_assays": 6,
+  "planned_native_calls": 18,
+  "model": "gpt-6.1-sol",
+  "reasoning_effort": "high",
+  "primary_pass": false,
+  "limits": [
+    "Six additional protein assays; bounded replication, not universal superiority.",
+    "Six protein assays selected by endpoint coverage and input availability, not by stored scores. This is a small cross-domain extension; no universal protein-engineering claim.",
+    "Architecture was generated from all96 support outcomes; support-CV architecture selection is not nested. Remaining186 query outcomes are never used for model or portfolio selection.",
+    "Generation maximum wait3600s and soft12-minute scientific target differ from the previous hard720-second campaign; cohorts are reported separately.",
+    "Three scientific sessions per portfolio. CV-selected single shares the same generated program pool; one-call direct has lower inference budget.",
+    "Pretraining exposure to public benchmarks cannot be excluded.",
+    "Top20 overlap is an offline ranking metric, not new wet-lab validation."
+  ]
+}

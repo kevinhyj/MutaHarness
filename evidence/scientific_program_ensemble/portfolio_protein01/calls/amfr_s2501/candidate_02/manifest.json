@@ -1,0 +1,50 @@
+{
+  "case_id": "amfr",
+  "seed": 2501,
+  "candidate": 2,
+  "status": "complete",
+  "input_sha256": "705136600825af7e0f5dbead7985300773bcfa6086a07820be1a3a9a1eea5a87",
+  "canonical_workspace_hashes": {
+    "case.json": "705136600825af7e0f5dbead7985300773bcfa6086a07820be1a3a9a1eea5a87",
+    "assignment.json": "663b02795c2498a191e01d9fb0575f2e3bbefeeab36ef3870a4b9a2350c0e70a"
+  },
+  "program_sha256": "d25eac185b63d9efa1ea8ef7dc69e6106c97dd95aab0fb819b86b26d23f61cea",
+  "deterministic_repeat_equal": true,
+  "invocations": [
+    {
+      "started_at_utc": "2026-10-13T06:31:05.286302+00:00",
+      "finished_at_utc": "2026-10-13T06:39:52.931944+00:00",
+      "wall_seconds": 527.641,
+      "exit_code": -15,
+      "timed_out": false,
+      "ready_observed_seconds": 525.5884977076203,
+      "controller_stopped_after_ready": true,
+      "completion_accepted": true,
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 818944,
+        "reasoning_output_tokens": 5646,
+        "output_tokens": 19040,
+        "input_tokens": 875260
+      },
+      "usage_known": true,
+      "observed_item_types": [
+        "agent_message",
+        "command_execution",
+        "error"
+      ],
+      "malformed_jsonl_lines": 0,
+      "model_requested": "gpt-6.1-sol",
+      "reasoning_effort": "high",
+      "fast_mode": false,
+      "backend_model_identifier": null,
+      "backend_model_identifier_status": "not provided by native exec JSONL",
+      "cli_version": "codex-cli 0.162.0-alpha.17.2"
+    }
+  ],
+  "errors": [],
+  "wall_seconds": 528.7693429170176,
+  "known_input_plus_output_tokens": 894300,
+  "unknown_usage": false,
+  "finished_at_utc": "2026-10-13T06:39:53.998289+00:00"
+}

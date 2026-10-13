@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "frozen_protein_conditions": 10,
+  "programs_hash_verified": 30,
+  "existing_zero_shot_conditions": 40,
+  "stored_metric_arithmetic_verified": true,
+  "predictor_executions": 0,
+  "new_model_calls": 0,
+  "test_labels_opened": false,
+  "scope": "hash/contract checks and stored-metric arithmetic; not fresh inference or full experiment reproduction"
+}

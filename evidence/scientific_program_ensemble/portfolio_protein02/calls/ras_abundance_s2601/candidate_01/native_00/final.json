@@ -1,0 +1,1 @@
+{"status":"ready","summary":"Saved deterministic, support-only proposal.py and decision_note.txt. The ensemble scores every query and achieved mean internal validation Spearman of 0.621 on feedback holdouts. The protected executor completed successfully and wrote trial_output.json."}

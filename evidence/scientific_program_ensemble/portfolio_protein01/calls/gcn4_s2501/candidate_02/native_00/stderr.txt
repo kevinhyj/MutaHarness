@@ -1,0 +1,9 @@
+2026-10-13T06:28:03.121070Z ERROR codex_models_manager::manager: failed to refresh available models: request timed out
+2026-10-13T06:28:40.567204Z  WARN codex_analytics::client: failed to send events request: error sending request for url (https://chatgpt.com/backend-api/codex/analytics-events/events)
+2026-10-13T06:31:57.537682Z  WARN codex_analytics::client: failed to send events request: error sending request for url (https://chatgpt.com/backend-api/codex/analytics-events/events)
+2026-10-13T06:32:38.129016Z ERROR codex_models_manager::manager: failed to refresh available models: request timed out
+2026-10-13T06:35:11.429637Z  WARN codex_analytics::client: failed to send events request: error sending request for url (https://chatgpt.com/backend-api/codex/analytics-events/events)
+2026-10-13T06:35:11.607991Z  WARN codex_core::responses_retry: stream disconnected - retrying sampling request (1/5 in 214ms)... turn_id=01a133f2-5aa1-7d41-8ff0-280ff5970666 retries=1 max_retries=5 sampling_error=stream disconnected before completion: IO error: peer closed connection without sending TLS close_notify: https://docs.rs/rustls/latest/rustls/manual/_03_howto/index.html#unexpected-eof
+2026-10-13T06:35:17.924152Z ERROR codex_api::endpoint::responses_websocket: failed to connect to websocket: IO error: tls handshake eof, url: wss://chatgpt.com/backend-api/codex/responses
+2026-10-13T06:35:17.925081Z  WARN codex_core::responses_retry: stream disconnected - retrying sampling request (2/5 in 363ms)... turn_id=01a133f2-5aa1-7d41-8ff0-280ff5970666 retries=2 max_retries=5 sampling_error=stream disconnected before completion: tls handshake eof
+2026-10-13T06:37:13.135436Z ERROR codex_models_manager::manager: failed to refresh available models: request timed out

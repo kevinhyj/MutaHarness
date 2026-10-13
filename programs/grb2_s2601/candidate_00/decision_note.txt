@@ -1,0 +1,85 @@
+Decision: support-only deterministic chemical-kernel and interaction ensemble
+
+Target and assay interpretation
+The target is signed rank correlation with the supplied higher-is-better
+ProteinGym DMS_score for GRB2_HUMAN_Faure_2021 (yeast growth). The output is an
+ordinal ranking of all 186 current unmeasured variants. Neither the internal
+regression predictions nor the returned scores are calibrated probabilities,
+and this work does not demonstrate improvement in a wet-lab assay. No measured
+wild type is available or assumed: each fit estimates an unpenalized intercept.
+No additional measurements are requested; selected_ids is always empty.
+
+How feedback is used
+Every invocation reconstructs substitutions relative to the case reference and
+fits all coefficients using only fitness values of that invocation's supplied
+support records. The full case has 32 original single-mutant records and 64
+independently sampled feedback records. Original and feedback records enter the
+final regression with equal observation weight; identifiers are not predictors.
+The feedback identifies joint mutation burdens and substitution effects absent
+from the original single-mutant coverage. Every training subset is refitted,
+with no stored support values, prediction IDs, fitted models, or cached states.
+The proposal does not read files or access network resources.
+
+Model
+The main component (80% ensemble weight) uses additive mutation covariances:
+strong sharing within a mutated position and weaker sharing across chemically
+similar wild-type residues. Substituted amino acids are compared by fixed
+hydropathy, side-chain volume, charge, aromaticity, glycine/proline indicators,
+polar-amide/hydroxyl class, and beta-branching descriptors. Gaussian similarities
+use two nearby bandwidths (2 and 4); ridge regularization is 0.4. Weak global
+composition and mutation-order features allow shared trends. These chemical
+similarities are priors for generalization, not observed mechanisms.
+
+The remaining 20% is a regularized second-order tensor-kernel ensemble. Its
+base features describe changed positions, per-position property changes,
+mutation severity, amino-acid and wild-type-to-mutant identities, broad residue
+classes, and mutation count. Tensor covariance weights 0.2 and 0.6 permit
+learned pair and other nonlinear combination effects while shrinking sparse
+combinations. This does not identify specific physical contacts.
+
+Each component is fitted on both the raw assay scale and log(fitness - floor).
+The nominal floor is -2, or lower than the observed minimum if necessary. This
+is a sensitivity model for flattening effects on the assay scale, not an
+experimentally established lower limit. Models are centered/scaled by their
+training targets before ensemble averaging. Final scores are midranks mapped
+strictly inside [-1,1], preserving ties. No probability or absolute-fitness
+interpretation is attached to their magnitudes.
+
+Validation and configuration choice
+Exploration compared hierarchical position/substitution ridge models, chemical
+Gaussian kernels, log/logit and rank target transforms, and tensor interactions
+using repeated held-out feedback and mixed-support splits. A weak hypothesized
+SH3 topology/parity prior was also tested. Its advantage did not persist clearly
+across fresh split seeds, so the delivered model uses no structural annotation.
+Rank target transforms were excluded from the final ensemble; all final target
+transformations and fitted quantities depend only on the training fold.
+
+The saved final_validation.json records checks of the actual final predictor on
+additional fixed split seeds. Original singles were retained while feedback
+records were held out. With four folds, pooled signed Spearman correlations for
+three seeds were 0.5870, 0.5511, 0.5956 (mean 0.5779), versus 0.4444, 0.4986,
+0.5294 for a position-only ridge baseline. With two folds, they were 0.5658,
+0.5720, 0.5076 (mean 0.5485), versus 0.4835, 0.4810, 0.5312. Two mixed-support
+four-fold checks gave 0.6048 and 0.5320 versus baseline 0.5868 and 0.4451.
+These are internal resampling diagnostics on the same 96 measured outcomes,
+not independent experimental validation or an unbiased estimate of future
+performance. Split variability and configuration search imply uncertainty.
+Exploration scripts, reports, and the initial executable are left in place.
+The final artifact is self-contained in proposal.py and uses NumPy/SciPy only.
+
+Reproducibility and limitations
+Inference has no randomized operations; exploratory split/search seeds are
+explicitly recorded in the scripts. Repeated invocation, support/query order
+invariance, refitting on a smaller support subset, missing/one-observation
+support behavior, exact query-ID coverage, score bounds, and finite output were
+checked. Typical full-case computation takes approximately 0.02 seconds locally
+once imports finish, comfortably below the 120-second fit limit.
+
+Only 96 outcomes cover a large substitution/combination space. Some query sites
+have no measured substitutions, most exact substitutions and pair combinations
+are unobserved, and phenotype heterogeneity may defeat chemical similarity.
+The sequence alone cannot establish burial, binding contacts, folding effects,
+or causes of epistasis. Strongly regularized shared features improve stability
+but can miss sharp substitution-specific effects. No external sequences, MSA,
+structure coordinates, pretrained scores, or hidden labels were used. The
+ranking remains a support-informed statistical prediction with these limits.

@@ -1,0 +1,105 @@
+{
+  "status": "separate_long_budget_completion_analysis",
+  "rows": [
+    {
+      "case_id": "cbx4",
+      "arm": "msa_tools",
+      "status": "complete",
+      "wall_seconds": 1090.722,
+      "known_input_plus_output_tokens": 509230,
+      "unknown_usage": false,
+      "checkpoint_contract_valid": true,
+      "attempts": 1,
+      "spearman": 0.5691128692553423,
+      "top25_overlap": 0.68,
+      "result_source": "long_budget_recovery",
+      "independent_spearman": 0.5691128692553423,
+      "distinct_prediction_scores": 200
+    },
+    {
+      "case_id": "gfp",
+      "arm": "structure_tools",
+      "status": "complete",
+      "wall_seconds": 809.087,
+      "known_input_plus_output_tokens": 447698,
+      "unknown_usage": false,
+      "checkpoint_contract_valid": true,
+      "attempts": 1,
+      "spearman": 0.7027807804924878,
+      "top25_overlap": 0.32,
+      "result_source": "long_budget_recovery",
+      "independent_spearman": 0.7027807804924879,
+      "distinct_prediction_scores": 250
+    },
+    {
+      "case_id": "kras_abundance",
+      "arm": "basic",
+      "status": "complete",
+      "wall_seconds": 522.529,
+      "known_input_plus_output_tokens": 348169,
+      "unknown_usage": false,
+      "checkpoint_contract_valid": true,
+      "attempts": 1,
+      "spearman": 0.47169433110929765,
+      "top25_overlap": 0.24,
+      "result_source": "long_budget_recovery",
+      "independent_spearman": 0.47169433110929776,
+      "distinct_prediction_scores": 250
+    },
+    {
+      "case_id": "ube4b",
+      "arm": "basic",
+      "status": "complete",
+      "wall_seconds": 742.829,
+      "known_input_plus_output_tokens": 454220,
+      "unknown_usage": false,
+      "checkpoint_contract_valid": true,
+      "attempts": 1,
+      "spearman": 0.3209873229984018,
+      "top25_overlap": 0.52,
+      "result_source": "long_budget_recovery",
+      "independent_spearman": 0.3209873229984018,
+      "distinct_prediction_scores": 202
+    }
+  ],
+  "binding_audit": [
+    {
+      "case_id": "cbx4",
+      "arm": "msa_tools",
+      "status": "PASS",
+      "final_exactly_bound": true,
+      "initial_inputs_unchanged": true,
+      "case_unmodified": true,
+      "checkpoint_substituted": false
+    },
+    {
+      "case_id": "gfp",
+      "arm": "structure_tools",
+      "status": "PASS",
+      "final_exactly_bound": true,
+      "initial_inputs_unchanged": true,
+      "case_unmodified": true,
+      "checkpoint_substituted": false
+    },
+    {
+      "case_id": "kras_abundance",
+      "arm": "basic",
+      "status": "PASS",
+      "final_exactly_bound": true,
+      "initial_inputs_unchanged": true,
+      "case_unmodified": true,
+      "checkpoint_substituted": false
+    },
+    {
+      "case_id": "ube4b",
+      "arm": "basic",
+      "status": "PASS",
+      "final_exactly_bound": true,
+      "initial_inputs_unchanged": true,
+      "case_unmodified": true,
+      "checkpoint_substituted": false
+    }
+  ],
+  "original_failures_preserved": true,
+  "new_calls": 4
+}

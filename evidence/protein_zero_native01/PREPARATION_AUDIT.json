@@ -1,0 +1,68 @@
+{
+  "cases": [
+    {
+      "matched_original_frequency_max_absolute_difference": 0.0,
+      "positions": 47,
+      "depth_kind": "effective_weighted",
+      "profile_task": {
+        "end": 47,
+        "mapping": "exact aligned WT region; 1-based full WT coordinates",
+        "neff": 631.201790072901,
+        "pseudocount_total": 1,
+        "selection": "lexically sorted unique aligned natural homologs; first 2048, same as RNA evidence extractor",
+        "sequences_total": 17787,
+        "sequences_used": 2048,
+        "start": 1,
+        "weighting": "inverse >=80pct identity neighbors, >=50pct pairwise coverage"
+      },
+      "case_id": "amfr"
+    },
+    {
+      "matched_original_frequency_max_absolute_difference": 0.0,
+      "positions": 220,
+      "depth_kind": "effective_weighted",
+      "profile_task": {
+        "end": 220,
+        "mapping": "exact aligned WT region; 1-based full WT coordinates",
+        "neff": 560.1772873052872,
+        "pseudocount_total": 1,
+        "selection": "lexically sorted unique aligned natural homologs; first 2048, same as RNA evidence extractor",
+        "sequences_total": 40154,
+        "sequences_used": 2048,
+        "start": 1,
+        "weighting": "inverse >=80pct identity neighbors, >=50pct pairwise coverage"
+      },
+      "case_id": "his7"
+    },
+    {
+      "matched_original_frequency_max_absolute_difference": 0.0,
+      "positions": 46,
+      "depth_kind": "unique_unweighted",
+      "profile_task": {
+        "selection": "unique non-query rows capped2048 in file order; same as original public PPI evidence",
+        "sequences_total": 14432,
+        "sequences_used": 2048,
+        "weighting": "none; unique unweighted",
+        "pseudocount_total": 1,
+        "mapping": "exact full target-chain query; reference positions to A3M match columns"
+      },
+      "case_id": "yap_peptide"
+    },
+    {
+      "matched_original_frequency_max_absolute_difference": 0.0,
+      "positions": 23,
+      "depth_kind": "unique_unweighted",
+      "profile_task": {
+        "selection": "unique non-query rows capped2048 in file order; same as original public PPI evidence",
+        "sequences_total": 3281,
+        "sequences_used": 2048,
+        "weighting": "none; unique unweighted",
+        "pseudocount_total": 1,
+        "mapping": "exact full target-chain query; reference positions to A3M match columns"
+      },
+      "case_id": "bh3_mcl1"
+    }
+  ],
+  "native_calls": 0,
+  "evaluator_files_opened": 0
+}

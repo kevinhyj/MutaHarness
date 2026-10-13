@@ -1,0 +1,91 @@
+Decision: deterministic support-only fluorescence ranking
+
+Artifact: proposal.py exports propose(case, assignment). Every invocation rebuilds
+all allele encodings, kernels, fitted intercepts and regression coefficients from
+that invocation's supplied support records. There are no runtime file reads,
+model caches, stored outcomes, hardcoded variant IDs, or external predictors.
+All current query IDs receive finite scores in [-1,1]; selected_ids is empty.
+Ranks are mapped to the interval with average ranks for ties. These numbers are
+ordinal utilities, not probabilities or calibrated fluorescence estimates.
+
+Assay interpretation
+The supplied context describes Phototropin fluorescence measured by FACS in
+Chlamydomonas reinhardtii. Higher supplied ProteinGym assay fitness is better.
+We do not reverse its sign, assume a measured WT, or interpret fluorescence as
+an experimentally established improvement in another phenotype. Positive raw
+assay units worked better than logarithmic or square-root transformations in
+support validation. A small ensemble contribution uses a signed power of 1.5,
+with inverse transformation before averaging, to accommodate scale curvature.
+Signed powers keep the implementation defined for signed replacement outcomes.
+
+How measured feedback is used
+The current case has 64 measured combinations, primarily involving 20 recurring
+alleles, and 32 measured single mutants. Sequence differences from the supplied
+reference define alleles. Combination support measurements fit all additive and
+nonlinear effects jointly. No single-mutant additive effect is simply summed as
+though it must remain constant in a combination.
+
+The combination predictor averages six regularized kernel regressions:
+  20% additive + weak allele-pair kernel, pair variance .003;
+  20% additive + weak allele-pair kernel, pair variance .01;
+  20% additive + allele-by-mutated-site kernel, variance .003;
+  20% additive + smooth RBF kernel, variance 10, distance scale 32;
+  10% each of the two allele-pair kernels on the signed power-1.5 scale.
+Features are centered on the combination training supports. The additive kernel
+has much greater prior variance than individual interactions. Sharing mutated-
+site indicators lets alternative substitutions at a site borrow interaction
+information. The smooth kernel admits small higher-order deviations. These are
+statistical predictive assumptions, not established structural mechanisms.
+A single-mutant support in the combination allele alphabet supplies a weak
+anchor with tenfold greater observation noise. This uses the supplied A28H
+measurement in this case, but the overlap is discovered anew on each invocation.
+The intercept is fitted without a penalty using noise-weighted universal kriging.
+Ridge noise is .01 at >=32 combination observations and increases below 32.
+
+Most original singles do not cover the combination alleles. Leave-one-out tests
+of amino-acid chemistry and sequence-neighborhood transfer did not produce a
+useful signed ranking signal for these singles. The four isolated query variants
+therefore use a robust support-single median, with only 20% transfer from
+available single measurements at the same position. Unsupported detailed
+structural annotations and physicochemical coefficients were not adopted.
+If no singles are supplied, this fallback uses the current support median.
+Repeated exactly measured genotypes, if any, use their current observed mean.
+
+Validation and configuration selection
+Development compared additive ridge, ridge pair kernels, allele/site pooling,
+RBF kernels, ARD sparse regression, lasso/elastic-net interactions, raw/log/sqrt/
+rank target scales, and powers above one. Repeated shuffled fourfold validation
+on the 64 feedback variants (six deterministic seeds, 24 splits) favored weak
+regularized interactions over additive-only fits: approximately .86 mean signed
+Spearman correlation versus .83 for the additive baseline. Sparse interaction
+models did not improve it. Separate 20-split checks retaining 48, 32 or 24
+feedback measurements tested the effect of the shared-single anchor and ridge
+noise. The weak shared-single anchor improved generalization, especially with
+smaller feedback training sets.
+
+Final implementation checks used another fixed seed, 1917, with 20 shuffled
+splits per training size, retaining all original singles as the real feedback
+workflow does. Mean signed Spearman correlation and split standard deviation:
+  48 combination supports: .8731, SD .0979;
+  32 combination supports: .7940, SD .0752;
+  24 combination supports: .6928, SD .0904.
+These are overlapping internal support splits, not independent experimental
+replicates or confidence intervals. Configuration search creates selection
+optimism; the fresh split seed is a stability check on the same small dataset,
+not an external test set. Development files remain in the workspace.
+Final local tests verified all 186 query IDs, finite bounded scores, empty
+selection, and exact equality of repeated calls. Two full fits together took
+approximately .05 seconds in the local environment. The required protected
+executor is run after this note is written to verify the actual artifact.
+
+Limitations
+Only 64 measured combinations constrain many possible interactions. Sparse or
+higher-order epistasis may be missed; rare allele combinations and variants
+outside the combination grid are more uncertain. Single variants without
+matching-site supports can receive ties. The conservative fallback sacrifices
+unjustified precision. Sequence proximity is not a substitute for structure.
+No MSA, structure, external sequence, pretrained score, WT measurement, hidden
+label, or new experiment was used. Fitness may conflate expression, folding,
+maturation and fluorescence chemistry; these data cannot establish which
+mechanism caused an effect. The intended outcome is signed assay rank
+correlation, with no claim of wet-lab improvement or calibrated probability.

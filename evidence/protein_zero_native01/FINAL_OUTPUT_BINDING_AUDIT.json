@@ -1,0 +1,217 @@
+{
+  "status": "PASS_all16_ranking_arrays_match_saved_artifacts",
+  "exact_score_array_matches": 14,
+  "notes": "Two final JSON arrays differ from workspace values by less than 1e-6; all average ranks are identical. Primary scoring always uses actual final submissions.",
+  "fresh_model_calls": 0,
+  "labels_read": false,
+  "rows": [
+    {
+      "case_id": "amfr",
+      "arm": "basic",
+      "artifact_comparisons": [
+        {
+          "file": "results/amfr/basic/workspace/final_predictions.json",
+          "sha256": "e5ddbee2f613b54e2053a5637b9dbc12a59f6130f3cf9ecf20cd6b2910e5be10",
+          "exact_score_match": true,
+          "max_absolute_difference": 0.0,
+          "identical_average_ranks": true
+        }
+      ]
+    },
+    {
+      "case_id": "amfr",
+      "arm": "msa_tools",
+      "artifact_comparisons": [
+        {
+          "file": "results/amfr/msa_tools/workspace/final_predictions.json",
+          "sha256": "ede3cb95f09594a26236c125d368eb534ddc7bb44d9992c55d59af2359b0fdaf",
+          "exact_score_match": true,
+          "max_absolute_difference": 0.0,
+          "identical_average_ranks": true
+        }
+      ]
+    },
+    {
+      "case_id": "amfr",
+      "arm": "structure_tools",
+      "artifact_comparisons": [
+        {
+          "file": "results/amfr/structure_tools/workspace/final_predictions.json",
+          "sha256": "373b2263585fd8f129c38f73552380806bbaf7952d18f37aab367b5ac99bd10e",
+          "exact_score_match": false,
+          "max_absolute_difference": 7.055382745257965e-07,
+          "identical_average_ranks": true
+        }
+      ]
+    },
+    {
+      "case_id": "amfr",
+      "arm": "joint_tools",
+      "artifact_comparisons": [
+        {
+          "file": "results/amfr/joint_tools/workspace/final_predictions.json",
+          "sha256": "462eb918d1f490032ae3c26e4f013cb079ea8c8c123fc0ba1adf8fd1539fc55a",
+          "exact_score_match": true,
+          "max_absolute_difference": 0.0,
+          "identical_average_ranks": true
+        }
+      ]
+    },
+    {
+      "case_id": "his7",
+      "arm": "basic",
+      "artifact_comparisons": [
+        {
+          "file": "results/his7/basic/workspace/final_predictions.json",
+          "sha256": "1659fd85454a4baa1e07fd1b15207bfb8e43cdf8109675fb25df0200446072d5",
+          "exact_score_match": true,
+          "max_absolute_difference": 0.0,
+          "identical_average_ranks": true
+        }
+      ]
+    },
+    {
+      "case_id": "his7",
+      "arm": "msa_tools",
+      "artifact_comparisons": [
+        {
+          "file": "results/his7/msa_tools/workspace/final_predictions.json",
+          "sha256": "199c29dd7fe578babd1fce21eb77b7990d38ce86f688cac95c24f0d61cced902",
+          "exact_score_match": true,
+          "max_absolute_difference": 0.0,
+          "identical_average_ranks": true
+        }
+      ]
+    },
+    {
+      "case_id": "his7",
+      "arm": "structure_tools",
+      "artifact_comparisons": [
+        {
+          "file": "results/his7/structure_tools/workspace/final_predictions.json",
+          "sha256": "40c77d7577d0d1d7eef1256b8ba25b9d2dabcc5baebd7b623562de34d3f92873",
+          "exact_score_match": false,
+          "max_absolute_difference": 8.650000021814819e-09,
+          "identical_average_ranks": true
+        }
+      ]
+    },
+    {
+      "case_id": "his7",
+      "arm": "joint_tools",
+      "artifact_comparisons": [
+        {
+          "file": "results/his7/joint_tools/workspace/final_predictions.json",
+          "sha256": "9c26d9015f04fdd23bffde70f72ed1b2d95051c971d06ceaf281e4e255fbe3cd",
+          "exact_score_match": true,
+          "max_absolute_difference": 0.0,
+          "identical_average_ranks": true
+        }
+      ]
+    },
+    {
+      "case_id": "yap_peptide",
+      "arm": "basic",
+      "artifact_comparisons": [
+        {
+          "file": "results/yap_peptide/basic/workspace/final_predictions.json",
+          "sha256": "c7eb4656c4e76b3515e866bfb72394a4c634fb97f29cd3c8246b733b7210bfca",
+          "exact_score_match": true,
+          "max_absolute_difference": 0.0,
+          "identical_average_ranks": true
+        }
+      ]
+    },
+    {
+      "case_id": "yap_peptide",
+      "arm": "msa_tools",
+      "artifact_comparisons": [
+        {
+          "file": "results/yap_peptide/msa_tools/workspace/final_predictions.json",
+          "sha256": "d41b860530dcf2e1275a4885c45d1aa98dc087066e6f714c338ea9142ee40bbe",
+          "exact_score_match": true,
+          "max_absolute_difference": 0.0,
+          "identical_average_ranks": true
+        }
+      ]
+    },
+    {
+      "case_id": "yap_peptide",
+      "arm": "structure_tools",
+      "artifact_comparisons": [
+        {
+          "file": "results/yap_peptide/structure_tools/workspace/final_predictions.json",
+          "sha256": "f30c9f5cd3f5bc2e50e82242d008d9f89d6e624fe4aab799efb32e81b087c77a",
+          "exact_score_match": true,
+          "max_absolute_difference": 0.0,
+          "identical_average_ranks": true
+        }
+      ]
+    },
+    {
+      "case_id": "yap_peptide",
+      "arm": "joint_tools",
+      "artifact_comparisons": [
+        {
+          "file": "results/yap_peptide/joint_tools/workspace/final_predictions.json",
+          "sha256": "cb3eb49680b1a3e1f3e359fb8a173477bf7d686f82ab0fa0eef517021f0ff417",
+          "exact_score_match": true,
+          "max_absolute_difference": 0.0,
+          "identical_average_ranks": true
+        }
+      ]
+    },
+    {
+      "case_id": "bh3_mcl1",
+      "arm": "basic",
+      "artifact_comparisons": [
+        {
+          "file": "results/bh3_mcl1/basic/workspace/predictions.json",
+          "sha256": "f0d19f189d71b38211707a6109f69004b838fbfc87ca12106b4494ed6f43e74f",
+          "exact_score_match": true,
+          "max_absolute_difference": 0.0,
+          "identical_average_ranks": true
+        }
+      ]
+    },
+    {
+      "case_id": "bh3_mcl1",
+      "arm": "msa_tools",
+      "artifact_comparisons": [
+        {
+          "file": "results/bh3_mcl1/msa_tools/workspace/final_predictions.json",
+          "sha256": "7dfecf651520ddd8fbb372a89aa23ec40a2bae2b0e785e8a75985027175e4e43",
+          "exact_score_match": true,
+          "max_absolute_difference": 0.0,
+          "identical_average_ranks": true
+        }
+      ]
+    },
+    {
+      "case_id": "bh3_mcl1",
+      "arm": "structure_tools",
+      "artifact_comparisons": [
+        {
+          "file": "results/bh3_mcl1/structure_tools/workspace/final_predictions.json",
+          "sha256": "5f4becd011e22cba45c231e6f45f4627db5cc76c40c4dc6200d7279f5a6f3972",
+          "exact_score_match": true,
+          "max_absolute_difference": 0.0,
+          "identical_average_ranks": true
+        }
+      ]
+    },
+    {
+      "case_id": "bh3_mcl1",
+      "arm": "joint_tools",
+      "artifact_comparisons": [
+        {
+          "file": "results/bh3_mcl1/joint_tools/workspace/predictions.json",
+          "sha256": "2a7e080a41b99e025888a4bd33745172e370abf0b425d2e205e90f7013f07104",
+          "exact_score_match": true,
+          "max_absolute_difference": 0.0,
+          "identical_average_ranks": true
+        }
+      ]
+    }
+  ]
+}

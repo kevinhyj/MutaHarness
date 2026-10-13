@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="470" viewBox="0 0 1200 470" role="img" aria-label="MutaHarness: zero-shot structure and MSA tools, and feedback-based scientific program ensemble">
+<defs><pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse"><path d="M30 0H0V30" fill="none" stroke="#2a4030" stroke-width=".5"/></pattern></defs>
+<rect width="1200" height="470" rx="22" fill="#142b1e"/><rect width="1200" height="470" rx="22" fill="url(#grid)"/>
+<g font-family="Arial, PingFang SC, Microsoft YaHei, sans-serif">
+<text x="48" y="49" fill="#b9e799" font-size="13" letter-spacing="2">MUTAHARNESS / TWO TESTED INTERVENTIONS</text>
+<text x="48" y="107" fill="white" font-size="38" font-weight="700">科学推理，落到下一轮实验。</text>
+<text x="48" y="143" fill="#b5c8b9" font-size="18">可靠地分析证据 · 生成可执行的科研程序 · 比较候选优先级</text>
+<rect x="48" y="191" width="526" height="208" rx="15" fill="#23412c" stroke="#46634a"/>
+<text x="70" y="226" fill="#b9e799" font-size="13">ZERO SHOT / 冷启动</text>
+<text x="70" y="264" fill="#fff" font-size="23" font-weight="600">Structure + MSA</text>
+<text x="70" y="297" fill="#b5c8b9" font-size="17">结构与进化输入 → 可靠的分析工具</text>
+<text x="70" y="331" fill="#b5c8b9" font-size="17">原生 Codex 组织证据，生成候选排序</text>
+<text x="70" y="375" fill="#d7edc7" font-size="16">10 个 assay · 平均 Spearman 0.5051 → 0.5736</text>
+<rect x="598" y="191" width="554" height="208" rx="15" fill="#d9edcd"/>
+<text x="622" y="226" fill="#46634a" font-size="13">FEEDBACK LEARNING / 实验反馈学习</text>
+<text x="622" y="264" fill="#183321" font-size="23" font-weight="600">Scientific Program Ensemble</text>
+<text x="622" y="297" fill="#46634a" font-size="17">同一份反馈 → 3 个独立 Codex 科学会话</text>
+<text x="622" y="331" fill="#46634a" font-size="17">可执行程序 → 统一验收 → 等权排名融合</text>
+<text x="622" y="375" fill="#274b30" font-size="16">10 个 assay · 相对同预算 CV 单程序 +0.0250</text>
+<text x="48" y="440" fill="#839c8a" font-size="13">两项改进分别实测；队列与反馈条件不同。预测用于实验决策，真实效果由实验验证。</text>
+</g></svg>

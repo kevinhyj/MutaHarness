@@ -1,0 +1,66 @@
+{
+  "cases": [
+    {
+      "condition": "his7_s2601",
+      "programs": 3,
+      "all_program_hashes_verified": true,
+      "predictions_match_stored_results": true,
+      "support_count": 96,
+      "query_count": 186,
+      "new_model_calls": 0,
+      "evaluator_labels_opened": false
+    },
+    {
+      "condition": "grb2_s2601",
+      "programs": 3,
+      "all_program_hashes_verified": true,
+      "predictions_match_stored_results": true,
+      "support_count": 96,
+      "query_count": 186,
+      "new_model_calls": 0,
+      "evaluator_labels_opened": false
+    },
+    {
+      "condition": "yap1_s2601",
+      "programs": 3,
+      "all_program_hashes_verified": true,
+      "predictions_match_stored_results": true,
+      "support_count": 96,
+      "query_count": 186,
+      "new_model_calls": 0,
+      "evaluator_labels_opened": false
+    },
+    {
+      "condition": "phot_s2601",
+      "programs": 3,
+      "all_program_hashes_verified": true,
+      "predictions_match_stored_results": true,
+      "support_count": 96,
+      "query_count": 186,
+      "new_model_calls": 0,
+      "evaluator_labels_opened": false
+    },
+    {
+      "condition": "ras_abundance_s2601",
+      "programs": 3,
+      "all_program_hashes_verified": true,
+      "predictions_match_stored_results": true,
+      "support_count": 96,
+      "query_count": 186,
+      "new_model_calls": 0,
+      "evaluator_labels_opened": false
+    },
+    {
+      "condition": "ynzc_s2601",
+      "programs": 3,
+      "all_program_hashes_verified": true,
+      "predictions_match_stored_results": true,
+      "support_count": 96,
+      "query_count": 186,
+      "new_model_calls": 0,
+      "evaluator_labels_opened": false
+    }
+  ],
+  "new_model_calls": 0,
+  "all18_cold_program_replays_exact": true
+}
