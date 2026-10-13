@@ -114,11 +114,11 @@ Task Option 2：下面先说明研发岗位与任务，再用LLM能力评估和M
 
 **这三组回放中，LLM的末轮平均命中率均高于图中的其他学习方法，显示了利用实验反馈进行候选选择的潜力。** 图例中的领域模型与One-hot学习曲线均使用RF；PPI的VenusREM为项目适配版。阴影为实验间均值±SEM，zero-shot水平线为五轮平均参考，Random为随机参考。[完整协议、参考线定义与源数据](docs/llm-evaluation.md)
 
-**下一步检验：在同一个Codex上，Harness能否进一步改善预测？** 以下两项对照分别考察证据输入和科研程序组织，保留各自的模型、实验范围与指标。
+**针对突变效应预测，改进 Codex 的 Harness。** 下面以原生 Codex 为基线，分别检验证据分析工具与科研程序集成的收益。
 
 ## 4. MutaHarness：两项 Harness 改进
 
-Harness 在这里指模型周围的输入、工具、执行检查与结果聚合流程。模型仍在原生 Codex 科学会话中自由建模。
+Codex 已有通用的任务执行 Harness。MutaHarness 在其科学会话流程上增加结构/MSA证据分析、科研程序检查与排名融合，让它更适合突变效应预测。底层模型保持不变，模型仍可自由选择科学建模方法。
 
 ![两项Harness：科研程序集成与结构进化证据分析](assets/harness-workflows.svg)
 

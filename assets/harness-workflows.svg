@@ -57,5 +57,5 @@
 <path d="M1074 708 L1074 734" fill="none" stroke="#849099" stroke-width="2.3" marker-end="url(#arrow)"/>
 <rect x="784" y="734" width="580" height="72" rx="14" fill="#daf1eb" stroke="#b8ddd3" stroke-width="1.5"/>
 <text x="1074.0" y="779.0" font-size="25" fill="#26343d" text-anchor="middle">Validated candidate ranking</text>
-<text x="720" y="878" font-size="23" fill="#687781" text-anchor="middle">Independently evaluated workflows · Same native Codex within each paired comparison</text>
+<text x="720" y="878" font-size="23" fill="#687781" text-anchor="middle">Independently evaluated workflows · Same underlying model within each paired comparison</text>
 </g></svg>
