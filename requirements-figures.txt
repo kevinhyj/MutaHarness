@@ -1,0 +1,3 @@
+# Plotting only; the prediction/replay dependencies are in requirements.txt.
+numpy>=1.26
+matplotlib>=3.8

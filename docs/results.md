@@ -4,6 +4,10 @@
 
 Spearman（ρ）表示预测排序与实验排序的一致程度，越高越好。以下为小规模任务队列的等权汇总，不是ProteinGym完整榜单分数。
 
+![既有实验的总体结果](../assets/results/results_overview.png)
+
+细柱为10个assay的均值；两项干预分别实测。纵轴分别截断为0.480–0.610和0.575–0.630，以便比较均值差异；全部assay的配对变化另图展示。绘图仅使用已有指标，没有新增模型或预测程序执行。
+
 ## 1. Structure + MSA：零样本
 
 10个protein/PPI assay，每个250个固定候选，0条目标实验反馈。基础原生Codex仍能使用本地科学工具并编写预测程序；改进组增加对应的结构/MSA原始文件、位点证据和分析工具。
@@ -58,6 +62,10 @@ Spearman（ρ）表示预测排序与实验排序的一致程度，越高越好�
 原始指标：[10个汇总](../evidence/scientific_program_ensemble/pooled_protein_metrics.json)、[首批4个](../evidence/scientific_program_ensemble/protein_metrics.json)、[追加6个恢复后](../evidence/scientific_program_ensemble/protein_additional6_metrics_recovered.json)、[原尝试](../evidence/scientific_program_ensemble/protein_additional6_original_attempts_metrics.json)。每个原生会话可能包含多个底层模型请求。
 
 ## 3. 如何解读与复核
+
+![完整逐 assay 配对差值](../assets/results/results_by_assay.png)
+
+两图使用相同横轴范围，并保留所有下降案例。左图对照基础原生Codex，右图对照同一程序池中反馈CV选出的单程序。图中没有置信区间或显著性标记。[绘图源数据与生成说明](../assets/results/README.md)
 
 两项干预分别验证：SPE实验没有结构/MSA输入，零样本四组没有实验support。两套队列与候选不同，不是同一次累计优化，也不应将两项增益相加。
 

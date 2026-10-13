@@ -1,0 +1,53 @@
+{
+  "purpose": "EVAgent-style presentation of existing results",
+  "new_model_calls": 0,
+  "predictor_executions": 0,
+  "test_labels_opened": false,
+  "data_sources": {
+    "evidence/protein_zero_native01/SUMMARY.json": "459617a7f4d50b2198bbdb3bbc8f4f26c2e65d8b9f8353e596b4e659bbe9239e",
+    "evidence/protein_zero_native02/SUMMARY.json": "4c5a149a7b9743c057bc5c498a48dd1d864e4b0c6fb354768046c061802820cd",
+    "evidence/scientific_program_ensemble/pooled_protein_metrics.json": "0ad31c5bbcb1ece4e0fc7f718b4ef2dbdfe8924f37d9c9cea5d7473285cea8f9"
+  },
+  "style": {
+    "font": "Arial",
+    "palette": {
+      "basic": "#F5B5BF",
+      "msa_tools": "#B79B63",
+      "structure_tools": "#43968D",
+      "joint_tools": "#D9788D",
+      "direct": "#F5B5BF",
+      "cv": "#728AB9",
+      "ensemble": "#D9788D"
+    },
+    "white_background": true,
+    "reference": "EVAgent active figure2 and Extended Data 3: Arial, pastel pink/blue/gold/teal, thin axes, paired data points",
+    "reference_sha256": {
+      "figure2.svg": "d0965350736d6218f7003cdd638d1a004a4aacf34fdf6379931c3bae02e9bb22",
+      "extended_data_3.svg": "a13220f51a3542517f4c78123ebe082b00625d8b182064c731679429b3571112"
+    }
+  },
+  "aggregation": "equal assay means; 10 assays per experiment; separate cohorts",
+  "error_bars": "none; overview shows means only; the by-assay figure shows all paired differences",
+  "overview_y_axes": {
+    "truncated": true,
+    "structure_msa": [
+      0.48,
+      0.61
+    ],
+    "program_ensemble": [
+      0.575,
+      0.63
+    ],
+    "bar_width": 0.32,
+    "disclosure": "axis-break marks and explicit figure/README captions"
+  },
+  "outputs": {
+    "assets/results/results_overview.svg": "e9806fc11b91517574f2880fca04230ac430048c3ec7f5e37e86bb8f18097e55",
+    "assets/results/results_overview.png": "ac645558016aefc7585027d77109fff19cb0fc12e064c929743ddd1253022aa7",
+    "assets/results/results_by_assay.svg": "9c86b00bcb24c196be234d88f26fad7b51388a206e63583d8005b86df72a6aba",
+    "assets/results/results_by_assay.png": "8308575420a02d926facb98b4f83374ed5a72a37b99019b3a2c6281df711ce9c",
+    "assets/results/figure_source_data.csv": "d8c65fbbefacd14cf4afd843f575d48f6ca7ae2c9c33de60bfdcd2b003fb36a2"
+  },
+  "matplotlib_version": "3.11.2",
+  "numpy_version": "2.5.4"
+}
