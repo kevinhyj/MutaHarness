@@ -25,6 +25,24 @@
       "selections_per_round": 32,
       "seed": 42,
       "metric": "current-pool top-decile hit rate"
+    },
+    "rna_feedback": {
+      "assays": 18,
+      "rounds": 5,
+      "initial_supports": 32,
+      "pool_per_round": 1000,
+      "selections_per_round": 32,
+      "seed": 42,
+      "metric": "current-pool top-decile hit rate"
+    },
+    "ppi_feedback": {
+      "assays": 37,
+      "rounds": 5,
+      "initial_supports": 32,
+      "pool_per_round": 1000,
+      "selections_per_round": 32,
+      "seed": 42,
+      "metric": "current-pool top-decile hit rate"
     }
   },
   "new_model_calls": 0,
@@ -119,6 +137,47 @@
       "server_path": "/data/huangyanjie/EVAgent/reports/fewshot_figure_refresh_20261001/multiround_arial_ticks25_20261011_v3/protein/protein_rf_main.svg",
       "sha256": "557900a93c0fc11d6e1ac11e754e10d956cdcfbd0d3693959553b7f6e80f6218",
       "bytes": 21149
+    },
+    "assets/evagent/rna_feedback.png": {
+      "server_path": "/data/huangyanjie/EVAgent/reports/fewshot_figure_refresh_20261001/multiround_arial_ticks25_20261011_v3/rna/rna_rf_main.png",
+      "sha256": "d811ba7fe0891a27c13127c6b74ddb7821dc7b6c6cd679f63d7036697dc2b2a8",
+      "bytes": 215061
+    },
+    "assets/evagent/rna_feedback.svg": {
+      "server_path": "/data/huangyanjie/EVAgent/reports/fewshot_figure_refresh_20261001/multiround_arial_ticks25_20261011_v3/rna/rna_rf_main.svg",
+      "sha256": "1bfa6d1fcc83642cfd7d8feec49c99e54d807ed7ee1701be7481aad9a7675233",
+      "bytes": 18744
+    },
+    "evidence/evagent/feedback/rna_per_assay_rounds.csv": {
+      "server_path": "/data/huangyanjie/EVAgent/reports/fewshot_figure_refresh_20261001/multiround_arial_ticks25_20261011_v3/data/rna/PER_ASSAY_ROUNDS.csv",
+      "sha256": "d3f67a44370e7f9c2aa09c670c35fcb0a429d7cffe90db51a1a80e405ac9dc47",
+      "bytes": 399355
+    },
+    "assets/evagent/ppi_feedback.png": {
+      "server_path": "/data/huangyanjie/EVAgent/reports/fewshot_figure_refresh_20261001/ppi_multiround_compact_legend_20261011_v5/ppi/ppi37_rf.png",
+      "sha256": "85ee56c94079afe0c7dd371a2902b60693c2d0468367932327907b303a3b53bd",
+      "bytes": 244546
+    },
+    "assets/evagent/ppi_feedback.svg": {
+      "server_path": "/data/huangyanjie/EVAgent/reports/fewshot_figure_refresh_20261001/ppi_multiround_compact_legend_20261011_v5/ppi/ppi37_rf.svg",
+      "sha256": "090fda970f2fc9383520533190195d5cc4a487cf1c95b703db1662ce40a86423",
+      "bytes": 20611
+    },
+    "evidence/evagent/feedback/ppi_per_assay_rounds.csv": {
+      "server_path": "/data/huangyanjie/EVAgent/reports/fewshot_figure_refresh_20261001/ppi_multiround_compact_legend_20261011_v5/data/ppi/PER_ASSAY_ROUNDS.csv",
+      "sha256": "c5b94443a8f57314f3c849dc1c1cc5546062cbd4af9bc521613ee515c48d9488",
+      "bytes": 77321
+    },
+    "evidence/evagent/feedback/rna_display_series.csv": {
+      "server_path": "/data/huangyanjie/EVAgent/reports/fewshot_figure_refresh_20261001/multiround_arial_ticks25_20261011_v3/data/rna/DISPLAY_SERIES.csv",
+      "sha256": "7fcff908131704de7cc1a46529c373b6d1a022e9d2fcc7cf3078c099b6b745bc",
+      "bytes": 3221
+    },
+    "evidence/evagent/feedback/ppi_curve_statistics.csv": {
+      "server_path": "/data/huangyanjie/EVAgent/reports/fewshot_figure_refresh_20261001/ppi_multiround_compact_legend_20261011_v5/data/ppi/CURVE_STATISTICS.csv",
+      "sha256": "9194daa1b5bfb3f7310febcc73635f075aa46e95a529ce63daf4445bb68a2c68",
+      "bytes": 4177
     }
-  }
+  },
+  "feedback_extension_date": "2026-10-14"
 }

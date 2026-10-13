@@ -6,7 +6,7 @@
 
 *概念示意图。Fitness指具体实验关心的分子性能；本项目聚焦右侧的突变排序与反馈学习。*
 
-Task Option 2：下面先说明研发岗位与任务，再用EVAgent和MutaHarness两组已有实验，讨论LLM的预测能力、Harness改进和后续研究。
+Task Option 2：下面先说明研发岗位与任务，再用LLM能力评估和MutaHarness两组已有实验，讨论LLM的预测能力、Harness改进和后续研究。
 
 ## 1. 行业岗位：谁在做什么？
 
@@ -63,22 +63,56 @@ Task Option 2：下面先说明研发岗位与任务，再用EVAgent和MutaHarne
 | 零样本冷启动 | 没有目标实验标签，根据结构和进化证据给这250个突变排序。 | [AMFR输入包](examples/zero_shot/amfr/)：参考序列、候选、结构与MSA证据，无已测反馈 | 每个候选的排序分数、所用证据与预测程序 |
 | 少样本反馈学习 | 根据96条已测结果，为剩余186个GFP候选预测荧光排序，交付可执行程序。 | [GFP case.json](inputs/gfp_s2501.json)：序列、实验目标、96条反馈、186个未测候选 | 三份可复核的科研程序、融合排序和程序分歧 |
 
-## 3. EVAgent：LLM与领域预测方法相比，表现如何？
+## 3. LLM能力评估：能预测突变，也能从实验反馈中学习吗？
 
-EVAgent用通用LLM按实验目标组织序列、进化和结构证据，预测突变效应。下面采用服务器当前结果图对应的共同数据集，每个数据集（assay）对应一项实验读出，测试250个候选。指标Spearman衡量预测排序与实验排序的一致程度，越高越好。
+先评估通用LLM本身的突变效应预测能力：根据实验目标、序列和可用的进化／结构证据给出预测，不进行任务专属微调。多轮实验中，已测结果直接作为上下文提供给LLM；领域模型则用表征＋随机森林（RF）学习反馈。这里的LLM能力包含给定证据和提示下的表现。
 
-| 任务 | 共同数据集 | EVAgent / Gemini 3.8 Flash | 代表性领域方法 |
+### 零样本：与领域预测方法比较
+
+每个数据集（assay）对应一项实验读出，测试250个候选，不提供目标实验反馈。Spearman衡量预测排序与实验排序的一致程度，越高越好。
+
+| 任务 | 共同数据集 | Gemini 3.8 Flash | 代表性领域方法 |
 |---|---:|---:|---|
 | 蛋白突变效应 | 201 | 0.4824 | ESM2 650M：0.4550；ProSST：0.5359；VenusREM：**0.5441** |
 | RNA突变效应 | 10 | **0.4271** | RNAErnie：0.2350；Evo2：0.2172 |
 
-![EVAgent与领域预测方法的已有结果](assets/evagent/evagent_overview.png)
+**Protein：LLM超过ESM2等部分方法，较强的结构与进化模型仍有优势。**
 
-**在这组RNA评测中，LLM优于所评估的领域模型；在蛋白评测中，已超过ESM2等部分方法，较强的结构与进化模型仍有优势。** 图中保留所有原对照，包括负分。Gemini的证据配置按已有结果选择，蛋白使用序列＋MSA＋结构，RNA使用序列＋MSA；这是描述性比较，各方法的输入并不完全相同。
+![Protein零样本突变效应预测：201项共同实验](assets/evagent/original_protein.png)
 
-反馈流程还有一个实测例子：在**47项蛋白实验的历史回放**中，共享32条初始反馈后，每轮从一个新的1000候选池选择32个并接收测量结果。第5轮，Gemini的前10%命中率为**39.16%**，ESM2 650M＋RF为**33.05%**。这是候选选择指标，与上面的Spearman分别报告。[原图、完整对照与协议](docs/evagent.md)
+**RNA：LLM在这组评测中优于所评估的领域模型。**
 
-**EVAgent提供领域竞争力的证据；MutaHarness进一步用同一个Codex做对照，检验两项可复用的Harness改进。** 下文聚焦输入工具和科研程序的组织方式，两套实验保留各自的模型、数据范围和指标。
+![RNA零样本突变效应预测：10项共同实验](assets/evagent/original_rna.png)
+
+柱高为逐实验等权平均，散点为各实验结果，负分完整保留。Gemini的输入配置按已有结果选择：Protein使用序列＋MSA＋结构，RNA使用序列＋MSA。各方法输入不同，这是一组描述性比较。
+
+### 多轮迭代：固定实验预算下的候选选择
+
+在历史实验数据上回放五轮设计：共享32条初始反馈，每轮从一个新的1000候选池选择32条，获得测量后更新下一轮预测。各方法只积累自己选择的后续反馈；第5轮开始前可用160条，结束共192条。
+
+纵轴为所选候选中达到**当前池前10%性能阈值**的比例，越高越好。以下三张图分别使用各自完整五轮的共同实验集合。
+
+| 任务 | 共同实验 | LLM第5轮命中率 | 图中最高的非LLM学习方法 |
+|---|---:|---:|---|
+| Protein | 47 | **39.16%** | ESM2 650M＋RF：33.05% |
+| RNA | 18 | **58.33%** | One-hot＋RF：37.50%（RNA-FM＋RF：36.28%） |
+| Protein–Protein | 37 | **35.22%** | One-hot＋RF：28.55%（VenusREM＋RF：23.99%） |
+
+**Protein：从蛋白功能测量中更新候选选择。**
+
+![Protein五轮反馈学习：47项共同实验](assets/evagent/protein_feedback.png)
+
+**RNA：从RNA功能测量中更新候选选择。**
+
+![RNA五轮反馈学习：18项共同实验](assets/evagent/rna_feedback.png)
+
+**Protein–Protein：从结合相关测量中更新候选选择。**
+
+![Protein–Protein五轮反馈学习：37项共同实验](assets/evagent/ppi_feedback.png)
+
+**这三组回放中，LLM的末轮平均命中率均高于图中的其他学习方法，显示了利用实验反馈进行候选选择的潜力。** 图例中的领域模型与One-hot学习曲线均使用RF；PPI的VenusREM为项目适配版。阴影为实验间均值±SEM，zero-shot水平线为五轮平均参考，Random为随机参考。五轮候选池不同，曲线上升本身不能单独证明反馈的因果收益，也没有新湿实验。[完整协议、参考线定义与源数据](docs/llm-evaluation.md)
+
+**下一步检验：在同一个Codex上，Harness能否进一步改善预测？** 以下两项对照分别考察证据输入和科研程序组织，保留各自的模型、实验范围与指标。
 
 ## 4. MutaHarness：两项 Harness 改进
 
@@ -133,7 +167,7 @@ flowchart LR
   F --> B
 ```
 
-这三点是后续研究设计，当前仓库交付的是已有实验、可复用流程与离线结果查看。[训练数据与轨迹设计细节](docs/evagent.md#未来研究设计)
+这三点是后续研究设计，当前仓库交付的是已有实验、可复用流程与离线结果查看。[训练数据与轨迹设计细节](docs/llm-evaluation.md#未来研究设计)
 
 ## 7. 代码、交付与复核
 
@@ -154,12 +188,11 @@ flowchart LR
 - **实测证据**：[程序集成](evidence/scientific_program_ensemble/)、[零样本首批](evidence/protein_zero_native01/)、[零样本追加批](evidence/protein_zero_native02/)，包含调用、程序、逐条预测和汇总。
 - **复核存档**：`python3 -m scripts.audit_existing` 检查哈希、指标算术和页面数据，不调用模型或执行预测程序。[材料来源与打包范围](docs/provenance.md)
 
-本地检查与GitHub CI使用同一组命令：
+[LLM评估存档核对脚本](scripts/audit_evagent.py)另行检查五张图的来源与指标。本地检查与GitHub CI还使用以下命令：
 
 ```bash
 python3 -m unittest discover -s tests -v
 python3 -m scripts.audit_existing
-python3 -m scripts.audit_evagent
 python3 -m scripts.build_viewer
 ```
 

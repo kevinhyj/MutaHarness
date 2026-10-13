@@ -23,6 +23,6 @@
 
 工程重构另通过11个排名与输入边界单元测试、Ruff静态/格式检查和页面回归检查。重构前后的报告、页面数据和图表使用的70个数值一致；冻结程序未重新执行，因此这些检查不等于重新复现实验。
 
-2026-10-13补入EVAgent背景证据：蛋白201项与RNA10项零样本领域对照，以及共同47项蛋白的五轮反馈回放。导入时按字节复制16份服务器原图、来源说明和CSV，并比对SHA-256；`scripts/audit_evagent.py`核对2100条零样本指标、1880条反馈指标及原均值／SEM。概览图仅重新排版已有均值，现有MutaHarness程序和分数未改。来源与范围见[导入清单](../evidence/evagent/manifest.json)和[结果说明](evagent.md)。未来训练与轨迹采集是研究设计，未作为已实现能力报告。
+2026-10-13补入LLM能力评估的背景证据，2026-10-14补齐RNA与Protein–Protein反馈曲线。零样本范围为蛋白201项、RNA10项；五轮反馈范围分别为Protein 47项、RNA 18项、Protein–Protein 37项。24份服务器原图、来源说明与CSV按字节复制并比对SHA-256；`scripts/audit_evagent.py`核对2100条零样本指标、3985条反馈指标及原均值／SEM。RNA源逐轮CSV包含历史Protein记录，评估核对仅取RNA共同队列。主README展示五张原图，另保留紧凑概览；现有MutaHarness程序和分数未改。来源与范围见[导入清单](../evidence/evagent/manifest.json)和[结果说明](llm-evaluation.md)。未来训练与轨迹采集是研究设计，未作为已实现能力报告。
 
 公开数据主要来自 [ProteinGym](https://github.com/OATML-Markslab/ProteinGym)，部分复合物任务来自原EVAgent公共导出。源码与输入中的原始assay名称、端点、采样和来源信息均保留。公共数据可能被模型预训练见过；运行时隔离避免提供隐藏标签，不等于训练集无泄漏。
