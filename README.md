@@ -56,7 +56,7 @@ Task Option 2：下面从研发岗位与任务出发，展示两项Codex Harness
 
 ## 2. 选择的难题：预测突变效应，支持下一批实验选择
 
-本项目选择计算岗位中的 **fitness预测与反馈更新**。它是分子定向进化的关键环节：先预测候选性能，挑选一批做实验，再从返回的测量中学习。零样本用于没有本项目实验反馈的冷启动；少样本用于 lab-in-the-loop 中的排序更新。用于蛋白药物时，可以分别服务结合、表达或稳定性等目标。少量测量驱动预测与工程优化的相关工作见[[2]](#ref-2)。
+本项目选择计算岗位中的 **fitness预测与反馈更新**。它是分子定向进化的关键环节：先预测候选性能，挑选一批做实验，再从返回的测量中学习。零样本用于没有本项目实验反馈的冷启动；少样本用于 lab-in-the-loop 中的排序更新。用于蛋白药物时，可以分别服务结合、表达或稳定性等目标。EVOLVEpro通过蛋白语言模型表征、回归模型与少样本主动学习连接预测和实验反馈。[[1]](#ref-1)
 
 这项任务的价值在于节省有限的实验名额。难点在于：同一个突变对稳定性和结合能力可能有不同影响；多个突变的效果不一定能相加；少量反馈又允许多种看似合理、泛化不同的模型。大模型能解释这些机制，但直接写出一长串分数，难以保证编号、证据和数百个候选的排序始终一致。
 
@@ -75,7 +75,7 @@ Codex 已有通用的任务执行 Harness。MutaHarness 在其科学会话流程
 
 左侧用同一份实验反馈生成三个科研程序，再检查并融合排名；右侧先将结构和MSA转成可用证据，再由Codex按实验目标组织预测。两条流程分别实测。
 
-**Scientific Program Ensemble：集成模型写出的科研程序。** 将同一份反馈交给三个独立会话，各自提出假设、验证并交付可执行预测程序。程序可以采用不同特征、模型和变换。检查输出后，把三份分数转成排名，再等权融合。这样能利用不同科学方案的互补性，降低一次建模选择的影响；设计借鉴了模型集成的思路。[[3]](#ref-3)
+**Scientific Program Ensemble：集成模型写出的科研程序。** 将同一份反馈交给三个独立会话，各自提出假设、验证并交付可执行预测程序。程序可以采用不同特征、模型和变换。检查输出后，把三份分数转成排名，再等权融合。这样能利用不同科学方案的互补性，降低一次建模选择的影响。LLM生成程序、交由可执行评价器检验的相关路线见FunSearch[[3]](#ref-3)和AlphaEvolve[[4]](#ref-4)。
 
 **Structure + MSA：补充证据，并改善分析工具。** 结构提供突变位置的空间环境，MSA提供自然同源序列中的变化信息。工具先核对序列与残基编号，再计算接触、暴露、位点频率等证据，明确返回缺失与置信度。模型据此为具体实验目标组织预测，而不必仅凭序列文字猜测。
 
@@ -100,11 +100,11 @@ python3 harness.py evidence --out outputs/amfr_evidence
 | 少样本：单次Codex → 三程序集成 | 0.5872 | **0.6093** | **+0.0221** | **8/10** |
 | 少样本：同预算CV选单程序 → 三程序集成 | 0.5843 | **0.6093** | **+0.0250** | **8/10** |
 
-**结构与进化证据改善了冷启动排序；程序集成在相同生成预算下，也优于从三个程序中只选一个。** 后一个对照用已测反馈的交叉验证（CV）选程序，能帮助区分“多生成几次”和“融合排名”的收益。
+**结构与进化证据改善了冷启动排序；程序集成在相同生成预算下，也优于从三个程序中只选一个。** 后一个对照用已测反馈的交叉验证（CV）选程序，能帮助区分“多生成几次”和“融合排名”的收益。额外推理计算如何分配和评价，也是测试时计算研究的核心问题。[[9]](#ref-9)
 
 ### 一个完整案例：用96条反馈预测GFP荧光
 
-**Query：** 根据已测反馈，为186个未测GFP变体预测荧光排序，交付可重复执行的程序。输入是[238 aa参考序列、96条反馈与186候选](inputs/gfp_s2501.json)，原始GFP荧光测量来自Sarkisyan等人的研究。[[4]](#ref-4)
+**Query：** 根据已测反馈，为186个未测GFP变体预测荧光排序，交付可重复执行的程序。输入是[238 aa参考序列、96条反馈与186候选](inputs/gfp_s2501.json)，原始GFP荧光测量来自Sarkisyan等人的[研究](https://www.nature.com/articles/nature17995)。
 
 原生Codex独立建模并交付一个程序，Spearman为**0.5303**。MutaHarness把同一任务交给三个独立会话，分别得到核回归与非线性响应、树模型与非线性响应、树模型与位点反馈校正三个科学方案。三份程序通过执行检查后，排名等权融合得到**0.5819**。
 
@@ -126,7 +126,9 @@ AMFR零样本 **0.4340 → 0.6574**。下图保留全部任务的提升与下降
 
 ## 5. LLM能力评估：能预测突变，也能从实验反馈中学习吗？
 
-前面的对照检验Codex的Harness收益。这里补充更广范围的领域比较，评估通用LLM本身的突变效应预测能力：根据实验目标、序列和可用的进化／结构证据给出预测，不进行任务专属微调。多轮实验中，已测结果直接作为上下文提供给LLM；领域模型则用表征＋随机森林（RF）学习反馈。这里的LLM能力包含给定证据和提示下的表现。蛋白与RNA领域基准分别参见ProteinGym[[5]](#ref-5)和RNAGym[[6]](#ref-6)。
+前面的对照检验Codex的Harness收益。这里补充更广范围的领域比较，评估通用LLM本身的突变效应预测能力：根据实验目标、序列和可用的进化／结构证据给出预测，不进行任务专属微调。多轮实验中，已测结果直接作为上下文提供给LLM；领域模型则用表征＋随机森林（RF）学习反馈。这里的LLM能力包含给定证据和提示下的表现。
+
+PG-LLM直接评估通用LLM依据序列与实验描述排序变体的能力，不提供工具、MSA或结构。[[2]](#ref-2) 本节展示包含可用证据及反馈的已有评估。蛋白与RNA领域基准分别参见ProteinGym[[5]](#ref-5)和RNAGym[[6]](#ref-6)。
 
 ### 零样本：与领域预测方法比较
 
@@ -253,13 +255,14 @@ python3 -m venv .venv
 
 ## 9. 参考文献
 
-以下文献对应任务背景、数据来源与方法设计。本文的Codex/Harness性能数字来自[仓库实测记录](docs/results.md)。
+重点列出2023–2026年的相关工作，分别对应反馈驱动的蛋白工程、通用LLM预测、科研程序与评估数据扩展。本文的Codex/Harness性能数字来自[仓库实测记录](docs/results.md)。
 
-1. <a id="ref-1"></a> Yang, K. K., Wu, Z. & Arnold, F. H. [Machine-learning-guided directed evolution for protein engineering](https://www.nature.com/articles/s41592-019-0496-6). *Nature Methods*, 2019. 定向进化中序列—功能预测与实验反馈的背景。
-2. <a id="ref-2"></a> Biswas, S. et al. [Low-N protein engineering with data-efficient deep learning](https://www.nature.com/articles/s41592-021-01100-y). *Nature Methods*, 2021. 少量实验测量支持预测与蛋白工程的相关工作。
-3. <a id="ref-3"></a> Dietterich, T. G. [Ensemble Methods in Machine Learning](https://link.springer.com/chapter/10.1007/3-540-45014-9_1). *Multiple Classifier Systems*, 2000. 模型集成的方法背景；本项目将集成对象扩展为独立科研程序。
-4. <a id="ref-4"></a> Sarkisyan, K. S. et al. [Local fitness landscape of the green fluorescent protein](https://www.nature.com/articles/nature17995). *Nature*, 2016. GFP案例的原始荧光测量来源。
-5. <a id="ref-5"></a> Notin, P. et al. [ProteinGym: Large-Scale Benchmarks for Protein Fitness Prediction and Design](https://proceedings.neurips.cc/paper_files/paper/2023/hash/cac723e5ff29f65e3fcbb0739ae91bee-Abstract-Datasets_and_Benchmarks.html). *NeurIPS*, 2023. 蛋白突变效应数据与评估框架。
-6. <a id="ref-6"></a> Arora, R. et al. [RNAGym: Large-scale Benchmarks for RNA Fitness and Structure Prediction](https://www.biorxiv.org/content/10.1101/2025.06.16.660049v1). *bioRxiv预印本*, 2025. RNA突变效应与结构预测基准。
-7. <a id="ref-7"></a> Chen, Z. et al. [ScienceAgentBench: Toward Rigorous Assessment of Language Agents for Data-Driven Scientific Discovery](https://proceedings.iclr.cc/paper_files/paper/2025/hash/f12b4df26344f3be803c06b555252efe-Abstract-Conference.html). *ICLR*, 2025. 真实科研任务、可执行程序与结果验收的评估参考。
-8. <a id="ref-8"></a> Li, Y. et al. [AutoSDT: Scaling Data-Driven Discovery Tasks Toward Open Co-Scientists](https://aclanthology.org/2025.emnlp-main.1546/). *EMNLP*, 2025. 自动构建科研代码任务与训练数据的扩展参考。
+1. <a id="ref-1"></a> **EVOLVEpro** — Jiang, K. et al. [Rapid in silico directed evolution by a protein language model with EVOLVEpro](https://doi.org/10.1126/science.adr6006). *Science*, 2025. 蛋白语言模型＋回归模型＋少样本主动学习，连接预测与多轮实验反馈。
+2. <a id="ref-2"></a> **PG-LLM** — Arora, R. K. et al. [PG-LLM: Benchmarking General-Purpose Language Models for Protein Variant Ranking](https://www.biorxiv.org/content/10.64898/2026.07.27.741045v3). *bioRxiv预印本*, 2026. 直接评估通用LLM的变体排序能力；[作者项目页](https://www.proteingymllm.com/)与[代码](https://github.com/rohitarorayyc/proteingym-llm)。
+3. <a id="ref-3"></a> **FunSearch** — Romera-Paredes, B. et al. [Mathematical discoveries from program search with large language models](https://www.nature.com/articles/s41586-023-06924-6). *Nature*, 2024. LLM生成程序与自动执行评价相结合，为科研程序的生成和检验提供参考。
+4. <a id="ref-4"></a> **AlphaEvolve** — Novikov, A. et al. [AlphaEvolve: A coding agent for scientific and algorithmic discovery](https://arxiv.org/abs/2506.13131). *arXiv白皮书*, 2025. 用评价器反馈驱动程序迭代改进，关联后续Harness优化方向。
+5. <a id="ref-5"></a> **ProteinGym** — Notin, P. et al. [ProteinGym: Large-Scale Benchmarks for Protein Fitness Prediction and Design](https://proceedings.neurips.cc/paper_files/paper/2023/hash/cac723e5ff29f65e3fcbb0739ae91bee-Abstract-Datasets_and_Benchmarks.html). *NeurIPS*, 2023. 蛋白突变效应数据与评估框架。
+6. <a id="ref-6"></a> **RNAGym** — Arora, R. et al. [RNAGym: Large-scale Benchmarks for RNA Fitness and Structure Prediction](https://www.biorxiv.org/content/10.1101/2025.06.16.660049v1). *bioRxiv预印本*, 2025. RNA突变效应与结构预测基准。
+7. <a id="ref-7"></a> **ScienceAgentBench** — Chen, Z. et al. [ScienceAgentBench: Toward Rigorous Assessment of Language Agents for Data-Driven Scientific Discovery](https://proceedings.iclr.cc/paper_files/paper/2025/hash/f12b4df26344f3be803c06b555252efe-Abstract-Conference.html). *ICLR*, 2025. 真实科研任务、可执行程序、执行结果与成本的评估参考。
+8. <a id="ref-8"></a> **AutoSDT** — Li, Y. et al. [AutoSDT: Scaling Data-Driven Discovery Tasks Toward Open Co-Scientists](https://aclanthology.org/2025.emnlp-main.1546/). *EMNLP*, 2025. 自动构建科研代码任务与训练数据，关联任务生成和数据扩展。
+9. <a id="ref-9"></a> **测试时计算** — Snell, C. et al. [Scaling LLM Test-Time Compute Optimally Can be More Effective than Scaling Parameters for Reasoning](https://proceedings.iclr.cc/paper_files/paper/2025/hash/1b623663fd9b874366f3ce019fdfdd44-Abstract-Conference.html). *ICLR*, 2025. 研究计算预算分配与推理策略，关联本项目的同预算对照。
