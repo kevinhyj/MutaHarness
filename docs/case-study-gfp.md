@@ -1,6 +1,6 @@
 # GFP案例：从96条反馈到186个候选的排序
 
-GFP是绿色荧光蛋白。本例用它的公开荧光测量，检验Codex能否从有限反馈预测未测变体，以及Scientific Program Ensemble能否改善一次建模选择。
+GFP是绿色荧光蛋白。本例用它的公开荧光测量，检验Codex能否从有限反馈预测未测变体，以及Scientific Program Ensemble能否改善一次建模选择。 原始测量来自Sarkisyan等人的[Local fitness landscape of the green fluorescent protein](https://www.nature.com/articles/nature17995)（Nature, 2016），本例使用ProteinGym整理后的测量与本项目固定划分。
 
 ## 1. 原始任务与输入
 
